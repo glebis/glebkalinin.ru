@@ -1,0 +1,14 @@
+# Header
+logo_text: # Add text logo instead of logo image
+menu:
+  Обо мне: about
+  # Услуги: services
+  Архив: archives
+
+# Content
+excerpt_link: Читать далее →
+fancybox: 0
+
+# Miscellaneous
+google_analytics: UA-11190202-1
+favicon: /favicon.png
