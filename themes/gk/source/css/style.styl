@@ -1,0 +1,666 @@
+// @import "vendor/normalize";
+@import 'vendor/jeet/_settings'
+@import 'vendor/jeet/_shame'
+@import 'vendor/jeet/_utilities'
+@import "vendor/jeet/_grid";
+
+
+// body_width = 38em
+body_width = 38em
+body_width_large = 58em
+bp_mobile = 720px
+bp_large = 1800px
+blue = #1ca9c1
+font_grotesk = "Museo Sans",arial,sans-serif
+font_serif = "PT Serif",georgia,serif
+
+@font-face
+	font-family: 'Museo Sans'
+	font-weight 400
+	src: url('/webfonts/museo/253089_0_0.eot');src: url('/webfonts/museo/253089_0_0.eot?#iefix') format('embedded-opentype'), url('/webfonts/museo/253089_0_0.woff') format('woff');
+@font-face
+	font-family: 'Museo Sans'
+	font-weight 700
+	src: url('/webfonts/museo/253088_0_0.eot');
+	src: url('/webfonts/museo/253088_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/museo/253088_0_0.woff') format('woff');
+
+.b-page
+	background #FFFAFA
+	color #000
+	font-family font_grotesk
+	margin 0
+	padding 0
+	&--black
+		background #0c0c0c
+		color #fff
+
+.nobr
+	white-space nowrap
+
+a
+	color blue
+	&:hover
+		text-decoration none
+	&:visited
+		color #000
+
+h1
+	font-family font_grotesk
+
+h2
+	font-family font_grotesk
+	font-weight 700
+	line-height 1.1
+	margin-top 1.3em
+	margin-bottom .5em
+
+h3
+	font-family font_grotesk
+	font-weight 700
+	font-size 1.2em
+	margin 1.3em 0 -.05em
+	// text-transform uppercase
+
+
+// ##     ## ########    ###    ########  ######## ########  
+// ##     ## ##         ## ##   ##     ## ##       ##     ## 
+// ##     ## ##        ##   ##  ##     ## ##       ##     ## 
+// ######### ######   ##     ## ##     ## ######   ########  
+// ##     ## ##       ######### ##     ## ##       ##   ##   
+// ##     ## ##       ##     ## ##     ## ##       ##    ##  
+// ##     ## ######## ##     ## ########  ######## ##     ## 
+
+.header
+	// center(max_width = body_width)
+	// background rgba(0,0,0,.05)
+	// background url(/images/bg.jpg) center bottom no-repeat
+	// background-size cover
+	// min-height 400px
+	background #eee
+	margin 0 0 1em 0
+	padding 10px 0
+	position relative
+	&__wrapper
+		width 58em
+		margin 20px auto 0
+	.logo
+		font-weight 600
+		line-height 1em
+		text-shadow 1px 1px 0 rgba(255,255,255,.9)
+		margin 0
+
+
+.b-page--inner 
+	.header
+		// min-height 220px
+		&__wrapper
+			margin-top 30px
+			margin-bottom 30px
+
+.b-page--black
+	.logo
+		a
+			color: white		
+
+.popular-link
+	font-size .8em
+	a
+		color #000
+
+.photo-avatar
+	float left
+	width 100px
+	height 100px
+	margin 0 10px 10px 0
+	border-radius 50px
+
+.subscribe_link
+	font-size .8em
+
+.social-widget
+	float right
+	clear both
+	// position absolute
+	// top 0
+	// right 0
+	overflow hidden
+	width 180px
+	// height 60px
+	margin 10px 0 0 0
+	// width 190px
+	// color white
+	&__headline
+		margin 0 0 .6em
+		font-weight normal
+		font-size .8em
+	&__twitter
+	&__facebook
+		float left
+		height 20px
+	&__twitter
+		width 110px
+	&__facebook
+		width 70px
+		height 40px
+		overflow hidden
+		border none
+bp(bp_mobile, false)
+.header
+	padding 1em
+	min-height 100px
+	&__wrapper
+		margin 1em 0
+		width auto
+
+.social-widget
+	position static
+	float none
+	width auto
+	margin 1em 0
+	&__twitter
+	&__facebook
+		float none
+		display inline-block
+		height 40px
+
+endbp()		
+
+.search-form
+	margin 5px 0 0 0
+	float right
+	// display none
+	&__field
+		border 1px solid #000
+		background rgba(255,255,255,.7)
+		border-radius 3px
+		padding	5px
+		width 180px
+		// box-shadow inset 5px 5px 8px rgba(0, 0, 0, 0.15);
+
+bp(bp_mobile, false)
+.subscribe_link
+	display block
+.search-form
+	float none
+	&__field
+		width 100%
+endbp()
+//    ###    ########  ######## ####  ######  ##       ######## 
+//   ## ##   ##     ##    ##     ##  ##    ## ##       ##       
+//  ##   ##  ##     ##    ##     ##  ##       ##       ##       
+// ##     ## ########     ##     ##  ##       ##       ######   
+// ######### ##   ##      ##     ##  ##       ##       ##       
+// ##     ## ##    ##     ##     ##  ##    ## ##       ##       
+// ##     ## ##     ##    ##    ####  ######  ######## ######## 
+
+.note
+	center(max_width = body_width)
+
+
+
+bp(bp_large, true)
+.note
+	center(max_width = body_width_large)
+endbp()
+
+
+
+.page-nav
+	center(max_width = body_width)
+	margin-top 1em
+	margin-bottom 1em
+	text-align center
+	
+bp(bp_large, true)
+.page-nav
+	center(max_width = body_width_large)
+endbp()
+
+bp(bp_mobile, false)
+.page-nav
+	width auto
+endbp()
+
+.page-number
+	display inline-block
+	margin-right .5em
+	margin-left .5em
+
+
+bp(bp_mobile, false)
+.note
+	width auto
+	margin 1em
+img
+	max-width 100%
+	height auto
+endbp()
+
+
+
+.bold
+	font-weight bold
+
+
+.note-cover
+	height 350px
+	background blue
+
+.note-content
+.text
+	font-family font_serif
+	line-height 1.6
+	font-size 18px
+
+	p
+		margin 0 0 1em
+		&.hl
+			font-family font_grotesk
+			margin-left 12%
+			font-size 85%
+	blockquote
+		margin 1.5em 0 1.5em 3.5em
+		p
+			font-size .9em
+	iframe
+		margin 1em 0
+	p.aside
+		&--left
+			float left
+			margin 0 1.5em 1em -8em
+			width 12em
+		&--right
+			float right
+			width 12em
+			margin 0 -9em 1em 1em
+		&--large
+			font-size 1.2em
+		&--small
+			font-size .8em
+			line-height 1.3
+			color #555
+
+bp(bp_large, true)
+.note-content
+.text
+	font-family font_serif
+	line-height 1.6
+	font-size 22px
+endbp()
+.comment
+	font-family font_grotesk
+	font-size .8em
+	a
+		color blue
+		text-decoration none
+
+bp(bp_mobile, false)
+.note-content
+	blockquote
+		margin-left 1em
+	p.aside
+		&--left
+		&--right
+			float none
+			width auto
+			margin 1em 0
+endbp()
+
+
+.illustration
+	width 60em
+	text-align center
+	margin-left -13em
+	img
+		max-width 100%
+		height auto
+
+bp(bp_mobile, false)
+.illustration
+	width auto
+	margin-left 0
+endbp()
+
+bp(bp_large, true)
+.illustration
+	width 80em
+	margin-left -17em
+endbp()
+
+
+.legend
+	font-size .7em
+	color #555
+	font-family font_grotesk
+	a
+		color #555
+		text-decoration none
+	&--center
+		text-align center
+
+.translation
+	color #555
+	font-size .7em
+	a
+		color #777
+
+.image
+	text-align center
+	margin 1em 0 0
+
+
+.note-meta
+	width 9em
+	float left
+	margin .2em 0 0 -10em
+
+bp(bp_mobile, false)
+.note-meta
+	float none
+	width auto
+	margin .5em 0
+endbp()
+
+.note-share
+	margin 1.5em 0 3em
+
+
+.fluid-width-video-wrapper
+	clear both
+	margin 2em 0
+
+// ########    ###     ######    ######  
+//    ##      ## ##   ##    ##  ##    ## 
+//    ##     ##   ##  ##        ##       
+//    ##    ##     ## ##   ####  ######  
+//    ##    ######### ##    ##        ## 
+//    ##    ##     ## ##    ##  ##    ## 
+//    ##    ##     ##  ######    ######  
+
+
+.page-title
+	center(max_width = 80%)
+	font-weight normal
+	margin-top 2em 
+	margin-bottom 0em
+	font-size 2em
+	text-align center
+	color #ccc
+	em
+		font-weight bold
+		font-style normal
+
+.categories
+	margin 1em 0 .7em
+	padding 0
+	&__item
+		list-style-type none
+		font-weight bold
+		display inline-block
+		margin 0 1em 0 0
+		a
+			text-decoration none
+		
+
+.tags-list
+	margin .3em 1em .5em 0
+	padding 0
+	// display inline-block
+	font-size .8em
+	// &:before
+	// 	content: "Темы: "
+	// 	color rgba(0,0,0,.5)
+	&__tag_title
+		list-style-type none
+		display inline
+		font-weight bold
+		margin-right .3em
+	li, &__tag
+		list-style-type none
+		display inline
+		// display inline-block
+		margin 0 0 0 0
+		font-weight normal
+		margin 0 .3em 0 0
+
+		&:last-child:after
+			content ""
+		a
+			border 1px solid rgba(0,0,0,0)
+			border-radius 3px
+			padding 2px
+			text-decoration none
+			color #000
+			&:hover
+				border-color rgba(0,0,0,.4)
+			&:visited
+				color #000
+
+bp(bp_mobile, false)
+.tags-list
+	margin-right 0
+	&__tag
+		display inline-block
+endbp()
+
+.about-author
+	font-size .8em
+// .link_about
+	
+// bp(bp_mobile, false)
+// .link_about
+// 	display block
+// 	text-align center
+// endbp()
+
+
+
+
+
+.note-published
+	font-size 11px
+	color #555
+
+.article-tag-list
+	display block
+	margin 0 0 5px
+	padding 0
+	&-item
+		list-style-type none
+		margin 0
+		display inline
+	&-link
+		text-decoration none
+		color #ccc
+		display inline-block
+		margin-right 1em
+		font-size 11px
+		// &:before
+		// 	content "#"
+		&:hover
+			color black
+
+
+
+
+.note-published
+	display block
+	color #ccc
+
+.note-title
+	margin 2.2em 0 .2em
+	hyphens auto
+	// text-align center
+	line-height 1.3
+	font-size 1.7em
+
+.article-title
+	text-decoration none
+	color #333
+
+h1.article-title
+	font-size 1.5em
+
+bp(bp_large,true)
+.note-title
+	font-size 2.4em
+
+.note-tags
+	&__tag
+		font-size 13px
+
+endbp()
+
+.big-link
+	text-decoration none
+	color #333
+	font-weight 600
+
+
+.pages
+	center(max_width = body_width)
+
+
+bp(bp_large, true)
+.pages
+	center(max_width = body_width_large)
+endbp()
+
+
+// ########  ######## ##          ###    ######## ######## ########  
+// ##     ## ##       ##         ## ##      ##    ##       ##     ## 
+// ##     ## ##       ##        ##   ##     ##    ##       ##     ## 
+// ########  ######   ##       ##     ##    ##    ######   ##     ## 
+// ##   ##   ##       ##       #########    ##    ##       ##     ## 
+// ##    ##  ##       ##       ##     ##    ##    ##       ##     ## 
+// ##     ## ######## ######## ##     ##    ##    ######## ########  
+
+
+.article-nav
+	margin 1em 0
+
+.note-related
+	margin 2em 0
+
+// subscr
+
+.subscribe_form
+	center(max_width = body_width)
+	background white
+	border 1px solid #eee
+	padding 1em
+	margin-top 1em 
+	margin-bottom 2em
+	&__header
+		margin-top .3em
+	// &__callto
+	p
+		font-size .8em
+	&__email
+		display inline-block
+		font-size 1.2em
+		vertical-align center
+		margin 0 .7em
+	&__submit
+		cursor pointer
+	label
+		display inline-block
+		font-weight bold
+		cursor pointer
+		// margin-right .3em
+	&--standalone
+		padding 0
+		background transparent
+		border none
+		p
+			font-size 1em
+		.subscribe_form__label
+			font-family font_grotesk
+			font-size 1em
+			
+		.subscribe_form__email
+			display block
+			font-family font_grotesk
+			font-size 1.5em
+			margin .4em 0
+		.subscribe_form__submit
+			border none
+			border-radius 3px
+			padding .4em .7em
+			color white
+			background blue
+			font-family font_grotesk
+			font-size 1em
+			&:hover
+				background #267E8C
+
+bp(bp_mobile, false)
+.subscribe_form
+	width auto
+	margin 1em
+endbp()
+
+
+//  ######   #######  ##     ## ##     ## ######## ##    ## ########  ######  
+// ##    ## ##     ## ###   ### ###   ### ##       ###   ##    ##    ##    ## 
+// ##       ##     ## #### #### #### #### ##       ####  ##    ##    ##       
+// ##       ##     ## ## ### ## ## ### ## ######   ## ## ##    ##     ######  
+// ##       ##     ## ##     ## ##     ## ##       ##  ####    ##          ## 
+// ##    ## ##     ## ##     ## ##     ## ##       ##   ###    ##    ##    ## 
+//  ######   #######  ##     ## ##     ## ######## ##    ##    ##     ######  
+
+#disqus_thread
+	center(max_width = body_width)
+
+
+
+// ########  #######   #######  ######## ######## ########  
+// ##       ##     ## ##     ##    ##    ##       ##     ## 
+// ##       ##     ## ##     ##    ##    ##       ##     ## 
+// ######   ##     ## ##     ##    ##    ######   ########  
+// ##       ##     ## ##     ##    ##    ##       ##   ##   
+// ##       ##     ## ##     ##    ##    ##       ##    ##  
+// ##        #######   #######     ##    ######## ##     ## 
+
+.footer
+	center(max_width = body_width)
+	margin-top 5em
+	margin-bottom 2em
+	color #555
+	&-i
+		font-size .8em
+	&-instagram
+		float right
+		margin-top -3px
+		&__link
+			background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTEzLjM4NnB4IiBoZWlnaHQ9IjExMy4zODZweCIgdmlld0JveD0iMCAwIDExMy4zODYgMTEzLjM4NiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTEzLjM4NiAxMTMuMzg2Ig0KCSB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxkZWZzPg0KCQk8cmVjdCBpZD0iU1ZHSURfMV8iIHdpZHRoPSIxMTMuMzg2IiBoZWlnaHQ9IjExMy4zODYiLz4NCgk8L2RlZnM+DQoJPGNsaXBQYXRoIGlkPSJTVkdJRF8yXyI+DQoJCTx1c2UgeGxpbms6aHJlZj0iI1NWR0lEXzFfIiAgb3ZlcmZsb3c9InZpc2libGUiLz4NCgk8L2NsaXBQYXRoPg0KCTxwYXRoIGNsaXAtcGF0aD0idXJsKCNTVkdJRF8yXykiIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjNUI1QjVCIiBkPSJNMTAwLjEzNiw0Ny44ODRoLTkuODU0DQoJCWMwLjcxOCwyLjc4NywxLjE0Miw1LjY5OSwxLjE0Miw4LjcxYzAsMTkuMjM4LTE1LjU5MiwzNC44My0zNC44MjYsMzQuODNTMjEuNzcsNzUuODMyLDIxLjc3LDU2LjU5NA0KCQljMC0zLjAxMSwwLjQyNi01LjkyMywxLjE0NC04LjcxaC05Ljg1NXY0Ny44OTNjMCwyLjQwMSwxLjk1LDQuMzUsNC4zNTgsNC4zNWg3OC4zNjFjMi40MDgsMCw0LjM1OC0xLjk0OCw0LjM1OC00LjM1VjQ3Ljg4NHoNCgkJIE0xMDAuMTM2LDE3LjQxMWMwLTIuNDAzLTEuOTUtNC4zNTMtNC4zNTgtNC4zNTNIODIuNzJjLTIuNDA1LDAtNC4zNTQsMS45NS00LjM1NCw0LjM1M3YxMy4wNjNjMCwyLjQwMywxLjk0OCw0LjM1Myw0LjM1NCw0LjM1Mw0KCQloMTMuMDU4YzIuNDA4LDAsNC4zNTgtMS45NSw0LjM1OC00LjM1M1YxNy40MTF6IE01Ni41OTcsMzQuODI3Yy0xMi4wMjMsMC0yMS43NjksOS43NDQtMjEuNzY5LDIxLjc2Nw0KCQljMCwxMi4wMjEsOS43NDUsMjEuNzcsMjEuNzY5LDIxLjc3YzEyLjAyMiwwLDIxLjc3LTkuNzQ5LDIxLjc3LTIxLjc3Qzc4LjM2Niw0NC41NzEsNjguNjE5LDM0LjgyNyw1Ni41OTcsMzQuODI3IE0xMDAuMTM2LDExMy4xOTINCgkJSDEzLjA1OEM1Ljg0NywxMTMuMTkyLDAsMTA3LjM0MywwLDEwMC4xMjZWMTMuMDU4QzAsNS44NDYsNS44NDcsMCwxMy4wNTgsMGg4Ny4wNzhjNy4yMTIsMCwxMy4wNTgsNS44NDYsMTMuMDU4LDEzLjA1OHY4Ny4wNjgNCgkJQzExMy4xOTMsMTA3LjM0MywxMDcuMzQ4LDExMy4xOTIsMTAwLjEzNiwxMTMuMTkyIi8+DQo8L2c+DQo8L3N2Zz4NCg==")
+			width 20px
+			height 20px
+			background-size cover
+			display block
+			&:hover
+				opacity .7
+	a
+		color #555
+bp(bp_mobile)
+.footer
+	width auto
+	padding 1em
+endbp()
+bp(bp_large, true)
+.footer
+	center(max_width = body_width_large)
+	padding 1em
+	&-i
+		font-size 1em
+endbp()
+
+
+// archive
+.archive-year-wrap
+	font-size 2.2em
+	a
+		text-decoration none
+.archive-article-title
+		text-decoration none
+		margin-top 0

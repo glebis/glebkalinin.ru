@@ -1,0 +1,5 @@
+nav:
+  next: 'Вперед'
+  prev: 'Назад'
+article:
+  comments: 'Комментарии'

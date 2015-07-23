@@ -1,0 +1,5 @@
+_config.yml
+node_modules
+public
+.DS_Store
+db.json
