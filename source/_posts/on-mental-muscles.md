@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2012-02-06 11:55:15+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 287
 disqus_identifier: 287 http://glebkalinin.ru/?p=287
 
 tags:
-- business
+- бизнес
 - tools
 - books
 - education

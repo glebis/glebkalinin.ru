@@ -4,7 +4,7 @@ layout: post
 title: "Хуан Карлос Пастор. «Как управлять командой: роль психологии и социальной среды»"
 
 tags:
-- business
+- бизнес
 - management
 - leadership
 ---

@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2011-04-16 11:54:17+00:00
 layout: post
@@ -9,9 +9,9 @@ wordpress_id: 197
 disqus_identifier: 197 http://glebkalinin.ru/?p=197
 
 tags:
-- business
+- бизнес
 - web-projects
-- internet
+- интернет
 - lectures
 - startapyi
 ---

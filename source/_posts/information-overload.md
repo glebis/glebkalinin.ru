@@ -10,7 +10,7 @@ disqus_identifier: 177 http://glebkalinin.ru/?p=177
 tags:
 - questions
 - data
-- internet
+- интернет
 - information-overload
 - productivity
 - reading

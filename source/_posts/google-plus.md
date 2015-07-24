@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2013-08-14 20:11:43+00:00
 layout: post
@@ -11,7 +11,7 @@ disqus_identifier: 479 http://glebkalinin.ru/?p=479
 tags:
 - collaboration
 - tools
-- internet
+- интернет
 - services
 - social-networks
 ---

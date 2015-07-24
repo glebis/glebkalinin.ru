@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2013-08-05 16:16:42+00:00
 layout: post
@@ -13,7 +13,7 @@ tags:
 - google
 - kindle
 - security
-- internet
+- интернет
 - media
 - services
 - social-networks

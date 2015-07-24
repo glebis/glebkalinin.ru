@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2010-11-09 08:20:12+00:00
 layout: post
@@ -12,7 +12,7 @@ tags:
 - delicious
 - web
 - tools
-- internet
+- интернет
 - productivity
 ---
 

@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2011-10-11 09:09:35+00:00
 layout: post
@@ -10,8 +10,8 @@ disqus_identifier: 258 http://glebkalinin.ru/?p=258
 
 tags:
 - communication
-- business
-- internet
+- бизнес
+- интернет
 - project-management
 - email
 ---

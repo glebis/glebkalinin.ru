@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2012-03-07 11:36:21+00:00
 layout: post

@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2013-04-30 17:31:34+00:00
 layout: post
@@ -9,8 +9,8 @@ wordpress_id: 449
 disqus_identifier: 449 http://glebkalinin.ru/?p=449
 
 tags:
-- business
-- internet
+- бизнес
+- интернет
 - monetization
 - ads
 - social-networks

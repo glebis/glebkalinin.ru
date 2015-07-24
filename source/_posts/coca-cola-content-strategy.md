@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2013-08-28 10:09:17+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 481
 disqus_identifier: 481 http://glebkalinin.ru/?p=481
 
 tags:
-- business
+- бизнес
 - brands
 - content
 - content-strategy

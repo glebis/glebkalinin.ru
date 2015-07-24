@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2011-06-27 09:29:07+00:00
 layout: post
@@ -12,7 +12,7 @@ tags:
 - wordpress
 - design
 - journalism
-- internet
+- интернет
 - content
 - project-management
 ---

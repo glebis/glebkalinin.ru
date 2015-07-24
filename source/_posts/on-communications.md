@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2012-02-28 07:55:48+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 292
 disqus_identifier: 292 http://glebkalinin.ru/?p=292
 
 tags:
-- business
+- бизнес
 - web-projects
 - communications
 - self-development

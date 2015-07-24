@@ -5,8 +5,8 @@ layout: post
 title: Как рассчитать ставку за час
 
 tags:
-- business
-- pricing
+- бизнес
+- ценообразование
 ---
 
 

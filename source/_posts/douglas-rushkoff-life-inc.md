@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2011-03-09 08:47:12+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 180
 disqus_identifier: 180 http://glebkalinin.ru/?p=180
 
 tags:
-- internet
+- интернет
 - books
 - education
 - reading

@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2010-04-20 06:30:27+00:00
 layout: post
@@ -10,7 +10,7 @@ disqus_identifier: 78 http://glebkalinin.ru/?p=78
 
 tags:
 - questions
-- internet
+- интернет
 - research
 ---
 

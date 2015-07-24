@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2011-06-28 11:58:49+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 229
 disqus_identifier: 229 http://glebkalinin.ru/?p=229
 
 tags:
-- business
+- бизнес
 - sustainability
 ---
 

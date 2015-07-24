@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2013-01-20 14:35:48+00:00
 layout: post
@@ -13,7 +13,7 @@ tags:
 - facebook
 - policy
 - state
-- internet
+- интернет
 - freedom
 ---
 

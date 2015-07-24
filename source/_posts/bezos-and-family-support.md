@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2013-04-13 20:56:58+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 445
 disqus_identifier: 445 http://glebkalinin.ru/?p=445
 
 tags:
-- business
+- бизнес
 - education
 - startapyi
 ---

@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2010-11-01 15:51:58+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 141
 disqus_identifier: 141 http://glebkalinin.ru/?p=141
 
 tags:
-- business
+- бизнес
 - web-projects
 - design
 - interfaces

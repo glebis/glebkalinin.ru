@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2010-05-10 07:13:10+00:00
 layout: post
@@ -9,9 +9,9 @@ wordpress_id: 89
 disqus_identifier: 89 http://glebkalinin.ru/?p=89
 
 tags:
-- business
+- бизнес
 - dopreality
-- internet
+- интернет
 - lectures
 ---
 

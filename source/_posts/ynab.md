@@ -6,7 +6,7 @@ title: You Need a Budget
 tags:
 - budgeting
 - money
-- business
+- бизнес
 - tools
 ---
 

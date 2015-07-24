@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2012-02-26 22:05:48+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 295
 disqus_identifier: 295 http://glebkalinin.ru/?p=295
 
 tags:
-- internet
+- интернет
 - content
 - marketing
 - media

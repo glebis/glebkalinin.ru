@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2011-06-27 04:35:03+00:00
 layout: post
@@ -9,10 +9,10 @@ wordpress_id: 221
 disqus_identifier: 221 http://glebkalinin.ru/?p=221
 
 tags:
-- business
+- бизнес
 - web
 - journalism
-- internet
+- интернет
 - content
 - content-strategy
 - media

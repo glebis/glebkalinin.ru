@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2009-10-12 18:33:28+00:00
 updated: 2011-11-25 18:33:32+00:00

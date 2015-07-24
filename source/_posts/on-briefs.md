@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2011-12-05 08:00:05+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 273
 disqus_identifier: 273 http://glebkalinin.ru/?p=273
 
 tags:
-- business
+- бизнес
 - project-management
 ---
 

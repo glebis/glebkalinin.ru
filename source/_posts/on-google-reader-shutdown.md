@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2013-03-14 12:04:01+00:00
 layout: post
@@ -10,8 +10,8 @@ disqus_identifier: 413 http://glebkalinin.ru/?p=413
 
 tags:
 - delicious
-- business
-- internet
+- бизнес
+- интернет
 - services
 - startapyi
 - reading

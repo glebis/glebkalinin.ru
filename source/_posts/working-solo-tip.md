@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2010-02-15 06:02:32+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 67
 disqus_identifier: 67 http://glebkalinin.ru/?p=67
 
 tags:
-- business
+- бизнес
 - self-development
 ---
 
@@ -17,10 +17,6 @@ tags:
 
 
 Фото: [Hal Bergman Photography](http://www.flickr.com/photos/pyrokinetic/395963090/)
-
-
-
-
 
 
 В Wall Street Journal опубликована очень полезная [статья](http://online.wsj.com/article/SB10001424052748704825504574581900293220092.html#printMode) о контрактных работниках, фрилансерах, независимых консультантах и _микропредпринимателях_.  (В английском есть термин [micropreneur](http://www.urbandictionary.com/define.php?term=micropreneur), которым называют предпринимателей, осознанно  фокусирующихся на небольших проектах, часто краткосрочных и не имеющих перспектив роста.) В США такие самостоятельные специалисты составляют от 20 до 23 процентов от общего числа работающих — то есть одну пятую трудоспособного населения страны.

@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2011-12-12 07:43:53+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 276
 disqus_identifier: 276 http://glebkalinin.ru/?p=276
 
 tags:
-- business
+- бизнес
 - content
 - content-strategy
 - startapyi

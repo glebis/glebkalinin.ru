@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2012-04-21 13:19:36+00:00
 layout: post
@@ -10,7 +10,7 @@ disqus_identifier: 330 http://glebkalinin.ru/?p=330
 
 tags:
 - branding
-- design-thinking
+- дизайн-мышление
 - services
 - reading
 ---

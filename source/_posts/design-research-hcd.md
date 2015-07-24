@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2010-10-30 00:37:11+00:00
 layout: post
@@ -9,12 +9,12 @@ wordpress_id: 138
 disqus_identifier: 138 http://glebkalinin.ru/?p=138
 
 tags:
-- business
+- бизнес
 - web
 - web-projects
 - questions
 - design
-- design-thinking
+- дизайн-мышление
 - lectures
 - sites
 ---

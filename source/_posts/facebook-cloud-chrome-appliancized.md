@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2011-05-13 07:21:07+00:00
 layout: post
@@ -10,7 +10,7 @@ disqus_identifier: 207 http://glebkalinin.ru/?p=207
 
 tags:
 - brands
-- internet
+- интернет
 - content
 - social-networks
 ---

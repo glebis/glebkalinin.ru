@@ -8,7 +8,7 @@ tags:
 - tools
 - reading
 - kindle
-- internet
+- интернет
 - productivity
 ---
 

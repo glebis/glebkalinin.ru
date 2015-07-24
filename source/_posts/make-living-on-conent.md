@@ -1,5 +1,5 @@
 ---
-author: admin
+
 comments: true
 date: 2011-07-11 13:10:51+00:00
 layout: post
@@ -9,7 +9,7 @@ wordpress_id: 230
 disqus_identifier: 230 http://glebkalinin.ru/?p=230
 
 tags:
-- business
+- бизнес
 - web-projects
 - questions
 - content
