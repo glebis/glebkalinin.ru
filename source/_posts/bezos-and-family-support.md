@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2013-04-13 20:56:58+00:00
-layout: post
-slug: bezos-and-family-support
 title: Бэзос и поддержка семьи
-wordpress_id: 445
 disqus_identifier: 445 http://glebkalinin.ru/?p=445
 
 tags:
 - бизнес
-- education
-- startapyi
+- образование
+- стартапы
 ---
 
 ![Джеф Бэзос](http://www.glebkalinin.ru/wp-content/uploads/2013/04/0403_jeff-bezos-amazon_8001-500x246.jpg)

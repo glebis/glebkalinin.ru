@@ -1,19 +1,15 @@
 ---
 
-comments: true
 date: 2010-11-09 08:20:12+00:00
-layout: post
-slug: delicious-bookmarks
 title: О закладках
-wordpress_id: 144
 disqus_identifier: 144 http://glebkalinin.ru/?p=144
 
 tags:
 - delicious
-- web
-- tools
+- веб
+- инструменты
 - интернет
-- productivity
+- продуктивность
 ---
 
 ![](http://glebkalinin.ru/featured/2010/11/delicious.jpg)

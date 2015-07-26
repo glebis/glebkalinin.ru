@@ -1,11 +1,7 @@
 ---
 
-comments: true
 date: 2011-02-15 14:22:15+00:00
-layout: post
-slug: textbooks
 title: 'Идея: сайт про учебники и учебные программы'
-wordpress_id: 171
 disqus_identifier: 171 http://glebkalinin.ru/?p=171
 
 ---

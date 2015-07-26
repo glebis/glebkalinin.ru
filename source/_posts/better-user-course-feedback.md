@@ -1,18 +1,14 @@
 ---
 
-comments: true
 date: 2011-04-13 07:01:04+00:00
-layout: post
-slug: better-user-course-feedback
 title: Отчёт по курсу об эффективном использовании компьютера
-wordpress_id: 193
 disqus_identifier: 193 http://glebkalinin.ru/?p=193
 
 tags:
-- education
-- productivity
-- public-perfomances
-- self-development
+- образование
+- продуктивность
+- публичные выступления
+- саморазвитие
 ---
 
 Пару месяцев назад в этом блоге я написал пост, в котором [предлагал](http://glebkalinin.ru/better-user-course/) всем желающим записаться на индивидуальный курс по эффективному использованию компьютера. 

@@ -1,13 +1,11 @@
 ---
-comments: true
 date: 2014-01-09 05:52:27+00:00
-layout: post
 title: Перезапуск
 
 tags:
 - docpad
-- tools
-- writing
+- инструменты
+- письмо
 - wordpress
 ---
 

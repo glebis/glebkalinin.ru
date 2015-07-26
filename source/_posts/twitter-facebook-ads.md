@@ -1,19 +1,15 @@
 ---
 
-comments: true
 date: 2013-04-30 17:31:34+00:00
-layout: post
-slug: twitter-facebook-ads
 title: Про Твиттер, Фейсбук и рекламу
-wordpress_id: 449
 disqus_identifier: 449 http://glebkalinin.ru/?p=449
 
 tags:
 - бизнес
 - интернет
-- monetization
-- ads
-- social-networks
+- монетизация
+- реклама
+- социальные сети
 ---
 
 Сегодня представители Твиттера анонсировали, что с этого дня [рекламная платформа](https://business.twitter.com/products/twitter-ads-self-service) сервиса доступна для любого пользователя системы. Продвигать свои твиты предлагается не только бизнесам разной величины, но и обычным пользователям, желающим усилить свой «персональный бренд». Об этом [пишет The Verge](http://www.theverge.com/2013/4/30/4285764/twitters-ad-platform-now-open-to-all), однако в России сервис пока что не работает.

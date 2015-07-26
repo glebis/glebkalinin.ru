@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2010-12-20 08:37:03+00:00
-layout: post
-slug: public-performances
 title: О публичных выступлениях
-wordpress_id: 136
 disqus_identifier: 136 http://glebkalinin.ru/?p=136
 
 tags:
-- lectures
-- public-perfomances
-- self-development
+- лекции
+- публичные выступления
+- саморазвитие
 ---
 
 ![](http://glebkalinin.ru/featured/2010/12/martin-luther-king.jpg)

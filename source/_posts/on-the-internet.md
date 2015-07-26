@@ -1,15 +1,11 @@
 ---
 
-comments: true
 date: 2013-02-18 11:42:57+00:00
-layout: post
-slug: on-the-internet
 title: В интернете никто не знает, что ты собака
-wordpress_id: 407
 disqus_identifier: 407 http://glebkalinin.ru/?p=407
 
 tags:
-- web-projects
+- веб-projects
 - интернет
 ---
 

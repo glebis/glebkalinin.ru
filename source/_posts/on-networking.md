@@ -1,15 +1,11 @@
 ---
 
-comments: true
 date: 2012-06-25 06:57:08+00:00
-layout: post
-slug: on-networking
 title: Об общении, знакомствах и расширении социальной сети
-wordpress_id: 374
 disqus_identifier: 374 http://glebkalinin.ru/?p=374
 
 tags:
-- events
+- события
 ---
 
 В минувший четверг, 21 июня, в «Тайге» прошла встерча с Вэлом Жердесом. Вэл — инвестор, бизнесмен, генеральный партнер Foresight Ventures, бывший сотрудник Apple и Lockheed Martin. Мы познакомились с ним на [TEDxNevaRiver](http://tedxnevariver.com/) неделю назад, где он, как и я, был спикером. 

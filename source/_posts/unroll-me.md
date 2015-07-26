@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2013-01-28 12:14:36+00:00
-layout: post
-slug: unroll-me
 title: Unroll.me — решаем проблему рассылок в один клик
-wordpress_id: 397
 disqus_identifier: 397 http://glebkalinin.ru/?p=397
 
 tags:
-- productivity
-- services
-- email
+- продуктивность
+- сервисы
+- электронная почта
 ---
 
 В конце 2011 я писал про [будущее электронной почты](http://glebkalinin.ru/rethink-email/). В этой области не наблюдается излишек инноваций, однако подвижки наметились: пояляются новые приложения для работы с почтой (Sparrow, [Mailbox](http://www.mailboxapp.com/)), [Movableink](http://movableink.com/) экспериментирует с динамичными электронными письмами, а Google [переосмысливает поиск по почте](https://www.google.com/experimental/gmailfieldtrial). Я же расскажу о сервисе Unroll.me, который позволяет эффективно бороться с перегрузкой вашего почтового ящика.

@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2013-08-01 06:30:50+00:00
-layout: post
-slug: bret-victor-the-future-of-programming
 title: Брет Виктор о будущем программирования
-wordpress_id: 459
 disqus_identifier: 459 http://glebkalinin.ru/?p=459
 
 tags:
-- thinking
-- design
+- мышление
+- дизайн
 - дизайн-мышление
 ---
 

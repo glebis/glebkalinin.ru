@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2010-05-06 09:43:16+00:00
-layout: post
-slug: cory-doctorow-wikipedia-in-education
 title: 'Кори Доктороу: Википедия в учебном процессе'
-wordpress_id: 88
 disqus_identifier: 88 http://glebkalinin.ru/?p=88
 
 tags:
 - wikipedia
-- education
+- образование
 ---
 
 [Кори Доктороу](http://craphound.com/) в лекции о копирайте, которая была опубликована в последнем [подкасте BigIdeas](http://www.tvo.org/TVOsites/WebObjects/TvoMicrosite.woa?bi?1272747600000), рассказывает, как во время учебного курса, который он вёл, он использовал Википедию. 

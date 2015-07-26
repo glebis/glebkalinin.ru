@@ -1,7 +1,5 @@
 ---
-comments: true
 date: 2014-02-28
-layout: post
 title: Как рассчитать ставку за час
 
 tags:

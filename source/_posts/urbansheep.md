@@ -1,11 +1,7 @@
 ---
 
-comments: true
 date: 2010-07-02 13:55:19+00:00
-layout: post
-slug: urbansheep
 title: Об Урбаншипе
-wordpress_id: 110
 disqus_identifier: 110 http://glebkalinin.ru/?p=110
 
 ---

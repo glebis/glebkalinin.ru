@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2010-11-18 11:20:54+00:00
-layout: post
-slug: brian-eno
 title: Брайан Ино
-wordpress_id: 150
 disqus_identifier: 150 http://glebkalinin.ru/?p=150
 
 tags:
-- lectures
-- events
+- лекции
+- события
 ---
 
 ![](http://glebkalinin.ru/featured/2010/11/Brian-Eno-006.jpg)

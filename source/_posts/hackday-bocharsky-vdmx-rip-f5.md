@@ -1,20 +1,16 @@
 ---
 
-comments: true
 date: 2009-12-21 05:45:50+00:00
-layout: post
-slug: hackday-bocharsky-vdmx-rip-f5
 title: 'Декабрь: Hackday, коллективные действия, Бочарский, VDMX, Remix Manifesto и F5'
-wordpress_id: 54
 disqus_identifier: 54 http://glebkalinin.ru/?p=54
 
 tags:
 - hackday
-- journalism
-- content
-- publications
-- events
-- experiment-ru
+- журналистика
+- контент
+- публикации
+- события
+- эксперимент.ру
 ---
 
 В декабре произошло несколько важных и интересных событий, по каждому из которых не грех было бы отчитаться отдельно, но выходит только оптом.

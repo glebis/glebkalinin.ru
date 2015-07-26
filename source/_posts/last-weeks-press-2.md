@@ -1,18 +1,14 @@
 ---
 
-comments: true
 date: 2012-03-05 18:23:47+00:00
-layout: post
-slug: last-weeks-press-2
 title: 'Читано на неделе: стартапы, удалённые команды, ментальные модели'
-wordpress_id: 300
 disqus_identifier: 300 http://glebkalinin.ru/?p=300
 
 tags:
-- content
-- content-strategy
-- startapyi
-- press-review
+- контент
+- контент-strategy
+- стартапы
+- читано на неделе
 - usability
 ---
 

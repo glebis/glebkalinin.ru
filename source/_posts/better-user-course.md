@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2011-01-20 11:49:16+00:00
-layout: post
-slug: better-user-course
 title: Бесплатный индивидуальный курс по эффективному использованию компьютера
-wordpress_id: 162
 disqus_identifier: 162 http://glebkalinin.ru/?p=162
 
 tags:
-- education
-- productivity
-- self-development
+- образование
+- продуктивность
+- саморазвитие
 ---
 
 ![](http://glebkalinin.ru/featured/2011/01/macpc.jpg)

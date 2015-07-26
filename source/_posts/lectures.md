@@ -1,11 +1,10 @@
 ---
 date: 2015-06-11
-layout: post
 title: Зачем ходить на лекции, семинары
 
 tags:
-- education
-- lectures
+- образование
+- лекции
 ---
 
 

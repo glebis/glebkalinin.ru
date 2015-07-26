@@ -1,22 +1,18 @@
 ---
 
-comments: true
 date: 2011-10-16 20:44:13+00:00
-layout: post
-slug: spaced-repetition
 title: ' Об обучении: интервальное повторение'
-wordpress_id: 262
 disqus_identifier: 262 http://glebkalinin.ru/?p=262
 
 tags:
-- english
-- tools
-- education
+- английский
+- инструменты
+- образование
 - learning
 - memory
-- productivity
-- self-development
-- reading
+- продуктивность
+- саморазвитие
+- чтение
 ---
 
 ![](http://glebkalinin.ru/featured/2011/10/flashcards.jpg)

@@ -1,11 +1,7 @@
 ---
 
-comments: true
 date: 2010-01-28 14:24:55+00:00
-layout: post
-slug: internet-pr
 title: Об интернет-PR и социальных сетях
-wordpress_id: 64
 disqus_identifier: 64 http://glebkalinin.ru/?p=64
 
 ---

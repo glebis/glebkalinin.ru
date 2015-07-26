@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2010-02-15 06:02:32+00:00
-layout: post
-slug: working-solo-tip
 title: Об успешной работе на себя
-wordpress_id: 67
 disqus_identifier: 67 http://glebkalinin.ru/?p=67
 
 tags:
 - бизнес
-- self-development
+- саморазвитие
 ---
 
 ![Home office](http://glebkalinin.ru/featured/2010/02/Screen-shot-2010-02-13-at-7.23.56-PM.png)

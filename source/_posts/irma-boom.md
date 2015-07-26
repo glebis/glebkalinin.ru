@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2012-06-07 06:20:19+00:00
-layout: post
-slug: irma-boom
 title: Ирма Бом. Манифест книги
-wordpress_id: 350
 disqus_identifier: 350 http://glebkalinin.ru/?p=350
 
 tags:
-- design
-- books
+- дизайн
+- книги
 ---
 
 6 июня 2012 года в [Тайге](http://space-taiga.org) в рамках фестиваля [PrintFarm](http://printfarm.ru) голландский дизайнер Ирма Бом (Irma Boom) демонстрировала свои книги и рассказывала связанные с ними истории. 

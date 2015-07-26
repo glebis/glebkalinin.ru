@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2013-08-13 21:11:39+00:00
-layout: post
-slug: nuzak
 title: Ньюзак
-wordpress_id: 477
 disqus_identifier: 477 http://glebkalinin.ru/?p=477
 
 tags:
-- journalism
-- media
+- журналистика
+- медиа
 ---
 
 В книге Морриса Бермана «Закат американской культуры» ([The Twilight of American Culture](http://www.amazon.com/gp/product/039332169X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=039332169X&linkCode=as2&tag=glebkali-20)) (о которой напишу отдельно) натолкнулся на термин ньюзак (nuzak), по аналогии с мьюзак (muzak).

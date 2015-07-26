@@ -1,11 +1,7 @@
 ---
 
-comments: true
 date: 2010-04-04 04:52:20+00:00
-layout: post
-slug: short-news
 title: Новости короткой строкой
-wordpress_id: 72
 disqus_identifier: 72 http://glebkalinin.ru/?p=72
 
 ---

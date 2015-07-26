@@ -1,12 +1,11 @@
 ---
 date: 2014-10-23
-layout: post
 title: Думать, не думать, писать
 
 tags:
-- thinking
+- мышление
 - meditation
-- writing
+- письмо
 ---
 
 

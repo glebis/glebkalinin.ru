@@ -1,11 +1,7 @@
 ---
 
-comments: true
 date: 2013-01-20 14:35:48+00:00
-layout: post
-slug: ian-bremmer-on-internet
 title: 'Ян Бреммер: «Рост интернета будет приводить к национализму, популизму, сектантству, насилию»'
-wordpress_id: 394
 disqus_identifier: 394 http://glebkalinin.ru/?p=394
 
 tags:
@@ -14,7 +10,7 @@ tags:
 - policy
 - state
 - интернет
-- freedom
+- свобода
 ---
 
 На днях в подкасте [Carnegie Council for Ethics in International Affairs](http://en.wikipedia.org/wiki/Carnegie_Council_for_Ethics_in_International_Affairs) была опубликована лекция эксперта в области американской внешней политики Яна Бреммера (того самого, который [якобы признал заслуги Путина](http://expert.ru/2013/01/10/pervyie-politicheskie-trendyi-2013-goda/?ny) на страницах Foreign Policy). Бреммер не первый год выступает в Carnegie Council, каждый год его прогнозы дают немало пищи для ума. В этом выступлении, которое я рекомендую [послушать полностью](http://www.carnegiecouncil.org/studio/multimedia/20130115/index.html#section-25743), Бреммер коснулся темы интернета. Даю примерный конспект этой части его выступления без комментариев.

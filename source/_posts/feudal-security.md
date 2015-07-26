@@ -1,22 +1,18 @@
 ---
 
-comments: true
 date: 2013-08-05 16:16:42+00:00
-layout: post
-slug: feudal-security
 title: Феодальная безопасность
-wordpress_id: 464
 disqus_identifier: 464 http://glebkalinin.ru/?p=464
 
 tags:
 - facebook
 - google
 - kindle
-- security
+- безопасность
 - интернет
-- media
-- services
-- social-networks
+- медиа
+- сервисы
+- социальные сети
 ---
 
 ![Bruce_Schneier](http://www.glebkalinin.ru/wp-content/uploads/2013/08/Bruce_Schneier-500x332.jpg)

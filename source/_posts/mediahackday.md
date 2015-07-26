@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2010-05-04 04:59:03+00:00
-layout: post
-slug: mediahackday
 title: МедиаХакдей в Петербурге
-wordpress_id: 80
 disqus_identifier: 80 http://glebkalinin.ru/?p=80
 
 tags:
 - hackday
-- web-projects
-- non-commercial
+- веб-projects
+- некоммерческие проекты
 ---
 
 ![](http://glebkalinin.ru/featured/2010/05/mediahack.png)

@@ -1,11 +1,7 @@
 ---
 
-comments: true
 date: 2010-01-05 17:18:52+00:00
-layout: post
-slug: cocaine-levamisole
 title: Антигельминтный кокаин
-wordpress_id: 57
 disqus_identifier: 57 http://glebkalinin.ru/?p=57
 
 ---

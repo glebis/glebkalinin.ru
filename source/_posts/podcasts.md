@@ -1,11 +1,10 @@
 ---
 date: 2015-01-25
-layout: post
 title: Подкасты
 
 tags:
-- education
-- english
+- образование
+- английский
 ---
 
 

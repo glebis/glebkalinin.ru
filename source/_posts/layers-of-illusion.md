@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2013-03-18 21:09:17+00:00
-layout: post
-slug: layers-of-illusion
 title: Слои иллюзии
-wordpress_id: 419
 disqus_identifier: 419 http://glebkalinin.ru/?p=419
 
 tags:
-- perception
-- illusion
-- tv
+- восприятие
+- иллюзия
+- телевидение
 ---
 
 ![](http://www.glebkalinin.ru/wp-content/uploads/2013/03/20130319-010123.jpg)

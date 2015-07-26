@@ -1,21 +1,17 @@
 ---
 
-comments: true
 date: 2010-06-07 05:28:40+00:00
-layout: post
-slug: hackday-and-collaboration
 title: Хакдей и размышления о совместной работе
-wordpress_id: 94
 disqus_identifier: 94 http://glebkalinin.ru/?p=94
 
 tags:
 - hackday
-- web-projects
-- journalism
-- content
-- media
-- non-commercial
-- events
+- веб-projects
+- журналистика
+- контент
+- медиа
+- некоммерческие проекты
+- события
 ---
 
 15-16 мая в Петербурге прошёл очередной, 4-ый [фестиваль Хакдей](http://hackday.ru/83.html). В прошлом декабре я участвовал в Хакдее в [качестве докладчика](http://glebkalinin.ru/hackday-bocharsky-vdmx-rip-f5/#more-54). В этот раз мы полным составом [Raum7](http://raum-7.com) помогали с организацией мастер-классов, а также за неполные 2 дня попытались сделать **проект городских аудио-историй City Murmur**. У нас это получилось -- результат работы доступен по адресу **[citymurmur.ru](http://citymurmur.ru)**. Более того, в финальном голосовании наш проект занял первое место.

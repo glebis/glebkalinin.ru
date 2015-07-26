@@ -1,13 +1,12 @@
 ---
 date: 2014-07-02
-layout: post
 title: You Need a Budget
 
 tags:
 - budgeting
 - money
 - бизнес
-- tools
+- инструменты
 ---
 
 

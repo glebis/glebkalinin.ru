@@ -65,11 +65,85 @@ highlight:
 default_category: uncategorized
 category_map:
 tag_map:
-  деньги: money
-  бизнес: business
+  # деньги: money
+  # бизнес: business
+  # дизайн-мышление: design-thinking
+  # ценообразование: pricing
+  # интернет: internet
+  английский: english
+  безопасность: security
+  блоги: blogs
+  браузеры: browsers
+  бренды: brands
+  букмарклеты: bookmarklets
+  веб: web
+  веб-проекты: web-projects
+  внимание: attention
+  вопросы: questions
+  восприятие: perception
+  данные: data
+  дебаты: debates
+  дизайн: design
   дизайн-мышление: design-thinking
-  ценообразование: pricing
+  допреальность: dopreality
+  журналистика: journalism
+  идеи: ideas
+  иллюзия: illusion
+  инструменты: tools
   интернет: internet
+  интерфейсы: interfaces
+  информационная перегрузка: information-overload
+  искусство: art
+  исследование: research
+  книги: books
+  коммуникации: communications
+  контент: content
+  контент-стратегия: content-strategy
+  красота: beauty
+  лекции: lectures
+  литература: literature
+  маркетинг: marketing
+  медиа: media
+  мозг: brain
+  монетизация: monetization
+  мотивация: motivation
+  мышление: myishlenie
+  наука: science
+  некоммерческие проекты: non-commercial
+  новые медиа: new-media
+  образование: education
+  письмо: writing
+  поисковая оптимизация: seo
+  программирование: programming
+  продуктивность: productivity
+  психология: psychology
+  публикации: publications
+  публичные выступления: public-perfomances
+  резиновая верстка: fluid
+  реклама: ads
+  риторика: rhetoric
+  сайты: sites
+  саморазвитие: self-development
+  свобода: freedom
+  сервисы: services
+  события: events
+  социальные сети: social-networks
+  стартапы: startapyi
+  текст: text
+  телевидение: tv
+  типографика: typography
+  управление проектами: project-management
+  устойчивое развитие: sustainability
+  фиксированная верстка: fixed
+  фильтрация: filters
+  читано на неделе: press-review
+  чтение: reading
+  шрифты: font
+  экономика: economics
+  эксперимент.ру: experiment-ru
+  электронная почта: email
+  юзабилити: usability
+
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

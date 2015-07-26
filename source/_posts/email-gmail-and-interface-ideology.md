@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2013-04-04 12:51:27+00:00
-layout: post
-slug: email-gmail-and-interface-ideology
 title: Про электронную почту, Gmail и идеологию интерфейса
-wordpress_id: 439
 disqus_identifier: 439 http://glebkalinin.ru/?p=439
 
 tags:
 - google
-- interfaces
-- email
+- интерфейсы
+- электронная почта
 ---
 
 На неделе Гугл сделал новый интерфейс Gmail фактически обязательным к применению. Я перешёл на него ещё давно, т.к. знал, что переход неизбежен (да, [ещё один пример](http://glebkalinin.ru/on-google-reader-shutdown/) того, как здорово жить в мире SAAS). Только по количество недовольных высказываний я узнал о том, что теперь с этим придётся жить всем.

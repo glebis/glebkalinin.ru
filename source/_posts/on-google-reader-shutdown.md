@@ -1,20 +1,16 @@
 ---
 
-comments: true
 date: 2013-03-14 12:04:01+00:00
-layout: post
-slug: on-google-reader-shutdown
 title: Мысли, навеянные закрытием Google Reader
-wordpress_id: 413
 disqus_identifier: 413 http://glebkalinin.ru/?p=413
 
 tags:
 - delicious
 - бизнес
 - интернет
-- services
-- startapyi
-- reading
+- сервисы
+- стартапы
+- чтение
 ---
 
 ![](http://www.glebkalinin.ru/featured/2013/03/keep-calm-and-save-google-reader.jpg)

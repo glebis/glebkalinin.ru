@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2012-04-16 08:31:30+00:00
-layout: post
-slug: design-the-new-business
 title: Дизайн нового бизнеса
-wordpress_id: 328
 disqus_identifier: 328 http://glebkalinin.ru/?p=328
 
 tags:
 - бизнес
-- design
+- дизайн
 - дизайн-мышление
 ---
 

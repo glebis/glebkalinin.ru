@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2013-04-11 09:23:00+00:00
-layout: post
-slug: on-debates
 title: Про дебаты
-wordpress_id: 441
 disqus_identifier: 441 http://glebkalinin.ru/?p=441
 
 tags:
-- debates
-- tools
-- services
+- дебаты
+- инструменты
+- сервисы
 ---
 
 Вчера натолкнулся на симпатичный сервис для ведения дебатов под названием [Wrangl](http://wrangl.com/). Он позволяет визуализировать аргументы и контраргументы, устраивать голосования и так далее.

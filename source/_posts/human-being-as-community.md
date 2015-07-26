@@ -1,11 +1,7 @@
 ---
 
-comments: true
 date: 2013-03-09 20:04:58+00:00
-layout: post
-slug: human-being-as-community
 title: Человек как сообщество
-wordpress_id: 410
 disqus_identifier: 410 http://glebkalinin.ru/?p=410
 
 ---

@@ -1,11 +1,7 @@
 ---
 
-comments: true
 date: 2012-10-20 16:09:51+00:00
-layout: post
-slug: plasticity
 title: О том, как полезно менять своё мнение
-wordpress_id: 390
 disqus_identifier: 390 http://glebkalinin.ru/?p=390
 
 ---

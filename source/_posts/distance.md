@@ -1,11 +1,9 @@
 ---
-comments: true
 date: 2014-02-05
-layout: post
 title: Дистанция
 
 tags:
-- thinking
+- мышление
 ---
 
 <div class="image">

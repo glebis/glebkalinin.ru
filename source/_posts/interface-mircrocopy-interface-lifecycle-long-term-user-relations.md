@@ -1,21 +1,17 @@
 ---
 
-comments: true
 date: 2012-05-31 14:34:38+00:00
-layout: post
-slug: interface-mircrocopy-interface-lifecycle-long-term-user-relations
 title: 'Дес Трейнор: текст в интерфейсе, жизненный цикл интерфейса, связь с пользователем'
-wordpress_id: 336
 disqus_identifier: 336 http://glebkalinin.ru/?p=336
 
 tags:
 - ux
-- web-projects
-- design
-- content
-- content-strategy
-- startapyi
-- project-management
+- веб-projects
+- дизайн
+- контент
+- контент-strategy
+- стартапы
+- управление проектами
 ---
 
 

@@ -1,19 +1,15 @@
 ---
 
-comments: true
 date: 2012-02-28 07:55:48+00:00
-layout: post
-slug: on-communications
 title: Про коммуникации
-wordpress_id: 292
 disqus_identifier: 292 http://glebkalinin.ru/?p=292
 
 tags:
 - бизнес
-- web-projects
-- communications
-- self-development
-- project-management
+- веб-projects
+- коммуникации
+- саморазвитие
+- управление проектами
 ---
 
 ![Ольга Ткачук, Глеб Калинин](http://raum7linodewp.s3.amazonaws.com/wp-content/uploads/2012/02/8cd664d392578b7e35c29640e7a19f9c-500x333.jpg)

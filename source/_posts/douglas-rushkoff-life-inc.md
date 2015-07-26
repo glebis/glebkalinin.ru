@@ -1,19 +1,15 @@
 ---
 
-comments: true
 date: 2011-03-09 08:47:12+00:00
-layout: post
-slug: douglas-rushkoff-life-inc
 title: Дуглас Рашкофф. Life, Inc.
-wordpress_id: 180
 disqus_identifier: 180 http://glebkalinin.ru/?p=180
 
 tags:
 - интернет
-- books
-- education
-- reading
-- economics
+- книги
+- образование
+- чтение
+- экономика
 ---
 
 ![](http://glebkalinin.ru/featured/2011/03/LifeNew-194x300-120x185.jpg)  

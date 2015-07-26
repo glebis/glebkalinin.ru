@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2010-10-08 10:58:27+00:00
-layout: post
-slug: blogs-lecture
 title: Лекция о блогах
-wordpress_id: 129
 disqus_identifier: 129 http://glebkalinin.ru/?p=129
 
 tags:
-- lectures
-- events
+- лекции
+- события
 ---
 
 ![](http://glebkalinin.ru/featured/2010/10/blog_logo-500x332.jpg)

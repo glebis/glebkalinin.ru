@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2011-03-14 11:57:59+00:00
-layout: post
-slug: salman-khan-ted
 title: Выступление Салмана Хана на TED
-wordpress_id: 186
 disqus_identifier: 186 http://glebkalinin.ru/?p=186
 
 tags:
-- lectures
-- education
+- лекции
+- образование
 ---
 
 Салман Хан — основатель Khan Academy, образовательного видео-сайта, рассказывает о том, как всё началось и куда всё движется:

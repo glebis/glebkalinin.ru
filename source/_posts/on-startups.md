@@ -1,18 +1,14 @@
 ---
 
-comments: true
 date: 2011-12-12 07:43:53+00:00
-layout: post
-slug: on-startups
 title: Про стартапы
-wordpress_id: 276
 disqus_identifier: 276 http://glebkalinin.ru/?p=276
 
 tags:
 - бизнес
-- content
-- content-strategy
-- startapyi
+- контент
+- контент-strategy
+- стартапы
 ---
 
 Вчера поучаствовал в качестве эксперта в [Startup Weekend](http://startupweekend.timepad.ru/), проводимом компанией Аркадия Морейниса «Главстарт». До сих пор ни разу не бывал на так называемых стартаперских тусовках по причине их кажущейся бесполезности (полностью [солидарен в этом вопросе с Ашмановым](http://glebkalinin.ru/ashmanov-on-startups/)), несмотря на то, что в одном стартапе сейчас участвую сам ([Локоло](http://lokolo.ru)) и обдумываю ещё один проект (хотя слово «стартап» предпочитаю в его отношении не использовать).

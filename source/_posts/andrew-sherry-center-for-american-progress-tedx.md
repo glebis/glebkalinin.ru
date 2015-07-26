@@ -1,17 +1,13 @@
 ---
-comments: true
 date: 2011-09-30 09:34:42+00:00
-layout: post
-slug: andrew-sherry-center-for-american-progress-tedx
 title: Лекция Эндрю Шерри о новых медиа
-wordpress_id: 247
 disqus_identifier: 247 http://glebkalinin.ru/?p=247
 
 tags:
-- blogs
-- journalism
-- lectures
-- new-media
+- блоги
+- журналистика
+- лекции
+- новые медиа
 ---
 
 Вчера посетили выступление Эндрю Шерри (Andrew Sherry, [@andysherry](http://twitter.com/andysherry)), прошедшую в рамках цикла [TEDxNevaRiver](http://tedxnevariver.com/) в MonochromeLoft. Эндрю -- специалист по новым медиа, журналист, жил и работал на Кипре, во Вьетнаме, освещал передачу Гонконга Китаю, сотрудничал с Франц-Пресс, а последние 6 лет работает в аналитическом центре (или «фабрике мысли», «мозговом центре», как ещё переводят на русский термин [think tank](http://en.wikipedia.org/wiki/Think_tank)) [Center for American Progress](http://www.americanprogress.org/), занимаясь их весьма популярным и посещаемым сайтом. 

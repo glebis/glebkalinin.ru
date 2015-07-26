@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2009-11-09 08:19:41+00:00
-layout: post
-slug: journalism-online
 title: 'Журналистика: учимся онлайн'
-wordpress_id: 30
 disqus_identifier: 30 http://glebkalinin.ru/?p=30
 
 tags:
-- journalism
-- writing
+- журналистика
+- письмо
 ---
 
 Артур Сульцбергер младший, издатель The New York Times, на вопрос о том, что он может посоветовать начинающим журналистам, [сказал](http://nymag.com/daily/intel/2009/10/times_publisher_arthur_sulzber.html):

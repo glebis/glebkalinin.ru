@@ -1,19 +1,15 @@
 ---
 
-comments: true
 date: 2009-10-20 07:07:05+00:00
-layout: post
-slug: fixed-vs-fluid
 title: 'Вёрстка: фикс против «резины»'
-wordpress_id: 17
 disqus_identifier: 17 http://glebkalinin.ru/?p=17
 
 tags:
 - css
 - javascript
-- design
-- fluid
-- fixed
+- дизайн
+- резиновая верстка
+- фиксированная верстка
 ---
 
 На Smashing Magazine [огромный обзор российского веб-дизайна](http://www.smashingmagazine.com/2009/10/17/global-web-design-russia/) за авторством Арсения Веснина ([Designcollector](http://designcollector.net/)). Один из аспектов, который неизбежно упоминается в связи с отечественным веб-дизайном -- это резиновая верстка.

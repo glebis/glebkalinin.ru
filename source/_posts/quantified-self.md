@@ -1,11 +1,9 @@
 ---
-comments: true
 date: 2014-03-23
-layout: post
 title: Исчисляемый я. Приложения количественной самооценки
 
 tags:
-- data
+- данные
 - quantified_self
 - apps
 ---

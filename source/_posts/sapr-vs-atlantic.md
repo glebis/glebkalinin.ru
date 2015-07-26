@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2010-05-05 08:22:16+00:00
-layout: post
-slug: sapr-vs-atlantic
 title: И всё-таки кого возьмут в будущее?
-wordpress_id: 87
 disqus_identifier: 87 http://glebkalinin.ru/?p=87
 
 tags:
-- content
-- media
-- brain
+- контент
+- медиа
+- мозг
 ---
 
 Меня несколько удивляет популярность лекции Юрия Сапрыкина «[Кого возьмут в будущее?](http://www.openspace.ru/society/world/details/17429/)», неделю назад опубликованной на OpenSpace. Лектор, конечно, сразу же признался, что только учится, но я ожидал чуть более глубоких наблюдений от сего почтенного мужа. Возможно, на моё восприятие наложился тот факт, что накануне я дочитал объёмную статью [Is Google Making Us Stupid?](http://theatlantic.com/magazine/archive/2008/07/is-google-making-us-stupid/6868/),  опубликованную в The Atlantic 2 года назад и рекомендованную мне [Даней Александровым](http://www.idiosync.info/) в ответ на мой недавний [запрос к ноосфере](http://glebkalinin.ru/internet-as-a-black-swan/). 

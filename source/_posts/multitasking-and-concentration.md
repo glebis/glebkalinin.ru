@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2010-07-09 06:55:38+00:00
-layout: post
-slug: multitasking-and-concentration
 title: О многозадачности и концентрации
-wordpress_id: 115
 disqus_identifier: 115 http://glebkalinin.ru/?p=115
 
 tags:
-- tools
-- productivity
-- self-development
+- инструменты
+- продуктивность
+- саморазвитие
 ---
 
 ![](http://glebkalinin.ru/featured/2010/07/brain.gif)

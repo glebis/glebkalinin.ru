@@ -1,20 +1,16 @@
 ---
 
-comments: true
 date: 2011-06-27 09:29:07+00:00
-layout: post
-slug: wordpress-google-docs-site
 title: Новостной сайт на Wordpress и Google Docs
-wordpress_id: 224
 disqus_identifier: 224 http://glebkalinin.ru/?p=224
 
 tags:
 - wordpress
-- design
-- journalism
+- дизайн
+- журналистика
 - интернет
-- content
-- project-management
+- контент
+- управление проектами
 ---
 
 ![](http://glebkalinin.ru/featured/2011/06/bangordailynews.com_-500x437.png)

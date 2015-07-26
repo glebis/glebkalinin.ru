@@ -1,18 +1,14 @@
 ---
 
-comments: true
 date: 2010-05-10 07:13:10+00:00
-layout: post
-slug: all-in-your-head
 title: Все ограничения — у нас в голове
-wordpress_id: 89
 disqus_identifier: 89 http://glebkalinin.ru/?p=89
 
 tags:
 - бизнес
-- dopreality
+- допреальность
 - интернет
-- lectures
+- лекции
 ---
 
 В прошлый четверг в рамках «Доп.реальности» лекцию читал интернет-буржуй [Андрей Рябых](http://ibo.ru). Выступление Андрея мне очень понравилось: очень обстоятельное и насыщенное фактами. На официальном сайте встречи можно [посмотреть презентацию](http://dopreality.ru/archive/andrey-ryabyh-where-cash-comes-from/#postfactum) и посмотреть видео:

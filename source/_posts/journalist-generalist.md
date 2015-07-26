@@ -1,15 +1,11 @@
 ---
 
-comments: true
 date: 2010-11-16 20:58:56+00:00
-layout: post
-slug: journalist-generalist
 title: Журналист-генералист
-wordpress_id: 149
 disqus_identifier: 149 http://glebkalinin.ru/?p=149
 
 tags:
-- journalism
+- журналистика
 ---
 
 [![Specialist or generalist?](http://farm2.static.flickr.com/1408/1180687751_72509dc2cb.jpg)](http://www.flickr.com/photos/davegray/1180687751/)

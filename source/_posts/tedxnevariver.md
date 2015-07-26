@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2012-06-27 07:23:25+00:00
-layout: post
-slug: tedxnevariver
 title: TEDxNevaRiver
-wordpress_id: 368
 disqus_identifier: 368 http://glebkalinin.ru/?p=368
 
 tags:
 - tedx
-- public-perfomances
-- events
+- публичные выступления
+- события
 ---
 
 16 июня 2012 я принял участие в конференции «[TEDxNevaRiver](http://tedxnevariver.com/) — Действующие лица. Идеи для новой повестки дня». Небольшие мероприятия в формате TEDx в Петербурге проходили и до этого ([встреча с Эндрю Шерри](http://glebkalinin.ru/andrew-sherry-center-for-american-progress-tedx/), открытое интервью Василия Гатова с [Джозефом Галарно](http://space-taiga.org/in-taiga/1439)), однако полноценная конференция была первая. 

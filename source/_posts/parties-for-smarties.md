@@ -1,17 +1,13 @@
 ---
 
-comments: true
 date: 2010-05-12 05:52:00+00:00
-layout: post
-slug: parties-for-smarties
 title: О вечеринках, знакомствах и интеллектуальном досуге
-wordpress_id: 91
 disqus_identifier: 91 http://glebkalinin.ru/?p=91
 
 tags:
-- questions
-- lectures
-- events
+- вопросы
+- лекции
+- события
 ---
 
 ![](http://farm3.static.flickr.com/2126/2019381444_6a2e998967.jpg)

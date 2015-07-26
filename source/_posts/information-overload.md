@@ -1,19 +1,15 @@
 ---
-comments: true
-layout: post
-slug: information-overload
 date: 2011-02-02
 title: Информационная перегрузка (фильтро-вероятностные подходы Ширки и Доктороу)
-wordpress_id: 177
 disqus_identifier: 177 http://glebkalinin.ru/?p=177
 
 tags:
-- questions
-- data
+- вопросы
+- данные
 - интернет
-- information-overload
-- productivity
-- reading
+- информационная перегрузка
+- продуктивность
+- чтение
 ---
 
 ![](http://glebkalinin.ru/featured/2011/02/ryoji-ikeda-500x333.jpg)

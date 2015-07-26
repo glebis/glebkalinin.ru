@@ -1,18 +1,14 @@
 ---
 
-comments: true
 date: 2012-02-01 07:16:25+00:00
-layout: post
-slug: idonethis
 title: iDoneThis — что вы сделали сегодня?
-wordpress_id: 284
 disqus_identifier: 284 http://glebkalinin.ru/?p=284
 
 tags:
-- motivation
-- productivity
-- self-development
-- services
+- мотивация
+- продуктивность
+- саморазвитие
+- сервисы
 ---
 
 Не так давно я писал про [будущее электронной почты](http://glebkalinin.ru/rethink-email/) (вкратце — для новичков в интернете не из корпоративного мира этот формат коммуникации уже не существует). Тем не менее, для тех кто к email привык, он может быть не только коммуникационным инструментом, но и очень удобным интерфейсом для самых разных действий: от добавления заметки в Evernote, создания поста в Живом журнале, отправки документа на [Kindle](http://glebkalinin.ru/reading-on-kindle/) и так далее.  

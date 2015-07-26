@@ -1,22 +1,18 @@
 ---
 
-comments: true
 date: 2012-02-26 22:05:48+00:00
-layout: post
-slug: last-weeks-press
 title: Читано на неделе
-wordpress_id: 295
 disqus_identifier: 295 http://glebkalinin.ru/?p=295
 
 tags:
 - интернет
-- content
-- marketing
-- media
-- brain
-- new-media
-- psychology
-- press-review
+- контент
+- маркетинг
+- медиа
+- мозг
+- новые медиа
+- психология
+- читано на неделе
 ---
 
 В этой новой рубрике я буду публиковать ссылки на самые интересные статьи, прочитанные за прошедшую неделю. В сегодняшней подборке крайне схожие тематически статьи.

@@ -1,22 +1,18 @@
 ---
 
-comments: true
 date: 2011-06-27 04:35:03+00:00
-layout: post
-slug: lady-gaga-pantless-in-paris
 title: Рабы Aol
-wordpress_id: 221
 disqus_identifier: 221 http://glebkalinin.ru/?p=221
 
 tags:
 - бизнес
-- web
-- journalism
+- веб
+- журналистика
 - интернет
-- content
-- content-strategy
-- media
-- seo
+- контент
+- контент-strategy
+- медиа
+- поисковая оптимизация
 ---
 
 Холодящая кровь [история бывшего редактора Aol](http://thefastertimes.com/news/2011/06/16/aol-hell-an-aol-content-slave-speaks-out/), одного из уволенных из компании после поглощения ей [Huffington Post](http://news.yahoo.com/s/yblog_thecutline/20110310/ts_yblog_thecutline/hundreds-of-layoffs-in-aols-media-division-as-company-absorbs-huffpo). 

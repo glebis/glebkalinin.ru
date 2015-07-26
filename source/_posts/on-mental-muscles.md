@@ -1,20 +1,16 @@
 ---
 
-comments: true
 date: 2012-02-06 11:55:15+00:00
-layout: post
-slug: on-mental-muscles
 title: О ментальных мышцах и профессионализме
-wordpress_id: 287
 disqus_identifier: 287 http://glebkalinin.ru/?p=287
 
 tags:
 - бизнес
-- tools
-- books
-- education
-- productivity
-- self-development
+- инструменты
+- книги
+- образование
+- продуктивность
+- саморазвитие
 ---
 
 ![](http://raum7linodewp.s3.amazonaws.com/wp-content/uploads/2012/02/sebastian-newbold-coe.jpg)

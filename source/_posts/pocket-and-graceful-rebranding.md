@@ -1,18 +1,14 @@
 ---
 
-comments: true
 date: 2012-04-21 13:19:36+00:00
-layout: post
-slug: pocket-and-graceful-rebranding
 title: Read it Later → Pocket и вопрос элегантного ребрендинга
-wordpress_id: 330
 disqus_identifier: 330 http://glebkalinin.ru/?p=330
 
 tags:
 - branding
 - дизайн-мышление
-- services
-- reading
+- сервисы
+- чтение
 ---
 
 Пару дней назад сервис по отложенному чтению текстов из интернета Read it Later, основной конкурент [Instapaper](http://instapaper.com), сменил своё название, а заодно и бизнес-модель. Теперь он называется [Pocket](http://http://getpocket.com) и приложение для iOS и Android, ранее приносившее основной доход компании, стало бесплатным.

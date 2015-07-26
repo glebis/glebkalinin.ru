@@ -1,18 +1,14 @@
 ---
 
-comments: true
 date: 2010-05-05 06:18:11+00:00
-layout: post
-slug: dopreality-may
 title: Допреальность в мае
-wordpress_id: 85
 disqus_identifier: 85 http://glebkalinin.ru/?p=85
 
 tags:
-- dopreality
+- допреальность
 - интернет
-- lectures
-- events
+- лекции
+- события
 ---
 
 Напомню, что мы с Олей Ткачук второй месяц курируем в «Этажах» серию встреч с интернет-деятелями под кодовым названием «[Доп.реальность](http://dopreality.ru)». Майская программа мне нравится особенно, судите сами.

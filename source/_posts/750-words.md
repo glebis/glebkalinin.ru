@@ -1,16 +1,12 @@
 ---
 
-comments: true
 date: 2010-06-10 05:52:27+00:00
-layout: post
-slug: 750-words
 title: По 750 слов в день
-wordpress_id: 96
 disqus_identifier: 96 http://glebkalinin.ru/?p=96
 
 tags:
-- tools
-- writing
+- инструменты
+- письмо
 ---
 
 ![](http://glebkalinin.ru/featured/2010/06/750words-badge.png)

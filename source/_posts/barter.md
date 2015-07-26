@@ -1,7 +1,6 @@
 ---
 
 date: 2014-06-26
-layout: post
 title: Бартер
 
 tags:

@@ -1,11 +1,7 @@
 ---
 
-comments: true
 date: 2013-03-31 23:35:03+00:00
-layout: post
-slug: carton-of-milk
 title: Пакет молока
-wordpress_id: 438
 disqus_identifier: 438 http://glebkalinin.ru/?p=438
 
 ---
