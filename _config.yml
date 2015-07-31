@@ -65,12 +65,10 @@ highlight:
 default_category: uncategorized
 category_map:
 tag_map:
-  # деньги: money
-  # бизнес: business
-  # дизайн-мышление: design-thinking
-  # ценообразование: pricing
-  # интернет: internet
+
+  интернет: internet
   английский: english
+  бизнес: business
   безопасность: security
   блоги: blogs
   браузеры: browsers
@@ -83,6 +81,7 @@ tag_map:
   восприятие: perception
   данные: data
   дебаты: debates
+  деньги: money
   дизайн: design
   дизайн-мышление: design-thinking
   допреальность: dopreality
@@ -136,6 +135,7 @@ tag_map:
   устойчивое развитие: sustainability
   фиксированная верстка: fixed
   фильтрация: filters
+  ценообразование: pricing  
   читано на неделе: press-review
   чтение: reading
   шрифты: font
