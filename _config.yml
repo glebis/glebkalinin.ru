@@ -68,6 +68,7 @@ tag_map:
 
   интернет: internet
   английский: english
+  бег: running
   бизнес: business
   безопасность: security
   блоги: blogs
@@ -127,6 +128,7 @@ tag_map:
   сервисы: services
   события: events
   социальные сети: social-networks
+  спорт: sports
   стартапы: startapyi
   текст: text
   телевидение: tv
