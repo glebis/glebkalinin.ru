@@ -9,6 +9,7 @@
 
 	// The commands
 	$commands = array(
+		'cd /srv/www/gkhexo',
 		'echo $PWD',
 		'whoami',
 		'git pull',
