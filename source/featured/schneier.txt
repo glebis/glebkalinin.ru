@@ -1,0 +1,1062 @@
+CHRIS PELICANO: Good afternoon, everyone.
+My name is Chris Pelicano.
+I'm the security engineering manager here at Google.
+Very briefly, I will introduce our guest this afternoon.
+He's a blogger.
+Most of you know him from schneier.com.
+He's an author.
+Many works including "Liars and Outliers," which he'll be
+talking about today.
+Ladies and gentlemen, Bruce Schneier.
+[APPLAUSE]
+
+BRUCE SCHNEIER: If you put that near me, there's feedback
+and it's all bad.
+Hi, thanks.
+I'm actually not going to talk about my book, because I
+figure if you want to hear about it, you can read it.
+I'd rather talk about stuff that I've been thinking about
+since that.
+This is very much ideas in progress, which makes it good
+for a talk here.
+I'm always interested in feedback and comments, and
+there will be time for that.
+What I want to talk about is security and power because I
+think that is a lot of what's interesting right now, and
+going on right now.
+So basically, technologies are disruptive.
+They disrupt society by disrupting power balances.
+And you can look at the history of the plow, or the
+stirrup, or gun powder, the printing press, telegraph,
+radio, airplane, container shipping, disease resistant,
+drought resistant wheat and see how those technologies
+changed the balance of power.
+And there's a lot written about this--
+written as history.
+Harder is doing this in the present--
+which is really what I'm thinking about--
+on the internet.
+The internet is incredibly disruptive.
+We've seen entire industries disappear.
+We've seen entire industries created.
+We've seen industries upended.
+We've seen the computer industry, itself, upended
+several times.
+Government has changed a lot.
+We see governments losing power as citizens organize.
+We're seeing political movements become easier.
+We're seeing totalitarian states use power.
+Really, the Obama campaign was revolutionary in how they used
+the internet to organize and engage people.
+You could look at how technology has changed the
+media, ranging from the 24-hour news cycle, to
+bloggers, and citizen journalism, and two-way
+communications, and the acute explosion of media sources,
+social power-- there's a lot here--
+personal publishing, the internet
+email, criminal power--
+certain crimes becoming easier--
+identity theft, which is really impersonation fraud
+done to scale, and how the internet has changed things.
+And I think about how this affects computer security--
+which is basically what I do--
+and then, how that affects the rest of the world.
+So traditionally, computer security has had the model of
+the user takes care of it.
+That's been the traditional model.
+It's actually a very strange model.
+We are selling products that aren't secure, aren't any
+good, and expect the user to make them good.
+I think of it as an automobile manufacturer, when they sell
+you a car, saying, that car doesn't come with breaks.
+But brakes are really important, and we think you
+should have them.
+There's some good aftermarket dealers.
+But you should get some break installed pretty quickly,
+maybe on the drive home.
+It's a much safer car that way.
+In a lot of ways, that's what we would do with anti-virus,
+with firewalls.
+We would sell these products and expect the user to do it
+themselves, to have some level of expertise necessary to
+secure their environment.
+There's a lot of reasons why we did this.
+It's the speed of our industry.
+It's the youth of our industry.
+But it was the norm.
+That model is breaking.
+That model is less becoming the norm.
+It's changing, not because we've realized there are
+better ways to do security, but because of how computers
+and the net are working today.
+There are two trends that, I think, change this model.
+The first is cloud computing.
+Now on the one hand, cloud computing isn't anything new.
+In the '60s, we called it time sharing.
+In the '80s, we called it client server.
+In the '90s--
+I had a company-- we called it managed
+security or managed services.
+It's, fundamentally, a balance between the cost of
+computation and the cost of data transport.
+In the '60s, computation's very expensive, so it makes
+sense to centralize computers in their own rooms with their
+own air conditioning and give people badges.
+In the '80s, what becomes expensive is large storage, so
+you end up with a client server model.
+In the '90s, it's more services.
+Right now, the cost of computing is really dropping
+towards free.
+The cost of transport is dropping towards free.
+So what makes sense economically is to put your
+computers on the places on the planet where they can be run
+the most cheaply, and access them from wherever you are.
+That seems to be the endgame.
+There's nothing cheaper than free.
+The times where you see computation pushed to the
+edges are places where you have relatively low
+bandwidth--
+maybe mobile applications--
+or relatively high need for local
+computation, like gaming.
+But even those are becoming more of a cloud model.
+So that's the first trend.
+The second trend is locked down endpoints.
+And I think this is more of a trend in businesses than in
+technology.
+But nowadays, the computing platforms we buy, we have much
+less control over.
+I have an iPhone.
+I can't clear my cookies on an iPhone.
+I can't get a program that does that.
+I can't even get a program that erases files, because I
+don't have direct control over the memory map.
+So these end user devices, whether they are
+tablets, or phones, or Kindles, the user has much
+less control over.
+On a Kindle, updates are downloaded automatically and I
+can't even say yes.
+At least, on the iPhone, I can say yes or no.
+But I still don't have anywhere near the control I
+have on my OSs.
+OSs are moving that direction as well.
+Both Windows 8 and Mountain Lion are moving to the
+direction of these mobile platforms, to give the user
+less control.
+And I think this is just purely economics.
+The companies have realized that the more they can control
+the supply chain, the better they'll do.
+So whether it's Apple, with their Apple store--
+however the system works, you're just better off if you
+can control as much of the environment as possible.
+So this brings us to a new model of security.
+And the model is someone else takes care of it.
+The model is it just happens automatically, by magic.
+This happens on my Gmail account.
+I have no control over Gmail security.
+I have to simply trust that Google does it.
+I have no control over my pictures on Flickr, or my
+Facebook account, any of that stuff.
+And I have less and less control over the devices where
+I view these things.
+So users have to trust vendors to a degree we hadn't, before.
+There are a lot of good reasons why we do this.
+All the reasons why these models make sense--
+convenience, redundancy, automation, the ability to
+share things.
+And the trust can be surprisingly complete.
+We're living in a world where Facebook mediates all of our
+friend interactions.
+Already, Google knows more about my interests than my
+wife does, which is a little bit freaky.
+Google knows what kind of porn every American likes, which is
+really freaky.
+But it's a trade off.
+It's a trade off we actually do pretty willingly.
+We give up some control in exchange for the environment
+that works well for us.
+And we trust that the vendors will treat us well, and
+protect us from harm.
+On the other hand, we're running out of other options.
+For most everybody, there aren't any real, viable
+alternatives.
+I run Eudora, but I'm, increasingly, a freak.
+My mother has a way better time on her computer since she
+got an Apple and has Apple handling every part of her
+computing environment.
+She loses a phone, she gets a new one.
+It just works great.
+And most of us can't do it ourselves.
+This is becoming more and more complex.
+I can't offer advice to tell people to run
+their own mail servers.
+That didn't make sense 20 years ago.
+It really doesn't make sense now.
+And you can't run your own Facebook.
+So the model I think of when I think of this type of
+computing environment is feudal security--
+and that's "feudal" with a "d," and not with a "t." It's
+that we, as users, have to pledge our allegiance to some
+powerful company who, in turn, promises to protect us.
+And I like it as a metaphor both because there's a real,
+rich historical metaphor, and because everyone's watching
+"Game of Thrones." So you can pull from both sources.
+And if you go back to classic, medieval feudalism, it was a
+system designed for a dangerous environment where
+you needed someone more powerful than
+you to protect you.
+It was a series of hierarchical relationships.
+There were obligations in both directions.
+It was actually a pretty complex political system.
+And I see more of it permeating the environment
+that we work in today.
+It has its advantages.
+For most people, the cloud providers are better at
+security than they are.
+Automatic cloud backup is fantastic.
+Automatic updates is fantastic.
+All these things are good.
+So feudal security provides this level of security that
+most everybody is below.
+So it will raise them up to whatever level the providers
+are providing.
+For those up here, it lowers them down.
+And where you see barriers to people adopting this are
+things like the banks, who, naturally, have a higher level
+of security, and don't want to go down.
+I assume that at some point, we are going to see a business
+model of a high security cloud vendor--
+whether it's a Dropbox or an email service--
+just something for some of these more
+high assurance users.
+We also have the problem of regulation.
+For a lot of companies, they have auditing reporting
+requirements.
+And if you go to Dropbox and say, we're using you for our
+company, we need to audit your system, they will say, go
+away, or to Rackspace.
+I assume we're going to see some water flow auditing
+model, where the Rackspace audit flows down to whatever
+service works on top of that, which flows down to whatever
+company now uses that service.
+Because I think we have to solve the
+regulatory barriers, here.
+Feudal security has risks.
+The vendors are going to act in their self interest.
+You hope that their self interest dovetails with your
+self interest, but that's not always the case.
+It's much less the case when you're not paying for the
+service, when, in fact, you are a user, not a customer.
+As we see, vendors will make side deals with the
+government.
+And the legal regime is different.
+If the data is in your premises, then
+it's in their premises.
+Vendors can act arbitrarily.
+Vendors can make mistakes.
+And vendors have an incentive to keep users tied to
+themselves.
+You guys are an exception by allowing users to take their
+data and leave.
+Most companies don't do that.
+Because tying the data to the company increases lock in,
+increases the value of the company.
+So this model is inherently based on trust.
+It's inherently based on the companies--
+the feudal lords--
+convincing the users to trust them with their data, their
+photos, their friends-- with everything.
+And unfortunately, the business model for a lot of
+these companies is basically betraying
+that trust for profit.
+And that is, depending on which company, more or less
+transparent, more or less salient.
+A lot of effort does go into hiding that fact, to
+pretending it's not true.
+And as it turned out, these companies have a side business
+betraying the trust to the government, too.
+So there is a little bit, or in some cases, a lot, of
+deceit that this is all based on.
+And I do worry about how long that can sustain.
+Some of it, it seems to be able to be sustained
+indefinitely.
+For others, I'm not so sure.
+The feudal model is also inherently based on power.
+And that's what I'm thinking is interesting, right now.
+And it does dovetail very nicely with the current
+alignment of power on the internet--
+the rise of the controlled endpoints, and the third party
+holding your data--
+those two different polls.
+So I started the talk by mentioning about the internet
+changing power.
+And if you look back at history of the internet, a lot
+of us thought that it would flow in a certain direction.
+The internet was really designed in the way that made
+most technical sense.
+There wasn't a lot of agenda placed on the net, as it was
+first designed.
+And if you look back at the literature around that time,
+you read about the natural laws of the internet, that the
+internet works a certain way because it's like gravity.
+It's just the way it has to work.
+It's the way that makes sense.
+And a lot of us thought this was inevitable, this was the
+way the world had to work.
+I have two quotes.
+One is John Perry Barlow.
+In 1996, he's addressing the World Economic Forum.
+And he has something called "The Declaration of
+Independence of Cyberspace," which is a
+great document to read.
+And he's telling governments things like, "You have no
+moral right to rule us, nor do you possess any methods of
+enforcement we have reason to fear." Three years earlier,
+John Gilmore writes that, "The internet interprets censorship
+as damage, and routes around it."
+These are very Utopian quotes, but we all
+believed them back then.
+We believed that is how the internet works, that the
+internet takes the masses, makes them powerful, takes the
+governments and makes them powerless.
+It turns out, that's just not true.
+That's not the way it works.
+What the internet does, like many
+technologies, is magnify power.
+It magnifies power, in general.
+And what happened is, when the powerless discovered the
+internet, suddenly they had power.
+The hackers, the dissidents, the criminals, the
+disenfranchised--
+as those marginal groups discovered the net, suddenly,
+they had power they didn't have before.
+And the change was fast, and it was stark.
+But when powerful interests realized the potential of the
+internet, they had more power to magnify.
+They were much slower, but their ability to use the
+internet to increase their power is greater.
+The unorganized were more nimble and quick, and the
+institutions were slower and more effective.
+And that's where we are today.
+So I look around and I see four classes of
+internet tools of power.
+And what's interesting about them is they all are tools by
+which a totalitarian government can increase their
+power, but they all have viable
+market reasons for existing.
+So censorship is also a content filtering, or data
+loss prevention.
+Propaganda is marketing.
+Surveillance is surveillance.
+I guess, personal data collecting.
+Surveillance is the business model the internet.
+Use control--
+in China, programs have to be certified by the government in
+order to be used on computers there, which sounds an awful
+lot like the Apple store.
+I mean we laugh, but this is important.
+We're building tools that have very different sorts of uses
+depending on who's using them, and why.
+And in both the government and the corporate sphere, powerful
+interests are gaining power with these tools.
+Censorship and surveillance are both on the rise.
+The internet censorship project, which tracks
+censorship around the world, finds more of it every year.
+We see more surveillance by governments every year, even
+before the United States stuff that happened two weeks ago.
+More personal data is being collected and correlated.
+More control over our hardware and software.
+Less purchasing, more licensing--
+we saw Adobe move to that model.
+This is getting harder.
+I'm trying to find a taskless productivity tool, and I can't
+find a good one that doesn't require me to use the cloud.
+And we have corporations--
+I think Facebook is one interesting example--
+that are actually changing social norms.
+They are affecting what people think is normal, is regular,
+for a profit motive.
+I think propaganda is something we don't talk about
+a lot, but it's both in companies and governments.
+I mean we might call it viral marketing, and there are some
+cute names for it, but basically, it's propaganda.
+And we're seeing more and more of it.
+And now, we're at the point where power basically controls
+everyone's data.
+Because in a lot of ways, personal data equals power,
+both on the government side and the corporate side.
+Even in non-internet businesses, the need to own
+the relationship, to know more about the customer, is driving
+a lot of data collection, and all that back end correlation.
+And I worry a lot about the commingling of corporate and
+government interests here.
+We live in a world--
+I don't have to go through the details-- of ubiquitous
+surveillance.
+Basically, everything is collected.
+Charlie Strauss has written about this as the end of
+pre-history, that sometime in our lifetime we're going to
+switch from pre-history, where only some things were saved,
+to actual history, where everything is saved.
+Now, we're in a world where most everything is saved.
+And what's happening now-- and I think it's something I'm not
+happy about, but try to understand--
+is how powerful interests are trying to steer this.
+I mentioned Facebook changing social norms.
+But we're seeing industries lobbying for laws to make
+their business models more profitable.
+So that's laws to prevent digital copying, laws to
+reduce privacy, laws allowing different businesses to
+control bandwidth.
+And on the government side, we're seeing international
+bodies trying to get rulings to make the internet easier to
+surveil, and to sensor.
+I've heard this called "cyber nationalism." And last
+November in Dubai, there was a meeting of the ITU-- that's
+the International Telecommunications Union.
+Those are the guys that run the phone system.
+They're not really very tech savvy, but they are very
+international.
+They are very non-US centric.
+And they want to wrest control of the internet from the US.
+For a lot of reasons, I think this would be a disaster.
+But there's a strong push.
+And unfortunately--
+I wrote this in my blog, today--
+I think all the Snowden documents make their case a
+lot easier.
+Because now, when they say, well you can't trust the
+Americans, everyone will say, oh yeah, you're right.
+You can't trust the Americans.
+So these things are happening now.
+We're seeing a large rise in the increase of militarization
+of cyberspace, which will push more of the internet under
+government control.
+I very much believe we are in the middle of a
+cyber war arms race.
+And it's heated up a little bit in the
+past couple of weeks.
+Because we've been complaining about China for
+the past few years.
+I've always assumed we've been giving as
+good as we're getting.
+And now, we're getting data that we are giving as good as
+we're getting, which is just going to make things worse.
+We're pretty sure that the cyber attack against the Saudi
+oil company Aramco was launched by Iran in
+retaliation for Stuxnet, which sounds complicated.
+But I don't know geopolitics.
+Maybe that makes sense.
+And we're seeing a lot of alignment of corporate and
+government power.
+I'm pretty sure I'm quoted in "The New York Times," today,
+as calling Facebook "the NSA's wet dream." I'm surprised I
+used those words.
+It was probably a long interview.
+So here's a way to think of it.
+In our country, we have two different types of law.
+There's constitutional law, that regulates what
+governments do, and there's regulatory law, that
+constrains what corporations so.
+And they're kind of separate.
+We're now living in a world where each group has learned
+to use the other's law to get around its own restrictions.
+If the government said, you all have to carry tracking
+devices 24/7, that would be unconstitutional.
+They could never get away with it.
+Yet, we all carry cell phones.
+If they all said, you must register whenever you meet a
+new friend, we'd never allow it.
+Yet, we all go on Facebook.
+And actually, I played this earlier.
+Two years ago, "The Onion" did a video.
+Just go to YouTube and type "the onion facebook cia." It's
+a short news video about Facebook
+being the new CIA program.
+It's hysterical.
+And is two years old, which makes it kind of sad.
+On the other hand, we're seeing corporations use the
+governments to enforce their business models.
+If, I don't know, the movie industry said that we're going
+to go into people's computers that trash them if we think
+they're copying files, that would be wrong.
+But they're going to try to get a law
+to do the same thing.
+Copyright--
+a lot of examples where industries are bypassing their
+own problems by going through government.
+And I think this only gets exacerbated as there's more
+technology.
+Feudal lords get more powerful.
+And some of that is just the natural order of bigness in
+our society right now.
+The way technology is right now, it favors the big.
+It doesn't favor many small.
+It favors two or three on top and nobody else.
+And it's true in geopolitics, too.
+Think about it.
+In any climate change negotiation on the planet, who
+do you think has more power--
+Exxon or Bolivia?
+It's not even close.
+Who has more power--
+Exxon or the United States?
+That's actually a discussion.
+This is weird.
+So that's one trajectory.
+There's another trajectory.
+There's a counterbalancing one, based on different
+natural laws of technology.
+So in the book I'm not talking about, "Liars and Outliers," I
+discuss something called a security gap.
+And in that book, I'm talking about, effectively, the arms
+race between attackers and defenders, and that technology
+causes disruptions in that arms race, and then, there's a
+rebalancing.
+So firearms are invented, fingerprint
+technologies are invented.
+All those things upset the balance between
+attackers and defenders.
+And one of things I point out is that, as technology
+advances, attackers have a natural advantage.
+Some of it's a basic first mover advantage.
+But in general, unorganized attackers can make use of
+innovations faster.
+So imagine someone invents the motor car.
+And the police say, well that's a
+really interesting thing.
+We could use one of those.
+So they have a group to study the automobile, and they
+produce an RFP, and they get bids, and they pick an
+automobile manufacturer, they get a car, they have a
+training system.
+Meanwhile, the burglar says, oh look, a new getaway
+vehicle, and can, much more quickly, use that.
+We saw that on the internet.
+And if you remember, as soon as the internet became a
+commercial entity, we saw a new breed of cyber criminal
+appear organically, out of the ground, immediately able to
+commit crimes, and fraud, and identity theft.
+All of these new things just showed up.
+Meanwhile, the police, who were trained on Agatha
+Christie novels, took, what, 10 years to figure it out.
+And they have figured it out.
+But if you were around during that time, it was really
+painful, as they had no idea what cyber crime
+was, or how it worked.
+So there's this delay when a new technology appears.
+And that's what I think of as a security gap--
+the delay between when the non-powerful can make use of
+the new technology--
+the fast and nimble--
+and when the powerful, the big and ponderous, can make use of
+the technology.
+And that gap gives attackers a natural advantage.
+And I'll spare you the details, but basically, that
+gap tends to be greater when there's more technology--
+when your curve is greater.
+And it's greater in times of rapid technological--
+actually, it's greater in times of rapid social change
+due to technological change.
+And today, we're living in a world with more technology
+than ever before, and greater ramp of social change, due to
+technological change, than ever before.
+So we're seeing an ever increasing security gap.
+So this is the big question that I do not
+have an answer to--
+who wins?
+Who wins, and in what circumstance?
+Does big, slow power beat small, nimble power?
+And there's going to be some David and Goliath metaphor, or
+Robin Hood and sheriff.
+I guess I'm going to need a more medieval metaphor.
+But that seems like an open question that we don't know.
+So for example, in Syria, recently, we saw the Syrian
+dissidents use Facebook to organize.
+We saw the Syrian government use Facebook to arrest
+dissidents.
+So right now, it's kind of a mess.
+As this shakes out, who gets the upper hand?
+Right now, it seems like governments do.
+It seems like the ability to collect, to analyze, to employ
+police beats dissidents.
+It seems like the big corporations win.
+That the need to have a credit card, or be on Facebook, and
+to do all these things to live your life are such that you
+can't shut them off.
+And they win.
+But it's not clear to me.
+It does seem clear to me that those that want to get around
+the systems always will be able to.
+But really, I'm now concerned about everyone in the middle.
+The nimble are here.
+The powerful are here.
+Here's the rest of us, which, I guess,
+is the hapless peasants.
+And as the powerful get more control, I think we get
+largely left out of any negotiations.
+And you see this in arbitrary rules, in
+arbitrary terms of service.
+You see this in secret NSA spying programs, or secret
+overrides to rules, and power aligning with power.
+It's not clear to me that these actually do catch
+terrorists.
+It's pretty clear to me that they don't, actually.
+But they do affect the rest of us.
+And I think these power issues are going to affect all of the
+discussions we have about the future of the internet in the
+coming decade.
+Because these are actually complex issues.
+We have to decide how we balance personal privacy
+against law enforcement.
+How do we balance them when we want to prevent copy
+protection, or prevent child pornography?
+When we decide, is it acceptable for us to be judged
+by computer algorithms.
+Is it acceptable to feed us search results?
+To loan us money for a house?
+To search us at airports?
+To convict us of drunk driving?
+How do these algorithms affect us?
+Do we have the right to correct data about ourselves,
+or to delete it?
+Do we want computers to forget?
+There's a lot of social lubricant in our society by
+the fact that we are a forgetting species.
+Do you really want--
+I mean, I don't want Google Glass because I don't my wife
+to be able to pull up old arguments.
+That seems bad.
+There's a lot of power struggles.
+And there are bigger ones coming.
+Cory Doctorow writes about the coming battles having to do
+with 3D printing.
+And they're very much the same as the copyright battles.
+There will be powerful interests that want to stop
+the execution of certain data files.
+It was music and movies.
+In the future, it will be working guns.
+It will be the Nike swoosh.
+His favorite example is anatomically correct,
+interchangeable Barbie torsos, which I never thought of, but
+would freak out Mattel, probably, rightly so.
+Or little statues of Mickey Mouse, which will freak out a
+very powerful company.
+RECORDED VOICE: Of Mickey Mouse
+BRUCE SCHNEIER: Who is that?
+We see some incredibly destabilizing
+technologies coming.
+And this whole debate on weapons of mass destruction--
+nuclear, chemical, biological--
+the idea is that, as technology magnifies power,
+society can deal with fewer bad events.
+So if the average bad guy--
+I'm just going to make this up-- can kill 10 people before
+he's captured, or rob 10 houses before he's captured,
+we could handle so many robbers.
+But if they can now do 100 times as much damage, we now
+need only 1/100 of them to maintain the
+same security level.
+A lot of our security is based on having some
+low level of badness.
+But as power magnifies the amount of badness each
+individual can do, you suddenly start needing much
+more control.
+I'm not even convinced that that will work.
+But that's going to be a huge debate.
+And that's going to push fear buttons.
+Today, largely, the powerful are winning these debates.
+And I worry that these are actually
+very complicated issues.
+They required meaningful debate, international
+cooperation, innovative solutions, which doesn't sound
+like I just described the US government.
+But we're going to have to do this.
+In a lot of ways, the internet is a fortuitous accident.
+It is a combination of lack of commercial interests,
+government benign neglect, some military core
+requirements for survivability and resilience, and computer
+engineers with vaguely libertarian leanings, doing
+what made technical sense.
+That was, kind of, the stew of the internet.
+And that stew is gone.
+There are policy battles going on, right now, over the future
+of the internet, in legislatures around the world,
+in international standards bodies, in international
+organizations.
+And I'm not sure how this is all going to play out.
+But I have some suggestions for different people.
+For researchers, I want to see a lot more research into these
+technologies of social control--
+surveillance, censorship, propaganda, and use control.
+And especially for you guys at Google, you're in a unique
+position to study propaganda.
+There is very little work being done on recognizing
+propaganda.
+And what I want is for my internet to come with all
+propaganda with a little yellow box, kind of like what
+you do on your search pages.
+My paid commercial is flagged as such.
+I would like to be done automatically.
+This seems vaguely impossible, but I think we need to start
+thinking about it.
+There is some research done around the edges.
+There's research done in recognizing fake Yelp reviews,
+recognizing fake Amazon reviews.
+But there's, right now, questions whether trending
+topics on Twitter is being gamed.
+So when we're losing this transparency, there's a lot of
+questions about the information we get.
+But I think we need research.
+Because those four things are going
+to become very important.
+And understanding how they work, and how to get around
+them, is going to become very important.
+We need safe places to anonymously publish.
+Wikileaks was great, but now seems no more.
+Right now, the best thing we have is something called
+Strongbox, that "The New Yorker" is running.
+I'm in the process of trying to review that
+system right now.
+I think we need a lot more of these, all around the world.
+We do need research into use limitation.
+I believe we're going to get legislation on, basically,
+copy protection for digital objects because of the 3D
+printers, because of bio printers, because of software
+defined radio.
+And that's going to really hurt our industry.
+Because lawmakers are not going to get this right.
+They're going to do something draconian, and
+it's going to be ugly.
+So the better we can solve the actual problems, the less
+likely we are to be handed solutions that won't work, and
+will hurt everything else.
+To vendors, I want people to remember that a lot of the
+technologies we build have dual use, that business and
+military uses are basically the same.
+So you see Blue Coat used to censor the Syrian internet, or
+Sophos used to eavesdrop on the internet, or social media
+enabling surveillance.
+On the one hand, the FBI is trying to get laws passed to
+have us put back doors in our communication systems.
+On the other hand, we don't want other countries to do the
+same thing.
+This is hard.
+The policy prescriptions, I think, are harder.
+I think in the near term, we need to keep circumvention
+legal, and keep net neutrality.
+I think those two things give us some backstop towards the
+powerful becoming even more powerful.
+Long term, fundamentally, we have to recognize we can't
+have it both ways, that if we want privacy, we have to want
+it everywhere-- our country and abroad.
+If we think that surveillance is good, we have
+to accept it elsewhere.
+Fundamentally, I want to see power levelled.
+Because the relationship is real unbalanced.
+If you think about historical feudalism, or you read about
+it, it eventually evolved into a more balanced government
+relationship.
+So you had feudalism, which started out as this bilateral
+agreement--
+we're in a dangerous world.
+I need you to protect me.
+So I will pledge my allegiance to you--
+turned into something very unbalanced--
+I'm powerful.
+I can do whatever I want.
+I will ignore my agreements.
+You're powerless.
+You can't do anything.
+And that eventually changed with the rise of the nation
+state, with, basically, rules that gave the feudal lords
+responsibilities as well as rights, culminating in
+something like the Magna Carta.
+And I think we're going to need something like that on
+the internet, with the current set of powers on the internet,
+which will be both government and corporate--
+some basic understanding that there are rights and
+responsibilities.
+There's some more balanced relationship.
+And whether that's limitations on what vendors can do with
+our data, or some public scrutiny for the rules by
+which we are judged by our data, I expect--
+no time soon, but eventually-- these will come.
+Because I think this is how we get liberty in
+your internet world.
+And I think this is actually a very long
+and difficult battle.
+I think some of the results will upend your company.
+But they might not be coming for a decade or more.
+So that's what I have prepared.
+I'm happy to take questions.
+[APPLAUSE]
+BRUCE SCHNEIER: So there are some rules about a microphone
+that are confusing to me.
+AUDIENCE: You talked about a game between governments, on
+one hand, and corporations, on the other, using each other's
+power systems to essentially get at everyone in the middle.
+How long do you think that that game can play out?
+Is it indefinite?
+Can it continue for the foreseeable future?
+Or do you see some sort of turning point in which some
+scandal or something will so threaten the middle as to
+galvanize them?
+BRUCE SCHNEIER: I don't know.
+And I think we're very much in uncharted territory, here.
+We're living in a world where it's very hard for the middle
+to be galvanize, for lots of different reasons.
+A lot of people have written about this.
+I have trouble predicting the future, because things are
+changing so fast.
+Right now, it all seems quite dysfunctional, and that
+there's no mechanism for things to change.
+But of course, that's ridiculous.
+That things will change.
+Exactly how, I don't know.
+And which way they'll change, I don't know.
+If the world is the terrorists might have nukes, and we're
+all going to die unless we live under totalitarianism,
+people are going to accept that.
+Because when people are scared, that's
+what they'll accept.
+And technology is to the point where that actually
+might be the world.
+But there are a lot of other ways this can play.
+I think this is, vaguely, the topic of my next book, so I
+hope to explore the different avenues we
+might move out of this.
+I haven't even begun to have an idea of which is likely to
+be correct.
+And I think I wouldn't trust me when I've decided.
+Just read science fiction 20 years ago.
+We're really bad at predicting, not technical
+future, but social future.
+Everyone could predict the automobile--
+that it would make people drive faster.
+But no one predicted the suburb.
+It's always the second order social effects.
+And that's what this is all about.
+So I just don't know.
+AUDIENCE: You mentioned the convergence of power,
+convergence of objectives, for the corporations and
+governments, and also, sort of the convergence of
+capabilities, like the Exxon Mobil comment.
+Do you see anything along the lines of the distinction
+between them vanishing?
+Corporations as states
+BRUCE SCHNEIER: --I think they, largely, are vanishing.
+And this is my main complaint with libertarianism as a
+philosophy.
+In the mid 1700s, it was great, because it identified
+the fact that power imbalance is bad, and we need to
+equalize power.
+But it kind of got stuck there, and didn't notice that
+power changed.
+I think there is a lot of blurring.
+And some of it is the fact that money controls
+government.
+And powerful corporations have the money.
+We have seen blurring at other times in history--
+the Dutch East India Company in Africa.
+There are different examples where corporations were de
+facto governments in areas where they were operating.
+This is not as stark.
+But power is changing.
+Power is less hard power.
+Power is more soft power, to use Nye's term.
+That the nature of power is changing, such--
+so I do think there is a blurring.
+But it's different than we thought, when we
+worried about this.
+The nature of social control is very, very different now,
+than it was.
+The nature of surveillance is very different.
+And it's going to change again.
+What is the half-life of these technologies?
+10 years?
+Five?
+So what's going to happen in five to 10 years that will be
+completely different?
+I don't know.
+AUDIENCE: I really liked your feudalism analogy, and I see
+one potential flaw in it.
+And I wanted your--
+BRUCE SCHNEIER: Oh, good.
+Flaws are good.
+I love those.
+AUDIENCE: --thought about it.
+As I understand it, feudal lords were pretty much
+monopolists.
+Like, the Russian serfs were bound to the land, and so they
+didn't get a choice of which Lord to be with.
+Whereas, people do, in fact, have a choice when there's two
+or three big guys, right?
+BRUCE SCHNEIER: They have a choice.
+But is it really a choice?
+If all three cellphone companies are collecting the
+same data, and giving it to the same government under the
+same rules, it's not really a choice.
+AUDIENCE: But if I can get a lot more customers by having a
+very clear privacy policy the respects you in a way the
+other guy doesn't, then--
+BRUCE SCHNEIER: It seems not to be true.
+It seems you get more customers by obfuscating your
+privacy policy.
+And there are a lot of great psych experiments about this,
+that if you make privacy salient by showing your
+privacy policy, people will say, whoa, that's bad.
+Facebook is a great example.
+They make the privacy policy really hard to find.
+Because they don't want you think about it.
+Because if you don't think about it, you share.
+So this is the problem with mini-big.
+Your normal market economics, which involves multiple
+sellers competing on features, only works if you've got a lot
+of sellers competing on features.
+If the three companies that do the same thing--
+I mean, what's the difference between Apple and Microsoft in
+operating systems?
+Is it really that different where privacy matters?
+Around the edges-- unless the companies choose to compete on
+those features--
+I can't fly less secure airlines where we'd get you
+through air security quicker.
+There is no competition in that.
+Or more secure airlines-- we do a
+background check on everybody.
+It's a perfectly reasonable feature to compete on, but
+there isn't any competition.
+So especially if some of these deal with government demands,
+you're just not going to have the competition.
+And there's a lot a reason to make that go
+away as much as possible.
+Because these companies want people to share more.
+[INAUDIBLE] land is interesting.
+No.
+Well, yes and no.
+It's very hard for someone regular to leave Facebook.
+That's where your party invites come from.
+That's where your friends are.
+That's where your social interaction is.
+You don't go on Facebook, you don't get invited to parties,
+you never get laid, you have a really sucky college
+experience.
+So you're not bound.
+But there's a lot of social push to stay.
+It's very hard to take your data when you leave-- again,
+Google is an exception, here.
+Remember the whole battles about cellphone number
+portability?
+That was all to bind people to the cellphone companies, to
+raise the cost of switching.
+You raise the cost of switching, you can do a lot
+more to your customers, or users.
+If the customers can't switch, you can piss
+them off a whole lot.
+So, yeah.
+And the other reason I kind of like the serf model is the
+notion of people doing stuff online, which is the raw
+material that companies use to make profits.
+So it's kind of like you're farming for your life.
+And I guess Farmville would be perfect for this, right?
+But maybe that's too much.
+The other way that the metaphor works-- and other
+people have written about this--
+the feudal metaphor--
+is that, in a feudal system, everything is owned.
+There's no commons.
+And we're seeing this on the internet, that no piece of the
+internet is a commons.
+In the United States, we have very
+particular rules about commons--
+free speech rules, association rules, rules about
+protesting--
+because you're on a street.
+You're on a public street.
+And those rules don't apply in, for example, Zuccotti Park
+in New York, because that was a privately
+owned public space.
+The internet is, entirely, privately owned public spaces.
+So Apple is well within its rights to say, to an app
+creator who made an app to show US drone strikes in
+Pakistan, you can't have your app on my store.
+Because it is not a free speech-- it is not a protest.
+This is a private space.
+Apple gets to decide.
+So this lack of a public sphere in the world where we
+are all associating is another way the feudal model works.
+I don't know how to fit it in to what I'm doing.
+I'll probably figure it out sooner or later.
+AUDIENCE: The feudal model is really
+appealing at first blush.
+But another problem with it is that we actually do live in a
+democracy, at least theoretically.
+And we do have the power to vote, at least theoretically.
+The problem seems, to me, not that there are currently all
+kinds of tricks, like the people who obfuscate the
+privacy policies win.
+It's more about the lassitude of those who are being
+governed by the government they set up, or the
+corporations they choose to do business with.
+And so ultimately, the problem is we aren't looking after our
+own interests.
+And so that seems to be what needs to be fixed.
+And it's not feudalism, because we have the
+opportunity to escape.
+We're just not taking advantage
+of it through tricks.
+BRUCE SCHNEIER: I agree with that.
+It's just getting harder and harder.
+And some of it is the fact that we are just too good at
+psychological manipulation.
+Advertising, political speeches, have gotten to good.
+I don't know how fair the game is.
+Yes, you are fundamentally right.
+The question is does that translate to
+being right in practice.
+The United States is particularly hard.
+Our political system is not designed for a huge spectrum
+of political ideas.
+Go to any other countries and you just realize how narrow
+our political debate is, just because of the way our two
+party system is set up.
+But again, unless the parties choose to compete on these
+features, we don't really have a choice.
+And some features they do, and some they don't.
+But yes, you are inherently right.
+By the book, that's correct.
+The question is how does that translate into to what we can
+actually do, realistically.
+AUDIENCE: So we need to trick Facebook into
+becoming the EFF.
+BRUCE SCHNEIER: I'm game.
+AUDIENCE: Does that mean that governments have an incentive
+to encourage there to be a few small companies, so that then,
+they don't compete on things like privacy?
+If there's only three, it's much harder for them to
+compete on something like that.
+BRUCE SCHNEIER: I don't know.
+There are a lot of examples we could look at.
+We could start poking at some of them.
+Automobile manufacturers--
+they do compete on safety, and have for many years.
+Saab built an industry on our car is safer than your car.
+So you do see security features, sometimes.
+In a lot of ways, the organic food
+movement is a food safety--
+MALE SPEAKER: Saab is gone.
+BRUCE SCHNEIER: Yeah, but in the '70s, that
+was what they did.
+MALE SPEAKER: Organic food was safe.
+BRUCE SCHNEIER: Yeah but, organic food is
+believed to be more pure.
+It's a food purity sale, which is inherently a health sale,
+and a safety sale.
+You can argue whether it's real or fake, but it's how the
+companies are competing.
+I don't think the government is incenting any particular
+economic outcome.
+I think there's just, right now, a very happy confluence.
+Thank you very much.
+[APPLAUSE]
