@@ -77,6 +77,7 @@ tag_map:
   букмарклеты: bookmarklets
   веб: web
   веб-проекты: web-projects
+  Global Shapers: global-shapers
   внимание: attention
   вопросы: questions
   восприятие: perception
@@ -145,6 +146,7 @@ tag_map:
   эксперимент.ру: experiment-ru
   электронная почта: email
   юзабилити: usability
+  язык: language
 
 
 # Date / Time format
