@@ -1,6 +1,6 @@
 title: Глеб Калинин
 ---
-<div itemscope itemtype="http://schema.org/Person"><p><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. Работаю в агентстве <a href="http://tsentsiper.com" itemprop="affiliation">Tsentsiper</a> над новыми сервисами и продуктами для Почты России. Вице-куратор московского хаба сообщества Всемирного экономического форума <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span>.</p><div class="illustration"><img itemprop="image" src="http://glebkalinin.ru/images/glebkalinin.jpg" alt="Глеб Калинин" title="Глеб Калинин. Фото: Андрей Манирко"></div>
+<div itemscope itemtype="http://schema.org/Person"><p><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. Работаю менеджером по продукту в компании <a itemprop="affiliation" href="//ostrovok.ru/">Ostrovok.Ru</a>. Вице-куратор московского хаба сообщества Всемирного экономического форума <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span>.</p><div class="illustration"><img itemprop="image" src="http://glebkalinin.ru/images/2015-gleb-kalinin-by-natalia-gladysheva.jpg" alt="Глеб Калинин" title="Глеб Калинин. Фото: Андрей Манирко"></div>
 
 <p>Занимаюсь аналитикой, разработкой новых продуктов, запуском, сопровождением и развитием интернет-проектов и других продуктов.</p>
 
@@ -29,7 +29,8 @@ title: Глеб Калинин
 
 <p>В 2013-2014 работал над проектами корпорации PMI (перезапуск Kassir.ru) и компании Foggylab. </p>
 
-<h2>Контакты</h2><p>Email: <a href="mailto:gleb.kalinin@raum-7.com" itemprop="email">gleb.kalinin@raum-7.com</a>
-</p><p>Телефон: <a href="tel:+79627063435" itemprop="telephone">+7(962)706-34-35</a></p>
+<p>В 2014-2015 работал в агентстве <a href="http://tsentsiper.com" itemprop="affiliation">Tsentsiper</a> над новыми сервисами и продуктами для Почты России. </p>
+
+<h2>Контакты</h2><p>Email: <a href="mailto:glebis@gmail.com" itemprop="email">glebis@gmail.com</a></p>
 
 </div>
