@@ -87,6 +87,7 @@ tag_map:
   дизайн: design
   дизайн-мышление: design-thinking
   допреальность: dopreality
+  здоровье: health
   журналистика: journalism
   идеи: ideas
   иллюзия: illusion
@@ -106,6 +107,8 @@ tag_map:
   литература: literature
   маркетинг: marketing
   медиа: media
+  медитация: meditation
+  тело: body
   мозг: brain
   монетизация: monetization
   мотивация: motivation
@@ -132,6 +135,7 @@ tag_map:
   социальные сети: social-networks
   спорт: sports
   стартапы: startups
+  стресс: stress
   текст: text
   телевидение: tv
   типографика: typography
@@ -139,13 +143,16 @@ tag_map:
   устойчивое развитие: sustainability
   фиксированная верстка: fixed
   фильтрация: filters
+  физиология: physiology
   ценообразование: pricing  
   читано на неделе: press-review
   чтение: reading
   шрифты: font
   экономика: economics
+  эмоции: emotions
   эксперимент.ру: experiment-ru
   электронная почта: email
+  эстетика:  aesthetics
   юзабилити: usability
   язык: language
 
