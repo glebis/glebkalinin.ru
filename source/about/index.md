@@ -1,6 +1,6 @@
 title: Глеб Калинин
 ---
-<div itemscope itemtype="http://schema.org/Person"><p><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. Работаю менеджером по продукту в компании <a itemprop="affiliation" href="//ostrovok.ru/">Ostrovok.Ru</a>. Вице-куратор московского хаба сообщества Всемирного экономического форума <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span>.</p><div class="illustration"><img itemprop="image" src="http://glebkalinin.ru/images/2015-gleb-kalinin-by-natalia-gladysheva.jpg" alt="Глеб Калинин" title="Глеб Калинин. Фото: Андрей Манирко"></div>
+<div itemscope itemtype="http://schema.org/Person"><p><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. Руковожу отделом контента в компании <a itemprop="affiliation" href="//ostrovok.ru/">Ostrovok.Ru</a>. Вице-куратор московского хаба сообщества Всемирного экономического форума <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span>.</p><div class="illustration"><img itemprop="image" src="http://glebkalinin.ru/images/2015-gleb-kalinin-by-natalia-gladysheva.jpg" alt="Глеб Калинин" title="Глеб Калинин. Фото: Наталья Гладышева"></div>
 
 <p>Занимаюсь аналитикой, разработкой новых продуктов, запуском, сопровождением и развитием интернет-проектов и других продуктов.</p>
 
@@ -15,7 +15,7 @@ title: Глеб Калинин
 
 <h2>Обо мне</h2>
 
-<p>Родился в  <span itemprop="birthDate" datetime="1984-04-24">1984</span> году в <span itemprop="birthPlace">Ленинград</span>е. Живу в Москве. Женат на прекрасной <a href="http://olgakalinina.ru/" itemprop="spouse">Ольге</a>.</p>
+<p>Родился в  <span itemprop="birthDate" datetime="1984-04-24">1984</span> году в <span itemprop="birthPlace">Ленинград</span>е. Живу в Москве. Женат на прекрасной <a href="http://olgakalinina.com/" itemprop="spouse">Ольге</a>.</p>
 
 <p>Первый интернет-проект, сайт <a href="http://experiment.ru">Эксперимент.ру</a>, запустил в 2001 году. </p>
 
