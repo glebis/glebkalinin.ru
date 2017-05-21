@@ -21,7 +21,6 @@
   %>
   <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic&amp;subset=latin,cyrillic" rel="stylesheet">
 
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (theme.rss){ %>
@@ -30,7 +29,8 @@
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
-  <!-- <link href="<%- url_for(config.root + 'webfonts/ptserif/main.css') %>" rel='stylesheet' type='text/css'> -->
+  
+<link rel="stylesheet" href="https://fonts.typotheque.com/WF-010357-009483.css" type="text/css" />
   <%- css('css/style') %>
   <%- partial('google-analytics') %>
 </head>
