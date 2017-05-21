@@ -1,6 +1,6 @@
 title: Глеб Калинин
 ---
-<div itemscope itemtype="http://schema.org/Person"><p><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. Руковожу отделом контента в компании <a itemprop="affiliation" href="//ostrovok.ru/">Ostrovok.Ru</a>. Куратор московского хаба сообщества Всемирного экономического форума <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span>.</p><div class="illustration"><img itemprop="image" src="http://glebkalinin.ru/images/2015-gleb-kalinin-by-natalia-gladysheva.jpg" alt="Глеб Калинин" title="Глеб Калинин. Фото: Наталья Гладышева"></div>
+<div itemscope itemtype="http://schema.org/Person"><p><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. Руковожу отделом контента в компании <a itemprop="affiliation" href="//ostrovok.ru/">Ostrovok.Ru</a>.</p><div class="illustration"><img itemprop="image" src="http://glebkalinin.ru/images/2015-gleb-kalinin-by-natalia-gladysheva.jpg" alt="Глеб Калинин" title="Глеб Калинин. Фото: Наталья Гладышева"></div>
 
 <p>Занимаюсь аналитикой, разработкой новых продуктов, запуском, сопровождением и развитием интернет-проектов и других продуктов.</p>
 
@@ -30,6 +30,8 @@ title: Глеб Калинин
 <p>В 2013-2014 работал над проектами корпорации PMI (перезапуск Kassir.ru) и компании Foggylab. </p>
 
 <p>В 2014-2015 работал в агентстве <a href="http://tsentsiper.com" itemprop="affiliation">Tsentsiper</a> над новыми сервисами и продуктами для Почты России. </p>
+
+<p>Член сообщества <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span>. В 2016-2017 годах был куратором московского хаба сообщества.</p>
 
 <h2>Контакты</h2><p>Email: <a href="mailto:glebis@gmail.com" itemprop="email">glebis@gmail.com</a></p>
 
