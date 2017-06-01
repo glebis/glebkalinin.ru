@@ -6,7 +6,7 @@
   var title = page.title;
 
   if (is_archive()){
-    title = 'Archives';
+    title = 'Архив';
 
     if (is_month()){
       title += ': ' + page.year + '/' + page.month;
@@ -16,7 +16,7 @@
   } else if (is_category()){
     title = 'Category: ' + page.category;
   } else if (is_tag()){
-    title = 'Tag: ' + page.tag;
+    title = 'Метка: ' + page.tag;
   }
   %>
   <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
