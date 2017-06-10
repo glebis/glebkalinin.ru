@@ -17,8 +17,8 @@ tags:
 
 
 
-![](http://glebkalinin.ru/featured/2010/09/john_mainw-120x155.jpg)  
-Джон Медина
+<p class="aside aside--left"><img src="http://glebkalinin.ru/featured/2010/09/john_mainw-120x155.jpg"><br><em>Джон Медина</em></p>  
+
 
 
 
