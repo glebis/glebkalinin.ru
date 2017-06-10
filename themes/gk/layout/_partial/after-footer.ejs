@@ -1,5 +1,23 @@
 <script src="<%- url_for(config.root + 'js/jquery.min.js') %>"></script>
-<script src="<%- url_for(config.root + 'js/vendor.min.js') %>"></script>
-<script src="<%- url_for(config.root + 'js/vendor/turbolinks.js') %>"></script>
-<script>(function(){$(function(){return $(".text").fitVids()})}).call(this);</script>
+<script src="<%- url_for(config.root + 'js/vendor.js') %>"></script>
 
+<script type="text/javascript">
+fluidvids.init({
+  selector: ['iframe', 'object'], // runs querySelectorAll()
+  players: ['www.youtube.com', 'player.vimeo.com'] // players to support
+});
+
+jQuery.fn.spectragram.accessData = {
+        accessToken: '17459092.05f6832.f61c499feb7a467dbf3c858a73260145',
+        clientID: '05f6832fbc754c8aa7e1e54b788f4fa6'
+};
+
+$('#instafeed').spectragram('getUserFeed',{
+	query: 'glebkalinin'
+});
+
+</script>
+
+<div class="instagram-feed-container">
+	<ul id="instafeed" class="instagram-feed"></ul>
+</div>
