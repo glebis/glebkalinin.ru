@@ -1,19 +1,25 @@
 <% if (post.prev || post.next){ %>
-<nav id="article-nav">
+<nav id="article-nav" class="article-nav">
   <% if (post.prev){ %>
-    <a href="<%- url_for(post.prev.path) %>" id="article-nav-newer" class="article-nav-link-wrap">
-      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+    <a href="<%- url_for(post.prev.path) %>" class="article-nav-link-wrap article-nav-link--newer">
+      <% if (post.prev.thumbnail){ %>
+        <img src="<%- post.prev.thumbnail %>" alt="" class="article-thumbnail article-nav-thumbnail article-nav-thumbnail--newer">
+      <% } %>
+      <div class="article-nav-title">
         <% if (post.prev.title){ %>
           <%= post.prev.title %>
         <% } else { %>
-          (no title)
+          (Без названия)
         <% } %>
       </div>
     </a>
   <% } %>
   <% if (post.next){ %>
-    <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"><%= post.next.title %>&nbsp;<span>&gt;</span></div>
+    <a href="<%- url_for(post.next.path) %>" class="article-nav-link-wrap article-nav-link--older">
+      <% if (post.next.thumbnail){ %>
+        <img src="<%- post.next.thumbnail %>" alt="" class="article-thumbnail article-nav-thumbnail article-nav-thumbnail--older">
+      <% } %>
+      <div class="article-nav-title"><%= post.next.title %></div>
     </a>
   <% } %>
 </nav>
