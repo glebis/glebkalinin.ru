@@ -1,21 +1,15 @@
 <header class="header">
 
   <div class="header__wrapper">
+    
+    <div class="logo-image-container"><img src="/images/20170607gleb_kalinin_photo.jpg" class="logo-image"></div>
+
     <form class="search-form" action="http://yandex.ru/sitesearch" method="get">
       <input type="hidden" name="searchid" value="<%= config.searchid %>">
       <input type="hidden" name="web" value="0">
       <input type="hidden" name="l10n" value="<%= config.l10n %>">
       <input type="search" class="field search-form__field" name="text" placeholder="<%= config.search %>" value="">
     </form>
-    <div class="social-widget">
-      <h3 class="social-widget__headline">
-        <%= config.follow %>
-      </h3>
-      <iframe class="social-widget__twitter" allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=glebis&amp;show_count=false">
-      </iframe>
-      <iframe  class="social-widget__facebook" src="//www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fkalinin&amp;width&amp;height=80&amp;colorscheme=light&amp;layout=button&amp;show_faces=true&amp;appId=729145880450151" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-      <a href="/subscribe" class="subscribe_link">Подписаться на рассылку</a>
-    </div>
 
     
       <% if (is_home()){ %>
@@ -24,10 +18,12 @@
           <%= config.title %>
         </span>
       </h1>
+      
       <% } 
       else { %>
-      <h2 class="logo"><a href="/" class="logo__text big-link"><%= config.title %></a></h2>
+      <h2 class="logo"><a href="/" class="logo__text"><%= config.title %></a></h2>
       <% } %>
+      <p class="logo__tagline">Картография целой жизни</p>
     
 
     <ul class="categories">
@@ -35,8 +31,8 @@
           <li class="categories__item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
         <% } %>
     </ul>
-    <ul class="tags-list"><li class="tags-list__tag_title">Темы:</li><li class="tags-list__tag"><a href="/tags/business" class="link">бизнес</a></li><li class="tags-list__tag"><a href="/tags/education" class="link">образование</a></li><li class="tags-list__tag"><a href="/tags/content" class="link">контент</a></li><li class="tags-list__tag"><a href="/tags/web" class="link">веб</a></li><li class="tags-list__tag"><a href="/tags/media" class="link">медиа</a></li></ul>
-    <p class="popular-link"><a href="/popular">Популярные посты</a></p>
+<!--    <ul class="tags-list"><li class="tags-list__tag_title">Темы:</li><li class="tags-list__tag"><a href="/tags/business" class="link">бизнес</a></li><li class="tags-list__tag"><a href="/tags/education" class="link">образование</a></li><li class="tags-list__tag"><a href="/tags/content" class="link">контент</a></li><li class="tags-list__tag"><a href="/tags/web" class="link">веб</a></li><li class="tags-list__tag"><a href="/tags/media" class="link">медиа</a></li></ul>
+    <p class="popular-link"><a href="/popular">Популярные посты</a></p> -->
     
 
   </div>
