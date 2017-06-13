@@ -47,6 +47,10 @@
       <% } %>
     </div>
     <% } %> -->
+<% if (is_post()){ %>
+  <div class="comment-absense"><p>Раньше здесь была форма комментариев, но теперь её нет. <a href="/no-comments">Почему</a>?</p><p>Хотите обсудить содержимое заметки? Напишите мне email или <a href="https://twitter.com/glebis">сообщение в&nbsp;твиттере</a>. Я отвечаю на все вежливые сообщения, и  готов дополнить заметки ценными дополнениями.</p></div>
+<% } %>
+
 
 
   </div>
@@ -55,39 +59,8 @@
   <% } %>
 </article>
 
+
 <% if (is_post()){ %>
   <%- partial('subscribe') %>
 <% } %>
 
-
-<% if (!index && post.comments && config.disqus_shortname && is_post() ){ %>
-<% if (config.disqus_shortname){ %>
-<script>
-  var disqus_shortname = '<%= config.disqus_shortname %>';
-  <% if (page.permalink){ %>
-  var disqus_url = '<%= page.permalink %>';
-  <% } %>
-
-
-  <% if (post.disqus_identifier){ %>
-  var disqus_identifier = '<%= post.disqus_identifier %>';
-  <% } else { %>
-  var disqus_identifier = '<%= page.path.replace('/','') %>';
-  <% } %>
-
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-<% } %>
-
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
-<% } %>
