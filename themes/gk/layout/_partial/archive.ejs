@@ -25,8 +25,8 @@
     if (page.total > 1){ %>
       <nav class="page-nav">
         <%- paginator({
-          prev_text: '&laquo; ' + __('nav.prev'),
-          next_text: __('nav.next') + ' &raquo;'
+          prev_text: '← ' + __('nav.prev'),
+          next_text: __('nav.next') + ' →'
         }) %>
       </nav>
     <% }
@@ -54,7 +54,7 @@
   case 'tag': %>
     <section class="archives-wrap">
     <h2 class="page-title">
-      <span class="archive-tag">#<%= page.tag %></span>
+      <span class="archive-tag"><%= page.tag %></span>
     </h2>
     <div class="archives">
     <% page.posts.each(function (post, i) { %>
