@@ -2,7 +2,11 @@
 
   <div class="header__wrapper">
     
-    <div class="logo-image-container"><img src="/images/20170607gleb_kalinin_photo.jpg" class="logo-image"></div>
+    <div class="logo-image-container">
+      <% if (!is_home()){ %><a href="/"><% } %>
+    <img src="/images/20170607gleb_kalinin_photo.jpg" class="logo-image">
+      <% if (!is_home()){ %></a><% } %>
+    </div>
 
     <form class="search-form" action="http://yandex.ru/sitesearch" method="get">
       <input type="hidden" name="searchid" value="<%= config.searchid %>">
