@@ -1,23 +1,9 @@
-title: Глеб Калинин
+title: Обо мне
 ---
-<div itemscope itemtype="http://schema.org/Person"><p><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. Руковожу отделом контента в&nbsp;компании <a itemprop="affiliation" href="//ostrovok.ru/">Ostrovok.Ru</a>.</p></div>
-
-<p>Занимаюсь аналитикой, разработкой новых продуктов, запуском, сопровождением и&nbsp;развитием интернет-проектов и&nbsp;других продуктов.</p>
+<div itemscope itemtype="http://schema.org/Person"><p><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. Родился в&nbsp;<span itemprop="birthDate" datetime="1984-04-24">1984</span> году в&nbsp;<span itemprop="birthPlace">Ленинград</span>е.</p> <p>Живу в&nbsp;Москве. Женат на&nbsp;прекрасной <a href="http://olgakalinina.com/" itemprop="spouse">Ольге</a>.</p><p>Руковожу отделом контента в&nbsp;компании <a itemprop="affiliation" href="//ostrovok.ru/">Ostrovok.Ru</a>.</p></div>
 
 
-## Области экспертизы:
-* <strong>Аналитика и&nbsp;управление продуктом</strong>&nbsp;&mdash; найти нишу, сформулировать и&nbsp;описать продукт</li>
-* <strong>Дизайн, UX&nbsp;и&nbsp;контроль реализации</strong>&nbsp;&mdash; сделать, чтобы было удобно и&nbsp;понятно</li>
-* <strong>Коммуникации и&nbsp;контент</strong>&nbsp;&mdash; как говорить о&nbsp;проекте с&nbsp;аудиторией</li>
-
-## Ключевые слова. Они&nbsp;же buzzwords
-<p><a href="http://glebkalinin.ru/tags/design-thinking">Дизайн-мышление</a>, сервисный дизайн, lean, lean&nbsp;ux, agile, product development, customer development</p>
-
-<h2>Обо мне</h2>
-
-<p>Родился в&nbsp;<span itemprop="birthDate" datetime="1984-04-24">1984</span> году в&nbsp;<span itemprop="birthPlace">Ленинград</span>е. Живу в&nbsp;Москве. Женат на&nbsp;прекрасной <a href="http://olgakalinina.com/" itemprop="spouse">Ольге</a>.</p>
-
-<p>Первый интернет-проект, сайт <a href="http://experiment.ru">Эксперимент.ру</a>, запустил в&nbsp;2001&nbsp;году. </p>
+<p>C 2001 года занимаюсь интернет-проектами. Первый свой проект, сайт <a href="http://experiment.ru">Эксперимент.ру</a>, запустил в&nbsp;2001&nbsp;году. Надеюсь, когда-нибудь я его перезапущу.</p>
 
 <p>Работал над проектами Sportbox.ru (РТР), сайтом мобильного оператора T-Mobile (Великобритания), в&nbsp;компании Newmedia stars над проектом &laquo;Незнакомка&raquo;, в&nbsp;компании Стерно над интернет-проектами для FMCG-брендов.</p>
 
@@ -33,6 +19,8 @@ title: Глеб Калинин
 
 <p>Член сообщества <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span> (инициатива Всемирного Экономического Форума). В&nbsp;2016-2017 годах был куратором московского хаба сообщества.</p>
 
-<h2>Контакты</h2> <p>Email: <a href="mailto:glebis@gmail.com" itemprop="email">glebis@gmail.com</a></p>
+<p>Эксперт <a href="http://contextfound.org">междисциплинарного лектория «Контекст»</a>. Спикер TEDxNevaRiver.</p>
+
+<h2>Контакты</h2> <p>Email: <a href="mailto:glebis@gmail.com" itemprop="email">glebis@gmail.com</a>.<br>Twitter: <a href="https://twitter.com/intent/tweet?text=%40glebis">@glebis</a></p>
 
 </div>
