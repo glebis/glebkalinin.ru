@@ -16,7 +16,7 @@ darkgrey = #777
 font_grotesk = "Lava 5",georgia,serif
 font_serif = "Lava 5",georgia,serif
 
-background_body = #ededed
+background_body = #f8f8f8
 selectionColor = #b4d5fe
 color = green
 
@@ -114,7 +114,7 @@ abbr
 	// background url(/images/bg.jpg) center bottom no-repeat
 	// background-size cover
 	// min-height 400px
-	background #eee
+	// background #eee
 	margin 0 0 1em 0
 	padding 10px 0
 	position relative
@@ -181,27 +181,27 @@ abbr
 .subscribe_link
 	font-size .8em
 
-.social-widget
-	float right
-	clear both
-	overflow hidden
-	width 180px
-	margin 10px 0 0 0
-	&__headline
-		margin 0 0 .6em
-		font-weight normal
-		font-size .8em
-	&__twitter
-	&__facebook
-		float left
-		height 20px
-	&__twitter
-		width 110px
-	&__facebook
-		width 70px
-		height 40px
-		overflow hidden
-		border none
+// .social-widget
+// 	float right
+// 	clear both
+// 	overflow hidden
+// 	width 180px
+// 	margin 10px 0 0 0
+// 	&__headline
+// 		margin 0 0 .6em
+// 		font-weight normal
+// 		font-size .8em
+// 	&__twitter
+// 	&__facebook
+// 		float left
+// 		height 20px
+// 	&__twitter
+// 		width 110px
+// 	&__facebook
+// 		width 70px
+// 		height 40px
+// 		overflow hidden
+// 		border none
 bp(bp_mobile, false)
 .header
 	padding 1em
@@ -210,16 +210,16 @@ bp(bp_mobile, false)
 		margin 1em 0
 		width auto
 
-.social-widget
-	position static
-	float none
-	width auto
-	margin 1em 0
-	&__twitter
-	&__facebook
-		float none
-		display inline-block
-		height 40px
+// .social-widget
+// 	position static
+// 	float none
+// 	width auto
+// 	margin 1em 0
+// 	&__twitter
+// 	&__facebook
+// 		float none
+// 		display inline-block
+// 		height 40px
 
 endbp()		
 
@@ -872,6 +872,202 @@ endbp()
 
 
 
+// social likes
 
-// .jello
-// 	background red
+.social-likes,.social-likes__button,.social-likes__widget
+	animation none 0s ease 0s 1 normal none running
+	backface-visibility visible
+	background transparent none repeat 0 0/auto auto padding-box border-box scroll
+	border medium none currentColor
+	border-collapse separate
+	border-image none
+	border-radius 0
+	border-spacing 0
+	bottom auto
+	box-shadow none
+	box-sizing content-box
+	caption-side top
+	clear none
+	clip auto
+	color #000
+	columns auto
+	column-count auto
+	column-fill balance
+	column-gap normal
+	column-rule medium none currentColor
+	column-span 1
+	column-width auto
+	content normal
+	counter-increment none
+	counter-reset none
+	cursor auto
+	direction ltr
+	display inline
+	empty-cells show
+	float none
+	font-family serif
+	font-size medium
+	font-style normal
+	font-variant normal
+	font-weight 400
+	font-stretch normal
+	line-height normal
+	height auto
+	hyphens none
+	left auto
+	letter-spacing normal
+	list-style disc outside none
+	margin 0
+	max-height none
+	max-width none
+	min-height 0
+	min-width 0
+	opacity 1
+	orphans 2
+	outline medium none invert
+	overflow visible
+	overflow-x visible
+	overflow-y visible
+	padding 0
+	pageafter auto
+	page-break-before auto
+	page-break-inside auto
+	perspective none
+	perspective-origin 50% 50%
+	position static
+	right auto
+	tab-size 8
+	table-layout auto
+	text-align left
+	text-align-last auto
+	text-decoration none
+	text-indent 0
+	text-shadow none
+	text-transform none
+	top auto
+	transform none
+	transform-origin 50% 50% 0
+	transform-style flat
+	transition none 0s ease 0s
+	unicode-bidi normal
+	vertical-align baseline
+	visibility visible
+	white-space normal
+	widows 2
+	width auto
+	word-spacing normal
+	z-index auto
+	all initial
+	box-sizing border-box
+
+// .social-likes:after,.social-likes:before,.social-likes__button:after,.social-likes__button:before,.social-likes__widget:after,.social-likes__widget:before
+// 	display none
+
+.social-likes-wrapper
+	border-top 1px solid #000
+	padding-top 2.2em
+	margin-top 2.6em
+
+.social-likes
+	opacity 0
+	display flex
+	display flex
+	-webkit-flex-wrap wrap
+	flex-wrap wrap
+	font-size 1.1em
+	min-height 36px
+	margin -.45em
+	line-height 1.45
+	& > *
+		display block
+		visibility hidden
+
+.social-likes_visible
+	opacity 1
+	transition opacity .25s ease-in
+	& > *
+		visibility inherit
+
+.social-likes__widget
+	position relative
+	white-space nowrap
+	font-size inherit
+	font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+	margin .45em
+	line-height inherit
+	border 0
+	text-align left
+	color #000
+
+.social-likes__button,.social-likes__widget
+	display block
+	cursor pointer
+	line-height inherit
+
+.social-likes__button
+	text-rendering optimizeLegibility
+	// font-family Helvetica Neue,Arial,sans-serif
+	color inherit
+	user-select none
+	-moz-user-select none
+	-ms-user-select none
+	user-select none
+	padding .18em .7em .15em 2.3em
+	vertical-align middle
+	font-size .95em
+
+.social-likes__invisible-button
+	display block
+	width 100%
+	height 100%
+
+.social-likes__icon
+	position absolute
+	fill currentColor
+	width 1.2em
+	height 1.2em
+	top .3em
+	left .4em
+
+.social-likes__widget_notext
+	.social-likes__icon
+		position static
+		display block
+		margin .3125em
+
+.social-likes_vertical
+	flex-direction column
+	flex-direction column
+	.social-likes__widget
+		width 11em
+
+.social-likes__widget:active,.social-likes__widget:focus,.social-likes__widget:hover
+	opacity .9
+	// filter saturate(.8) brightness(1.15)
+	// filter saturate(.8) brightness(1.15)
+	color blue
+
+// .social-likes__widget_pocket
+// 	color green
+
+// .social-likes__widget_twitter
+// 	background #55acee
+
+// .social-likes__widget_plusone
+// 	background #dc4e41
+
+// .social-likes__widget_vkontakte
+// 	background #45668e
+
+// .social-likes__widget_odnoklassniki
+// 	background #ed812b
+
+// .social-likes__widget_pinterest
+// 	background #bd081c
+
+// .social-likes__widget_telegram
+// 	background #08c
+
+// .social-likes__widget_linkedin
+// 	background #0077b5
