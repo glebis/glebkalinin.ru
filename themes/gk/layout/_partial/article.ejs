@@ -34,22 +34,25 @@
         <%- post.content %>
       <% } %>
     </div>
+<% if(is_post()) { %>
+<div class="social-likes-wrapper">
+  <div class="social-likes">
+    <div data-service="facebook" title="Поделиться ссылкой на Facebook">Facebook</div>
+    <div data-service="twitter" title="Поделиться ссылкой в Твиттере">Twitter</div>
+    <div data-service="pocket" title="Сохранить в Pocket">Pocket</div>
+    <div data-service="telegram" title="Отправить в Telegram">Telegram</div>
+    <div data-service="vkontakte" title="Поделиться Vkontakte">Вконтакте</div>
+  </div>
+</div>
+ <% } %>
 
-    
-<!--     <% if(is_post()) { %>
-    <div class="article-meta">
-
-      <%- partial('post/category') %>
-      <% if (post.comments && config.disqus_shortname){ %>
-        <p class="comment">
-          <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('article.comments') %></a>
-        </p>
-      <% } %>
-    </div>
-    <% } %> -->
 <% if (is_post()){ %>
   <div class="comment-absense"><p>Раньше здесь была форма комментариев, но теперь её нет. <a href="/no-comments">Почему</a>?</p><p>Хотите обсудить содержимое заметки? Напишите мне email или <a href="https://twitter.com/glebis">сообщение в&nbsp;твиттере</a>. Я отвечаю на все вежливые сообщения, и  готов дополнить заметки ценными дополнениями.</p></div>
 <% } %>
+
+
+
+
 
 
 
