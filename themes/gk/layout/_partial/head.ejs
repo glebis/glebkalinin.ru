@@ -14,7 +14,7 @@
       title += ': ' + page.year;
     }
   } else if (is_category()){
-    title = 'Category: ' + page.category;
+    title = 'Категория: ' + page.category;
   } else if (is_tag()){
     title = 'Метка: ' + page.tag;
   }
@@ -30,8 +30,24 @@
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
   
-<link rel="stylesheet" href="https://fonts.typotheque.com/WF-010357-009483.css" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.typotheque.com/WF-010357-009483.css" type="text/css" />
   <%- css('css/style') %>
   <%- partial('google-analytics') %>
   <link rel="canonical" href="<%= url.replace('/index.html','/') %>">
+  <% if (is_post() && config.generator_amp && site.data ){ %>
+    <!-- GOOGLE AMP -->
+    <link rel="amphtml" href="<%= config.url %>/<%= page.path %>amp/index.html">
+  <% } %>
 </head>
+
+<!-- <% if (site.data.menu ){ %>
+   
+<ul class="tags-list">
+<li class="tags-list__tag_title">Темы:</li>
+<% for (var link in site.data.menu) { 
+  %>
+  <li class="tags-list__tag"><a href="<%= site.data.menu[link] %>" class="link"><%= link %></a><% 
+} %>
+</ul>
+<p class="popular-link"><a href="/popular">Популярные посты</a></p>
+<% } %> -->

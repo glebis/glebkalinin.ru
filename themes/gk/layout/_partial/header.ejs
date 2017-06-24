@@ -27,17 +27,14 @@
       else { %>
       <h2 class="logo"><a href="/" class="logo__text"><%= config.title %></a></h2>
       <% } %>
-      <p class="logo__tagline">Картография целой жизни</p>
+      <p class="logo__tagline"><%= config.subtitle %></p>
     
 
     <ul class="categories">
       <% for (var i in theme.menu){ %>
           <li class="categories__item"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
         <% } %>
-    </ul>
-<!--    <ul class="tags-list"><li class="tags-list__tag_title">Темы:</li><li class="tags-list__tag"><a href="/tags/business" class="link">бизнес</a></li><li class="tags-list__tag"><a href="/tags/education" class="link">образование</a></li><li class="tags-list__tag"><a href="/tags/content" class="link">контент</a></li><li class="tags-list__tag"><a href="/tags/web" class="link">веб</a></li><li class="tags-list__tag"><a href="/tags/media" class="link">медиа</a></li></ul>
-    <p class="popular-link"><a href="/popular">Популярные посты</a></p> -->
-    
+    </ul>    
 
   </div>
 
