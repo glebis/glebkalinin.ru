@@ -4,7 +4,7 @@
 
 # Site
 title: Блог Глеба Калинина
-subtitle:
+subtitle: Картография целой жизни
 description:
 author: Глеб Калинин
 follow: Следите за моими постами
@@ -20,8 +20,6 @@ disqus_shortname: glebkalinin
 
 
 searchid: 2103323
-
-
 
 
 # URL
@@ -168,7 +166,7 @@ time_format: HH:mm
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 20
+per_page: 30
 pagination_dir: page
 
 # Extensions
@@ -178,6 +176,25 @@ theme: gk
 
 plugins:
   hexo-footnotes
+  hexo-typograf
+
+
+
+
+# The following settings is the quick start options.
+generator_amp:
+  templateDir:  amp-template
+  assetDistDir: amp-dist
+  logo:
+    path:   sample/sample-logo.png
+    width:  600
+    height: 60
+  substituteTitleImage: 
+    path:   sample/sample-substituteTitleImage.png
+    width:  1024
+    height: 800
+  warningLog: false   # To display warning, please set true.
+
 
 
 feed:
