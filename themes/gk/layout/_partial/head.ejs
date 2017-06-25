@@ -34,11 +34,13 @@
   <%- css('css/style') %>
   <%- partial('google-analytics') %>
   <link rel="canonical" href="<%= url.replace('/index.html','/') %>">
-  <% if (is_post() && config.generator_amp && site.data ){ %>
-    <!-- GOOGLE AMP -->
+  <% if (is_post() && config.generator_amp && site.data.dev ){ %>
+    <!-- GOOGLE AMP, for now only on dev version -->
     <link rel="amphtml" href="<%= config.url %>/<%= page.path %>amp/index.html">
   <% } %>
 </head>
+
+
 
 <!-- <% if (site.data.menu ){ %>
    
