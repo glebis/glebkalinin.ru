@@ -1,10 +1,10 @@
 # Header
 logo_text: # Add text logo instead of logo image
 menu:
-  Обо мне: about
+  Обо мне: about/
   # Услуги: services
-  Архив: archives
-  Подписать на рассылку: subscribe
+  Архив: archives/
+  Подписать на рассылку: subscribe/
 
 # Content
 excerpt_link: Читать далее →
