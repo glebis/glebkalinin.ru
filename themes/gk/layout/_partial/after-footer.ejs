@@ -1,14 +1,7 @@
 <script src="<%- url_for(config.root + 'js/jquery.min.js') %>"></script>
 
 <script type="text/javascript">
-	var socialLikesButtons = {
-	pocket: {
-		icon: 'M8,14 C3.57894737,14 0,10.5 0,6.17647059 L0,1.19411765 C0,0.535294118 0.547368421,0 1.22105263,0 L14.7789474,0 C15.4526316,0 16,0.535294118 16,1.19411765 L16,6.17647059 C16,10.5 12.4210526,14 8,14 Z M8,9.88235294 C8.25263158,9.88235294 8.54736842,9.8 8.71578947,9.59411765 L12.7157895,5.68235294 C13.1368421,5.31176471 13.1368421,4.65294118 12.7157895,4.24117647 C12.3368421,3.82941176 11.6631579,3.82941176 11.2421053,4.24117647 L8,7.41176471 L4.71578947,4.24117647 C4.33684211,3.82941176 3.66315789,3.82941176 3.24210526,4.24117647 C2.82105263,4.61176471 2.82105263,5.27058824 3.24210526,5.68235294 L7.24210526,9.59411765 C7.45263158,9.8 7.74736842,9.88235294 8,9.88235294 Z',
-		popupUrl: 'https://getpocket.com/save?url={url}',
-		popupWidth: 600,
-		popupHeight: 500
-	}
-};
+
 </script>
 
 <script src="<%- url_for(config.root + 'js/vendor.js') %>"></script>
@@ -24,7 +17,7 @@ jQuery.fn.spectragram.accessData = {
 	clientID: '05f6832fbc754c8aa7e1e54b788f4fa6'
 };
 
-console.log('kakava');
+// console.log('kakava');
 
 $('#instafeed').spectragram('getUserFeed',{
 	query: 'glebkalinin'
