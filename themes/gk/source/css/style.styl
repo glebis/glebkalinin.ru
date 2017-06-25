@@ -5,7 +5,6 @@
 @import "vendor/jeet/_grid";
 
 
-// body_width = 38em
 body_width = 38em
 body_width_large = 58em
 bp_mobile = 720px
@@ -143,16 +142,16 @@ abbr
 			width 10em
 			float left
 			
-		&:before
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			width: 100%
-			background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-			opacity: .6; 
+		// &:before
+		// 	content: '';
+		// 	position: absolute;
+		// 	top: 0;
+		// 	right: 0;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	width: 100%
+		// 	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+		// 	opacity: .6; 
 
 .b-page--inner 
 	.header
@@ -166,42 +165,21 @@ abbr
 		a
 			color: white		
 
-.popular-link
-	font-size .8em
-	a
-		color #000
+// .popular-link
+// 	font-size .8em
+// 	a
+// 		color #000
 
-.photo-avatar
-	float left
-	width 100px
-	height 100px
-	margin 0 10px 10px 0
-	border-radius 50px
+// .photo-avatar
+// 	float left
+// 	width 100px
+// 	height 100px
+// 	margin 0 10px 10px 0
+// 	border-radius 50px
 
-.subscribe_link
-	font-size .8em
+// .subscribe_link
+// 	font-size .8em
 
-// .social-widget
-// 	float right
-// 	clear both
-// 	overflow hidden
-// 	width 180px
-// 	margin 10px 0 0 0
-// 	&__headline
-// 		margin 0 0 .6em
-// 		font-weight normal
-// 		font-size .8em
-// 	&__twitter
-// 	&__facebook
-// 		float left
-// 		height 20px
-// 	&__twitter
-// 		width 110px
-// 	&__facebook
-// 		width 70px
-// 		height 40px
-// 		overflow hidden
-// 		border none
 bp(bp_mobile, false)
 .header
 	padding 1em
@@ -209,6 +187,14 @@ bp(bp_mobile, false)
 	&__wrapper
 		margin 1em 0
 		width auto
+	.logo
+		font-size 1em
+	.logo-image
+		width 80px
+		height 80px
+		border-radius 80px
+		&-container
+			width 95px
 
 // .social-widget
 // 	position static
@@ -236,12 +222,14 @@ endbp()
 		// box-shadow inset 5px 5px 8px rgba(0, 0, 0, 0.15);
 
 bp(bp_mobile, false)
+.header
+
 .subscribe_link
 	display block
 .search-form
-	float none
+	// float none
 	&__field
-		width 100%
+		width 70%
 endbp()
 //    ###    ########  ######## ####  ######  ##       ######## 
 //   ## ##   ##     ##    ##     ##  ##    ## ##       ##       
