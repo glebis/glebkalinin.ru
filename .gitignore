@@ -6,3 +6,4 @@ public
 *.mp3
 source/_data/dev.yml
 amp-*
+package-lock.json
