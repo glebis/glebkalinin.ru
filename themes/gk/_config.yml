@@ -2,8 +2,8 @@
 logo_text: # Add text logo instead of logo image
 menu:
   Обо мне: about/
-  # Услуги: services
-  Архив: archives/
+  Фотография: photography/
+  Статьи: archives/
   Подписать на рассылку: subscribe/
 
 # Content
