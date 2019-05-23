@@ -1,6 +1,6 @@
 title: О Глебе Калинине
 ---
-<div itemscope itemtype="http://schema.org/Person"><p><span style="display: none"><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. </span>Родился в&nbsp;<span itemprop="birthDate" datetime="1984-04-24">1984</span> году в&nbsp;<span itemprop="birthPlace">Ленинград</span>е.</p> <p>Живу в&nbsp;Москве. Женат на&nbsp;прекрасной <a href="http://olgakalinina.com/" itemprop="spouse">Ольге</a>.</p><p>Руководитель направления пользовательского опыта в&nbsp;компании <a itemprop="affiliation" href="//ozon.travel/">OZON.travel</a>.</p></div>
+<div itemscope itemtype="http://schema.org/Person"><p><span style="display: none"><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. </span>Родился в&nbsp;<span itemprop="birthDate" datetime="1984-04-24">1984</span> году в&nbsp;<span itemprop="birthPlace">Ленинград</span>е.</p> <p>Живу в&nbsp;Москве. Женат на&nbsp;прекрасной <a href="http://olgakalinina.com/" itemprop="spouse">Ольге</a>.</p><p>Директор по продукту в&nbsp;компании <a itemprop="affiliation" href="//ozon.travel/">OZON.travel</a>.</p></div>
 
 
 <p>C 2001 года занимаюсь интернет-проектами. Первый свой проект, сайт <a href="http://experiment.ru">Эксперимент.ру</a>, запустил в&nbsp;2001&nbsp;году. Надеюсь, когда-нибудь я его перезапущу.</p>
