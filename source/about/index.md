@@ -2,6 +2,9 @@ title: О Глебе Калинине
 ---
 <div itemscope itemtype="http://schema.org/Person"><p><span style="display: none"><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. </span>Родился в&nbsp;<span itemprop="birthDate" datetime="1984-04-24">1984</span> году в&nbsp;<span itemprop="birthPlace">Ленинград</span>е.</p> <p>Живу в&nbsp;Москве. Женат на&nbsp;прекрасной <a href="http://olgakalinina.com/" itemprop="spouse">Ольге</a>.</p><p>Директор по продукту в&nbsp;компании <a itemprop="affiliation" href="//ozon.travel/">OZON.travel</a>.</p></div>
 
+<p>[Фотографирую](/photography/). Учусь на курсе Сергея Максимишина «Фотограф как рассказчик».</p><p>Преподаю практики осознанности для компаний и вне их, учусь на инструктура преподавателей практик осознанности.</p>
+
+<p>Выпускник сообщества <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span> (инициатива Всемирного Экономического Форума). В&nbsp;2016-2017 годах был куратором московского хаба сообщества.</p>
 
 <p>C 2001 года занимаюсь интернет-проектами. Первый свой проект, сайт <a href="http://experiment.ru">Эксперимент.ру</a>, запустил в&nbsp;2001&nbsp;году. Надеюсь, когда-нибудь я его перезапущу.</p>
 
@@ -15,15 +18,12 @@ title: О Глебе Калинине
 
 <p>В&nbsp;2013-2014 работал над проектами корпорации PMI (перезапуск Kassir.ru) и&nbsp;компании Foggylab. </p>
 
-<p>В&nbsp;2014-2015 работал в&nbsp;агентстве <a href="http://tsentsiper.com" itemprop="affiliation">Tsentsiper</a> над новыми сервисами и&nbsp;продуктами для Почты России. </p>
+<p>В&nbsp;2014-2015 работал в&nbsp;агентстве <a href="http://tsentsiper.com" itemprop="affiliation">Tsentsiper</a> над новыми сервисами и&nbsp;продуктами для <a href="//pochta.ru/">Почты России</a>. </p>
 
 <p>В 2015-2018 руководил отделом контента в компании <a href="http://ostrovok.ru/">Островок.ру</a></p>
 
-<p>Выпускник сообщества <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span> (инициатива Всемирного Экономического Форума). В&nbsp;2016-2017 годах был куратором московского хаба сообщества.</p>
 
-<p>Эксперт <a href="http://contextfound.org">междисциплинарного лектория «Контекст»</a>. Спикер TEDxNevaRiver.</p>
-
-<p>[Фотографирую](/photography/). Учусь на курсе Сергея Максимишина «Фотограф как рассказчик».</p>
+<p>Спикер TEDx. Эксперт <a href="http://contextfound.org">междисциплинарного лектория «Контекст»</a>.</p>
 
 <h2>Контакты</h2> <p>Email: <a href="mailto:glebis@gmail.com" itemprop="email">glebis@gmail.com</a>.<br>Twitter: <a href="https://twitter.com/intent/tweet?text=%40glebis">@glebis</a></p>
 
