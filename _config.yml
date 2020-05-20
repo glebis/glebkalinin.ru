@@ -43,6 +43,9 @@ archive_generator:
   per_page: 100
 
 
+
+
+
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -194,6 +197,7 @@ generator_amp:
     width:  1024
     height: 800
   warningLog: false   # To display warning, please set true.
+
 
 
 

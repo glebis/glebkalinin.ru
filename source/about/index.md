@@ -3,16 +3,8 @@ title: О Глебе Калинине
 <div itemscope itemtype="http://schema.org/Person"><p><span style="display: none"><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. </span>Родился в&nbsp;<span itemprop="birthDate" datetime="1984-04-24">1984</span> году в&nbsp;<span itemprop="birthPlace">Ленинград</span>е.</p> <p>Живу в&nbsp;Москве. Женат на&nbsp;прекрасной <a href="http://olgakalinina.com/" itemprop="spouse">Ольге</a>.</p></div>
 
 
-<p>Сертифицированный преподаватель практик осознанности (светсткий подход). Обучаю практикам внимательности (медитация), учу справляться со стрессом, находить в жизни радость. Мой канал в телеграме — «<a href="https://t.me/Experimentally">Опытным путём</a>».</p>
+<p>Сертифицированный преподаватель практик осознанности (светский подход). Обучаю практикам внимательности (медитация), учу справляться со стрессом, находить в жизни радость. Сайт про мои практики — <a href="//mind.so">Итак, ум (mind.so)</a>. Мой канал в телеграме — «<a href="https://t.me/Experimentally">Опытным путём</a>».</p>
 
-<p>[Фотографирую](/photography/). Закончил 2-летний курс Сергея Максимишина «Фотограф как рассказчик».</p>
-
-
-<p>Выпускник сообщества <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span> (инициатива Всемирного Экономического Форума). В&nbsp;2016-2017 годах был куратором московского хаба сообщества.</p>
-
-<p>Спикер TEDx. Эксперт <a href="http://contextfound.org">междисциплинарного лектория «Контекст»</a>.</p>
-
-<p>C 2001 года занимаюсь интернет-проектами. Первый свой проект, сайт <a href="http://experiment.ru">Эксперимент.ру</a>, запустил в&nbsp;2001&nbsp;году. </p>
 
 
 
@@ -30,6 +22,16 @@ title: О Глебе Калинине
 <p>Был инициатором и&nbsp;первым главным редактором сайта &laquo;<a href="http://theoryandpractice.ru">Теории и&nbsp;практики</a>&raquo; в&nbsp;Санкт-Петербурге. Сформировал редакцию, сформулировал принципы и&nbsp;правила её&nbsp;работы, организовал около 20 мероприятий.</p>
 
 <p>С&nbsp;2010 по&nbsp;2014 руководил собственной компанией Raum7: занимались консалтингом, UX-проектированием и&nbsp;дизайном.</p>
+
+
+<p>[Фотографирую](/photography/). Закончил 2-летний курс Сергея Максимишина «Фотограф как рассказчик».</p>
+
+
+<p>Выпускник сообщества <span itemscope itemtype="http://schema.org/Organization" itemprop="memberOf"><a href="http://globalshapers.org/"  itemprop="name">Global Shapers</a></span> (инициатива Всемирного Экономического Форума). В&nbsp;2016-2017 годах был куратором московского хаба сообщества.</p>
+
+<p>Спикер TEDx. Эксперт <a href="http://contextfound.org">междисциплинарного лектория «Контекст»</a>.</p>
+
+<p>C 2001 года занимаюсь интернет-проектами. Первый свой проект, сайт <a href="http://experiment.ru">Эксперимент.ру</a>, запустил в&nbsp;2001&nbsp;году. </p>
 
 
 
