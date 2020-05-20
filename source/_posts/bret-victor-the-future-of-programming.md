@@ -12,7 +12,7 @@ tags:
 
 [Брет Виктор](http://worrydream.com/) устроил на конференции DBX замечательное шоу — «перенёсся» на 40 лет назад и используя только знания, доступные в 1973 (и доступные тогда технологии — [кодоскоп](http://en.wikipedia.org/wiki/Overhead_projector), который, кажется, преждевременно вышел из употребления) сделал несколько «предсказаний» о будущем программирования — и все они, конечно, не сбылись. 
 
-<iframe src="http://player.vimeo.com/video/71278954?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe src="https://player.vimeo.com/video/71278954?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 
 [Слайды и дополнительные материалы](http://worrydream.com/#!/dbx).
