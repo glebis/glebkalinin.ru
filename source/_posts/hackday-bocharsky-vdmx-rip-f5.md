@@ -65,7 +65,7 @@ tags:
 
 Не самая прозрачная компания Ambimarketing выборочно записывала лекцию и взяла у Константина интервью — оно доступно на Youtube-канале [ambimarketing](http://www.youtube.com/user/ambimarketing), вот небольшой отрывок:
 
-<object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/vOYyQdXkqXE&hl=ru_RU&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/vOYyQdXkqXE&hl=ru_RU&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></embed></object>
+<object width="480" height="295"><param name="movie" value="https://www.youtube.com/v/vOYyQdXkqXE&hl=ru_RU&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/vOYyQdXkqXE&hl=ru_RU&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></embed></object>
 
 
 
