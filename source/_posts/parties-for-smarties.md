@@ -10,7 +10,7 @@ tags:
 - события
 ---
 
-![](http://farm3.static.flickr.com/2126/2019381444_6a2e998967.jpg)
+![](https://farm3.static.flickr.com/2126/2019381444_6a2e998967.jpg)
 
 
 Фото: [NTMY](http://www.flickr.com/photos/ntmy/)
@@ -68,7 +68,7 @@ tags:
 [Ignite](http://ignite.oreilly.com/) -- чуть более симпатичный мне формат от O'Reilly. 5-минутные выступления на любую тему, 20 слайдов, по 15 секунд на каждый. [Видео-пример](http://ignite.oreilly.com/) с официального сайта. Никакого эксклюзивного разрешения на Ignite получать не нужно, но ряд вполне обоснованных условий проведения [у формата есть](http://ignite.oreilly.com/faq/how-to.html).
 
 
-![Ignite Phoenix](http://farm3.static.flickr.com/2638/4083728588_0edd3e0246.jpg)
+![Ignite Phoenix](https://farm3.static.flickr.com/2638/4083728588_0edd3e0246.jpg)
 
 
 Фото: [sheiladeeisme](http://www.flickr.com/photos/sheila_dee/)
@@ -86,7 +86,7 @@ tags:
 [Свой небольшой TED](http://www.ted.com/tedx) можно устроить, даже не приглашая звёзд науки, культуры или политики. Плюс этого варианта в том, что событие будет обеспечено контентом от TED на долгие годы вперёд, минус в том же -- вероятно, у участников не будет стимула для генерации и развития собственных идей.
 
 
-![TEDx Tallin](http://farm3.static.flickr.com/2583/3670914803_3ecf540250.jpg)
+![TEDx Tallin](https://farm3.static.flickr.com/2583/3670914803_3ecf540250.jpg)
 
 
 Фото: [Michele Travierso](http://www.flickr.com/photos/mitch-in-wanderlust/3670914803/)
