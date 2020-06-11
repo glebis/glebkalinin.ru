@@ -16,7 +16,7 @@ tags:
 
 
 
-![](http://www.glebkalinin.ru/wp-content/uploads/2013/04/promoted_tweets.png)
+![](https://glebkalinin.ru/wp-content/uploads/2013/04/promoted_tweets.png)
 
 
 

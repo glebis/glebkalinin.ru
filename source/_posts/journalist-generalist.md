@@ -8,7 +8,7 @@ tags:
 - журналистика
 ---
 
-[![Specialist or generalist?](http://farm2.static.flickr.com/1408/1180687751_72509dc2cb.jpg)](http://www.flickr.com/photos/davegray/1180687751/)
+[![Specialist or generalist?](https://farm2.static.flickr.com/1408/1180687751_72509dc2cb.jpg)](http://www.flickr.com/photos/davegray/1180687751/)
 
 Не удалось сегодня попасть на лекцию [Кости Бочарского](http://mediapedia.ru/) и пересечься после неё (Костя, я звонил-писал), поэтому тут, чтобы не забыть, изложу вопрос, который я хотел с Константином обсудить.
 
