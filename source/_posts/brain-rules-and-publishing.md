@@ -17,7 +17,7 @@ tags:
 
 
 
-<p class="aside aside--left"><img src="http://glebkalinin.ru/featured/2010/09/john_mainw-120x155.jpg"><br><em>Джон Медина</em></p>  
+<p class="aside aside--left"><img src="//glebkalinin.ru/featured/2010/09/john_mainw-120x155.jpg"><br><em>Джон Медина</em></p>  
 
 
 
@@ -48,4 +48,4 @@ tags:
 
 
 
-<object width="500" height="400"><param name="movie" value="http://www.youtube.com/v/IK1nMQq67VI?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/IK1nMQq67VI?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="500" height="400"></embed></object></div>
+<object width="500" height="400"><param name="movie" value="http://www.youtube.com/v/IK1nMQq67VI?fs=1&amp;hl=en_US&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/IK1nMQq67VI?fs=1&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="500" height="400"></embed></object></div>

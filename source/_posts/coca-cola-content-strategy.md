@@ -16,7 +16,7 @@ tags:
 
 
 <div class="image">
-<img src="http://www.glebkalinin.ru/wp-content/uploads/2013/08/download-500x280.jpeg" alt="">
+<img src="//www.glebkalinin.ru/wp-content/uploads/2013/08/download-500x280.jpeg" alt="">
 </div>
 
 <p class="legend legend--center">© <a href="http://www.coca-colacompany.com/coca-cola-unbottled/share-a-coke-employees-hit-the-streets-of-london">Coca-Cola </a></p>

@@ -65,7 +65,7 @@ tags:
 
 Не самая прозрачная компания Ambimarketing выборочно записывала лекцию и взяла у Константина интервью — оно доступно на Youtube-канале [ambimarketing](http://www.youtube.com/user/ambimarketing), вот небольшой отрывок:
 
-<object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/vOYyQdXkqXE&hl=ru_RU&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/vOYyQdXkqXE&hl=ru_RU&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></embed></object>
+<object width="480" height="295"><param name="movie" value="https://www.youtube.com/v/vOYyQdXkqXE&hl=ru_RU&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/vOYyQdXkqXE&hl=ru_RU&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></embed></object>
 
 
 
@@ -92,22 +92,11 @@ tags:
 ### F5
 
 
-
-
-
-
-
 ![F5](http://glebkalinin.ru/featured/2009/12/f5.png)  
 В вышедшем в прошлый понедельник номере газеты F5 есть материал «Свободная каста», в котором я поучаствовал в качестве героя. Заметка посвящена безофисным работникам. Я вкратце рассказал, как пришёл к такой жизни, описал своё расписание и составил краткий список онлайн-инструментов, которыми пользуюсь ежедневно. 
-
 
 
 Скачать журнал: [F5, #40 - Декабрь 2009](http://www.f5.ru/magazine/download/f5_newspaper_n40_14_12_2009.pdf)
 
 
-
-
-
-
 К слову, я не уверен, что буду оставаться в таком состоянии всегда — всё-таки порой мне очень даже хочется менять пространство, работать в одном месте, а жить в другом. Вероятно уже в следующем году я сниму офис. Особенно вероятно это становится в свете того, что мы с Олей Ткачук открываем компанию. Хотя в правилах этой компании никогда не будет пункта об обязательном ежедневном присутствии в офисе, удобное и спокойное место для будущих работников создать необходимо.
-
