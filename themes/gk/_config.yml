@@ -2,7 +2,7 @@
 logo_text: # Add text logo instead of logo image
 menu:
   Обо мне: about/
-  Фотография: photography/
+  Сейчас: now/
   Статьи: archives/
   Подписать на рассылку: subscribe/
 
