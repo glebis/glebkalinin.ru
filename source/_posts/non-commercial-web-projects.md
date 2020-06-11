@@ -2,7 +2,7 @@
 
 date: 2010-04-06 10:53:02+00:00
 title: О запуске некоммерческих веб-проектов
-disqus_identifier: 76 http://glebkalinin.ru/?p=76
+disqus_identifier: 76 https://glebkalinin.ru/?p=76
 
 tags:
 - веб-projects

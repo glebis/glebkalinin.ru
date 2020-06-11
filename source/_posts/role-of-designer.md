@@ -2,7 +2,7 @@
 
 date: 2009-11-30 14:01:32+00:00
 title: О роли дизайнера
-disqus_identifier: 42 http://glebkalinin.ru/?p=42
+disqus_identifier: 42 https://glebkalinin.ru/?p=42
 
 tags:
 - дизайн

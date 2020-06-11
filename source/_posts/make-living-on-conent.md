@@ -2,7 +2,7 @@
 
 date: 2011-07-11 13:10:51+00:00
 title: Как заработать на контент-проекте?
-disqus_identifier: 230 http://glebkalinin.ru/?p=230
+disqus_identifier: 230 https://glebkalinin.ru/?p=230
 
 tags:
 - бизнес

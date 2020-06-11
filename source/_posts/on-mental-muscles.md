@@ -2,7 +2,7 @@
 
 date: 2012-02-06 11:55:15+00:00
 title: О ментальных мышцах и профессионализме
-disqus_identifier: 287 http://glebkalinin.ru/?p=287
+disqus_identifier: 287 https://glebkalinin.ru/?p=287
 
 tags:
 - бизнес
@@ -13,7 +13,7 @@ tags:
 - саморазвитие
 ---
 
-![](http://raum7linodewp.s3.amazonaws.com/wp-content/uploads/2012/02/sebastian-newbold-coe.jpg)
+![](https://raum7linodewp.s3.amazonaws.com/wp-content/uploads/2012/02/sebastian-newbold-coe.jpg)
 
 В прошлом году я прочитал замечательную книгу [The Power of Full Engagement](http://www.amazon.com/gp/product/0743226747/ref=as_li_ss_tl?ie=UTF8&tag=glebkali-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0743226747). Её авторы изначально занимались подготовкой спортсменов к соревнованиям, в ходе которой уделяли внимание не только физическим тренировкам, но и психологической стороне развития будущих чемпионов, обучая их управлению не временем, но энергией. Позже они поняли, что применяемые ими принципы работают и по отношению к обычным людям, предпринимателям и профессионалам самых разных областей.
 

@@ -2,7 +2,7 @@
 
 date: 2010-05-06 09:43:16+00:00
 title: 'Кори Доктороу: Википедия в учебном процессе'
-disqus_identifier: 88 http://glebkalinin.ru/?p=88
+disqus_identifier: 88 https://glebkalinin.ru/?p=88
 
 tags:
 - wikipedia

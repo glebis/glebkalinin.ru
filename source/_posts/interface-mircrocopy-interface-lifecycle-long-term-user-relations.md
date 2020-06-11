@@ -2,7 +2,7 @@
 
 date: 2012-05-31 14:34:38+00:00
 title: 'Дес Трейнор: текст в интерфейсе, жизненный цикл интерфейса, связь с пользователем'
-disqus_identifier: 336 http://glebkalinin.ru/?p=336
+disqus_identifier: 336 https://glebkalinin.ru/?p=336
 
 tags:
 - ux

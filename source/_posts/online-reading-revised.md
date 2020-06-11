@@ -11,7 +11,7 @@ tags:
 - продуктивность
 ---
 
-Пять с лишним лет назад я уже писал про то, как я [читаю онлайн](http://glebkalinin.ru/online-reading). С тех пор процесс видоизменился, поэтому расскажу о нем по-новой.
+Пять с лишним лет назад я уже писал про то, как я [читаю онлайн](https://glebkalinin.ru/online-reading). С тех пор процесс видоизменился, поэтому расскажу о нем по-новой.
 
 
 
@@ -41,7 +41,7 @@ tags:
 
 <p class="hl">Update: Меня подсказали, что Instapaper как раз 2 года назад был продан и с тех пор обновляется и развивается, теперь туда тоже можно сохранять видео, писать заметки к отдельным абзацам. Следить за развитием можно <a href="http://blog.instapaper.com/">в блоге</a>.</p>
 
-Зато приложение [Pocket](https://getpocket.com/) (ранее — Read it later, см. мою [заметку про перезапуск](http://glebkalinin.ru/pocket-and-graceful-rebranding)) развивается неплохо, поэтому я переехал туда. Pocket умеет  сохранять не только статьи, но и видео, у него приятное приложение для iOS, где он также интегрирован с Safari и встроенным клиентом для Твиттера.
+Зато приложение [Pocket](https://getpocket.com/) (ранее — Read it later, см. мою [заметку про перезапуск](https://glebkalinin.ru/pocket-and-graceful-rebranding)) развивается неплохо, поэтому я переехал туда. Pocket умеет  сохранять не только статьи, но и видео, у него приятное приложение для iOS, где он также интегрирован с Safari и встроенным клиентом для Твиттера.
 
 При отправке статей в Pocket я обязательно задаю минимум 2 тега:
 
@@ -57,11 +57,11 @@ tags:
 
 3. Содержательные теги — про какую область знаний  статья, например: language, learning, marketing, philosophy и т.д . Теги в Покете устроены не лучшим образом, поэтому я стараюсь не усердствовать и как можно реже добавлять новые. В закладках на Pinboard у меня почти почти полторы тысячи тегов (!), поэтому если не сдерживать себя, то и в Покете начнётся анархия и теги станут бесполезны.
 
-К слову о закладках, все добавленные мной статьи отправляются через [IFTTT](http://glebkalinin.ru/ifttt) в закладки на [Pinboard](https://pinboard.in/u:glebis/) ([рецепт](https://ifttt.com/myrecipes/personal/8880500)). Помеченные звездочкой заметки из Покета сохраняются в Evernote ([рецепт](https://ifttt.com/recipes/70594-save-a-favorited-item-from-pocket-to-evernote)).
+К слову о закладках, все добавленные мной статьи отправляются через [IFTTT](https://glebkalinin.ru/ifttt) в закладки на [Pinboard](https://pinboard.in/u:glebis/) ([рецепт](https://ifttt.com/myrecipes/personal/8880500)). Помеченные звездочкой заметки из Покета сохраняются в Evernote ([рецепт](https://ifttt.com/recipes/70594-save-a-favorited-item-from-pocket-to-evernote)).
 
 ### Kindle
 
-Особо длинные тексты я по-прежнему предпочитаю читать на Киндле (см. [мой обзор Kindle](http://glebkalinin.ru/reading-on-kindle)). Для отправки текстов на Киндл я пользовался [расширением Klip.me](https://chrome.google.com/webstore/detail/send-to-kindle-by-klipme/ipkfnchcgalnafehpglfbommidgmalan), но сейчас чаще использую [официальное амазоновское](https://chrome.google.com/webstore/detail/send-to-kindle-for-google/cgdjpilhipecahhcilnafpblkieebhea). Сбоев оно пока не давало. У Klip.me есть только один плюс — оно позволяет отредактировать текст перед отправкой, удалив ненужные куски. PDF по-прежнему отправляю на устройство по email с темой convert, они конвертируются в удобочитаемый формат и скачиваются на Kindle автоматически.
+Особо длинные тексты я по-прежнему предпочитаю читать на Киндле (см. [мой обзор Kindle](https://glebkalinin.ru/reading-on-kindle)). Для отправки текстов на Киндл я пользовался [расширением Klip.me](https://chrome.google.com/webstore/detail/send-to-kindle-by-klipme/ipkfnchcgalnafehpglfbommidgmalan), но сейчас чаще использую [официальное амазоновское](https://chrome.google.com/webstore/detail/send-to-kindle-for-google/cgdjpilhipecahhcilnafpblkieebhea). Сбоев оно пока не давало. У Klip.me есть только один плюс — оно позволяет отредактировать текст перед отправкой, удалив ненужные куски. PDF по-прежнему отправляю на устройство по email с темой convert, они конвертируются в удобочитаемый формат и скачиваются на Kindle автоматически.
 
 ### Разбор накопленного
 

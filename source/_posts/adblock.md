@@ -2,7 +2,7 @@
 
 date: 2013-08-04 11:33:53+00:00
 title: AdBlock и фильтрация рекламы
-disqus_identifier: 461 http://glebkalinin.ru/?p=461
+disqus_identifier: 461 https://glebkalinin.ru/?p=461
 
 tags:
 - безопасность

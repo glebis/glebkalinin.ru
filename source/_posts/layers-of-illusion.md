@@ -2,7 +2,7 @@
 
 date: 2013-03-18 21:09:17+00:00
 title: Слои иллюзии
-disqus_identifier: 419 http://glebkalinin.ru/?p=419
+disqus_identifier: 419 https://glebkalinin.ru/?p=419
 
 tags:
 - восприятие

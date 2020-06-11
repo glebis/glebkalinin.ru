@@ -2,7 +2,7 @@
 
 date: 2010-04-04 04:52:20+00:00
 title: Новости короткой строкой
-disqus_identifier: 72 http://glebkalinin.ru/?p=72
+disqus_identifier: 72 https://glebkalinin.ru/?p=72
 
 ---
 
@@ -10,9 +10,9 @@ disqus_identifier: 72 http://glebkalinin.ru/?p=72
 
 Во-первых, наша с [Олей Ткачук](http://olgatkachuk.ru) компания обзавелась домом — **офис  [Raum7](http://raum-7.com)** находится совсем рядом с [Пятью углами](http://ru.wikipedia.org/wiki/%D0%9F%D1%8F%D1%82%D1%8C_%D1%83%D0%B3%D0%BB%D0%BE%D0%B2), а выглядит примерно так: 
 
-![Офис Raum-7](http://glebkalinin.ru/featured/2010/04/raum-1-500x375.jpg)
+![Офис Raum-7](https://glebkalinin.ru/featured/2010/04/raum-1-500x375.jpg)
 
-![Офис Raum-7](http://glebkalinin.ru/featured/2010/04/raum-2-500x375.jpg)
+![Офис Raum-7](https://glebkalinin.ru/featured/2010/04/raum-2-500x375.jpg)
 
 Во-вторых, в «Этажах» в минувший четверг, 1 апреля, стартовала **образовательная серия «[Доп.Реальность](http://dopreality.ru)»**, которую мы с Олей же курируем. Первым гостем стала Ольга Стерник, владелица студии [Sterno.Ru](http://sterno.ru). В этот четверг, 8 апреля, в гостях у «Этажей» Максим Спиридонов, основатель и руководитель продюсерского центра «Ройбер» и ведущий подкаста «Рунетология». Вся информация о программе, а также видео, интервью и т.д. будут доступны на официальном сайте [dopreality.ru](http://dopreality.ru), а также через твиттер  [@dopreality](http://twitter.com/dopreality).
 

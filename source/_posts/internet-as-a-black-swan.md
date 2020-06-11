@@ -2,7 +2,7 @@
 
 date: 2010-04-20 06:30:27+00:00
 title: Интернет как «чёрный лебедь»? Вопросы о глобальном влиянии Сети
-disqus_identifier: 78 http://glebkalinin.ru/?p=78
+disqus_identifier: 78 https://glebkalinin.ru/?p=78
 
 tags:
 - вопросы

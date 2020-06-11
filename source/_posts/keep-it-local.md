@@ -2,7 +2,7 @@
 
 date: 2012-10-11 20:44:50+00:00
 title: Keep it local
-disqus_identifier: 386 http://glebkalinin.ru/?p=386
+disqus_identifier: 386 https://glebkalinin.ru/?p=386
 
 tags:
 - веб-projects
@@ -16,7 +16,7 @@ tags:
 
 
 
-[![](http://raum7linodewp.s3.amazonaws.com/wp-content/uploads/2012/10/logo-200-120x120.png)](http://keepitlocal.ru)
+[![](https://raum7linodewp.s3.amazonaws.com/wp-content/uploads/2012/10/logo-200-120x120.png)](http://keepitlocal.ru)
 
 
 

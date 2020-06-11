@@ -2,7 +2,7 @@
 
 date: 2010-11-16 20:58:56+00:00
 title: Журналист-генералист
-disqus_identifier: 149 http://glebkalinin.ru/?p=149
+disqus_identifier: 149 https://glebkalinin.ru/?p=149
 
 tags:
 - журналистика
@@ -26,7 +26,7 @@ tags:
 
 
 
-![](http://glebkalinin.ru/featured/2010/11/bocharsky-500x333.jpg)
+![](https://glebkalinin.ru/featured/2010/11/bocharsky-500x333.jpg)
 
 Ну да, превратиться в консультанта, иследователя, ученого -- это одна из возможностей. Проблема в том, **кто будет за это платить**? В смысле как продавать это?
 

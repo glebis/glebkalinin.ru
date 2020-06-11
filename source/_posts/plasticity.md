@@ -2,7 +2,7 @@
 
 date: 2012-10-20 16:09:51+00:00
 title: О том, как полезно менять своё мнение
-disqus_identifier: 390 http://glebkalinin.ru/?p=390
+disqus_identifier: 390 https://glebkalinin.ru/?p=390
 
 ---
 

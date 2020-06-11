@@ -2,7 +2,7 @@
 
 date: 2010-11-09 08:20:12+00:00
 title: О закладках
-disqus_identifier: 144 http://glebkalinin.ru/?p=144
+disqus_identifier: 144 https://glebkalinin.ru/?p=144
 
 tags:
 - delicious
@@ -12,7 +12,7 @@ tags:
 - продуктивность
 ---
 
-![](http://glebkalinin.ru/featured/2010/11/delicious.jpg)
+![](https://glebkalinin.ru/featured/2010/11/delicious.jpg)
 
 Сегодня какое-то время не работал сервис [Delicious](http://delicious.com). Ценить то, что у тебя есть очень часто начинаешь тогда, когда тебя этого лишают, так что по-моему это отличный повод для того, чтобы рассказать о том, как я пользуюсь сервисом и что вообще думаю о сетевых закладках.
 
@@ -22,7 +22,7 @@ tags:
 
 
 
-[![](http://glebkalinin.ru/featured/2010/11/delicious-glebis.png)](http://delicious/glebis)
+[![](https://glebkalinin.ru/featured/2010/11/delicious-glebis.png)](http://delicious/glebis)
 
 
 

@@ -1,7 +1,7 @@
 ---
 date: 2011-02-02
 title: Информационная перегрузка (фильтро-вероятностные подходы Ширки и Доктороу)
-disqus_identifier: 177 http://glebkalinin.ru/?p=177
+disqus_identifier: 177 https://glebkalinin.ru/?p=177
 
 tags:
 - вопросы
@@ -12,7 +12,7 @@ tags:
 - чтение
 ---
 
-![](http://glebkalinin.ru/featured/2011/02/ryoji-ikeda-500x333.jpg)
+![](https://glebkalinin.ru/featured/2011/02/ryoji-ikeda-500x333.jpg)
 
 <p class="legend"><a href="http://www.ryojiikeda.com/">Ryoji Ikeda</a></p>
 

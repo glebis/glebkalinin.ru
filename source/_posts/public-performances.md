@@ -2,7 +2,7 @@
 
 date: 2010-12-20 08:37:03+00:00
 title: О публичных выступлениях
-disqus_identifier: 136 http://glebkalinin.ru/?p=136
+disqus_identifier: 136 https://glebkalinin.ru/?p=136
 
 tags:
 - лекции
@@ -10,7 +10,7 @@ tags:
 - саморазвитие
 ---
 
-![](http://glebkalinin.ru/featured/2010/12/martin-luther-king.jpg)
+![](https://glebkalinin.ru/featured/2010/12/martin-luther-king.jpg)
 
 Мартин Лютер Кинг
 
