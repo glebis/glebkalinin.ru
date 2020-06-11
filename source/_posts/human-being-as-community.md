@@ -2,7 +2,7 @@
 
 date: 2013-03-09 20:04:58+00:00
 title: Человек как сообщество
-disqus_identifier: 410 http://glebkalinin.ru/?p=410
+disqus_identifier: 410 https://glebkalinin.ru/?p=410
 
 ---
 

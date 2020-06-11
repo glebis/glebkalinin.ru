@@ -2,7 +2,7 @@
 
 date: 2010-05-05 06:18:11+00:00
 title: Допреальность в мае
-disqus_identifier: 85 http://glebkalinin.ru/?p=85
+disqus_identifier: 85 https://glebkalinin.ru/?p=85
 
 tags:
 - допреальность

@@ -2,7 +2,7 @@
 
 date: 2013-04-13 20:56:58+00:00
 title: Бэзос и поддержка семьи
-disqus_identifier: 445 http://glebkalinin.ru/?p=445
+disqus_identifier: 445 https://glebkalinin.ru/?p=445
 
 tags:
 - бизнес

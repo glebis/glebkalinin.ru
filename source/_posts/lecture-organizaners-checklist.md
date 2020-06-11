@@ -2,7 +2,7 @@
 
 date: 2009-11-01 01:39:59+00:00
 title: Чеклист организатора лекции, мастер-класса, семинара
-disqus_identifier: 24 http://glebkalinin.ru/?p=24
+disqus_identifier: 24 https://glebkalinin.ru/?p=24
 
 tags:
 - лекции
@@ -83,7 +83,7 @@ tags:
 
 
 
-![Как выглядят видео-порты](http://glebkalinin.ru/featured/2009/11/dvi-vga-s-video-mini-displayport-mini-dvi.png)  
+![Как выглядят видео-порты](https://glebkalinin.ru/featured/2009/11/dvi-vga-s-video-mini-displayport-mini-dvi.png)  
 Зоопарк портов. У DVI [есть разновидности](http://ru.wikipedia.org/wiki/DVI).
 
 

@@ -2,7 +2,7 @@
 
 date: 2011-04-22 06:28:10+00:00
 title: 'Про чтение: Kindle'
-disqus_identifier: 201 http://glebkalinin.ru/?p=201
+disqus_identifier: 201 https://glebkalinin.ru/?p=201
 
 tags:
 - kindle
@@ -24,7 +24,7 @@ tags:
 
 
 
-![](http://glebkalinin.ru/featured/2011/04/palm-iii.jpg)  
+![](https://glebkalinin.ru/featured/2011/04/palm-iii.jpg)  
 Palm III -- моя первая переносная читалка
 
 
@@ -46,7 +46,7 @@ Palm III -- моя первая переносная читалка
 
 <!-- more -->
 
-![](http://glebkalinin.ru/featured/2011/04/kindle.jpg)
+![](https://glebkalinin.ru/featured/2011/04/kindle.jpg)
 
 
 
@@ -62,7 +62,7 @@ Palm III -- моя первая переносная читалка
 
 
 
-![](http://glebkalinin.ru/featured/2011/04/ipad-kindle-microscope.jpg)  
+![](https://glebkalinin.ru/featured/2011/04/ipad-kindle-microscope.jpg)  
 [Kindle и iPad под микроскопом](http://www.bit-101.com/blog/?p=2722). Автор эксперимента напоминает, что никакой священной войны начинать не планировал, а всего лишь поделился интересными фотографиями.
 
 
@@ -79,7 +79,7 @@ Palm III -- моя первая переносная читалка
 
 
 
-Сервисом **[Instapaper](http://www.instapaper.com)** я пользуюсь уже давно и писал о нём в заметке «[Инструменты для чтения онлайн](http://glebkalinin.ru/online-reading/#instapaper)», но с появлением Киндла он стал ещё полезней и удобней. Теперь тексты, которые не требуют немедленного прочтения, я, как и раньше, сохраняю в Instapaper, а раз в неделю получаю их подборку на Киндл. При этом я могу не только читать документы, но и быстро и удобно делать из них выписки, что очень полезно. Настроить доставку можно [здесь](http://www.instapaper.com/user/kindle).
+Сервисом **[Instapaper](http://www.instapaper.com)** я пользуюсь уже давно и писал о нём в заметке «[Инструменты для чтения онлайн](https://glebkalinin.ru/online-reading/#instapaper)», но с появлением Киндла он стал ещё полезней и удобней. Теперь тексты, которые не требуют немедленного прочтения, я, как и раньше, сохраняю в Instapaper, а раз в неделю получаю их подборку на Киндл. При этом я могу не только читать документы, но и быстро и удобно делать из них выписки, что очень полезно. Настроить доставку можно [здесь](http://www.instapaper.com/user/kindle).
 
 **[Send to Kindle](https://chrome.google.com/webstore/detail/ipkfnchcgalnafehpglfbommidgmalan) **-- расширение для Хрома, Firefox, Opera и IE9 от [klip.me](http://www.klip.me/). Добавляет в браузер кнопку, по нажатии на которую можно моментально отправить статью с любого сайта на ваш киндловский адрес и через минуту увидеть его на устройстве. Теперь любую статью больше одно экрана отправляю читаю с электронной бумаги, щадя глаза.
 

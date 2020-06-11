@@ -2,7 +2,7 @@
 
 date: 2013-08-01 06:30:50+00:00
 title: Брет Виктор о будущем программирования
-disqus_identifier: 459 http://glebkalinin.ru/?p=459
+disqus_identifier: 459 https://glebkalinin.ru/?p=459
 
 tags:
 - мышление

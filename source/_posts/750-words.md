@@ -2,7 +2,7 @@
 
 date: 2010-06-10 05:52:27+00:00
 title: По 750 слов в день
-disqus_identifier: 96 http://glebkalinin.ru/?p=96
+disqus_identifier: 96 https://glebkalinin.ru/?p=96
 
 tags:
 - инструменты

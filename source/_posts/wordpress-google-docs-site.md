@@ -2,7 +2,7 @@
 
 date: 2011-06-27 09:29:07+00:00
 title: Новостной сайт на Wordpress и Google Docs
-disqus_identifier: 224 http://glebkalinin.ru/?p=224
+disqus_identifier: 224 https://glebkalinin.ru/?p=224
 
 tags:
 - wordpress
@@ -13,7 +13,7 @@ tags:
 - управление проектами
 ---
 
-![](http://glebkalinin.ru/featured/2011/06/bangordailynews.com_-500x437.png)
+![](https://glebkalinin.ru/featured/2011/06/bangordailynews.com_-500x437.png)
 
 В штате Мэн, США есть город Бангор с населением в 35000 человек, что, для сравнения, в 6 с лишним раз меньше Великого Новгорода или, скажем, Пскова. В Бангоре с XIX века существует городская газета -- [The Bangor Daily News](http://bangordailynews.com). С середины июня сайт издания работает на движке Wordpress -- этим фактом после того, как на нём же стали работать Techcrunch, Mashable и другие крупномасштабные медийные [проекты](http://wordpress.org/showcase/), уже никого не удивишь. Примечательно то, как выстроен рабочий процесс редакции:
 

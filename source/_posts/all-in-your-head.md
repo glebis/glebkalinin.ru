@@ -2,7 +2,7 @@
 
 date: 2010-05-10 07:13:10+00:00
 title: Все ограничения — у нас в голове
-disqus_identifier: 89 http://glebkalinin.ru/?p=89
+disqus_identifier: 89 https://glebkalinin.ru/?p=89
 
 tags:
 - бизнес

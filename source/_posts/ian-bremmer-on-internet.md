@@ -2,7 +2,7 @@
 
 date: 2013-01-20 14:35:48+00:00
 title: 'Ян Бреммер: «Рост интернета будет приводить к национализму, популизму, сектантству, насилию»'
-disqus_identifier: 394 http://glebkalinin.ru/?p=394
+disqus_identifier: 394 https://glebkalinin.ru/?p=394
 
 tags:
 - big-data

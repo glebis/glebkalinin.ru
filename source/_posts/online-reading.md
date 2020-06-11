@@ -3,7 +3,7 @@
 date: 2009-10-12 18:33:28+00:00
 updated: 2011-11-25 18:33:32+00:00
 title: Инструменты для чтения онлайн
-disqus_identifier: 3 http://glebkalinin.ru/?p=3
+disqus_identifier: 3 https://glebkalinin.ru/?p=3
 
 
 

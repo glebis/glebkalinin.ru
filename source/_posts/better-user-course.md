@@ -2,7 +2,7 @@
 
 date: 2011-01-20 11:49:16+00:00
 title: Бесплатный индивидуальный курс по эффективному использованию компьютера
-disqus_identifier: 162 http://glebkalinin.ru/?p=162
+disqus_identifier: 162 https://glebkalinin.ru/?p=162
 
 tags:
 - образование
@@ -10,7 +10,7 @@ tags:
 - саморазвитие
 ---
 
-![](http://glebkalinin.ru/featured/2011/01/macpc.jpg)
+![](https://glebkalinin.ru/featured/2011/01/macpc.jpg)
 
 Фото: [Iain Cuthbertson](http://www.flickr.com/photos/bigcuthy/)
 
@@ -46,7 +46,7 @@ tags:
   * работа с браузером -- bookmarklets, расширения и т.д.,
 
 
-  * работа [с закладками](http://glebkalinin.ru/delicious-bookmarks/),
+  * работа [с закладками](https://glebkalinin.ru/delicious-bookmarks/),
 
 	
   * оптимизация работы с почтой,

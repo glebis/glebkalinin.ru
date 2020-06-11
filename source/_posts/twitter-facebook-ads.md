@@ -2,7 +2,7 @@
 
 date: 2013-04-30 17:31:34+00:00
 title: Про Твиттер, Фейсбук и рекламу
-disqus_identifier: 449 http://glebkalinin.ru/?p=449
+disqus_identifier: 449 https://glebkalinin.ru/?p=449
 
 tags:
 - бизнес
@@ -20,7 +20,7 @@ tags:
 
 
 
-Твиттер, вслед за Фейсбуком, который предлагает «спонсировать» записи, а также платить за сообщения пользователям, не состоящим в друзьях, двинулся в направлении информационного b2c. Это хорошо потому, что бизнес-модель сервиса становится более понятной и диверсифицированной (ведь крупные бренды могут в одночасье [передумать покупать рекламу](http://www.wired.co.uk/news/archive/2012-05/16/gm-pulls-out-of-facebook-advertising) в социальных медиа). Мы, вероятно, в ближайшее время не станем свидетелями его закрытия (привет, [Google Reader](http://glebkalinin.ru/on-google-reader-shutdown/), привет, [закрывшийся сегодня](http://www.theverge.com/2013/4/30/4281780/posterous-is-shutting-down-tomorrow-here-are-the-best-alternatives) же Posterous).
+Твиттер, вслед за Фейсбуком, который предлагает «спонсировать» записи, а также платить за сообщения пользователям, не состоящим в друзьях, двинулся в направлении информационного b2c. Это хорошо потому, что бизнес-модель сервиса становится более понятной и диверсифицированной (ведь крупные бренды могут в одночасье [передумать покупать рекламу](http://www.wired.co.uk/news/archive/2012-05/16/gm-pulls-out-of-facebook-advertising) в социальных медиа). Мы, вероятно, в ближайшее время не станем свидетелями его закрытия (привет, [Google Reader](https://glebkalinin.ru/on-google-reader-shutdown/), привет, [закрывшийся сегодня](http://www.theverge.com/2013/4/30/4281780/posterous-is-shutting-down-tomorrow-here-are-the-best-alternatives) же Posterous).
 
 
 

@@ -2,7 +2,7 @@
 
 date: 2011-06-27 04:35:03+00:00
 title: Рабы Aol
-disqus_identifier: 221 http://glebkalinin.ru/?p=221
+disqus_identifier: 221 https://glebkalinin.ru/?p=221
 
 tags:
 - бизнес

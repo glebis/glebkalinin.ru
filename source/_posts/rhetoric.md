@@ -2,7 +2,7 @@
 
 date: 2013-08-06 20:44:42+00:00
 title: Риторика
-disqus_identifier: 402 http://glebkalinin.ru/?p=402
+disqus_identifier: 402 https://glebkalinin.ru/?p=402
 
 tags:
 - публичные выступления

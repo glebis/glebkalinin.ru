@@ -2,7 +2,7 @@
 
 date: 2013-03-28 15:16:17+00:00
 title: Черновик для интернета
-disqus_identifier: 422 http://glebkalinin.ru/?p=422
+disqus_identifier: 422 https://glebkalinin.ru/?p=422
 
 tags:
 - google-chrome

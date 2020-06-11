@@ -2,7 +2,7 @@
 
 date: 2010-09-06 07:14:43+00:00
 title: О сайтах книг и «Правилах мозга»
-disqus_identifier: 123 http://glebkalinin.ru/?p=123
+disqus_identifier: 123 https://glebkalinin.ru/?p=123
 
 tags:
 - книги
