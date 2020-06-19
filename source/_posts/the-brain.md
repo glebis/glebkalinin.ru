@@ -77,7 +77,7 @@ TheBrain также почти никак не&nbsp;помогает вам ор
 
 Но&nbsp;самое главное: получайте удовольствие от&nbsp;процесса! Правильно организованное управление знаниями может и&nbsp;должно приносить не&nbsp;только пользу, но&nbsp;и&nbsp;радость.
 
-В&nbsp;июне я&nbsp;планирую провести вебинар про использование TheBrain. Чтобы не&nbsp;пропустить анонс, [подпишитесь на&nbsp;мою рассылку][9].
+[Встреча и дискуссия про TheBrain и систему Zettelkasten](https://www.youtube.com/watch?v=WpwTDeohWYw).
 
 [1]:	http://www.thebrain.com/
 [2]:	http://www.youtube.com/watch?v=EzQkJ4lleKk
