@@ -55,7 +55,7 @@ filename_case: 1
 render_drafts: false
 post_asset_folder: false
 relative_link: false
-future: false
+future: true
 highlight:
   enable: true
   line_number: true
