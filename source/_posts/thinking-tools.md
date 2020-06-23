@@ -1,3 +1,4 @@
+---
 title: Инструменты мышления. TheBrain, метод Zettelkasten
 tags:
   - инструменты
