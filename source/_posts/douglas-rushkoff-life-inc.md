@@ -46,6 +46,6 @@ Life, Inc. начинается с рассказа о том, как в оди�
 
 
 [rushkoff.com](http://rushkoff.com/)
-[Life Inc: How Corporatism Conquered the World, and How We Can Take It Back на Амазоне](http://www.amazon.com/gp/product/0812978501?ie=UTF8&tag=glebkali-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0812978501)![](http://www.assoc-amazon.com/e/ir?t=glebkali-20&l=as2&o=1&a=0812978501)
+[Life Inc: How Corporatism Conquered the World, and How We Can Take It Back на Амазоне](http://www.amazon.com/gp/product/0812978501?ie=UTF8&tag=glebkali-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0812978501)
 [Аудиокнига](http://www.randomhouse.com/catalog/display.pperl?isbn=9780307702326)
 [Ресурсы по теме книги](http://rushkoff.com/life-inc-resources/)
