@@ -10,6 +10,7 @@ tags:
 - продуктивность
 - сервисы
 - стартапы
+- no-code
 ---
 
 Прислали инвайт в новый сервис [ifttt](http://ifttt.com/) (if this then that) — кажется, особенно удачная иллюстрация к [статье](http://www.kommersant.ru/doc/1592404/) Кости Бочарского про открытые API. Во Френдфиде, благодаря которому мне достался инвайт (ещё парочка есть), сервис окрестили Yahoo! Pipes 2.0 ([копия моей заметочки](http://blogs.yandex.ru/cachedcopy.xml?f=ecc11958b2d95165b9d1f8bba9214350&i=58&m=http%3A%2F%2Fblog.glebkalinin.ru%2F2007%2F02%2Fyahoo-pipes%2F&q=K3icY2RgBEIQYAJjNyDJBuY7MjAxwiU5IJKsBZkFqcUMULD0sywDAyNCEQuGCUiSnBBJtuLUorLUIn6l9JzUpOzEnMy8zDy9olKoiTsOLPvNCqQF0KSVBICCIYwMSMDNzRFoAaeuoZ4BGEBEGWFuZIVoAGmBOhroFhYQi5EhxA3iPiZ1oFeYGFNAngB5ilGdgYGZOTMvHWTOZBYMGzA8w5xbXCyu5FUc7GleYGjkE5UXkG6sHeXrlVcSmo7mIwkcypQkCPsMKssMDGA3qCcBHQE%2FHQ%3D%3D) о Pipes в старом блоге), но это не совсем так. 
