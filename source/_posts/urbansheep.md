@@ -31,7 +31,6 @@ disqus_identifier: 110 https://glebkalinin.ru/?p=110
 
 
 
-[![Medium7453](http://theoryandpractice.ru/system/seminars/images/7453/medium7453.jpg?1277914347)](http://theoryandpractice.ru/seminars/7453-ozhidaniya-i-predvkushenie-kak-effekt-platsebo-svyazan-s-uspekhom-igr-mifologiey-brendov-i-prodazhey-uslug-4-7)
 
 ЛЕКЦИЯ:
 
@@ -44,7 +43,3 @@ disqus_identifier: 110 https://glebkalinin.ru/?p=110
 Организатор:
 
 [Raum7](http://theoryandpractice.ru/organizers/7453-ozhidaniya-i-predvkushenie-kak-effekt-platsebo-svyazan-s-uspekhom-igr-mifologiey-brendov-i-prodazhey-uslug-4-7)
-
-[![Bulb-red](http://theoryandpractice.ru/images/button/bulb-red.png?1278075628)я пойду](http://theoryandpractice.ru/seminars/7453-ozhidaniya-i-predvkushenie-kak-effekt-platsebo-svyazan-s-uspekhom-igr-mifologiey-brendov-i-prodazhey-uslug-4-7)
-
-[![Logo-tiny](http://theoryandpractice.ru/images/logo-tiny.gif?1278075628)](http://theoryandpractice.ru/)

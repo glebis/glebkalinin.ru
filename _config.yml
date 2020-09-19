@@ -37,7 +37,8 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: admin/*
+# for nelify config via https://blog.anbuchelva.in/blog/integrate-netlify-cms-with-hexo/#enable-netlify-cms
 
 archive_generator:
   per_page: 100
@@ -55,7 +56,7 @@ filename_case: 1
 render_drafts: false
 post_asset_folder: false
 relative_link: false
-future: false
+future: true
 highlight:
   enable: true
   line_number: true
@@ -68,6 +69,7 @@ category_map:
 tag_map:
 
   английский: english
+  автоматизация бизнеса: business-automation
   бег: running
   бизнес: business
   безопасность: security
@@ -101,6 +103,7 @@ tag_map:
   коммуникации: communications
   контент: content
   контент-стратегия: content-strategy
+  курсы: courses
   красота: beauty
   лекции: lectures
   локоло: lokolo
