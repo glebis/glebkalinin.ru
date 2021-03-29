@@ -2,9 +2,10 @@
 logo_text: # Add text logo instead of logo image
 menu:
   Обо мне: about/
-  Сейчас: now/
+  # Сейчас: now/
   Статьи: archives/
-  Подписаться на рассылку: subscribe/
+  Практики осознанности: https://mind.so/
+  Рассылка: subscribe/
 
 # Content
 excerpt_link: Читать далее →
