@@ -2,12 +2,13 @@ title: Глеб Калинин
 layout: links
 ---
 
-Инструктор практик осознанности, психотерапевт и фотограф. <nobr>Москва—Берлин.</nobr>
+Инструктор практик осознанности, психотерапевт и фотограф. <nobr class="city">Москва—Берлин.</nobr>
 
 <p class="link-descr">Instagram <a href="https://instagram.com/glebkalinin">@glebkalinin</a> — <a href="https://instagram.com/glebkalininstudio">@glebkalininstudio</a>.</p>
 
 ## Чем могу помочь
 
+Мои услуги: коучинг, практики осознанности и психотерапия, портретная и репортажная фотография. <a href="/services">Подробнее про услуги и цены</a>
 
 ## Записаться на консультацию
 
@@ -31,6 +32,7 @@ layout: links
 
 <ul class="links">
 	<li class="links-item">Телеграм-канал о медитации и полной жизни <a href="https://t.me/Experimentally">Опытным путём</a></li>
+	<li class="links-item"><a href="https://glebkalinin.ru/">Блог glebkalinin.ru</a></li>
 </ul>
 
 
