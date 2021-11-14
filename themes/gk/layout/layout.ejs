@@ -3,9 +3,14 @@
 
 
 <body class="b-page">
-  <div id="container">
+  <div id="container" <% if (page.layout==='links')  {%>class="container-link"<% } %>>
 
-  <%- partial('_partial/header', null, {cache: !config.relative_link}) %> 
+<% if (page.layout!=='links')  {%> 
+<%- partial('_partial/header', null, {cache: !config.relative_link}) %> 
+
+ <% } %>
+
+  
     
     <section id="main" class="outer"><%- body %></section>
     
@@ -14,3 +19,4 @@
   </div>
 </body>
 </html>
+
