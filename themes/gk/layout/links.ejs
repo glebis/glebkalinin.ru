@@ -1,15 +1,1 @@
-
-<%- partial('_partial/head') %>
-
-
-<body class="b-page">
-  <div id="container" class="container-link">
-    
-
-    <section id="main" class="outer"><%- body %></section>
-    
-    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
-  </div>
-</body>
-</html>
+<%- partial('_partial/article', {post: page, index: false}) %>
