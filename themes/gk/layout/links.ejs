@@ -3,10 +3,9 @@
 
 
 <body class="b-page">
-  <div id="container">
-
-  <%- partial('_partial/header', null, {cache: !config.relative_link}) %> 
+  <div id="container" class="container-link">
     
+
     <section id="main" class="outer"><%- body %></section>
     
     <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>

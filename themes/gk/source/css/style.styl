@@ -234,6 +234,15 @@ endbp()
 	margin 0 .8em 0.8em .4em
 .article-entry ul.links
 	margin-left 0
+	overflow hidden
+	&:after
+		clear both
+
+.link-descr
+	font-size .8em
+	color #555
+	a
+		color: #000
 .links-item
 	list-style-type: none
 	clear both
