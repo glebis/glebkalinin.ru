@@ -1,8 +1,17 @@
-<%- partial('_partial/head') %>
-<body class="b-page">
-  <div id="container">
-    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
 
+<%- partial('_partial/head') %>
+
+
+<body class="b-page">
+  <div id="container" <% if (page.layout==='links')  {%>class="container-link"<% } %>>
+
+<% if (page.layout!=='links')  {%> 
+<%- partial('_partial/header', null, {cache: !config.relative_link}) %> 
+
+ <% } %>
+
+  
+    
     <section id="main" class="outer"><%- body %></section>
     
     <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
@@ -10,3 +19,4 @@
   </div>
 </body>
 </html>
+
