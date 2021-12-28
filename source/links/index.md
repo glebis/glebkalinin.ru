@@ -6,9 +6,15 @@ layout: links
 
 <p class="link-descr">Instagram <a href="https://instagram.com/glebkalinin">@glebkalinin</a> — <a href="https://instagram.com/glebkalininstudio">@glebkalininstudio</a>.</p>
 
+<ul class="links">
+	<li class="links-item link-item-video"><a href="https://us02web.zoom.us/meeting/register/tZIpc-iprzMiEtTF5cxI3F4_-0nar6j6g4Bc?fbclid=IwAR2_OjpqgiqmWPfCthkPv21MVlpt0hoIaxe2XI6bxrOTCfgbLXRcOsJ1zo4" target="_blank">Глеб Калинин: ГОДОВОЙ ОТЧЁТ. Среда, 29 декабря 2021, 20-00 мск</a></li>
+</ul>
+
+
+
 ## Чем могу помочь
 
-Мои услуги: коучинг, практики осознанности и психотерапия, портретная и репортажная фотография. <a href="/services">Подробнее про услуги и цены</a>
+Мои услуги: коучинг, практики осознанности и психотерапия, портретная и репортажная фотография. Ведение персональных баз знаний («второй мозг»). <a href="/services">Подробнее про услуги и цены →</a>
 
 ## Записаться на консультацию
 
