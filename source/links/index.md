@@ -13,6 +13,11 @@ layout: links
 <!-- 	<li class="links-item link-item-video"><a href="https://us02web.zoom.us/meeting/register/tZIpc-iprzMiEtTF5cxI3F4_-0nar6j6g4Bc?fbclid=IwAR2_OjpqgiqmWPfCthkPv21MVlpt0hoIaxe2XI6bxrOTCfgbLXRcOsJ1zo4" target="_blank">Глеб Калинин: ГОДОВОЙ ОТЧЁТ. Среда, 29 декабря 2021, 20-00 мск</a></li> -->
 </ul>
 
+## Подписка на рассылку
+
+1 раз в месяц о самом важном
+
+<iframe src="https://gleb.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 
 ## Чем могу помочь
@@ -22,16 +27,12 @@ layout: links
 - Портретная и репортажная **фотография**. 
 - Ведение персональных баз знаний («второй мозг»). <a href="/services">Подробнее про услуги и цены →</a>
 
-## Записаться на консультацию
+## Напишите мне
 
 Написать в [телеграм @glebkalinin](https://t.me/glebkalinin)
 [Написать email](mailto:glebis@gmail.com)
 
-## Подписка на рассылку
 
-1 раз в месяц о самом важном
-
-<iframe src="https://gleb.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 
 ## Видео
