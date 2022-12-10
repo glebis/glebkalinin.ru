@@ -4,7 +4,7 @@
 
 # Site
 title: Блог Глеба Калинина
-subtitle: Картография целой жизни
+subtitle: Человек в фокусе
 description:
 author: Глеб Калинин
 follow: Следите за моими постами
@@ -51,7 +51,7 @@ archive_generator:
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+#external_link: true # Open external links in new tab
 filename_case: 1
 render_drafts: false
 post_asset_folder: false
@@ -73,6 +73,7 @@ tag_map:
   бег: running
   бизнес: business
   безопасность: security
+  благодарность: gratitude
   блоги: blogs
   браузеры: browsers
   бренды: brands
@@ -108,6 +109,7 @@ tag_map:
   лекции: lectures
   локоло: lokolo
   литература: literature
+  майндфулнесс: mindfulness
   маркетинг: marketing
   медиа: media
   медитация: meditation
