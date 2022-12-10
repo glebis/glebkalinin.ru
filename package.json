@@ -27,6 +27,6 @@
     "qs": "^6.11.0"
   },
   "devDependencies": {
-    "coffee-script": "^1.11.1"
+    "coffeescript": "^2.7.0"
   }
 }
