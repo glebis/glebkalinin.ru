@@ -65,6 +65,8 @@ title: О Глебе Калинине
 
 
 
-<h2>Контакты</h2> <p>Email: <a href="mailto:glebis@gmail.com" itemprop="email">glebis@gmail.com</a>.<br>Twitter: <a href="https://twitter.com/intent/tweet?text=%40glebis">@glebis</a></p>
+<h2>Контакты</h2> 
+<p>Telegram: [@glebkalinin](https://t.me/glebkalinin)</p>
+<p>Email: <a href="mailto:glebis@gmail.com" itemprop="email">glebis@gmail.com</a>.<br>Twitter: <a href="https://twitter.com/intent/tweet?text=%40glebis">@glebis</a></p>
 
 </div>
