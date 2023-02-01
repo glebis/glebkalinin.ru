@@ -1,7 +1,7 @@
 title: О Глебе Калинине
 ---
 
-<p><img src="/images/20200511 glebkalinin-by-olga.jpg" alt="Глеб Калинин" title="Глеб Калинин" style="width: 100%; height: auto" ></p>
+<p><img src="/images/202301-glebkalinin.jpg" alt="Глеб Калинин" title="Глеб Калинин" style="max-width: 50%; max-height: auto; display: block; margin: 1rem auto" ></p>
 
 
 <p>Глеб Калинин — психолог-консультант, коуч по стандартам ICF, инструкт практик осознаннсти, фотограф. Живу в Берлине, работаю с клиентами по всему миру. <a href="/services">Подробнее о том, чем я могу быть полезен</a></p>
@@ -66,7 +66,7 @@ title: О Глебе Калинине
 
 
 <h2>Контакты</h2> 
-<p>Telegram: [@glebkalinin](https://t.me/glebkalinin)</p>
-<p>Email: <a href="mailto:glebis@gmail.com" itemprop="email">glebis@gmail.com</a>.<br>Twitter: <a href="https://twitter.com/intent/tweet?text=%40glebis">@glebis</a></p>
+<p>Telegram: <a href="https://t.me/glebkalinin">@glebkalinin</a> <br>
+Email: <a href="mailto:glebis@gmail.com" itemprop="email">glebis@gmail.com</a>.<br>Twitter: <a href="https://twitter.com/intent/tweet?text=%40glebis">@glebis</a></p>
 
 </div>
