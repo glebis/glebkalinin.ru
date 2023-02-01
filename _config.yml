@@ -8,7 +8,7 @@ subtitle: Человек в фокусе
 description:
 author: Глеб Калинин
 follow: Следите за моими постами
-search: Поиск по блогу
+search: Поиск по сайту
 facebook: kalinin
 twitter: glebis
 googleplus: 111301961252276698105
@@ -123,6 +123,7 @@ tag_map:
   новые медиа: new-media
   образование: education
   обучение: learning
+  ответственность: commitment
   память: memory
   письмо: writing
   поисковая оптимизация: seo
@@ -152,6 +153,7 @@ tag_map:
   фиксированная верстка: fixed
   фильтрация: filters
   физиология: physiology
+  ценности: values  
   ценообразование: pricing  
   читано на неделе: press-review
   чтение: reading
