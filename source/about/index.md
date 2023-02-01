@@ -18,9 +18,9 @@ title: О Глебе Калинине
 <!-- <div itemscope itemtype="http://schema.org/Person"><p><span style="display: none"><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. </span>Родился в <span itemprop="birthDate" datetime="1984-04-24">1984</span> году в <span itemprop="birthPlace">Ленинград</span>е.</p> <p>Живу в Москве. Женат на прекрасной <a href="http://olgakalinina.com/" itemprop="spouse">Ольге</a>.</p></div> -->
 
 
-## Публикации
+## Публикации и интервью
 
-
+* [Саморазвитие через взаимодействие с людьми – прямой эфир в Проднавыке](https://youtu.be/lR_jCp0499A)
 * Подкаст «Нога За Головой» — [«Глеб Калинин — Светский подход к медитации»](https://noga-za-golovoy.simplecast.com/episodes/11-21yX9Lbj)
 * ЦЕХ: [В любой непонятной ситуации медитируй: как включить осознанность в повседневную жизнь](https://zeh.media/praktika/meditatsiya/4921065-v-lyuboy-neponyatnoy-situatsii-meditiruy-kak-vklyuchit-osoznannost-v-povsednevnuyu-zhizn)
 * VC.ru: [Медитация в офисе. Советы от практикующих сотрудников](https://vc.ru/hr/89452-meditaciya-v-ofise-sovety-ot-praktikuyushchih-sotrudnikov)
