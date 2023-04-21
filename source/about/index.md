@@ -19,7 +19,7 @@ title: О Глебе Калинине
 
 
 ## Публикации и интервью
-
+* [Вебинар Skillbox: Как практики осознанности помогают снизить стресс](https://www.youtube.com/watch?v=acC-JfUctXQ)
 * [Саморазвитие через взаимодействие с людьми – прямой эфир в Проднавыке](https://youtu.be/lR_jCp0499A)
 * Подкаст «Нога За Головой» — [«Глеб Калинин — Светский подход к медитации»](https://noga-za-golovoy.simplecast.com/episodes/11-21yX9Lbj)
 * ЦЕХ: [В любой непонятной ситуации медитируй: как включить осознанность в повседневную жизнь](https://zeh.media/praktika/meditatsiya/4921065-v-lyuboy-neponyatnoy-situatsii-meditiruy-kak-vklyuchit-osoznannost-v-povsednevnuyu-zhizn)
@@ -69,4 +69,3 @@ title: О Глебе Калинине
 <p>Telegram: <a href="https://t.me/glebkalinin">@glebkalinin</a> <br>
 Email: <a href="mailto:glebis@gmail.com" itemprop="email">glebis@gmail.com</a>.<br>Twitter: <a href="https://twitter.com/intent/tweet?text=%40glebis">@glebis</a></p>
 
-</div>
