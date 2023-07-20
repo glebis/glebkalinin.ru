@@ -19,6 +19,7 @@ title: О Глебе Калинине
 
 
 ## Публикации и интервью
+* [Тинькофф Журнал: Как я использовала ChatGPT в роли психолога](https://journal.tinkoff.ru/chatgpt-psychologist/)
 * [Вебинар Skillbox: Как практики осознанности помогают снизить стресс](https://www.youtube.com/watch?v=acC-JfUctXQ)
 * [Саморазвитие через взаимодействие с людьми – прямой эфир в Проднавыке](https://youtu.be/lR_jCp0499A)
 * Подкаст «Нога За Головой» — [«Глеб Калинин — Светский подход к медитации»](https://noga-za-golovoy.simplecast.com/episodes/11-21yX9Lbj)
