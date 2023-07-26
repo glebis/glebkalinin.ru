@@ -2,7 +2,7 @@ title: Глеб Калинин
 layout: links
 ---
 
-Психолог-консультант, инструктор практик осознанности, фотограф. Создатель сообщества внимательной продуктивности «Опытным путём». <nobr class="city">Москва—Берлин.</nobr>
+Психолог-консультант, коуч, инструктор практик осознанности, фотограф. <nobr class="city">Берлин.</nobr>
 
 <p class="link-descr">Instagram <a href="https://instagram.com/glebkalinin">@glebkalinin</a> — <a href="https://instagram.com/glebkalininstudio">@glebkalininstudio</a>.</p>
 
