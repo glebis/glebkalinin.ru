@@ -1,11 +1,12 @@
 # Header
 logo_text: # Add text logo instead of logo image
 menu:
-  Обо мне: about/
+  Кто я: about/
   # Сейчас: now/
   Статьи: archives/
   Консультирование: services/
   Рассылка: subscribe/
+  ТГ-канал: https://t.me/experimentally
 
 # Content
 excerpt_link: Читать далее →
