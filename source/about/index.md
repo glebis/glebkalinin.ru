@@ -21,7 +21,8 @@ title: О Глебе Калинине
 
 
 ## Публикации и интервью
-* Подкаст «Будет сделано»: [Человек в фокусе](https://willbedone.ru/gleb-kalinin-200/)
+* Яндекс.Академия: [Где и как хранить свои знания: концепция «внешнего мозга»](https://academy.yandex.ru/journal/gde-i-kak-hranit-svoi-znaniya:-koncepciya-vneshnego-mozga)
+* Подкаст «Будет сделано»: [Человек в фокусе](/willbedone)
 * [Тинькофф Журнал: Как я использовала ChatGPT в роли психолога](https://journal.tinkoff.ru/chatgpt-psychologist/)
 * [Вебинар Skillbox: Как практики осознанности помогают снизить стресс](https://www.youtube.com/watch?v=acC-JfUctXQ)
 * [Саморазвитие через взаимодействие с людьми – прямой эфир в Проднавыке](https://youtu.be/lR_jCp0499A)
