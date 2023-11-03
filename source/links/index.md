@@ -2,27 +2,26 @@ title: Глеб Калинин
 layout: links
 ---
 
-Психолог-консультант, коуч, инструктор практик осознанности, фотограф. <nobr class="city">Берлин.</nobr>
+Психолог-консультант, коуч, инструктор практик осознанности, фотограф и художник. <nobr class="city">Берлин.</nobr>
 
 <p class="link-descr">Instagram <a href="https://instagram.com/glebkalinin">@glebkalinin</a> — <a href="https://instagram.com/glebkalininstudio">@glebkalininstudio</a>.</p>
 
 <ul class="links">
-<li class="links-item link-item-video"><a href="https://experiment.ru/think-n-link/" target="_blank">Лаборатория Think&Link</a>. 6 недель совместной работы над цифровой базой знаний, или «вторым мозгом» (февраль-март)</li>
-<li class="links-item link-item-video">Сообщество внимательной продуктивности «<a href="https://experiment.ru/" target="_blank">Опытным путём</a>».</li>
+<li class="links-item link-item-video"><a href="https://glebkalinin.ru/services/psychology/" target="_blank">Психологическое консультирование</a>».</li>
+<li class="links-item link-item-video"><a href="https://t.me/Experimentally" target="_blank">Телеграм-канал «Опытным путём»</a>.</li>
 
 <!-- 	<li class="links-item link-item-video"><a href="https://us02web.zoom.us/meeting/register/tZIpc-iprzMiEtTF5cxI3F4_-0nar6j6g4Bc?fbclid=IwAR2_OjpqgiqmWPfCthkPv21MVlpt0hoIaxe2XI6bxrOTCfgbLXRcOsJ1zo4" target="_blank">Глеб Калинин: ГОДОВОЙ ОТЧЁТ. Среда, 29 декабря 2021, 20-00 мск</a></li> -->
 </ul>
 
 ## Подписка на рассылку
 
-1 раз в месяц о самом важном
 
 <iframe src="https://gleb.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 
 
 ## Чем могу помочь
 
-- **Психологическое консультирование**. Работаю в подходе терапии принятия и ответственности.  Помогаю с вопросами: прокрастинация, потеря смысла, принятие сложных изменений в жизни.
+- **[Психологическое консультирование](https://glebkalinin.ru/services/psychology/)**. Работаю в подходе терапии принятия и ответственности.  Помогаю с вопросами: прокрастинация, потеря смысла, принятие сложных изменений в жизни, принятие решений.
 - **Коучинг**. Помогаю начать движение в сторону важного несрочного.
 - Портретная и репортажная **фотография**. 
 - Ведение персональных баз знаний («второй мозг»). <a href="/services">Подробнее про услуги и цены →</a>
