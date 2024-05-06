@@ -10,7 +10,7 @@ tags:
 ---
 
 
-Около года назад мы с [Ольгой](http://olgakalinina.ru) начали вести семейный бюджет, используя систему [You Need A Budget](http://www.youneedabudget.com/). YNAB, как его называют для краткости, — это кросс-платформенный софт для компьютеров, [приложения](http://www.youneedabudget.com/features/android) для мобильных устройств (iPhone и Adnroid) и, что самое главное, эффективная методология ведения бюджета.
+[You Need A Budget](http://www.youneedabudget.com/), или YNAB, как его называют для краткости, — это кросс-платформенный софт для компьютеров, [приложения](http://www.youneedabudget.com/features/android) для мобильных устройств (iPhone и Adnroid) и, что самое главное, эффективная методология ведения бюджета.
 
 <div class="illustration"><img src="/images/20140701-ynab.jpg" alt="Маринус ван Реймерсвале. Меняла и его жена. 1539." ></div>
 
