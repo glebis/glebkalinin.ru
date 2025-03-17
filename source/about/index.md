@@ -4,7 +4,18 @@ title: О Глебе Калинине
 <p><img src="/images/202301-glebkalinin.jpg" alt="Глеб Калинин" title="Глеб Калинин" style="max-width: 50%; max-height: auto; display: block; margin: 1rem auto" ></p>
 
 
-<p>Глеб Калинин — психолог-консультант, коуч по стандартам ICF, инструктор практик осознанности, фотограф и художник. Живу в Берлине, работаю с клиентами по всему миру.</p>
+<p>Глеб Калинин — независимый исследоваль ИИ, коуч и художник. С 2023 году развиваю сообщество и лаборатории AI Mindset. Разрабатываю ИИ-продукты. Живу в Берлине, работаю с клиентами по всему миру.</p>
+
+<p>По-английски пишу про ИИ в <a href="https://www.linkedin.com/in/glebkalinin/">LinkedIn</a></p>
+
+<p>Мои каналы в Телеграме:</p>
+<ul>
+  <li><a href="https://t.me/Experimentally">Опытным путём × Глеб Калинин</a> — про смыслы, будущее, человек</li>
+  <li><a href="https://t.me/ai_mind_set">AI Mindset</a> — Про изменение мышления в эпоху искусственного интеллекта</li>
+  <li><a href="https://t.me/toolusing/">Tool Building Ape</a> — Про то, как пользоваться и строить свои инструменты </li>
+  <li><a href="https://t.me/mentalhealthtech">Mental health tech</a> — про технологии и человеческое психическое здоровье</li>
+</ul>
+
 
 <p>Мой слоган: «Человек в фокусе». Всё, чем я сейчас занимаюсь — про людей и для людей.</p>
 
@@ -21,6 +32,7 @@ title: О Глебе Калинине
 
 
 ## Публикации и интервью
+* 
 * Яндекс.Академия: [Где и как хранить свои знания: концепция «внешнего мозга»](https://academy.yandex.ru/journal/gde-i-kak-hranit-svoi-znaniya:-koncepciya-vneshnego-mozga)
 * Подкаст «Будет сделано»: [Человек в фокусе](/willbedone)
 * [Тинькофф Журнал: Как я использовала ChatGPT в роли психолога](https://journal.tinkoff.ru/chatgpt-psychologist/)
