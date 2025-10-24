@@ -4,20 +4,25 @@ title: О Глебе Калинине
 <p><img src="/images/202301-glebkalinin.jpg" alt="Глеб Калинин" title="Глеб Калинин" style="max-width: 50%; max-height: auto; display: block; margin: 1rem auto" ></p>
 
 
-<p>Глеб Калинин — психолог-консультант, коуч по стандартам ICF, инструктор практик осознанности, фотограф и художник. Живу в Берлине, работаю с клиентами по всему миру.</p>
+<p>Глеб Калинин. Я ведущий лабораторий по применению искусственного интеллекта, разработчик ии-продуктов в области ментального здоровья. Живу в Берлине.</p>
 
-<p>Мой слоган: «Человек в фокусе». Всё, чем я сейчас занимаюсь — про людей и для людей.</p>
 
-<p><a href="/services">Подробнее о том, чем я могу быть полезен</a></p>
 
-<p> Мой канал в телеграме — «<a href="https://t.me/Experimentally">Опытным путём</a>» — про медитацию, психотерапию и полную жизнь.</p>
+<p>Мой контакт: <a href="https://t.me/glebkalinin">Telegram</a></p>
+
+<p> Мои каналы в телеграме:</p> 
+<ul>
+<li><a href="https://t.me/toolusing">Tool Building Ape</a> — про ИИ и использование инструментов</li>
+<li>«<a href="https://t.me/Experimentally">Опытным путём</a>» — про медитацию, психотерапию и полную жизнь.</li>
+<li><a href="https://t.me/mentalhealthtech">Mental health tech</a> — про технологии в области психического здоровья</li>
+</ul>
 
 
 
 
 <!-- <p><a href="/now">Чем я занимаюсь сейчас</a>.</p> -->
 
-<!-- <div itemscope itemtype="http://schema.org/Person"><p><span style="display: none"><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. </span>Родился в <span itemprop="birthDate" datetime="1984-04-24">1984</span> году в <span itemprop="birthPlace">Ленинград</span>е.</p> <p>Живу в Москве. Женат на прекрасной <a href="http://olgakalinina.com/" itemprop="spouse">Ольге</a>.</p></div> -->
+<!-- <div itemscope itemtype="http://schema.org/Person"><p><span style="display: none"><span itemprop="name">Глеб</span> <span itemprop="familyName">Калинин</span>. </span>Родился в <span itemprop="birthDate" datetime="1984-04-24">1984</span> году в <span itemprop="birthPlace">Ленинград</span>е.</p></div> -->
 
 
 ## Публикации и интервью
@@ -42,6 +47,8 @@ title: О Глебе Калинине
 <hr>
 
 ## Биография
+
+<p>C 2020 — независимый консультант. Работаю со стартапами и компаниями над продуктами в области ментального здоровья и искуственного интеллекта. Разрабатываю свои ии-продукты.</p>
 
 <p>В 2018-2020 был директором по продукту в компании <a itemprop="affiliation" href="//ozon.travel/">OZON.travel</a> (холдинг <a href="https://ozon.ru/">OZON.ru</a>).</p>
 
