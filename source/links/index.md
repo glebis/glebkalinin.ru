@@ -7,7 +7,7 @@ layout: links
 <p class="link-descr">Instagram <a href="https://instagram.com/glebkalinin">@glebkalinin</a> — <a href="https://instagram.com/glebkalininstudio">@glebkalininstudio</a>.</p>
 
 <ul class="links">
-<li class="links-item link-item-video"><a href="https://glebkalinin.ru/services/psychology/" target="_blank">Психологическое консультирование</a>».</li>
+<li class="links-item link-item-video"><a href="https://glebkalinin.com/services/psychology/" target="_blank">Психологическое консультирование</a>».</li>
 <li class="links-item link-item-video"><a href="https://t.me/Experimentally" target="_blank">Телеграм-канал «Опытным путём»</a>.</li>
 
 <!-- 	<li class="links-item link-item-video"><a href="https://us02web.zoom.us/meeting/register/tZIpc-iprzMiEtTF5cxI3F4_-0nar6j6g4Bc?fbclid=IwAR2_OjpqgiqmWPfCthkPv21MVlpt0hoIaxe2XI6bxrOTCfgbLXRcOsJ1zo4" target="_blank">Глеб Калинин: ГОДОВОЙ ОТЧЁТ. Среда, 29 декабря 2021, 20-00 мск</a></li> -->
@@ -21,7 +21,7 @@ layout: links
 
 ## Чем могу помочь
 
-- **[Психологическое консультирование](https://glebkalinin.ru/services/psychology/)**. Работаю в подходе терапии принятия и ответственности.  Помогаю с вопросами: прокрастинация, потеря смысла, принятие сложных изменений в жизни, принятие решений.
+- **[Психологическое консультирование](https://glebkalinin.com/services/psychology/)**. Работаю в подходе терапии принятия и ответственности.  Помогаю с вопросами: прокрастинация, потеря смысла, принятие сложных изменений в жизни, принятие решений.
 - **Коучинг**. Помогаю начать движение в сторону важного несрочного.
 - Портретная и репортажная **фотография**. 
 - Ведение персональных баз знаний («второй мозг»). <a href="/services">Подробнее про услуги и цены →</a>
@@ -47,7 +47,7 @@ layout: links
 
 <ul class="links">
 	<li class="links-item">Телеграм-канал о медитации и полной жизни <a href="https://t.me/Experimentally">Опытным путём</a></li>
-	<li class="links-item"><a href="https://glebkalinin.ru/">Блог glebkalinin.ru</a></li>
+	<li class="links-item"><a href="https://glebkalinin.com/">Блог glebkalinin.com</a></li>
 </ul>
 
 

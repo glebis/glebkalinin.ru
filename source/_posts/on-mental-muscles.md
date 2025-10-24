@@ -2,7 +2,7 @@
 
 date: 2012-02-06 11:55:15+00:00
 title: О ментальных мышцах и профессионализме
-disqus_identifier: 287 https://glebkalinin.ru/?p=287
+disqus_identifier: 287 https://glebkalinin.com/?p=287
 
 tags:
 - бизнес

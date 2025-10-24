@@ -2,7 +2,7 @@
 
 date: 2011-06-28 11:58:49+00:00
 title: Business as usual
-disqus_identifier: 229 https://glebkalinin.ru/?p=229
+disqus_identifier: 229 https://glebkalinin.com/?p=229
 
 tags:
 - бизнес

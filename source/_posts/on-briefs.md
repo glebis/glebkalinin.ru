@@ -2,7 +2,7 @@
 
 date: 2011-12-05 08:00:05+00:00
 title: Про брифы на создание сайта
-disqus_identifier: 273 https://glebkalinin.ru/?p=273
+disqus_identifier: 273 https://glebkalinin.com/?p=273
 
 tags:
 - бизнес

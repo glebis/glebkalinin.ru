@@ -2,7 +2,7 @@
 
 date: 2013-02-18 11:42:57+00:00
 title: В интернете никто не знает, что ты собака
-disqus_identifier: 407 https://glebkalinin.ru/?p=407
+disqus_identifier: 407 https://glebkalinin.com/?p=407
 
 tags:
 - веб-projects

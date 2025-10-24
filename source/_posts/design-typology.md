@@ -2,7 +2,7 @@
 
 date: 2010-11-01 15:51:58+00:00
 title: Типология дизайна и его продажи
-disqus_identifier: 141 https://glebkalinin.ru/?p=141
+disqus_identifier: 141 https://glebkalinin.com/?p=141
 
 tags:
 - бизнес
@@ -11,7 +11,7 @@ tags:
 - интерфейсы
 ---
 
-Продолжая изучение [темы дизайна](https://glebkalinin.ru/design-research-hcd/), читаю замечательное у Лизы Орешкиной:
+Продолжая изучение [темы дизайна](https://glebkalinin.com/design-research-hcd/), читаю замечательное у Лизы Орешкиной:
 
 
 
@@ -31,7 +31,7 @@ tags:
 
 
 
-[![](https://glebkalinin.ru/featured/2010/11/design_is_ru_2-500x548.gif)](http://designthe.info/blog/articles/design_typology.html)
+[![](https://glebkalinin.com/featured/2010/11/design_is_ru_2-500x548.gif)](http://designthe.info/blog/articles/design_typology.html)
 
 Вся заметка [Типология Дизайна 1.0](http://designthe.info/blog/articles/design_typology.html) несомненно стоит внимания, Лиза очень чётко всё расписывает. 
 <!-- more -->

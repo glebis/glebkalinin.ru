@@ -2,7 +2,7 @@
 
 date: 2009-12-04 17:47:39+00:00
 title: Контент-менеджмент и веб-публикации
-disqus_identifier: 41 https://glebkalinin.ru/?p=41
+disqus_identifier: 41 https://glebkalinin.com/?p=41
 
 tags:
 - веб
@@ -33,7 +33,7 @@ tags:
 
 
 
-![Структура записи умной CMS](https://glebkalinin.ru/featured/2009/12/scheme.png)
+![Структура записи умной CMS](https://glebkalinin.com/featured/2009/12/scheme.png)
 
 
 
@@ -50,7 +50,7 @@ tags:
 
 
 
-[![sections-interface](https://glebkalinin.ru/featured/2009/12/sections-interface-500x368.png)](https://glebkalinin.ru/featured/2009/12/sections-interface.png)
+[![sections-interface](https://glebkalinin.com/featured/2009/12/sections-interface-500x368.png)](https://glebkalinin.com/featured/2009/12/sections-interface.png)
 
 
 

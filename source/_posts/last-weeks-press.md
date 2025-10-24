@@ -2,7 +2,7 @@
 
 date: 2012-02-26 22:05:48+00:00
 title: Читано на неделе
-disqus_identifier: 295 https://glebkalinin.ru/?p=295
+disqus_identifier: 295 https://glebkalinin.com/?p=295
 
 tags:
 - интернет
@@ -27,7 +27,7 @@ tags:
 
 **[A Guide to the Digital Advertising Industry That's Watching Your Every Click](http://www.theatlantic.com/technology/archive/2012/02/a-guide-to-the-digital-advertising-industry-thats-watching-your-every-click/252667/)** (The Atlantic)
 
-Джозеф Туроу (Joseph Turow) изучает культурно-социальные последствия нерегулируемой деятельности коммерческих компаний, которые изучают и во многом уже сейчас формируют медиа-пространство вокруг человека. Это открывок из книги, которая, похоже, тоже достойна прочтения. Несколько иной, и пожалуй более острый угол зрения на проблемы, обозначенные [Рашковыффым в Life, Inc.](https://glebkalinin.ru/douglas-rushkoff-life-inc/) и Парисером в [Filter Bubble](http://en.wikipedia.org/wiki/Filter_bubble)).
+Джозеф Туроу (Joseph Turow) изучает культурно-социальные последствия нерегулируемой деятельности коммерческих компаний, которые изучают и во многом уже сейчас формируют медиа-пространство вокруг человека. Это открывок из книги, которая, похоже, тоже достойна прочтения. Несколько иной, и пожалуй более острый угол зрения на проблемы, обозначенные [Рашковыффым в Life, Inc.](https://glebkalinin.com/douglas-rushkoff-life-inc/) и Парисером в [Filter Bubble](http://en.wikipedia.org/wiki/Filter_bubble)).
 
 ![](https://raum7linodewp.s3.amazonaws.com/wp-content/uploads/2012/02/prsx34vk-1329715430-500x325.jpg)
 

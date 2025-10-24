@@ -2,7 +2,7 @@
 
 date: 2013-03-28 15:16:17+00:00
 title: Черновик для интернета
-disqus_identifier: 422 https://glebkalinin.ru/?p=422
+disqus_identifier: 422 https://glebkalinin.com/?p=422
 
 tags:
 - google-chrome
@@ -21,10 +21,10 @@ tags:
 Работает это так: 
 
 Вы активируете элемент формы, в котором хотите написать текст, жмёте на кнопку расширения, выбираете, создатите ли новый документ или воспользуетесь заготовкой:
-![](https://glebkalinin.ru/wp-content/uploads/2013/03/Screen+Shot+2013-03-27+at+10.52.28+AM.png)
+![](https://glebkalinin.com/wp-content/uploads/2013/03/Screen+Shot+2013-03-27+at+10.52.28+AM.png)
 
 После этого редактируете текст на сервисе (используя все его возможности, включая markdown и сохранение версий), а по готовности вставляете текст обратно в форму:
 
-![](https://glebkalinin.ru/wp-content/uploads/2013/03/Screen-Shot-2013-03-28-at-6.56.25-PM.png)
+![](https://glebkalinin.com/wp-content/uploads/2013/03/Screen-Shot-2013-03-28-at-6.56.25-PM.png)
 
 Увы, пока что сервис не очень дружит с русским языком и с юникодом в целом, однако надеюсь автор в ближайшее время это поправит. 

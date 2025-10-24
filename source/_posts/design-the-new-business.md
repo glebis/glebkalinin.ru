@@ -2,7 +2,7 @@
 
 date: 2012-04-16 08:31:30+00:00
 title: Дизайн нового бизнеса
-disqus_identifier: 328 https://glebkalinin.ru/?p=328
+disqus_identifier: 328 https://glebkalinin.com/?p=328
 
 tags:
 - бизнес
@@ -10,7 +10,7 @@ tags:
 - дизайн-мышление
 ---
 
-![](https://glebkalinin.ru/featured/2012/04/Logo.png)
+![](https://glebkalinin.com/featured/2012/04/Logo.png)
 
 [Design The New Business](http://www.designthenewbusiness.com/) — 40-минутный документальный фильм о дизайн-мышлении в применении к бизнесу.
 

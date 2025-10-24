@@ -2,7 +2,7 @@
 
 date: 2012-06-07 06:20:19+00:00
 title: Ирма Бом. Манифест книги
-disqus_identifier: 350 https://glebkalinin.ru/?p=350
+disqus_identifier: 350 https://glebkalinin.com/?p=350
 
 tags:
 - дизайн

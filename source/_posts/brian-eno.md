@@ -2,14 +2,14 @@
 
 date: 2010-11-18 11:20:54+00:00
 title: Брайан Ино
-disqus_identifier: 150 https://glebkalinin.ru/?p=150
+disqus_identifier: 150 https://glebkalinin.com/?p=150
 
 tags:
 - лекции
 - события
 ---
 
-![](https://glebkalinin.ru/featured/2010/11/Brian-Eno-006.jpg)
+![](https://glebkalinin.com/featured/2010/11/Brian-Eno-006.jpg)
 
 Брайан Ино, фото: Martin Godwin, [Guardian](http://www.guardian.co.uk/music/2010/apr/28/brian-eno-brighton-festival?intcmp=239)
 
@@ -28,7 +28,7 @@ tags:
 
 
 
-![](https://glebkalinin.ru/featured/2010/11/77-Million-Paintings-by-B-009-500x333.jpg)
+![](https://glebkalinin.com/featured/2010/11/77-Million-Paintings-by-B-009-500x333.jpg)
 
 Фото: Matthew Andrews, [Guardian](http://www.guardian.co.uk/artanddesign/gallery/2010/may/18/brighton-brian-eno-art?picture=362785423#/?picture=362785421&index=6)
 

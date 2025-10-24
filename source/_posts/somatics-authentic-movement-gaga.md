@@ -90,6 +90,6 @@ date: 2017-02-01 21:54:30
 В следующих постах я продолжу рассказывать про телесные практики, расскажу про свой подход к фитнесу и еде, про жонглирование, а также поделюсь подборкой теоретического материала.
 
 [1]:	https://www.tsekh.ru/class_24.html
-[2]:	https://glebkalinin.ru/searching-for-body
+[2]:	https://glebkalinin.com/searching-for-body
 [3]:	http://www.annagarafeeva.com/%D0%B4%D0%B8%D1%81%D1%86%D0%B8%D0%BF%D0%BB%D0%B8%D0%BD%D0%B0-%D0%B0%D1%83%D1%82%D0%B5%D0%BD%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8/
 [4]:	http://www.yogashaktipat.com/about-movement

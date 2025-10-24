@@ -2,14 +2,14 @@
 
 date: 2010-10-08 10:58:27+00:00
 title: Лекция о блогах
-disqus_identifier: 129 https://glebkalinin.ru/?p=129
+disqus_identifier: 129 https://glebkalinin.com/?p=129
 
 tags:
 - лекции
 - события
 ---
 
-![](https://glebkalinin.ru/featured/2010/10/blog_logo-500x332.jpg)
+![](https://glebkalinin.com/featured/2010/10/blog_logo-500x332.jpg)
 
 В следующий четверг, 14 октября в интернет-центре Русского музея я буду рассказывать о блогах. Официальный анонс выглядит так:
 

@@ -2,7 +2,7 @@
 
 date: 2011-05-18 21:42:50+00:00
 title: Если то-то, то то
-disqus_identifier: 211 https://glebkalinin.ru/?p=211
+disqus_identifier: 211 https://glebkalinin.com/?p=211
 
 tags:
 - delicious
@@ -13,9 +13,9 @@ tags:
 - no-code
 ---
 
-Прислали инвайт в новый сервис [ifttt](http://ifttt.com/) (if this then that) — кажется, особенно удачная иллюстрация к [статье](http://www.kommersant.ru/doc/1592404/) Кости Бочарского про открытые API. Во Френдфиде, благодаря которому мне достался инвайт (ещё парочка есть), сервис окрестили Yahoo! Pipes 2.0 ([копия моей заметочки](http://blogs.yandex.ru/cachedcopy.xml?f=ecc11958b2d95165b9d1f8bba9214350&i=58&m=http%3A%2F%2Fblog.glebkalinin.ru%2F2007%2F02%2Fyahoo-pipes%2F&q=K3icY2RgBEIQYAJjNyDJBuY7MjAxwiU5IJKsBZkFqcUMULD0sywDAyNCEQuGCUiSnBBJtuLUorLUIn6l9JzUpOzEnMy8zDy9olKoiTsOLPvNCqQF0KSVBICCIYwMSMDNzRFoAaeuoZ4BGEBEGWFuZIVoAGmBOhroFhYQi5EhxA3iPiZ1oFeYGFNAngB5ilGdgYGZOTMvHWTOZBYMGzA8w5xbXCyu5FUc7GleYGjkE5UXkG6sHeXrlVcSmo7mIwkcypQkCPsMKssMDGA3qCcBHQE%2FHQ%3D%3D) о Pipes в старом блоге), но это не совсем так. 
+Прислали инвайт в новый сервис [ifttt](http://ifttt.com/) (if this then that) — кажется, особенно удачная иллюстрация к [статье](http://www.kommersant.ru/doc/1592404/) Кости Бочарского про открытые API. Во Френдфиде, благодаря которому мне достался инвайт (ещё парочка есть), сервис окрестили Yahoo! Pipes 2.0 ([копия моей заметочки](http://blogs.yandex.ru/cachedcopy.xml?f=ecc11958b2d95165b9d1f8bba9214350&i=58&m=http%3A%2F%2Fblog.glebkalinin.com%2F2007%2F02%2Fyahoo-pipes%2F&q=K3icY2RgBEIQYAJjNyDJBuY7MjAxwiU5IJKsBZkFqcUMULD0sywDAyNCEQuGCUiSnBBJtuLUorLUIn6l9JzUpOzEnMy8zDy9olKoiTsOLPvNCqQF0KSVBICCIYwMSMDNzRFoAaeuoZ4BGEBEGWFuZIVoAGmBOhroFhYQi5EhxA3iPiZ1oFeYGFNAngB5ilGdgYGZOTMvHWTOZBYMGzA8w5xbXCyu5FUc7GleYGjkE5UXkG6sHeXrlVcSmo7mIwkcypQkCPsMKssMDGA3qCcBHQE%2FHQ%3D%3D) о Pipes в старом блоге), но это не совсем так. 
 
-![](https://glebkalinin.ru/featured/2011/05/Screen-shot-2011-05-19-at-12.47.17-AM-500x486.png)
+![](https://glebkalinin.com/featured/2011/05/Screen-shot-2011-05-19-at-12.47.17-AM-500x486.png)
 
 <!-- more -->
 
@@ -42,7 +42,7 @@ Ifttt — мэшап-приложение (то есть приложение, �
   * восстановить переставшие работать для российских операторов смс-оповещения о прямых сообщениях (DM) или упоминаниях (@) в Твиттере
 	
 
-  * автоматически публиковать в Твиттер ссылки с определённым тегом из [Delicious](https://glebkalinin.ru/delicious-bookmarks/)
+  * автоматически публиковать в Твиттер ссылки с определённым тегом из [Delicious](https://glebkalinin.com/delicious-bookmarks/)
 
 
   * создать смс-канал для публикации быстрых идей в Evernote — я, например, настроил действие таким образом, что все сообщения с хэштегом #i, которые я отсылаю на сервисный номер ifttt, добавлились в тетрадь для идей в Evernote

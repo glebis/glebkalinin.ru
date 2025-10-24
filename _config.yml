@@ -24,7 +24,7 @@ searchid: 2103323
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://glebkalinin.ru
+url: https://glebkalinin.com
 root: /
 permalink: :title/
 permalink_defaults:
@@ -219,4 +219,4 @@ feed:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/glebis/glebkalinin.ru
+  repo: https://github.com/glebis/glebkalinin.com

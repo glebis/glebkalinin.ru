@@ -2,7 +2,7 @@
 
 date: 2009-10-22 04:31:59+00:00
 title: Типографика в веб — расширение пространства борьбы
-disqus_identifier: 21 https://glebkalinin.ru/?p=21
+disqus_identifier: 21 https://glebkalinin.com/?p=21
 
 tags:
 - css

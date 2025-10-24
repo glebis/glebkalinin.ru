@@ -2,11 +2,11 @@
 
 date: 2013-03-31 23:35:03+00:00
 title: Пакет молока
-disqus_identifier: 438 https://glebkalinin.ru/?p=438
+disqus_identifier: 438 https://glebkalinin.com/?p=438
 
 ---
 
-![3041499164_0107a2d98d_b](https://glebkalinin.ru/wp-content/uploads/2013/04/3041499164_0107a2d98d_b2-500x331.jpg)
+![3041499164_0107a2d98d_b](https://glebkalinin.com/wp-content/uploads/2013/04/3041499164_0107a2d98d_b2-500x331.jpg)
 
 
 Photo Credit: [blackaller](http://www.flickr.com/photos/75903973@N00/3041499164/) via [Compfight](http://compfight.com) [cc](http://www.flickr.com/help/general/#147)

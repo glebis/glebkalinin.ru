@@ -43,10 +43,10 @@ tags:
 Я считаю, что текст в вебе должен быть живым и обновляемым, поэтому периодически я вношу обновления в старые посты (или честно пишу, что они безнадежно устарели).
 
 [1]:	https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B5%D0%BD%D0%B8%D0%B5_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5
-[2]:	https://glebkalinin.ru/subscribe/
+[2]:	https://glebkalinin.com/subscribe/
 [3]:	https://twitter.com/glebis
 [4]:	http://facebook.com/kalinin
-[5]:	https://github.com/glebis/glebkalinin.ru
+[5]:	https://github.com/glebis/glebkalinin.com
 [6]:	http://ulyssesapp.com
 [7]:	https://desktop.github.com/
 [8]:	https://www.sublimetext.com/

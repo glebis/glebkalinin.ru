@@ -2,7 +2,7 @@
 
 date: 2011-07-19 20:46:24+00:00
 title: Когнитивная плавность и дизайн
-disqus_identifier: 233 https://glebkalinin.ru/?p=233
+disqus_identifier: 233 https://glebkalinin.com/?p=233
 
 tags:
 - дизайн

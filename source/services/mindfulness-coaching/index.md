@@ -1,7 +1,7 @@
 title: Практики майндфулнесс
 ---
 
-<!-- <img src="https://glebkalinin.ru/images/20200511%20glebkalinin-by-olga.jpg" alt="Глеб Калинин" title="Глеб Калинин" > -->
+<!-- <img src="https://glebkalinin.com/images/20200511%20glebkalinin-by-olga.jpg" alt="Глеб Калинин" title="Глеб Калинин" > -->
 
 Глеб Калинин — психолог-консультант, сертифицированный инструктор практик осознанности,  коуч. 
 

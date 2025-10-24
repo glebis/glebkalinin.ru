@@ -2,7 +2,7 @@
 
 date: 2013-08-13 21:11:39+00:00
 title: Ньюзак
-disqus_identifier: 477 https://glebkalinin.ru/?p=477
+disqus_identifier: 477 https://glebkalinin.com/?p=477
 
 tags:
 - журналистика

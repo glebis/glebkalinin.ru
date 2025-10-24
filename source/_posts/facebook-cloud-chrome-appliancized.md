@@ -2,7 +2,7 @@
 
 date: 2011-05-13 07:21:07+00:00
 title: 'Разное: Фейсбук, облако, Хром и ограниченное всё'
-disqus_identifier: 207 https://glebkalinin.ru/?p=207
+disqus_identifier: 207 https://glebkalinin.com/?p=207
 
 tags:
 - бренды

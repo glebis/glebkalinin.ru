@@ -84,7 +84,7 @@ TheBrain также почти никак не помогает вам орга
 [3]:	https://webbrain.com/brain/brain/3D80058C-14D8-5361-0B61-A061F89BAF87/thought/16065#-316
 [4]:	https://en.wikipedia.org/wiki/Dot-com_bubble
 [5]:	http://getpocket.com/
-[6]:	https://glebkalinin.ru/ifttt/
-[7]:	https://glebkalinin.ru/tags/kindle/
+[6]:	https://glebkalinin.com/ifttt/
+[7]:	https://glebkalinin.com/tags/kindle/
 [8]:	http://www.thebrain.com/support/101/
-[9]:	https://glebkalinin.ru/subscribe/
+[9]:	https://glebkalinin.com/subscribe/

@@ -2,7 +2,7 @@
 
 date: 2012-02-28 07:55:48+00:00
 title: Про коммуникации
-disqus_identifier: 292 https://glebkalinin.ru/?p=292
+disqus_identifier: 292 https://glebkalinin.com/?p=292
 
 tags:
 - бизнес

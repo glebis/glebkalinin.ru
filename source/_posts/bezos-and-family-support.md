@@ -2,7 +2,7 @@
 
 date: 2013-04-13 20:56:58+00:00
 title: Бэзос и поддержка семьи
-disqus_identifier: 445 https://glebkalinin.ru/?p=445
+disqus_identifier: 445 https://glebkalinin.com/?p=445
 
 tags:
 - бизнес
@@ -10,7 +10,7 @@ tags:
 - стартапы
 ---
 
-![Джеф Бэзос](https://glebkalinin.ru/wp-content/uploads/2013/04/0403_jeff-bezos-amazon_8001-500x246.jpg)
+![Джеф Бэзос](https://glebkalinin.com/wp-content/uploads/2013/04/0403_jeff-bezos-amazon_8001-500x246.jpg)
 
 Посмотрел пару интервью с Джеффри Бэзосом, создателем Амазона. После ухода Джобса он один из самых интересных предпринимателей-визионеров. (И тот еще фрик, [судя по всему](http://mashable.com/2012/11/30/jeff-bezos-10000-year-clock/).) 
 

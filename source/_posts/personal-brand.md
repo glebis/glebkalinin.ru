@@ -2,7 +2,7 @@
 
 date: 2010-02-10 14:26:57+00:00
 title: О персональных брендах
-disqus_identifier: 65 https://glebkalinin.ru/?p=65
+disqus_identifier: 65 https://glebkalinin.com/?p=65
 
 ---
 

@@ -2,7 +2,7 @@
 
 date: 2010-09-06 07:14:43+00:00
 title: О сайтах книг и «Правилах мозга»
-disqus_identifier: 123 https://glebkalinin.ru/?p=123
+disqus_identifier: 123 https://glebkalinin.com/?p=123
 
 tags:
 - книги
@@ -17,7 +17,7 @@ tags:
 
 
 
-<p class="aside aside--left"><img src="//glebkalinin.ru/featured/2010/09/john_mainw-120x155.jpg"><br><em>Джон Медина</em></p>  
+<p class="aside aside--left"><img src="//glebkalinin.com/featured/2010/09/john_mainw-120x155.jpg"><br><em>Джон Медина</em></p>  
 
 
 

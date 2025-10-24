@@ -2,7 +2,7 @@
 
 date: 2011-02-15 14:22:15+00:00
 title: 'Идея: сайт про учебники и учебные программы'
-disqus_identifier: 171 https://glebkalinin.ru/?p=171
+disqus_identifier: 171 https://glebkalinin.com/?p=171
 
 ---
 
@@ -10,7 +10,7 @@ disqus_identifier: 171 https://glebkalinin.ru/?p=171
 
 
 
-![](https://glebkalinin.ru/featured/2011/02/textbook.jpg)
+![](https://glebkalinin.com/featured/2011/02/textbook.jpg)
 
 Учебник для медицинских сестёр, 1935 год. Фото: [AZ_RN](http://www.flickr.com/photos/mama_dove/)
 

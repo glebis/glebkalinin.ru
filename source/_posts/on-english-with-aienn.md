@@ -2,7 +2,7 @@
 
 date: 2011-03-29 08:54:36+00:00
 title: 'Об английском: беседа с Антоном Уткиным'
-disqus_identifier: 187 https://glebkalinin.ru/?p=187
+disqus_identifier: 187 https://glebkalinin.com/?p=187
 
 tags:
 - английский
@@ -17,7 +17,7 @@ tags:
 
 
 
-![Антон Уткин](https://glebkalinin.ru/featured/2011/03/outkin-500x332.jpg)
+![Антон Уткин](https://glebkalinin.com/featured/2011/03/outkin-500x332.jpg)
 
 Антон Уткин
 
@@ -160,4 +160,4 @@ tags:
 Мне кажется, психологические барьеры — самое большое препятствие на пути к освоению другого языка.
 
 
-![To be continued](https://glebkalinin.ru/featured/2011/03/tbc.jpg)
+![To be continued](https://glebkalinin.com/featured/2011/03/tbc.jpg)

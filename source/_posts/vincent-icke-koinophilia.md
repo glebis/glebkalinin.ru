@@ -2,7 +2,7 @@
 
 date: 2012-06-04 07:29:36+00:00
 title: Койнофилия
-disqus_identifier: 338 https://glebkalinin.ru/?p=338
+disqus_identifier: 338 https://glebkalinin.com/?p=338
 
 tags:
 - искусство

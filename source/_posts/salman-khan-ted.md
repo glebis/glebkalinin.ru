@@ -2,7 +2,7 @@
 
 date: 2011-03-14 11:57:59+00:00
 title: Выступление Салмана Хана на TED
-disqus_identifier: 186 https://glebkalinin.ru/?p=186
+disqus_identifier: 186 https://glebkalinin.com/?p=186
 
 tags:
 - лекции

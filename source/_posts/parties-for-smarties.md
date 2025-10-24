@@ -2,7 +2,7 @@
 
 date: 2010-05-12 05:52:00+00:00
 title: О вечеринках, знакомствах и интеллектуальном досуге
-disqus_identifier: 91 https://glebkalinin.ru/?p=91
+disqus_identifier: 91 https://glebkalinin.com/?p=91
 
 tags:
 - вопросы
@@ -104,7 +104,7 @@ tags:
 Что-то в духе того, что делает [лекторий «Контекст»](http://www.contextclub.org/): короткое выступление одного учёного (философа, политика, бизнесмена), и обсуждение группой экспертов или всех участников.
 
 
-![](https://glebkalinin.ru/featured/2010/05/sekats16.jpg)
+![](https://glebkalinin.com/featured/2010/05/sekats16.jpg)
 
 
 Александр Секаций [в лектории «Контекст»](http://www.contextclub.org/events/y2010/m1/n35). Фото: Михаил Солоненко

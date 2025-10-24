@@ -2,7 +2,7 @@
 
 date: 2011-04-16 11:54:17+00:00
 title: Ашманов о стартапах
-disqus_identifier: 197 https://glebkalinin.ru/?p=197
+disqus_identifier: 197 https://glebkalinin.com/?p=197
 
 tags:
 - бизнес

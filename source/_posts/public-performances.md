@@ -1,14 +1,14 @@
 ---
 title: О публичных выступлениях
 date: 2010-12-20T08:37:03.000Z
-disqus_identifier: 136 https://glebkalinin.ru/?p=136
+disqus_identifier: 136 https://glebkalinin.com/?p=136
 updated: 2020-06-23T22:51:00.415Z
 tags:
   - лекции
   - публичные выступления
   - саморазвитие
 ---
-![](https://glebkalinin.ru/featured/2010/12/martin-luther-king.jpg)
+![](https://glebkalinin.com/featured/2010/12/martin-luther-king.jpg)
 
 <p class="legend">Мартин Лютер Кинг</p>
 

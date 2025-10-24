@@ -2,7 +2,7 @@
 
 date: 2010-01-05 17:18:52+00:00
 title: Антигельминтный кокаин
-disqus_identifier: 57 https://glebkalinin.ru/?p=57
+disqus_identifier: 57 https://glebkalinin.com/?p=57
 
 ---
 

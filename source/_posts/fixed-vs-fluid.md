@@ -2,7 +2,7 @@
 
 date: 2009-10-20 07:07:05+00:00
 title: 'Вёрстка: фикс против «резины»'
-disqus_identifier: 17 https://glebkalinin.ru/?p=17
+disqus_identifier: 17 https://glebkalinin.com/?p=17
 
 tags:
 - css
