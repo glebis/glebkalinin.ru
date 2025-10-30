@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+    // Redirect from glebkalinin.ru to glebkalinin.com
+    if (window.location.hostname === 'glebkalinin.ru') {
+      window.location.replace(window.location.href.replace('glebkalinin.ru', 'glebkalinin.com'));
+    }
+  </script>
   <meta charset="utf-8">
   <%
   var title = page.title;
