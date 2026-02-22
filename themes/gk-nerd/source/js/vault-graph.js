@@ -161,6 +161,7 @@ function initGraph() {
   const rot={xy:0,xz:0,xw:0,yz:0,yw:0,zw:0};
   let autoTime=0;
   const speed={xw:0.05,yw:0.035,zw:0.02,xy:0.006,yz:0.01};
+  let paused=false, graphHidden=false, speedMultiplier=1;
 
   // Drag controls
   let dragging=false,lastX=0,lastY=0,cameraZ=7;
@@ -241,10 +242,12 @@ function initGraph() {
   let lastLabel=0;
   function animate(now){
     requestAnimationFrame(animate);
+    if(paused)return;
+    const dt=0.008*speedMultiplier;
     if(!dragging){
-      autoTime+=0.008;
-      rot.xw+=speed.xw*0.008;rot.yw+=speed.yw*0.008;rot.zw+=speed.zw*0.008;
-      rot.xy+=speed.xy*0.008;rot.yz+=speed.yz*0.008;
+      autoTime+=dt;
+      rot.xw+=speed.xw*dt;rot.yw+=speed.yw*dt;rot.zw+=speed.zw*dt;
+      rot.xy+=speed.xy*dt;rot.yz+=speed.yz*dt;
     }
     camera.position.z+=(cameraZ-camera.position.z)*0.08;
     if(!dragging){camera.position.x=Math.sin(autoTime*0.08)*0.4;camera.position.y=Math.cos(autoTime*0.06)*0.25;}
@@ -296,6 +299,30 @@ function initGraph() {
     if(now-lastLabel>60){updateLabels(projected,rotated,wMin,wRange,dMin,dRange);lastLabel=now;}
   }
   requestAnimationFrame(animate);
+
+  // Graph controls
+  const pauseBtn=document.getElementById('graph-pause');
+  const toggleBtn=document.getElementById('graph-toggle');
+  const speedSlider=document.getElementById('graph-speed');
+  const heroVisual=document.getElementById('hero-visual');
+
+  if(pauseBtn) pauseBtn.addEventListener('click',()=>{
+    paused=!paused;
+    pauseBtn.textContent=paused?'▶':'⏸';
+    pauseBtn.title=paused?'Resume graph':'Pause graph';
+  });
+
+  if(toggleBtn) toggleBtn.addEventListener('click',()=>{
+    graphHidden=!graphHidden;
+    heroVisual.style.transition='opacity 0.4s ease';
+    heroVisual.style.opacity=graphHidden?'0':'';
+    toggleBtn.textContent=graphHidden?'○':'◉';
+    toggleBtn.title=graphHidden?'Show graph':'Hide graph';
+  });
+
+  if(speedSlider) speedSlider.addEventListener('input',e=>{
+    speedMultiplier=parseFloat(e.target.value);
+  });
 
   // Resize observer
   const ro=new ResizeObserver(entries=>{

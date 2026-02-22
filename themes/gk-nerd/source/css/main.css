@@ -326,6 +326,107 @@
   color: var(--text-dim);
 }
 
+/* Graph Controls */
+.hero .graph-controls {
+  position: absolute;
+  bottom: calc(var(--space-xl) + 40px);
+  right: calc(var(--space-lg) + 100px);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  background: rgba(15, 15, 18, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  line-height: 1;
+}
+
+.hero .graph-controls button {
+  all: unset;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2px;
+  line-height: 1;
+  transition: color 0.15s ease;
+}
+
+.hero .graph-controls button:hover {
+  color: var(--accent);
+}
+
+.hero .graph-speed {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: default;
+  margin: 0;
+  padding: 0;
+}
+
+.hero .graph-speed span {
+  user-select: none;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.hero .graph-controls input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 56px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1px;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.hero .graph-controls input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  transition: background 0.15s ease;
+}
+
+.hero .graph-controls input[type="range"]::-webkit-slider-thumb:hover {
+  background: var(--accent);
+}
+
+.hero .graph-controls input[type="range"]::-moz-range-thumb {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hero .graph-controls input[type="range"]::-moz-range-track {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 1px;
+}
+
+@media (max-width: 768px) {
+  .hero .graph-controls .graph-speed {
+    display: none;
+  }
+}
+
 .scroll-indicator {
   position: absolute;
   bottom: var(--space-lg);
