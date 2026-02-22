@@ -4,8 +4,8 @@ date: 2023-04-02 13:52:00
 
 
 <p>Gleb Kalinin<br />
-Bayerische strasse 34<br />10707 Berlin</p>
-<p>Telefon: 04917685278763<br />
+Amsterdamer Str. 21<br />13347 Berlin, Germany</p>
+<p>Telefon: +4917685278763<br />
 E-Mail: <a href="mailto:glebis@gmail.com">glebis@gmail.com</a><br />
 </p>
 
