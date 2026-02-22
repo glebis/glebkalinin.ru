@@ -281,8 +281,8 @@
 .hero-graph-bg .vault-graph-container {
   position: absolute;
   top: -10%;
-  left: 25%;
-  width: 80%;
+  left: 40%;
+  width: 65%;
   height: 120%;
 }
 
@@ -292,9 +292,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 55%;
+  width: 50%;
   height: 100%;
-  background: linear-gradient(90deg, #0f0f12 30%, transparent 100%);
+  background: linear-gradient(90deg, #0f0f12 40%, transparent 100%);
   z-index: 1;
   pointer-events: none;
 }
@@ -557,6 +557,72 @@
 /* ==========================================================================
    Community Section
    ========================================================================== */
+
+/* Featured Communities */
+.community-featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+@media (max-width: 768px) {
+  .community-featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.community-featured-card {
+  padding: var(--space-xl);
+  border: 1px solid var(--border-primary);
+  border-left: 4px solid var(--accent);
+  background: var(--bg-card);
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.community-featured-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.community-featured-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.community-featured-tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--accent);
+  margin: 0;
+}
+
+.community-featured-desc {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.community-featured-link {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--accent);
+  margin-top: auto;
+}
+
+.community-featured-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: auto;
+}
 
 .community-grid {
   display: grid;
