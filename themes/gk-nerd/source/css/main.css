@@ -1435,6 +1435,26 @@
   background: var(--bg-tertiary);
 }
 
+.speculative-intro {
+  max-width: 700px;
+  margin-bottom: var(--space-2xl);
+}
+
+.speculative-lead {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: var(--space-md);
+}
+
+.speculative-intro p:not(.speculative-lead) {
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
 .speculative-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
