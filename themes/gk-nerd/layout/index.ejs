@@ -42,13 +42,21 @@
     </div>
   </div>
 
+  <!-- Graph Controls -->
+  <div class="graph-controls" id="graph-controls">
+    <button id="graph-pause" title="Pause graph">⏸</button>
+    <button id="graph-toggle" title="Hide graph">◉</button>
+    <label class="graph-speed">
+      <span>speed</span>
+      <input type="range" id="graph-speed" min="0" max="3" step="0.1" value="1">
+    </label>
+  </div>
+
   <!-- Bottom Navigation -->
   <nav class="hero-nav" id="hero-nav">
     <a href="#personal-os" class="active">the system</a>
     <span class="dot">·</span>
     <a href="#products">products</a>
-    <span class="dot">·</span>
-    <a href="#beyond">interfaces</a>
     <span class="dot">·</span>
     <a href="#speculative">futures</a>
     <span class="dot">·</span>
@@ -266,11 +274,11 @@
 
     <!-- Other Products Grid -->
     <div class="products-grid products-grid-secondary">
-      <a href="/voice-claude/" class="product-card" data-index="0">
-        <span class="product-icon">🎙</span>
-        <h3 class="product-title">VOICE CLAUDE</h3>
-        <p class="product-subtitle">Sub-second voice to tool execution</p>
-        <p class="product-description">Speak. Execute. No keyboard. Real-time speech recognition. Your Obsidian vault, hands-free.</p>
+      <a href="https://verity.salient.community" class="product-card" data-index="0" target="_blank">
+        <span class="product-icon">&#9993;</span>
+        <h3 class="product-title">VERITY</h3>
+        <p class="product-subtitle">AI-powered Telegram agent</p>
+        <p class="product-description">Claude in your pocket. Research, collect knowledge, recall from your vault, process voice — all from Telegram.</p>
         <span class="product-arrow">→</span>
       </a>
 
@@ -289,62 +297,6 @@
         <p class="product-description">What if AI knew everything? Exploring futures through film. Design fiction meets reality.</p>
         <span class="product-arrow">→</span>
       </a>
-    </div>
-  </div>
-</section>
-
-<!-- Beyond Chatbots Section -->
-<section class="section beyond-section" id="beyond">
-  <div class="container">
-    <header class="section-header">
-      <h2 class="section-title">Beyond Chatbots</h2>
-      <span class="section-subtitle">interfaces for Software 3.0</span>
-    </header>
-
-    <div class="beyond-intro">
-      <p class="beyond-lead">Chatbots are not the only interface. Often not even the right one.</p>
-      <p>The same AI, the same context, the same knowledge &mdash; but different ways in. Pick the one that fits the moment.</p>
-    </div>
-
-    <div class="beyond-grid">
-      <div class="beyond-card">
-        <div class="beyond-icon">🎙</div>
-        <h3 class="beyond-title">Voice</h3>
-        <p class="beyond-context">Walking. Cooking. Driving.</p>
-        <p class="beyond-description">Hands-free access to your entire system. Sub-second latency. No screen required.</p>
-      </div>
-
-      <div class="beyond-card">
-        <div class="beyond-icon">📱</div>
-        <h3 class="beyond-title">Telegram</h3>
-        <p class="beyond-context">In line. On the train. Quick thought.</p>
-        <p class="beyond-description">Your AI in your pocket. Send a voice note, get a structured response. Mobile-first.</p>
-      </div>
-
-      <div class="beyond-card">
-        <div class="beyond-icon">⌨</div>
-        <h3 class="beyond-title">Terminal</h3>
-        <p class="beyond-context">Deep work. Complex tasks. Full context.</p>
-        <p class="beyond-description">Claude Code with access to everything. Files, history, tools. Power mode.</p>
-      </div>
-
-      <div class="beyond-card">
-        <div class="beyond-icon">⏰</div>
-        <h3 class="beyond-title">Scheduled</h3>
-        <p class="beyond-context">You sleep. It works.</p>
-        <p class="beyond-description">Automations that run without you. Morning briefings. Research. Commits.</p>
-      </div>
-
-      <div class="beyond-card beyond-card-future">
-        <div class="beyond-icon">✨</div>
-        <h3 class="beyond-title">Ad-hoc</h3>
-        <p class="beyond-context">Interfaces that don&rsquo;t exist yet.</p>
-        <p class="beyond-description">Generated for the moment. A presentation. A dashboard. Whatever the task needs.</p>
-      </div>
-    </div>
-
-    <div class="beyond-quote">
-      <blockquote>Talk with the intelligence your way. Sing, whisper, nod, signal. Stay quiet. Think long term.</blockquote>
     </div>
   </div>
 </section>
