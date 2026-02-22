@@ -1,0 +1,59 @@
+# Theme configuration
+menu:
+  products: /products/
+  videos: /videos/
+  community: /community/
+  blog: /blog/
+  chat: /chat/
+
+# Social links
+telegram: glebkalinin
+telegram_channels:
+  - handle: toolusing
+    name: Tool Building Ape
+    description: AI tools, coding agents, vibe coding
+    subscribers: "~1,800"
+  - handle: experimentally
+    name: Опытным путём
+    description: Psychology meets practice
+    subscribers: "~1,500"
+  - handle: mentalhealthtech
+    name: Mental Health Tech
+    description: AI in mental health
+    subscribers: "~500"
+
+# Products
+products:
+  - id: salience
+    title: SALIENCE
+    subtitle: 8-week Personal OS lab
+    description: Build your Telegram agent. Create your data lakes. Let AI surface what matters.
+    icon: "⚡"
+    link: https://salience.agency
+  - id: voice-claude
+    title: VOICE CLAUDE
+    subtitle: Sub-second voice to tool execution
+    description: Speak. Execute. No keyboard. Real-time speech recognition. Your Obsidian vault, hands-free.
+    icon: "🎙"
+    link: /voice-claude/
+  - id: claude-code-lab
+    title: CLAUDE CODE LAB
+    subtitle: 6-week practical lab · 350+ alumni
+    description: Practical AI-assisted development. For PMs, designers, founders. Ship skills you can fork.
+    icon: "⌨"
+    link: /claude-code-lab/
+  - id: speculative
+    title: SPECULATIVE DESIGN
+    subtitle: Films · Experimental interfaces
+    description: What if AI knew everything? Exploring futures through film. Design fiction meets reality.
+    icon: "🎬"
+    link: /speculative/
+
+# Site info
+author: Gleb Kalinin
+location: Berlin, Germany
+tagline: Builder. Maker. AI Lab Facilitator.
+description: I build AI systems that know your context. Not chatbots. Personal operating systems.
+
+# Analytics
+google_analytics: G-XXXXXXXXXX

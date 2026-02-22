@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <%- partial('_partial/head') %>
+</head>
+<body>
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progress-bar"></div>
+
+  <!-- Header Controls -->
+  <header class="site-header">
+    <div class="header-controls">
+      <div class="theme-toggle" id="theme-toggle" role="button" tabindex="0" aria-label="Toggle theme">
+        <div class="theme-toggle-thumb">
+          <span class="theme-icon">☀️</span>
+        </div>
+      </div>
+      <a href="https://t.me/<%= theme.telegram %>" class="telegram-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9.964 15.568l-.246 3.463c.352 0 .505-.151.688-.333l1.651-1.588 3.418 2.51c.626.347 1.073.165 1.244-.58l2.254-10.556h.001c.2-.932-.337-1.296-.95-1.07L3.23 11.07c-.912.353-.898.861-.155 1.09l3.91 1.219 9.084-5.73c.427-.279.816-.125.496.154" fill="currentColor"/>
+        </svg>
+        <span>Message</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <%- body %>
+
+  <!-- Footer -->
+  <%- partial('_partial/footer') %>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/vault-graph.js" defer></script>
+</body>
+</html>
