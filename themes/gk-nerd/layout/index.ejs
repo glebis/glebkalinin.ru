@@ -83,87 +83,87 @@
       <div class="os-diagram">
         <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg" class="architecture-svg">
           <!-- Layer 3: Interfaces -->
-          <rect x="20" y="20" width="480" height="110" rx="8" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.6"/>
+          <rect x="20" y="20" width="480" height="110" rx="8" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.7"/>
           <text x="40" y="46" class="svg-label-accent">INTERFACES</text>
 
           <!-- Interface items as sub-boxes -->
-          <rect x="36" y="56" width="100" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.75" opacity="0.35"/>
+          <rect x="36" y="56" width="100" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
           <text x="86" y="74" text-anchor="middle" class="svg-small">Voice</text>
 
-          <rect x="148" y="56" width="100" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.75" opacity="0.35"/>
+          <rect x="148" y="56" width="100" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
           <text x="198" y="74" text-anchor="middle" class="svg-small">Verity (TG)</text>
 
-          <rect x="260" y="56" width="100" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.75" opacity="0.35"/>
+          <rect x="260" y="56" width="100" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
           <text x="310" y="74" text-anchor="middle" class="svg-small">Terminal</text>
 
-          <rect x="372" y="56" width="116" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.75" opacity="0.35"/>
+          <rect x="372" y="56" width="116" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
           <text x="430" y="74" text-anchor="middle" class="svg-small">Scheduled</text>
 
           <text x="40" y="108" class="svg-tiny">Same intelligence, different entry points</text>
           <text x="280" y="108" class="svg-tiny">Ad-hoc generated interfaces</text>
 
           <!-- Arrows: Interfaces → Runtime (multiple) -->
-          <line x1="86" y1="130" x2="150" y2="155" stroke="var(--accent)" stroke-width="0.75" opacity="0.3"/>
-          <line x1="198" y1="130" x2="220" y2="155" stroke="var(--accent)" stroke-width="0.75" opacity="0.3"/>
-          <line x1="310" y1="130" x2="300" y2="155" stroke="var(--accent)" stroke-width="0.75" opacity="0.3"/>
-          <line x1="430" y1="130" x2="380" y2="155" stroke="var(--accent)" stroke-width="0.75" opacity="0.3"/>
+          <line x1="86" y1="130" x2="150" y2="155" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+          <line x1="198" y1="130" x2="220" y2="155" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+          <line x1="310" y1="130" x2="300" y2="155" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+          <line x1="430" y1="130" x2="380" y2="155" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
 
           <!-- Layer 2: Agent Runtime -->
-          <rect x="20" y="155" width="480" height="130" rx="8" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.4"/>
+          <rect x="20" y="155" width="480" height="130" rx="8" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.55"/>
           <text x="40" y="180" class="svg-label">AGENT RUNTIME</text>
 
           <!-- Runtime sub-items -->
-          <rect x="36" y="190" width="140" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.75" opacity="0.25"/>
+          <rect x="36" y="190" width="140" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.4"/>
           <text x="106" y="208" text-anchor="middle" class="svg-small">Claude Agent SDK</text>
 
-          <rect x="188" y="190" width="140" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.75" opacity="0.25"/>
+          <rect x="188" y="190" width="140" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.4"/>
           <text x="258" y="208" text-anchor="middle" class="svg-small">Skills &amp; MCP</text>
 
-          <rect x="340" y="190" width="148" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.75" opacity="0.25"/>
+          <rect x="340" y="190" width="148" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.4"/>
           <text x="414" y="208" text-anchor="middle" class="svg-small">Multi-agent orch.</text>
 
           <text x="40" y="242" class="svg-small">Salience layer: surface what matters</text>
           <text x="40" y="260" class="svg-tiny">Agents propose, humans authorize</text>
 
           <!-- Cross-connections within runtime -->
-          <line x1="176" y1="204" x2="188" y2="204" stroke="var(--accent)" stroke-width="0.5" opacity="0.2" stroke-dasharray="3,3"/>
-          <line x1="328" y1="204" x2="340" y2="204" stroke="var(--accent)" stroke-width="0.5" opacity="0.2" stroke-dasharray="3,3"/>
+          <line x1="176" y1="204" x2="188" y2="204" stroke="var(--accent)" stroke-width="1" opacity="0.35" stroke-dasharray="3,3"/>
+          <line x1="328" y1="204" x2="340" y2="204" stroke="var(--accent)" stroke-width="1" opacity="0.35" stroke-dasharray="3,3"/>
 
           <!-- Arrows: Runtime → Data (bidirectional) -->
-          <line x1="200" y1="285" x2="200" y2="310" stroke="var(--accent)" stroke-width="0.75" opacity="0.3"/>
-          <polygon points="195,307 205,307 200,314" fill="var(--accent)" opacity="0.3"/>
-          <line x1="320" y1="310" x2="320" y2="285" stroke="var(--accent)" stroke-width="0.75" opacity="0.3"/>
-          <polygon points="315,288 325,288 320,281" fill="var(--accent)" opacity="0.3"/>
+          <line x1="200" y1="285" x2="200" y2="310" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+          <polygon points="194,306 206,306 200,315" fill="var(--accent)" opacity="0.5"/>
+          <line x1="320" y1="310" x2="320" y2="285" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+          <polygon points="314,289 326,289 320,280" fill="var(--accent)" opacity="0.5"/>
 
           <!-- Layer 1: Data & Memory -->
-          <rect x="20" y="310" width="480" height="150" rx="8" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.3"/>
+          <rect x="20" y="310" width="480" height="150" rx="8" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.45"/>
           <text x="40" y="336" class="svg-label">DATA &amp; MEMORY</text>
 
           <!-- Data sub-items in two rows -->
-          <rect x="36" y="346" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.5" opacity="0.2"/>
+          <rect x="36" y="346" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
           <text x="96" y="362" text-anchor="middle" class="svg-tiny">Notes &amp; docs</text>
 
-          <rect x="168" y="346" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.5" opacity="0.2"/>
+          <rect x="168" y="346" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
           <text x="228" y="362" text-anchor="middle" class="svg-tiny">Bookmarks</text>
 
-          <rect x="300" y="346" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.5" opacity="0.2"/>
+          <rect x="300" y="346" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
           <text x="360" y="362" text-anchor="middle" class="svg-tiny">Health data</text>
 
-          <rect x="36" y="378" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.5" opacity="0.2"/>
+          <rect x="36" y="378" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
           <text x="96" y="394" text-anchor="middle" class="svg-tiny">Transcripts</text>
 
-          <rect x="168" y="378" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.5" opacity="0.2"/>
+          <rect x="168" y="378" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
           <text x="228" y="394" text-anchor="middle" class="svg-tiny">Search queries</text>
 
-          <rect x="300" y="378" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="0.5" opacity="0.2"/>
+          <rect x="300" y="378" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
           <text x="360" y="394" text-anchor="middle" class="svg-tiny">Research</text>
 
           <text x="40" y="430" class="svg-small">Episodic / Semantic / Procedural memory</text>
           <text x="40" y="448" class="svg-tiny">Local-first. File-based. Your hardware.</text>
 
           <!-- Side annotation: feedback loop -->
-          <path d="M 508 130 Q 515 240 508 350" fill="none" stroke="var(--accent)" stroke-width="0.75" opacity="0.2" stroke-dasharray="4,4"/>
-          <text x="506" y="244" class="svg-tiny" transform="rotate(90, 506, 244)" opacity="0.3">feedback loop</text>
+          <path d="M 508 130 Q 516 240 508 350" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.35" stroke-dasharray="4,4"/>
+          <text x="506" y="244" class="svg-tiny" transform="rotate(90, 506, 244)" opacity="0.45">feedback loop</text>
         </svg>
       </div>
 
