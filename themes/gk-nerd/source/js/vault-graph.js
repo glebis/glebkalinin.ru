@@ -324,6 +324,32 @@ function initGraph() {
     speedMultiplier=parseFloat(e.target.value);
   });
 
+  // Fullscreen toggle (desktop)
+  const fsBtn=document.getElementById('graph-fullscreen');
+  const heroEl=document.getElementById('hero');
+  if(fsBtn&&heroEl) fsBtn.addEventListener('click',()=>{
+    const isFs=heroEl.classList.toggle('graph-fullscreen');
+    fsBtn.textContent=isFs?'✕':'⛶';
+    fsBtn.title=isFs?'Exit fullscreen':'Fullscreen graph';
+    if(isFs){
+      const r=container.getBoundingClientRect();
+      if(r.width>0&&r.height>0){camera.aspect=r.width/r.height;camera.updateProjectionMatrix();renderer.setSize(r.width,r.height);}
+    }
+  });
+
+  // Mobile graph reveal
+  const mobileReveal=document.getElementById('graph-mobile-reveal');
+  const graphControls=document.getElementById('graph-controls');
+  if(mobileReveal) mobileReveal.addEventListener('click',e=>{
+    e.preventDefault();
+    heroVisual.classList.add('graph-mobile-active');
+    heroVisual.style.opacity='';
+    if(graphControls) graphControls.classList.add('graph-mobile-active');
+    mobileReveal.classList.add('hidden');
+    const r=container.getBoundingClientRect();
+    if(r.width>0&&r.height>0){camera.aspect=r.width/r.height;camera.updateProjectionMatrix();renderer.setSize(r.width,r.height);}
+  });
+
   // Resize observer
   const ro=new ResizeObserver(entries=>{
     const r=entries[0].contentRect;
