@@ -991,6 +991,96 @@
 }
 
 /* ==========================================================================
+   Page Content (generic pages: about, impressum, etc.)
+   ========================================================================== */
+
+.page-section {
+  padding-top: 120px;
+}
+
+.page-section .section-header {
+  margin-bottom: var(--space-xl);
+}
+
+.page-section .section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.page-content {
+  max-width: 720px;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.page-content p {
+  margin-bottom: var(--space-md);
+}
+
+.page-content h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.page-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.page-content ul,
+.page-content ol {
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.page-content li {
+  margin-bottom: var(--space-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.page-content li::marker {
+  color: var(--accent);
+}
+
+.page-content a {
+  color: var(--accent);
+  transition: opacity var(--transition-fast);
+}
+
+.page-content a:hover {
+  opacity: 0.8;
+}
+
+.page-content hr {
+  border: none;
+  border-top: 1px solid var(--border-primary);
+  margin: var(--space-2xl) 0;
+}
+
+.page-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+.page-content blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: var(--space-lg);
+  margin: var(--space-lg) 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 

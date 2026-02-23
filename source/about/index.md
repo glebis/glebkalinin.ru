@@ -15,9 +15,13 @@ title: О Глебе Калинине
 <li><a href="https://t.me/toolusing">Tool Building Ape</a> — про ИИ и использование инструментов</li>
 <li>«<a href="https://t.me/Experimentally">Опытным путём</a>» — про медитацию, психотерапию и полную жизнь.</li>
 <li><a href="https://t.me/mentalhealthtech">Mental health tech</a> — про технологии в области психического здоровья</li>
+<li><a href="https://t.me/klodkot">Klodkot</a></li>
 </ul>
 
+## Лаборатории
 
+* [Salience Lab](https://salience.glebkalinin.com) — 8-недельная лаборатория по построению Personal OS: телеграм-агент, голосовой Claude, дата-озёра, навыки и MCP-серверы.
+* [Claude Code Lab](https://claude-code.glebkalinin.com) — 6-недельная практическая лаборатория по ии-разработке. 350+ выпускников.
 
 
 <!-- <p><a href="/now">Чем я занимаюсь сейчас</a>.</p> -->
