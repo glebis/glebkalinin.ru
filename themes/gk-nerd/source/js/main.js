@@ -425,4 +425,23 @@
 
   sectionHeaders.forEach(header => headerObserver.observe(header));
 
+  // ==========================================================================
+  // Speculative Card Swap
+  // ==========================================================================
+
+  document.querySelectorAll('.speculative-swap-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      const card = this.closest('.speculative-card');
+      if (!card) return;
+      const isFlipped = card.classList.toggle('flipped');
+      this.textContent = isFlipped
+        ? 'Back to concept'
+        : this.dataset.label || 'See the implementation';
+    });
+
+    // Store original label
+    toggle.dataset.label = toggle.textContent;
+  });
+
 })();

@@ -20,9 +20,7 @@
 
         <div class="hero-philosophy" id="hero-philosophy">
           <blockquote>
-            &ldquo;AI as capability amplifier, not replacement.<br>
-            Voice is the natural interface for Software 3.0.<br>
-            Keyboards were designed for 1.0.&rdquo;
+            &ldquo;AI as capability amplifier, not replacement. It&rsquo;s an enormous self-improving framework that can support and grow human creativity. As a polymath and multipotentialite, I now have enough of a productivity boost to skip traditional funding requirements and build whatever I think the world needs&mdash;bootstrapped or on a very limited, focused funding.&rdquo;
           </blockquote>
         </div>
 
@@ -60,9 +58,9 @@
   <nav class="hero-nav" id="hero-nav">
     <a href="#personal-os" class="active">the system</a>
     <span class="dot">·</span>
-    <a href="#products">products</a>
-    <span class="dot">·</span>
     <a href="#speculative">futures</a>
+    <span class="dot">·</span>
+    <a href="#products">products</a>
     <span class="dot">·</span>
     <a href="#community">community</a>
   </nav>
@@ -163,6 +161,7 @@
 
           <!-- Side annotation: feedback loop -->
           <path d="M 508 130 Q 518 240 508 350" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.5" stroke-dasharray="5,4"/>
+          <rect x="504" y="228" width="14" height="55" rx="2" fill="var(--bg-secondary)" transform="rotate(90, 510, 244)" opacity="0.8"/>
           <text x="510" y="244" class="svg-tiny" transform="rotate(90, 510, 244)" opacity="0.6" letter-spacing="0.15em">feedback loop</text>
         </svg>
       </div>
@@ -200,11 +199,192 @@
   </div>
 </section>
 
+<!-- Speculative Design Section -->
+<section class="section speculative-section" id="speculative">
+  <div class="container">
+    <header class="section-header">
+      <h2 class="section-title">Speculative Design</h2>
+      <span class="section-subtitle">imagining the future</span>
+    </header>
+
+    <div class="speculative-intro">
+      <p class="speculative-lead">I live with new capabilities and imagine what will become possible when millions of people also do.</p>
+    </div>
+
+    <div class="speculative-grid">
+      <!-- Story 1: The Thinking Room -->
+      <article class="speculative-card">
+        <div class="speculative-card-front">
+          <div class="speculative-number">01</div>
+          <h3 class="speculative-title">The Thinking Room</h3>
+          <div class="speculative-body">
+            <p>Imagine you are planning your business. You sit in a quiet room. Details keep coming and you voice them without interruption.</p>
+            <p>Your agent listens. It doesn&rsquo;t interrupt. But you can ask it anytime: <em>&ldquo;What am I missing? Where are my blind spots? What cognitive biases am I falling into?&rdquo;</em></p>
+            <p>When you&rsquo;re done, it gives you back your thinking &mdash; as a presentation, a voice message, a short text, a video. You decide the format.</p>
+          </div>
+          <div class="speculative-output">
+            <span class="output-label">Output:</span>
+            <span class="output-options">presentation &middot; voice memo &middot; text &middot; video</span>
+          </div>
+        </div>
+        <div class="speculative-card-back">
+          <div class="speculative-number">01</div>
+          <h3 class="speculative-title">The Implementation</h3>
+          <div class="speculative-body">
+            <p><a href="https://github.com/glebis/audio-monitor" target="_blank" rel="noopener"><strong>audio-monitor</strong></a> &mdash; continuous audio monitoring with VAD + Whisper transcription + SQLite FTS5 search.</p>
+            <p>Coupling it with intent detection or comment extraction gives you a predictive, always-on, always-attentive AI &mdash; for your own benefit.</p>
+          </div>
+          <div class="speculative-output">
+            <span class="output-label">Stack:</span>
+            <span class="output-options">VAD &middot; Whisper &middot; SQLite FTS5</span>
+          </div>
+        </div>
+        <a href="#" class="speculative-swap-toggle">See the implementation</a>
+      </article>
+
+      <!-- Story 2: The Second Opinion -->
+      <article class="speculative-card">
+        <div class="speculative-card-front">
+          <div class="speculative-number">02</div>
+          <h3 class="speculative-title">The Second Opinion</h3>
+          <div class="speculative-body">
+            <p>Before you share your idea publicly, you stress-test it. The agent plays devil&rsquo;s advocate. It finds the weak points you can&rsquo;t see because you&rsquo;re too close.</p>
+            <p>But it also stress-checks your mind. <em>&ldquo;Is this actually a crisis, or am I catastrophizing?&rdquo;</em></p>
+            <p>It separates signal from noise when anxiety amplifies everything. Not therapy. Just a reality check from something that doesn&rsquo;t have skin in the game.</p>
+          </div>
+          <div class="speculative-output">
+            <span class="output-label">Mode:</span>
+            <span class="output-options">devil&rsquo;s advocate &middot; anxiety filter &middot; reality check</span>
+          </div>
+        </div>
+        <div class="speculative-card-back">
+          <div class="speculative-number">02</div>
+          <h3 class="speculative-title">The Implementation</h3>
+          <div class="speculative-body">
+            <p><a href="https://github.com/glebis/claude-skills/tree/master/session-analyzer" target="_blank" rel="noopener"><strong>Session Analyzer</strong></a> &mdash; analyzes Claude Code sessions from the last 24h, classifies them, identifies patterns, and provides actionable improvements.</p>
+            <p>Your automated second opinion on how you work.</p>
+          </div>
+          <div class="speculative-output">
+            <span class="output-label">Output:</span>
+            <span class="output-options">session reports &middot; pattern analysis &middot; action items</span>
+          </div>
+        </div>
+        <a href="#" class="speculative-swap-toggle">See the implementation</a>
+      </article>
+
+      <!-- Story 3: The Night Shift -->
+      <article class="speculative-card speculative-card-expanded">
+        <div class="speculative-card-front">
+          <div class="speculative-number">03</div>
+          <h3 class="speculative-title">The Night Shift</h3>
+          <div class="speculative-body">
+            <p>While you sleep, the system works.</p>
+
+            <div class="night-shift-timeline">
+              <div class="timeline-item">
+                <span class="timeline-time">22:00</span>
+                <span class="timeline-event">Obsidian vault commits to git. Day captured.</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-time">every 15m</span>
+                <span class="timeline-event">Chrome history syncs to searchable database.</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-time">09:30</span>
+                <span class="timeline-event">Health briefing: sleep, HR &amp; HRV trends, behavioral patterns, session analyses.</span>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-time">10:00</span>
+                <span class="timeline-event">Research digest: 10 relevant + 10 serendipitous finds.</span>
+              </div>
+            </div>
+
+            <div class="health-report-example">
+              <div class="health-report-header">09:30 &middot; Health Briefing</div>
+              <div class="health-report-grid">
+                <div class="health-metric">
+                  <span class="health-metric-label">Resting HR</span>
+                  <span class="health-metric-value">55 <small>bpm</small></span>
+                  <span class="health-metric-delta delta-good">&darr;3%</span>
+                </div>
+                <div class="health-metric">
+                  <span class="health-metric-label">HRV</span>
+                  <span class="health-metric-value">45.6 <small>ms</small></span>
+                  <span class="health-metric-delta delta-warn">&darr;8%</span>
+                </div>
+                <div class="health-metric">
+                  <span class="health-metric-label">Steps/day</span>
+                  <span class="health-metric-value">6,477</span>
+                  <span class="health-metric-delta delta-warn">&darr;27%</span>
+                </div>
+                <div class="health-metric">
+                  <span class="health-metric-label">Exercise</span>
+                  <span class="health-metric-value">163 <small>min</small></span>
+                  <span class="health-metric-delta delta-warn">&darr;40%</span>
+                </div>
+              </div>
+              <div class="health-sparkline-row">
+                <span class="health-metric-label">HRV 7d</span>
+                <svg class="health-sparkline" viewBox="0 0 84 24" preserveAspectRatio="none">
+                  <polyline fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" points="2,8 14,4 26,10 38,6 50,12 62,14 74,16 82,18"/>
+                  <circle cx="82" cy="18" r="2" fill="var(--accent)"/>
+                </svg>
+              </div>
+              <p class="health-report-insight">HR excellent (well below 65 bpm target). HRV below 50 ms threshold &mdash; suggests incomplete recovery. Prioritize sleep tonight, add a 15-min walk.</p>
+            </div>
+
+            <p class="speculative-detail">10:00 &middot; Research digest: &ldquo;Measuring AI Ability to Complete Long Tasks&rdquo; from arXiv, &ldquo;Claude Code Best Practices&rdquo; from Medium, &ldquo;LLMs in Scientific Method&rdquo; from Nature.</p>
+          </div>
+          <div class="speculative-output">
+            <span class="output-label">Sources:</span>
+            <span class="output-options">arXiv &middot; Nature &middot; Medium &middot; HN &middot; Reddit</span>
+          </div>
+        </div>
+        <div class="speculative-card-back">
+          <div class="speculative-number">03</div>
+          <h3 class="speculative-title">The Implementations</h3>
+          <div class="speculative-body">
+            <div class="speculative-tool-grid">
+              <a href="https://verity.salient.community" target="_blank" rel="noopener" class="speculative-tool">
+                <strong>Verity</strong>
+                <span>Telegram bot with research skills</span>
+              </a>
+              <a href="https://github.com/glebis/claude-skills/tree/master/daydream" target="_blank" rel="noopener" class="speculative-tool">
+                <strong>Vault Daydream</strong>
+                <span>Multi-agent system mining Obsidian vault for non-obvious connections, inspired by Gwern&rsquo;s LLM Daydreaming</span>
+              </a>
+              <a href="https://github.com/glebis/claude-skills/tree/master/deep-research" target="_blank" rel="noopener" class="speculative-tool">
+                <strong>Deep Research</strong>
+                <span>Internet-enabled research via OpenAI Deep Research API</span>
+              </a>
+              <a href="https://github.com/glebis/claude-skills" target="_blank" rel="noopener" class="speculative-tool">
+                <strong>FireCrawl Research</strong>
+                <span>Web scraping and source enrichment</span>
+              </a>
+              <a href="https://github.com/glebis/claude-skills" target="_blank" rel="noopener" class="speculative-tool">
+                <strong>Insight Extractor</strong>
+                <span>Parses session reports into action items, patterns, tool discoveries</span>
+              </a>
+              <a href="https://github.com/glebis/claude-skills/tree/master/session-analyzer" target="_blank" rel="noopener" class="speculative-tool">
+                <strong>Session Analyzer</strong>
+                <span>Classifies sessions, identifies behavioral patterns</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="speculative-swap-toggle">See the implementations</a>
+      </article>
+    </div>
+
+    <p class="speculative-note">These aren&rsquo;t concepts. This is the system I use daily.</p>
+  </div>
+</section>
+
 <!-- Products Section -->
 <section class="section" id="products">
   <div class="container">
     <header class="section-header">
-      <h2 class="section-title">Products</h2>
+      <h2 class="section-title">My Products</h2>
       <span class="section-subtitle">what I build</span>
     </header>
 
@@ -324,115 +504,109 @@
       </div>
     </div>
 
+    <!-- Claude Code Lab - Featured Full Width -->
+    <div class="product-featured" id="claude-code-lab-block">
+      <div class="product-featured-header">
+        <div>
+          <h3 class="product-featured-title">Claude Code Lab</h3>
+          <p class="product-featured-tagline">Ship what you imagine</p>
+        </div>
+        <a href="https://claude.salient.community" class="product-featured-cta" target="_blank">
+          Join the Lab &rarr;
+        </a>
+      </div>
+
+      <div class="product-featured-content">
+        <div class="product-featured-main">
+          <p class="product-featured-lead">
+            7-week hands-on workshop where you learn to use <strong>Claude Code</strong> as a universal AI agent &mdash;
+            for coding, data analysis, content creation, automation, and building real products.
+          </p>
+
+          <div class="product-featured-description">
+            <p>Not a course about prompting. You build real things from week one:</p>
+
+            <ul class="product-featured-list">
+              <li><strong>Agent Architecture</strong> &mdash; Subagents, context management, prompt engineering that actually works</li>
+              <li><strong>MCP &amp; Skills</strong> &mdash; Connect any external tool or API. Build reusable automations you can fork and share</li>
+              <li><strong>Cloud Deployment</strong> &mdash; Ship to Vercel, Netlify, Railway. From prototype to production</li>
+              <li><strong>Web Apps &amp; Prototypes</strong> &mdash; Build functional applications, dashboards, and tools with AI assistance</li>
+              <li><strong>Documents &amp; Data</strong> &mdash; Process files, APIs, databases. Automate the tedious parts of your work</li>
+            </ul>
+
+            <p class="text-muted">
+              Most participants are not developers. Product managers, designers, founders, analysts, researchers &mdash;
+              basic computer literacy is all you need.
+            </p>
+          </div>
+        </div>
+
+        <div class="product-featured-sidebar">
+          <div class="product-featured-meta">
+            <div class="meta-item">
+              <span class="meta-label">Duration</span>
+              <span class="meta-value">7 weeks</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Format</span>
+              <span class="meta-value">Live sessions via Zoom</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Alumni</span>
+              <span class="meta-value">100+ participants</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Schedule</span>
+              <span class="meta-value">Mon &amp; Thu, 18:00 CET</span>
+            </div>
+          </div>
+
+          <div class="product-featured-quote">
+            <blockquote>
+              &ldquo;There&rsquo;s simply no boundary anymore of what you can&rsquo;t do.&rdquo;
+              <cite>&mdash; Mikhail, participant</cite>
+            </blockquote>
+            <blockquote>
+              &ldquo;The speed of going from thought to action is unreal.&rdquo;
+              <cite>&mdash; Luka, entrepreneur</cite>
+            </blockquote>
+            <blockquote>
+              &ldquo;That state of flow, where you&rsquo;re constantly building.&rdquo;
+              <cite>&mdash; Alexander, investment analyst</cite>
+            </blockquote>
+          </div>
+
+          <div class="product-featured-for">
+            <h4>For:</h4>
+            <ul>
+              <li>Product managers &amp; designers</li>
+              <li>Entrepreneurs &amp; founders</li>
+              <li>Analysts &amp; researchers</li>
+              <li>Multipotentialites shipping across domains</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Other Products Grid -->
     <div class="products-grid products-grid-secondary">
       <a href="https://verity.salient.community" class="product-card" data-index="0" target="_blank">
         <span class="product-icon">&#9993;</span>
         <h3 class="product-title">VERITY</h3>
         <p class="product-subtitle">AI-powered Telegram agent</p>
-        <p class="product-description">Claude in your pocket. Research, collect knowledge, recall from your vault, process voice — all from Telegram.</p>
-        <span class="product-arrow">→</span>
+        <p class="product-description">Claude in your pocket. Research, collect knowledge, recall from your vault, process voice &mdash; all from Telegram.</p>
+        <span class="product-arrow">&rarr;</span>
       </a>
 
-      <a href="https://claude-code.glebkalinin.com" class="product-card" data-index="1" target="_blank">
-        <span class="product-icon">⌨</span>
-        <h3 class="product-title">CLAUDE CODE LAB</h3>
-        <p class="product-subtitle">6-week practical lab · 350+ alumni</p>
-        <p class="product-description">Practical AI-assisted development. For PMs, designers, founders. Ship skills you can fork.</p>
-        <span class="product-arrow">→</span>
-      </a>
-
-      <a href="/speculative/" class="product-card" data-index="2">
-        <span class="product-icon">🎬</span>
+      <a href="/speculative/" class="product-card" data-index="1">
+        <span class="product-icon">&#127916;</span>
         <h3 class="product-title">SPECULATIVE DESIGN</h3>
-        <p class="product-subtitle">Films · Experimental interfaces</p>
+        <p class="product-subtitle">Films &middot; Experimental interfaces</p>
         <p class="product-description">What if AI knew everything? Exploring futures through film. Design fiction meets reality.</p>
-        <span class="product-arrow">→</span>
+        <span class="product-arrow">&rarr;</span>
       </a>
     </div>
-  </div>
-</section>
-
-<!-- Speculative Design Section -->
-<section class="section speculative-section" id="speculative">
-  <div class="container">
-    <header class="section-header">
-      <h2 class="section-title">Speculative Design</h2>
-      <span class="section-subtitle">imagining the future</span>
-    </header>
-
-    <div class="speculative-intro">
-      <p class="speculative-lead">I imagine the future and implement it.</p>
-      <p>I start from a feeling &mdash; a grokking of how life might be when technology really matures &mdash; and start living as if it&rsquo;s already there. I look at where it fails, while focusing on where it excels. I live with new capabilities and imagine what will become possible when millions of people also do.</p>
-    </div>
-
-    <div class="speculative-grid">
-      <!-- Story 1: The Thinking Room -->
-      <article class="speculative-card">
-        <div class="speculative-number">01</div>
-        <h3 class="speculative-title">The Thinking Room</h3>
-        <div class="speculative-body">
-          <p>Imagine you are planning your business. You sit in a quiet room. Details keep coming and you voice them without interruption.</p>
-          <p>Your agent listens. It doesn&rsquo;t interrupt. But you can ask it anytime: <em>&ldquo;What am I missing? Where are my blind spots? What cognitive biases am I falling into?&rdquo;</em></p>
-          <p>When you&rsquo;re done, it gives you back your thinking &mdash; as a presentation, a voice message, a short text, a video. You decide the format.</p>
-        </div>
-        <div class="speculative-output">
-          <span class="output-label">Output:</span>
-          <span class="output-options">presentation · voice memo · text · video</span>
-        </div>
-      </article>
-
-      <!-- Story 2: The Second Opinion -->
-      <article class="speculative-card">
-        <div class="speculative-number">02</div>
-        <h3 class="speculative-title">The Second Opinion</h3>
-        <div class="speculative-body">
-          <p>Before you share your idea publicly, you stress-test it. The agent plays devil&rsquo;s advocate. It finds the weak points you can&rsquo;t see because you&rsquo;re too close.</p>
-          <p>But it also stress-checks your mind. <em>&ldquo;Is this actually a crisis, or am I catastrophizing?&rdquo;</em></p>
-          <p>It separates signal from noise when anxiety amplifies everything. Not therapy. Just a reality check from something that doesn&rsquo;t have skin in the game.</p>
-        </div>
-        <div class="speculative-output">
-          <span class="output-label">Mode:</span>
-          <span class="output-options">devil&rsquo;s advocate · anxiety filter · reality check</span>
-        </div>
-      </article>
-
-      <!-- Story 3: The Night Shift -->
-      <article class="speculative-card speculative-card-expanded">
-        <div class="speculative-number">03</div>
-        <h3 class="speculative-title">The Night Shift</h3>
-        <div class="speculative-body">
-          <p>While you sleep, the system works.</p>
-
-          <div class="night-shift-timeline">
-            <div class="timeline-item">
-              <span class="timeline-time">22:00</span>
-              <span class="timeline-event">Obsidian vault commits to git. Day captured.</span>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-time">every 15m</span>
-              <span class="timeline-event">Chrome history syncs to searchable database.</span>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-time">09:30</span>
-              <span class="timeline-event">Health briefing: sleep duration, HRV, weekly steps.</span>
-            </div>
-            <div class="timeline-item">
-              <span class="timeline-time">10:00</span>
-              <span class="timeline-event">Research digest: 10 relevant + 10 serendipitous finds.</span>
-            </div>
-          </div>
-
-          <p class="speculative-detail">Today&rsquo;s digest: &ldquo;Measuring AI Ability to Complete Long Tasks&rdquo; from arXiv, &ldquo;Claude Code Best Practices&rdquo; from Medium, &ldquo;LLMs in Scientific Method&rdquo; from Nature. Themes extracted from your recent work.</p>
-        </div>
-        <div class="speculative-output">
-          <span class="output-label">Sources:</span>
-          <span class="output-options">arXiv · Nature · Medium · HN · Reddit</span>
-        </div>
-      </article>
-    </div>
-
-    <p class="speculative-note">These aren&rsquo;t concepts. This is the system I use daily.</p>
   </div>
 </section>
 

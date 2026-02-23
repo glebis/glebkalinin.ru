@@ -164,17 +164,113 @@ function initGraph() {
   let paused=false, graphHidden=false, speedMultiplier=1;
 
   // Drag controls
-  let dragging=false,lastX=0,lastY=0,cameraZ=7;
-  canvas.addEventListener('pointerdown',e=>{dragging=true;lastX=e.clientX;lastY=e.clientY;canvas.setPointerCapture(e.pointerId);canvas.style.cursor='grabbing';});
+  let dragging=false,lastX=0,lastY=0,cameraZ=7,dragMoved=false;
+  canvas.addEventListener('pointerdown',e=>{dragging=true;dragMoved=false;lastX=e.clientX;lastY=e.clientY;canvas.setPointerCapture(e.pointerId);canvas.style.cursor='grabbing';});
   window.addEventListener('pointermove',e=>{
     if(!dragging)return;
     const dx=e.clientX-lastX,dy=e.clientY-lastY;
+    if(Math.abs(dx)>2||Math.abs(dy)>2)dragMoved=true;
     lastX=e.clientX;lastY=e.clientY;
     if(e.shiftKey){rot.xw+=dx*0.003;rot.yw+=dy*0.003;}
     else{rot.xy+=dx*0.002;rot.xz+=dy*0.002;}
   });
   window.addEventListener('pointerup',()=>{dragging=false;canvas.style.cursor='grab';});
   canvas.addEventListener('wheel',e=>{e.preventDefault();cameraZ=clamp(cameraZ-Math.sign(e.deltaY)*0.4,3,14);},{passive:false});
+
+  // Click-to-zoom state
+  let focusedNode=-1, zoomAnim=null, lastProjected=null;
+  const ZOOM_DURATION=500; // ms
+  const ZOOM_DISTANCE=3.5; // camera distance when zoomed in
+  const defaultCameraZ=7;
+
+  // Focused node label overlay
+  const focusLabel=document.createElement('div');
+  focusLabel.style.cssText='position:absolute;font-family:var(--font-mono,"Geist Mono",monospace);white-space:nowrap;pointer-events:none;text-shadow:0 0 10px rgba(26,26,31,0.95),0 0 20px rgba(26,26,31,0.8);will-change:transform,opacity;font-size:16px;opacity:0;transition:opacity 0.3s ease;z-index:10;';
+  labelLayer.appendChild(focusLabel);
+
+  function easeInOutCubic(t){return t<0.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}
+
+  function startZoomTo(nodeIdx){
+    const p=lastProjected[nodeIdx];
+    if(!p)return;
+    const startPos={x:camera.position.x,y:camera.position.y,z:camera.position.z};
+    // Target: look at node from a closer distance along the camera->node line
+    const nx=p[0],ny=p[1],nz=p[2];
+    // Camera approaches node but stays offset in Z
+    const dx=nx-camera.position.x,dy=ny-camera.position.y,dz=nz-camera.position.z;
+    const dist=Math.sqrt(dx*dx+dy*dy+dz*dz);
+    const approach=Math.max(0,dist-ZOOM_DISTANCE)/dist;
+    const targetPos={
+      x:startPos.x+dx*approach,
+      y:startPos.y+dy*approach,
+      z:startPos.z+dz*approach
+    };
+    const targetLookAt={x:nx,y:ny,z:nz};
+    // If already focused on another node, start lookAt from that node's position
+    let startLookAt={x:0,y:0,z:0};
+    if(focusedNode>=0&&lastProjected&&lastProjected[focusedNode]){
+      const fp=lastProjected[focusedNode];
+      startLookAt={x:fp[0],y:fp[1],z:fp[2]};
+    }
+    const startTime=performance.now();
+    focusedNode=nodeIdx;
+    zoomAnim={startPos,targetPos,startLookAt,targetLookAt,startTime,zooming:'in'};
+    // Show label
+    const node=nodes[nodeIdx];
+    const cc=CAT_COLORS[cats[node[1]]]||[1,0.42,0.21];
+    focusLabel.textContent=node[0];
+    focusLabel.style.color='rgba('+Math.round(cc[0]*255)+','+Math.round(cc[1]*255)+','+Math.round(cc[2]*255)+',1)';
+    focusLabel.style.opacity='1';
+    canvas.style.cursor='pointer';
+  }
+
+  function startZoomOut(){
+    const startPos={x:camera.position.x,y:camera.position.y,z:camera.position.z};
+    const targetPos={x:0,y:0,z:defaultCameraZ};
+    // Use the current focused node position (accounts for rotation drift)
+    let startLookAt={x:0,y:0,z:0};
+    if(focusedNode>=0&&lastProjected&&lastProjected[focusedNode]){
+      const fp=lastProjected[focusedNode];
+      startLookAt={x:fp[0],y:fp[1],z:fp[2]};
+    }
+    const targetLookAt={x:0,y:0,z:0};
+    const startTime=performance.now();
+    focusedNode=-1;
+    zoomAnim={startPos,targetPos,startLookAt,targetLookAt,startTime,zooming:'out'};
+    focusLabel.style.opacity='0';
+    canvas.style.cursor='grab';
+  }
+
+  function hitTestNode(clientX,clientY){
+    if(!lastProjected)return -1;
+    const rect=canvas.getBoundingClientRect();
+    const cw=canvas.clientWidth,ch=canvas.clientHeight;
+    const hw=cw/2,hh=ch/2;
+    const mx=clientX-rect.left,my=clientY-rect.top;
+    let bestIdx=-1,bestDist=Infinity;
+    const threshold=20; // px hit radius
+    for(let i=0;i<nodeCount;i++){
+      const p=lastProjected[i];
+      if(!p)continue;
+      tmpV.set(p[0],p[1],p[2]).project(camera);
+      if(tmpV.z>1||tmpV.z<0)continue;
+      const sx=(tmpV.x*hw)+hw,sy=(-tmpV.y*hh)+hh;
+      const dx=sx-mx,dy=sy-my;
+      const d=Math.sqrt(dx*dx+dy*dy);
+      if(d<threshold&&d<bestDist){bestDist=d;bestIdx=i;}
+    }
+    return bestIdx;
+  }
+
+  canvas.addEventListener('click',e=>{
+    if(dragMoved)return; // ignore drag-end clicks
+    const hit=hitTestNode(e.clientX,e.clientY);
+    if(hit>=0&&hit!==focusedNode){
+      startZoomTo(hit);
+    }else{
+      if(focusedNode>=0)startZoomOut();
+    }
+  });
 
   // Labels
   const MAX_LABELS=25;
@@ -244,15 +340,46 @@ function initGraph() {
     requestAnimationFrame(animate);
     if(paused)return;
     const dt=0.008*speedMultiplier;
-    if(!dragging){
-      autoTime+=dt;
-      rot.xw+=speed.xw*dt;rot.yw+=speed.yw*dt;rot.zw+=speed.zw*dt;
-      rot.xy+=speed.xy*dt;rot.yz+=speed.yz*dt;
-    }
-    camera.position.z+=(cameraZ-camera.position.z)*0.08;
-    if(!dragging){camera.position.x=Math.sin(autoTime*0.08)*0.4;camera.position.y=Math.cos(autoTime*0.06)*0.25;}
-    camera.lookAt(0,0,0);
+    const isFocused=focusedNode>=0;
+    const isAnimating=zoomAnim&&!zoomAnim.done;
 
+    // 1. Update auto-rotation (slowed when focused)
+    const rotScale=isFocused?0.15:1;
+    if(!dragging&&!isAnimating){
+      autoTime+=dt;
+      rot.xw+=speed.xw*dt*rotScale;rot.yw+=speed.yw*dt*rotScale;rot.zw+=speed.zw*dt*rotScale;
+      rot.xy+=speed.xy*dt*rotScale;rot.yz+=speed.yz*dt*rotScale;
+    }
+
+    // 2. Camera positioning
+    if(isAnimating){
+      // Tween camera position and lookAt during zoom
+      const elapsed=now-zoomAnim.startTime;
+      const t=clamp(elapsed/ZOOM_DURATION,0,1);
+      const et=easeInOutCubic(t);
+      const sp=zoomAnim.startPos,tp=zoomAnim.targetPos;
+      const sl=zoomAnim.startLookAt,tl=zoomAnim.targetLookAt;
+      camera.position.x=sp.x+(tp.x-sp.x)*et;
+      camera.position.y=sp.y+(tp.y-sp.y)*et;
+      camera.position.z=sp.z+(tp.z-sp.z)*et;
+      camera.lookAt(
+        sl.x+(tl.x-sl.x)*et,
+        sl.y+(tl.y-sl.y)*et,
+        sl.z+(tl.z-sl.z)*et
+      );
+      if(t>=1){
+        if(zoomAnim.zooming==='out'){zoomAnim=null;cameraZ=defaultCameraZ;}
+        else{zoomAnim.done=true;}
+      }
+    }else if(!isFocused){
+      // Default unfocused camera behavior
+      camera.position.z+=(cameraZ-camera.position.z)*0.08;
+      if(!dragging){camera.position.x=Math.sin(autoTime*0.08)*0.4;camera.position.y=Math.cos(autoTime*0.06)*0.25;}
+      camera.lookAt(0,0,0);
+    }
+    // When focused+done animating, lookAt is set after projection below
+
+    // 3. Project 4D -> 3D
     const rm=compose(rot);
     let wMin=1e9,wMax=-1e9;
     const rotated=[];
@@ -268,15 +395,29 @@ function initGraph() {
       if(p[2]<dMin)dMin=p[2];if(p[2]>dMax)dMax=p[2];
     }
     const dRange=dMax-dMin||1;
+    lastProjected=projected;
 
+    // 4. When focused (post-animation), track the node
+    if(isFocused&&!isAnimating){
+      const fp=projected[focusedNode];
+      if(fp)camera.lookAt(fp[0],fp[1],fp[2]);
+    }
+
+    // 5. Update node visuals
     for(let i=0;i<nodeCount;i++){
       const nw=(rotated[i][3]-wMin)/wRange;
       const cc=CAT_COLORS[cats[nodes[i][1]]]||[1,0.42,0.21];
       colorArr[i*3]=cc[0];colorArr[i*3+1]=cc[1];colorArr[i*3+2]=cc[2];
-      sizeArr[i]=0.08+degrees[i]*0.025;
-      intArr[i]=0.35+nw*0.9;
+      if(i===focusedNode){
+        sizeArr[i]=0.25+degrees[i]*0.035;
+        intArr[i]=1.3;
+      }else{
+        sizeArr[i]=0.08+degrees[i]*0.025;
+        intArr[i]=0.35+nw*0.9;
+      }
     }
 
+    // 6. Update edge visuals
     for(let e=0;e<edgeCount;e++){
       const [ai,bi]=edges[e];
       const a=projected[ai],b=projected[bi];
@@ -289,6 +430,7 @@ function initGraph() {
       eColArr[base+3]=cb[0];eColArr[base+4]=cb[1];eColArr[base+5]=cb[2];
     }
 
+    // 7. Render
     geo.attributes.position.needsUpdate=true;
     geo.attributes.hyperColor.needsUpdate=true;
     geo.attributes.size.needsUpdate=true;
@@ -296,7 +438,23 @@ function initGraph() {
     eGeo.attributes.position.needsUpdate=true;
     eGeo.attributes.color.needsUpdate=true;
     renderer.render(scene,camera);
-    if(now-lastLabel>60){updateLabels(projected,rotated,wMin,wRange,dMin,dRange);lastLabel=now;}
+
+    // 8. Labels
+    if(now-lastLabel>60){
+      updateLabels(projected,rotated,wMin,wRange,dMin,dRange);
+      lastLabel=now;
+    }
+
+    // 9. Position the focus label above the focused node
+    if(isFocused){
+      const fp=projected[focusedNode];
+      if(fp){
+        const cw=canvas.clientWidth,ch=canvas.clientHeight;
+        tmpV.set(fp[0],fp[1],fp[2]).project(camera);
+        const sx=(tmpV.x*cw/2)+cw/2,sy=(-tmpV.y*ch/2)+ch/2;
+        focusLabel.style.transform='translate('+sx+'px,'+sy+'px) translate(-50%,-180%)';
+      }
+    }
   }
   requestAnimationFrame(animate);
 
