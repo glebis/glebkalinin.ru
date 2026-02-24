@@ -444,4 +444,60 @@
     toggle.dataset.label = toggle.textContent;
   });
 
+  // ==========================================================================
+  // Futures Cone Interactivity
+  // ==========================================================================
+
+  const coneDescriptions = {
+    possible: '<strong>Possible</strong> \u2013 What if AI knew everything about you? What if interfaces disappeared entirely? Science fiction territory.',
+    plausible: '<strong>Plausible</strong> \u2013 AI agents with persistent memory, proactive health monitoring, autonomous research. Technically feasible, not yet mainstream.',
+    probable: '<strong>Probable</strong> \u2013 Voice interfaces, session analysis, automated research digests. Already emerging in early-adopter workflows.',
+    preferable: '<strong>Preferable</strong> \u2013 Personal OS: your data, your agents, your infrastructure. Local-first, human-authorized, context-aware. This is what I build and use daily.'
+  };
+
+  const coneSvg = document.querySelector('.futures-cone-svg');
+  const coneInfo = document.getElementById('cone-info');
+  const coneAnnotation = document.getElementById('cone-annotation');
+  const coneLeader = document.getElementById('cone-leader');
+  let activeCone = null;
+
+  if (coneSvg && coneInfo) {
+    document.querySelectorAll('.cone-layer').forEach(layer => {
+      layer.addEventListener('click', function() {
+        const zone = this.dataset.cone;
+
+        if (activeCone === zone) {
+          // Deactivate
+          this.classList.remove('cone-active');
+          coneSvg.classList.remove('has-active');
+          coneInfo.innerHTML = '';
+          if (coneAnnotation) coneAnnotation.style.opacity = '1';
+          if (coneLeader) coneLeader.style.opacity = '0.3';
+          activeCone = null;
+        } else {
+          // Activate new
+          document.querySelectorAll('.cone-layer').forEach(l => l.classList.remove('cone-active'));
+          this.classList.add('cone-active');
+          coneSvg.classList.add('has-active');
+          coneInfo.innerHTML = coneDescriptions[zone] || '';
+          if (coneAnnotation) coneAnnotation.style.opacity = '0';
+          if (coneLeader) coneLeader.style.opacity = '0';
+          activeCone = zone;
+        }
+      });
+
+      layer.addEventListener('mouseenter', function() {
+        if (!activeCone) {
+          coneInfo.innerHTML = coneDescriptions[this.dataset.cone] || '';
+        }
+      });
+
+      layer.addEventListener('mouseleave', function() {
+        if (!activeCone) {
+          coneInfo.innerHTML = '';
+        }
+      });
+    });
+  }
+
 })();

@@ -294,24 +294,13 @@
 
 .hero-graph-bg .vault-graph-container {
   position: absolute;
-  top: -10%;
-  left: 55%;
-  width: 50%;
-  height: 120%;
+  top: -15%;
+  left: 40%;
+  width: 65%;
+  height: 130%;
 }
 
-/* Text readability over graph */
-.hero-graph-bg::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(90deg, #0f0f12 60%, transparent 100%);
-  z-index: 1;
-  pointer-events: none;
-}
+/* Text readability over graph -- gradient removed per user request */
 
 /* Hero Navigation */
 .hero-nav {
@@ -1747,9 +1736,22 @@
   background: var(--bg-tertiary);
 }
 
+.speculative-intro-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+  align-items: start;
+}
+
+@media (min-width: 1000px) {
+  .speculative-intro-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .speculative-intro {
   max-width: 700px;
-  margin-bottom: var(--space-2xl);
 }
 
 .speculative-lead {
@@ -1765,6 +1767,147 @@
   font-size: 1.0625rem;
   color: var(--text-secondary);
   line-height: 1.7;
+}
+
+/* Speculative Methods */
+.speculative-methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .speculative-methods {
+    grid-template-columns: 1fr;
+  }
+}
+
+.speculative-method {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: var(--space-md);
+  border-left: 2px solid var(--accent);
+}
+
+.speculative-method strong {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-primary);
+}
+
+.speculative-method span {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Futures Cone Diagram */
+.futures-cone-container {
+  overflow-x: auto;
+}
+
+.futures-cone-svg {
+  width: 100%;
+  min-width: 500px;
+  height: auto;
+}
+
+/* Cone layer base + interaction */
+.cone-layer {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.cone-layer .cone-fill {
+  transition: fill-opacity 0.25s ease, stroke-opacity 0.25s ease;
+}
+
+.cone-layer[data-cone="possible"] .cone-fill { fill-opacity: 0.06; stroke-opacity: 0.15; }
+.cone-layer[data-cone="plausible"] .cone-fill { fill-opacity: 0.08; stroke-opacity: 0.2; }
+.cone-layer[data-cone="probable"] .cone-fill  { fill-opacity: 0.12; stroke-opacity: 0.3; }
+.cone-layer[data-cone="preferable"] .cone-fill { fill-opacity: 0.2; stroke-opacity: 0.6; }
+
+/* Hover/active: boost the hovered layer */
+.cone-layer:hover .cone-fill,
+.cone-layer.cone-active .cone-fill {
+  fill-opacity: 0.35;
+  stroke-opacity: 0.8;
+}
+
+.cone-layer:hover .svg-cone-label,
+.cone-layer.cone-active .svg-cone-label {
+  fill: var(--accent);
+  font-weight: 700;
+}
+
+/* Dim other layers when one is active */
+.futures-cone-svg.has-active .cone-layer:not(.cone-active) {
+  opacity: 0.4;
+}
+
+.futures-cone-svg .svg-cone-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  fill: var(--text-dim);
+  letter-spacing: 0.05em;
+  transition: fill 0.2s ease;
+}
+
+.futures-cone-svg .svg-cone-active {
+  fill: var(--accent);
+  font-weight: 700;
+}
+
+.futures-cone-svg .svg-cone-now {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  fill: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.futures-cone-svg .svg-cone-axis {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  fill: var(--text-dim);
+  letter-spacing: 0.05em;
+}
+
+.futures-cone-svg .svg-cone-annotation {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--accent);
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s ease;
+}
+
+.futures-cone-svg .svg-cone-credit {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  fill: var(--text-dim);
+  opacity: 0.6;
+}
+
+/* Info panel below cone */
+.cone-info {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  min-height: 2.5rem;
+  padding-top: var(--space-sm);
+  transition: opacity 0.2s ease;
+}
+
+.cone-info:empty {
+  opacity: 0;
+}
+
+.cone-info strong {
+  color: var(--accent);
 }
 
 .speculative-grid {
@@ -2208,4 +2351,171 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* ==========================================================================
+   Mobile Responsive Fixes
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  /* Reduce section vertical padding (8rem -> 3rem) */
+  .section {
+    padding: var(--space-lg) 0;
+  }
+
+  /* Reduce container side padding */
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  /* Section headers: stack vertically */
+  .section-header {
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+  }
+
+  .section-title {
+    font-size: clamp(1.75rem, 9vw, 2.5rem);
+    word-break: break-word;
+  }
+
+  /* Product featured: drastically reduce padding */
+  .product-featured {
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+
+  .product-featured-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+  }
+
+  .product-featured-cta {
+    margin-left: 0;
+  }
+
+  .product-featured-title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+
+  .product-featured-lead {
+    font-size: 1.125rem;
+  }
+
+  .product-featured-content {
+    gap: var(--space-lg);
+  }
+
+  .product-featured-meta {
+    grid-template-columns: 1fr 1fr;
+    padding: var(--space-md);
+  }
+
+  .product-featured-quote {
+    padding: var(--space-md);
+  }
+
+  .product-featured-for {
+    padding: var(--space-md);
+  }
+
+  /* Architecture SVG: full width */
+  .os-diagram-compact {
+    width: 100%;
+  }
+
+  .architecture-svg {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Quote: reduce size */
+  .quote-large {
+    font-size: 1.125rem;
+  }
+
+  /* Product cards: reduce padding */
+  .product-card {
+    padding: var(--space-lg);
+  }
+
+  /* Speculative cards: reduce padding + gap */
+  .speculative-card {
+    padding: var(--space-lg);
+  }
+
+  .speculative-grid {
+    gap: var(--space-lg);
+  }
+
+  /* Speculative intro: reduce bottom margin */
+  .speculative-intro-layout {
+    margin-bottom: var(--space-lg);
+  }
+
+  /* Futures cone: allow horizontal scroll */
+  .futures-cone-container {
+    margin: 0 calc(-1 * var(--space-md));
+    padding: 0 var(--space-md);
+  }
+
+  .futures-cone-svg {
+    min-width: 400px;
+  }
+
+  /* Community featured grid */
+  .community-featured-card {
+    padding: var(--space-lg);
+  }
+
+  /* Channel cards */
+  .channel-card {
+    padding: var(--space-lg);
+  }
+
+  /* Timeline SVG container */
+  .timeline-svg-container {
+    margin: 0 calc(-1 * var(--space-md));
+    padding: 0 var(--space-md);
+  }
+
+  /* Hero content: reduce left padding */
+  .hero .container {
+    padding-left: var(--space-lg);
+  }
+
+  .hero-content {
+    padding: var(--space-xl) 0;
+  }
+
+  /* Product featured list: tighter */
+  .product-featured-list li {
+    font-size: 0.9375rem;
+  }
+}
+
+/* Extra-small screens (320px) */
+@media (max-width: 380px) {
+  .container {
+    padding: 0 var(--space-sm);
+  }
+
+  .product-featured {
+    padding: var(--space-md);
+  }
+
+  .hero .container {
+    padding-left: var(--space-md);
+  }
+
+  .section-title {
+    font-size: clamp(1.75rem, 11vw, 2.5rem);
+  }
+
+  .hero-name {
+    font-size: clamp(2.5rem, 12vw, 3rem);
+  }
 }

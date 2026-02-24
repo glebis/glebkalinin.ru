@@ -14,8 +14,7 @@
         <p class="hero-tagline" id="hero-tagline">Somebody has to imagine the future</p>
 
         <div class="hero-description" id="hero-description">
-          <p>I build AI systems that know your context.</p>
-          <p>Not chatbots. <span class="highlight">Personal operating systems.</span></p>
+          <p>I use science fiction, speculative design and vibe-coding to imagine, implement and live the embodied experience of <span class="highlight">co-creating with thinking machines.</span></p>
         </div>
 
         <div class="hero-philosophy" id="hero-philosophy">
@@ -56,9 +55,7 @@
 
   <!-- Bottom Navigation -->
   <nav class="hero-nav" id="hero-nav">
-    <a href="#personal-os" class="active">the system</a>
-    <span class="dot">·</span>
-    <a href="#speculative">futures</a>
+    <a href="#speculative" class="active">the method</a>
     <span class="dot">·</span>
     <a href="#products">products</a>
     <span class="dot">·</span>
@@ -66,137 +63,6 @@
   </nav>
 
   <div class="scroll-indicator">↓ scroll</div>
-</section>
-
-<!-- Personal OS Section -->
-<section class="section personal-os-section" id="personal-os">
-  <div class="container">
-    <header class="section-header">
-      <h2 class="section-title">Personal OS</h2>
-      <span class="section-subtitle">the system</span>
-    </header>
-
-    <div class="personal-os-layout">
-      <!-- Architecture Diagram -->
-      <div class="os-diagram">
-        <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg" class="architecture-svg">
-          <!-- Layer 3: Interfaces -->
-          <rect x="20" y="20" width="480" height="110" rx="8" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.7"/>
-          <text x="40" y="46" class="svg-label-accent">INTERFACES</text>
-
-          <!-- Interface items as sub-boxes -->
-          <rect x="36" y="56" width="100" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
-          <text x="86" y="74" text-anchor="middle" class="svg-small">Voice</text>
-
-          <rect x="148" y="56" width="100" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
-          <text x="198" y="74" text-anchor="middle" class="svg-small">Verity (TG)</text>
-
-          <rect x="260" y="56" width="100" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
-          <text x="310" y="74" text-anchor="middle" class="svg-small">Terminal</text>
-
-          <rect x="372" y="56" width="116" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
-          <text x="430" y="74" text-anchor="middle" class="svg-small">Scheduled</text>
-
-          <text x="40" y="108" class="svg-tiny">Same intelligence, different entry points</text>
-          <text x="280" y="108" class="svg-tiny">Ad-hoc generated interfaces</text>
-
-          <!-- Arrows: Interfaces → Runtime (multiple) -->
-          <line x1="86" y1="130" x2="150" y2="155" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
-          <line x1="198" y1="130" x2="220" y2="155" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
-          <line x1="310" y1="130" x2="300" y2="155" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
-          <line x1="430" y1="130" x2="380" y2="155" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
-
-          <!-- Layer 2: Agent Runtime -->
-          <rect x="20" y="155" width="480" height="130" rx="8" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.55"/>
-          <text x="40" y="180" class="svg-label">AGENT RUNTIME</text>
-
-          <!-- Runtime sub-items -->
-          <rect x="36" y="190" width="140" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.4"/>
-          <text x="106" y="208" text-anchor="middle" class="svg-small">Claude Agent SDK</text>
-
-          <rect x="188" y="190" width="140" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.4"/>
-          <text x="258" y="208" text-anchor="middle" class="svg-small">Skills &amp; MCP</text>
-
-          <rect x="340" y="190" width="148" height="28" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.4"/>
-          <text x="414" y="208" text-anchor="middle" class="svg-small">Multi-agent orch.</text>
-
-          <text x="40" y="242" class="svg-small">Salience layer: surface what matters</text>
-          <text x="40" y="260" class="svg-tiny">Agents propose, humans authorize</text>
-
-          <!-- Cross-connections within runtime -->
-          <line x1="176" y1="204" x2="188" y2="204" stroke="var(--accent)" stroke-width="1" opacity="0.35" stroke-dasharray="3,3"/>
-          <line x1="328" y1="204" x2="340" y2="204" stroke="var(--accent)" stroke-width="1" opacity="0.35" stroke-dasharray="3,3"/>
-
-          <!-- Arrows: Runtime → Data (bidirectional) -->
-          <line x1="200" y1="285" x2="200" y2="310" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
-          <polygon points="194,306 206,306 200,315" fill="var(--accent)" opacity="0.5"/>
-          <line x1="320" y1="310" x2="320" y2="285" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
-          <polygon points="314,289 326,289 320,280" fill="var(--accent)" opacity="0.5"/>
-
-          <!-- Layer 1: Data & Memory -->
-          <rect x="20" y="310" width="480" height="150" rx="8" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.45"/>
-          <text x="40" y="336" class="svg-label">DATA &amp; MEMORY</text>
-
-          <!-- Data sub-items in two rows -->
-          <rect x="36" y="346" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
-          <text x="96" y="362" text-anchor="middle" class="svg-tiny">Notes &amp; docs</text>
-
-          <rect x="168" y="346" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
-          <text x="228" y="362" text-anchor="middle" class="svg-tiny">Bookmarks</text>
-
-          <rect x="300" y="346" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
-          <text x="360" y="362" text-anchor="middle" class="svg-tiny">Health data</text>
-
-          <rect x="36" y="378" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
-          <text x="96" y="394" text-anchor="middle" class="svg-tiny">Transcripts</text>
-
-          <rect x="168" y="378" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
-          <text x="228" y="394" text-anchor="middle" class="svg-tiny">Search queries</text>
-
-          <rect x="300" y="378" width="120" height="24" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
-          <text x="360" y="394" text-anchor="middle" class="svg-tiny">Research</text>
-
-          <text x="40" y="430" class="svg-small">Episodic / Semantic / Procedural memory</text>
-          <text x="40" y="448" class="svg-tiny">Local-first. File-based. Your hardware.</text>
-
-          <!-- Side annotation: feedback loop -->
-          <path d="M 508 130 Q 518 240 508 350" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.5" stroke-dasharray="5,4"/>
-          <rect x="504" y="228" width="14" height="55" rx="2" fill="var(--bg-secondary)" transform="rotate(90, 510, 244)" opacity="0.8"/>
-          <text x="510" y="244" class="svg-tiny" transform="rotate(90, 510, 244)" opacity="0.6" letter-spacing="0.15em">feedback loop</text>
-        </svg>
-      </div>
-
-      <!-- Content blocks -->
-      <div class="personal-os-content">
-        <div class="os-block">
-          <h3>What is Personal OS?</h3>
-          <p>An AI-managed life infrastructure where agents autonomously handle knowledge, task execution, and decision support &mdash; using your data, your memory, your context.</p>
-          <p class="text-muted">Not another app. The <span class="text-accent">operating system</span> your AI agents run on. Without it, they&rsquo;re brilliant amnesics. With it, they know who you are and what matters.</p>
-        </div>
-
-        <div class="os-block">
-          <h3>Three-Layer Architecture</h3>
-          <ul class="os-list">
-            <li><strong>Data & Memory:</strong> Notes, bookmarks, search queries, health data, research articles, meeting transcripts &mdash; plus persistent memory systems (episodic, semantic, procedural)</li>
-            <li><strong>Agent Runtime:</strong> Salience layer for surfacing what matters. Multi-agent orchestration. Extensible through skills (reusable automations) and MCP servers (tool integrations). Agents propose, humans authorize.</li>
-            <li><strong>Interfaces:</strong> Voice (hands-free), Telegram (mobile), Terminal (deep work), Scheduled (autonomous). Same intelligence, different entry points.</li>
-          </ul>
-        </div>
-
-        <div class="os-block">
-          <h3>Your Data, Your System</h3>
-          <p>Personal OS means better data ownership. Local-first architecture. File-based storage, not cloud lock-in. Your health records, conversation history, and knowledge stay on your hardware &mdash; accessible to your agents, invisible to platforms.</p>
-          <p class="text-muted">When you own the infrastructure, <span class="text-accent">AI works for you</span> &mdash; not for whoever trained it.</p>
-        </div>
-
-        <div class="os-block">
-          <h3>The Philosophy</h3>
-          <p class="quote-large">&ldquo;80% deterministic scaffolding + 20% AI routing. An older model with solid infrastructure outperforms a frontier model dropped into chaos.&rdquo;</p>
-          <p class="text-muted">The paradigm shift: tool-centric to agent-centric. Reactive to proactive. Storage to active memory. Keyboards to omnichannel.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- Speculative Design Section -->
@@ -207,8 +73,69 @@
       <span class="section-subtitle">imagining the future</span>
     </header>
 
-    <div class="speculative-intro">
-      <p class="speculative-lead">I live with new capabilities and imagine what will become possible when millions of people also do.</p>
+    <div class="speculative-intro-layout">
+      <div class="speculative-intro">
+        <p class="speculative-lead">I start from a feeling &mdash; a grokking of how life might be when technology matures. I go on to live as if it&rsquo;s already here.</p>
+        <p>I build working prototypes of future interfaces, not concept renders. Childhood science fiction never left; it just changed medium. The method: imagine it, build it, live with it, observe where it fails and where it excels.</p>
+
+        <div class="speculative-methods">
+          <div class="speculative-method">
+            <strong>Prototype the future</strong>
+            <span>Working implementations over concept renders. If you can&rsquo;t use it daily, it&rsquo;s not real yet.</span>
+          </div>
+          <div class="speculative-method">
+            <strong>Live with it</strong>
+            <span>Use the system every day. Observe friction. The interesting question isn&rsquo;t &ldquo;what can this AI do?&rdquo; but &ldquo;what kind of environment emerges from long-term human-AI interaction?&rdquo;</span>
+          </div>
+          <div class="speculative-method">
+            <strong>Digital body, not second brain</strong>
+            <span>Memory + tools + action capability + sensory systems. Growing a symbiotic ecosystem.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Futures Cone Diagram -->
+      <div class="futures-cone-container">
+        <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg" class="futures-cone-svg">
+          <!-- Cone layers (back to front) -->
+          <g class="cone-layer" data-cone="possible">
+            <path d="M 80,150 L 660,20 L 660,280 Z" fill="var(--accent)" stroke="var(--accent)" stroke-width="1" class="cone-fill"/>
+            <text x="620" y="36" text-anchor="end" class="svg-cone-label">possible</text>
+          </g>
+
+          <g class="cone-layer" data-cone="plausible">
+            <path d="M 80,150 L 660,55 L 660,245 Z" fill="var(--accent)" stroke="var(--accent)" stroke-width="1" class="cone-fill"/>
+            <text x="620" y="68" text-anchor="end" class="svg-cone-label">plausible</text>
+          </g>
+
+          <g class="cone-layer" data-cone="probable">
+            <path d="M 80,150 L 660,90 L 660,210 Z" fill="var(--accent)" stroke="var(--accent)" stroke-width="1" class="cone-fill"/>
+            <text x="620" y="102" text-anchor="end" class="svg-cone-label">probable</text>
+          </g>
+
+          <g class="cone-layer" data-cone="preferable">
+            <path d="M 80,150 L 660,115 L 660,185 Z" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5" class="cone-fill"/>
+            <text x="620" y="132" text-anchor="end" class="svg-cone-label svg-cone-active">preferable</text>
+          </g>
+
+          <!-- Now marker -->
+          <circle cx="80" cy="150" r="5" fill="var(--accent)"/>
+          <text x="80" y="180" text-anchor="middle" class="svg-cone-now">NOW</text>
+
+          <!-- Time arrow -->
+          <line x1="80" y1="305" x2="660" y2="305" stroke="var(--accent)" stroke-width="1" opacity="0.3"/>
+          <polygon points="660,302 660,308 670,305" fill="var(--accent)" opacity="0.3"/>
+          <text x="670" y="310" class="svg-cone-axis">time</text>
+
+          <!-- Default annotation -->
+          <text x="300" y="150" text-anchor="middle" class="svg-cone-annotation" id="cone-annotation">I build here</text>
+          <line x1="340" y1="148" x2="450" y2="148" stroke="var(--accent)" stroke-width="1" opacity="0.3" stroke-dasharray="3,3" id="cone-leader"/>
+
+          <!-- Framework credit -->
+          <text x="80" y="318" class="svg-cone-credit">Futures Cone &mdash; Dunne &amp; Raby, Voros</text>
+        </svg>
+        <div class="cone-info" id="cone-info"></div>
+      </div>
     </div>
 
     <div class="speculative-grid">
@@ -261,12 +188,12 @@
           <div class="speculative-number">02</div>
           <h3 class="speculative-title">The Implementation</h3>
           <div class="speculative-body">
-            <p><a href="https://github.com/glebis/claude-skills/tree/master/session-analyzer" target="_blank" rel="noopener"><strong>Session Analyzer</strong></a> &mdash; analyzes Claude Code sessions from the last 24h, classifies them, identifies patterns, and provides actionable improvements.</p>
-            <p>Your automated second opinion on how you work.</p>
+            <p><a href="https://github.com/glebis/claude-skills/tree/master/decision-toolkit" target="_blank" rel="noopener"><strong>Decision Toolkit</strong></a> &mdash; structured decision-making tools with bias checkers, pre-mortem analysis, and scenario explorers. 7 frameworks, 20+ cognitive biases detected.</p>
+            <p>Guide, don&rsquo;t decide. Tools illuminate the decision space rather than choosing for you.</p>
           </div>
           <div class="speculative-output">
-            <span class="output-label">Output:</span>
-            <span class="output-options">session reports &middot; pattern analysis &middot; action items</span>
+            <span class="output-label">Frameworks:</span>
+            <span class="output-options">pre-mortem &middot; first principles &middot; 10-10-10 &middot; regret minimization</span>
           </div>
         </div>
         <a href="#" class="speculative-swap-toggle">See the implementation</a>
@@ -388,15 +315,133 @@
       <span class="section-subtitle">what I build</span>
     </header>
 
+    <!-- Personal OS - Featured Full Width -->
+    <div class="product-featured" id="personal-os-block">
+      <div class="product-featured-header">
+        <div>
+          <h3 class="product-featured-title">Personal OS</h3>
+          <p class="product-featured-tagline">Your AI infrastructure</p>
+        </div>
+      </div>
+
+      <div class="product-featured-content">
+        <div class="product-featured-main">
+          <p class="product-featured-lead">
+            An AI-managed life infrastructure where agents autonomously handle knowledge, task execution, and decision support &mdash; using <strong>your data, your memory, your context</strong>.
+          </p>
+
+          <div class="product-featured-description">
+            <p>Not another app. The operating system your AI agents run on. Without it, they&rsquo;re brilliant amnesics. With it, they know who you are and what matters.</p>
+
+            <ul class="product-featured-list">
+              <li><strong>Data &amp; Memory</strong> &mdash; Notes, bookmarks, health data, transcripts, search queries, research. Episodic, semantic, procedural memory. Local-first, file-based, your hardware.</li>
+              <li><strong>Agent Runtime</strong> &mdash; Claude Agent SDK, skills &amp; MCP servers, multi-agent orchestration. Salience layer surfaces what matters. Agents propose, humans authorize.</li>
+              <li><strong>Interfaces</strong> &mdash; Voice (hands-free), <a href="https://verity.salient.community" target="_blank" rel="noopener">Verity</a> (Telegram), Terminal (deep work), Scheduled (autonomous). Same intelligence, different entry points.</li>
+            </ul>
+
+            <p class="quote-large">&ldquo;80% deterministic scaffolding + 20% AI routing. An older model with solid infrastructure outperforms a frontier model dropped into chaos.&rdquo;</p>
+          </div>
+        </div>
+
+        <div class="product-featured-sidebar">
+          <!-- Architecture Diagram -->
+          <div class="os-diagram-compact">
+            <svg viewBox="0 0 520 600" xmlns="http://www.w3.org/2000/svg" class="architecture-svg">
+              <!-- Layer 3: Interfaces -->
+              <rect x="20" y="20" width="480" height="130" rx="8" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.7"/>
+              <text x="40" y="48" class="svg-label-accent">INTERFACES</text>
+
+              <rect x="36" y="62" width="100" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+              <text x="86" y="84" text-anchor="middle" class="svg-small">Voice</text>
+
+              <!-- Verity highlighted -->
+              <rect x="148" y="62" width="100" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.9"/>
+              <text x="198" y="84" text-anchor="middle" class="svg-small" fill="var(--accent)" font-weight="700">Verity (TG)</text>
+              <text x="198" y="112" text-anchor="middle" class="svg-tiny" fill="var(--accent)" opacity="0.6">verity.salient.community</text>
+
+              <rect x="260" y="62" width="100" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+              <text x="310" y="84" text-anchor="middle" class="svg-small">Terminal</text>
+
+              <rect x="372" y="62" width="116" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+              <text x="430" y="84" text-anchor="middle" class="svg-small">Scheduled</text>
+
+              <text x="40" y="130" class="svg-tiny">Same intelligence, different entry points</text>
+
+              <!-- Arrows: Interfaces → Runtime -->
+              <line x1="86" y1="150" x2="150" y2="185" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+              <line x1="198" y1="150" x2="220" y2="185" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+              <line x1="310" y1="150" x2="300" y2="185" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+              <line x1="430" y1="150" x2="380" y2="185" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+
+              <!-- Layer 2: Agent Runtime -->
+              <rect x="20" y="185" width="480" height="155" rx="8" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.55"/>
+              <text x="40" y="214" class="svg-label">AGENT RUNTIME</text>
+
+              <rect x="36" y="228" width="140" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.4"/>
+              <text x="106" y="250" text-anchor="middle" class="svg-small">Claude Agent SDK</text>
+
+              <rect x="188" y="228" width="140" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.4"/>
+              <text x="258" y="250" text-anchor="middle" class="svg-small">Skills &amp; MCP</text>
+
+              <rect x="340" y="228" width="148" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.25" opacity="0.4"/>
+              <text x="414" y="250" text-anchor="middle" class="svg-small">Multi-agent orch.</text>
+
+              <text x="40" y="290" class="svg-small">Salience layer: surface what matters</text>
+              <text x="40" y="310" class="svg-tiny">Agents propose, humans authorize</text>
+
+              <line x1="176" y1="245" x2="188" y2="245" stroke="var(--accent)" stroke-width="1" opacity="0.35" stroke-dasharray="3,3"/>
+              <line x1="328" y1="245" x2="340" y2="245" stroke="var(--accent)" stroke-width="1" opacity="0.35" stroke-dasharray="3,3"/>
+
+              <!-- Arrows: Runtime → Data (bidirectional) -->
+              <line x1="200" y1="340" x2="200" y2="375" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+              <polygon points="194,371 206,371 200,380" fill="var(--accent)" opacity="0.5"/>
+              <line x1="320" y1="375" x2="320" y2="340" stroke="var(--accent)" stroke-width="1.25" opacity="0.5"/>
+              <polygon points="314,344 326,344 320,335" fill="var(--accent)" opacity="0.5"/>
+
+              <!-- Layer 1: Data & Memory -->
+              <rect x="20" y="380" width="480" height="200" rx="8" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.45"/>
+              <text x="40" y="410" class="svg-label">DATA &amp; MEMORY</text>
+
+              <rect x="36" y="424" width="140" height="30" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
+              <text x="106" y="444" text-anchor="middle" class="svg-small">Notes &amp; docs</text>
+
+              <rect x="188" y="424" width="140" height="30" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
+              <text x="258" y="444" text-anchor="middle" class="svg-small">Bookmarks</text>
+
+              <rect x="340" y="424" width="148" height="30" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
+              <text x="414" y="444" text-anchor="middle" class="svg-small">Health data</text>
+
+              <rect x="36" y="464" width="140" height="30" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
+              <text x="106" y="484" text-anchor="middle" class="svg-small">Transcripts</text>
+
+              <rect x="188" y="464" width="140" height="30" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
+              <text x="258" y="484" text-anchor="middle" class="svg-small">Search queries</text>
+
+              <rect x="340" y="464" width="148" height="30" rx="4" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.35"/>
+              <text x="414" y="484" text-anchor="middle" class="svg-small">Research</text>
+
+              <text x="40" y="524" class="svg-small">Episodic / Semantic / Procedural memory</text>
+              <text x="40" y="548" class="svg-tiny">Local-first. File-based. Your hardware.</text>
+
+              <!-- Feedback loop -->
+              <path d="M 508 150 Q 520 290 508 420" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.5" stroke-dasharray="5,4"/>
+              <rect x="504" y="272" width="14" height="55" rx="2" fill="var(--bg-secondary)" transform="rotate(90, 510, 290)" opacity="0.8"/>
+              <text x="510" y="290" class="svg-tiny" transform="rotate(90, 510, 290)" opacity="0.6" letter-spacing="0.15em">feedback loop</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Salience - Featured Full Width -->
     <div class="product-featured" id="salience-block">
       <div class="product-featured-header">
         <div>
           <h3 class="product-featured-title">Salience</h3>
-          <p class="product-featured-tagline">Rise What Matters</p>
+          <p class="product-featured-tagline">Rise What Matters &mdash; Cohort 1, March 2026</p>
         </div>
         <a href="https://salience.glebkalinin.com" class="product-featured-cta" target="_blank">
-          Join the Lab →
+          Join the Lab &rarr;
         </a>
       </div>
 
@@ -509,7 +554,7 @@
       <div class="product-featured-header">
         <div>
           <h3 class="product-featured-title">Claude Code Lab</h3>
-          <p class="product-featured-tagline">Ship what you imagine</p>
+          <p class="product-featured-tagline">Ship what you imagine &mdash; Lab 03, March 2026</p>
         </div>
         <a href="https://claude.salient.community" class="product-featured-cta" target="_blank">
           Join the Lab &rarr;
@@ -589,24 +634,6 @@
       </div>
     </div>
 
-    <!-- Other Products Grid -->
-    <div class="products-grid products-grid-secondary">
-      <a href="https://verity.salient.community" class="product-card" data-index="0" target="_blank">
-        <span class="product-icon">&#9993;</span>
-        <h3 class="product-title">VERITY</h3>
-        <p class="product-subtitle">AI-powered Telegram agent</p>
-        <p class="product-description">Claude in your pocket. Research, collect knowledge, recall from your vault, process voice &mdash; all from Telegram.</p>
-        <span class="product-arrow">&rarr;</span>
-      </a>
-
-      <a href="/speculative/" class="product-card" data-index="1">
-        <span class="product-icon">&#127916;</span>
-        <h3 class="product-title">SPECULATIVE DESIGN</h3>
-        <p class="product-subtitle">Films &middot; Experimental interfaces</p>
-        <p class="product-description">What if AI knew everything? Exploring futures through film. Design fiction meets reality.</p>
-        <span class="product-arrow">&rarr;</span>
-      </a>
-    </div>
   </div>
 </section>
 
