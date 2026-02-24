@@ -100,22 +100,22 @@
           <!-- Cone layers (back to front) -->
           <g class="cone-layer" data-cone="possible">
             <path d="M 80,150 L 660,20 L 660,280 Z" fill="var(--accent)" stroke="var(--accent)" stroke-width="1" class="cone-fill"/>
-            <text x="620" y="36" text-anchor="end" class="svg-cone-label">possible</text>
+            <text x="620" y="38" text-anchor="end" dominant-baseline="central" class="svg-cone-label">possible</text>
           </g>
 
           <g class="cone-layer" data-cone="plausible">
             <path d="M 80,150 L 660,55 L 660,245 Z" fill="var(--accent)" stroke="var(--accent)" stroke-width="1" class="cone-fill"/>
-            <text x="620" y="68" text-anchor="end" class="svg-cone-label">plausible</text>
+            <text x="620" y="73" text-anchor="end" dominant-baseline="central" class="svg-cone-label">plausible</text>
           </g>
 
           <g class="cone-layer" data-cone="probable">
             <path d="M 80,150 L 660,90 L 660,210 Z" fill="var(--accent)" stroke="var(--accent)" stroke-width="1" class="cone-fill"/>
-            <text x="620" y="102" text-anchor="end" class="svg-cone-label">probable</text>
+            <text x="620" y="103" text-anchor="end" dominant-baseline="central" class="svg-cone-label">probable</text>
           </g>
 
           <g class="cone-layer" data-cone="preferable">
             <path d="M 80,150 L 660,115 L 660,185 Z" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.5" class="cone-fill"/>
-            <text x="620" y="132" text-anchor="end" class="svg-cone-label svg-cone-active">preferable</text>
+            <text x="620" y="150" text-anchor="end" dominant-baseline="central" class="svg-cone-label svg-cone-active">preferable</text>
           </g>
 
           <!-- Now marker -->
@@ -205,66 +205,55 @@
           <div class="speculative-number">03</div>
           <h3 class="speculative-title">The Night Shift</h3>
           <div class="speculative-body">
-            <p>While you sleep, the system works.</p>
+            <p>While you sleep, the system daydreams.</p>
+
+            <p class="speculative-detail">It reads what you haven&rsquo;t had time to read. It follows threads you bookmarked and forgot. It connects yesterday&rsquo;s conversation with a paper from three months ago. By morning, it has something to show you.</p>
 
             <div class="night-shift-timeline">
               <div class="timeline-item">
                 <span class="timeline-time">22:00</span>
-                <span class="timeline-event">Obsidian vault commits to git. Day captured.</span>
+                <span class="timeline-event">Day captured. Vault commits, browser history indexed, conversations archived.</span>
               </div>
               <div class="timeline-item">
-                <span class="timeline-time">every 15m</span>
-                <span class="timeline-event">Chrome history syncs to searchable database.</span>
+                <span class="timeline-time">overnight</span>
+                <span class="timeline-event">Research agents fan out: arXiv, HN, Reddit, RSS. Following your interests &mdash; and adjacent ones.</span>
               </div>
               <div class="timeline-item">
                 <span class="timeline-time">09:30</span>
-                <span class="timeline-event">Health briefing: sleep, HR &amp; HRV trends, behavioral patterns, session analyses.</span>
+                <span class="timeline-event">Health briefing: sleep, HR &amp; HRV trends, recovery signals.</span>
               </div>
               <div class="timeline-item">
                 <span class="timeline-time">10:00</span>
-                <span class="timeline-event">Research digest: 10 relevant + 10 serendipitous finds.</span>
+                <span class="timeline-event">Research digest: 10 relevant finds + 10 serendipitous ones. The second list is the one that matters.</span>
               </div>
             </div>
 
-            <div class="health-report-example">
-              <div class="health-report-header">09:30 &middot; Health Briefing</div>
-              <div class="health-report-grid">
-                <div class="health-metric">
-                  <span class="health-metric-label">Resting HR</span>
-                  <span class="health-metric-value">55 <small>bpm</small></span>
-                  <span class="health-metric-delta delta-good">&darr;3%</span>
+            <div class="night-shift-serendipity">
+              <div class="serendipity-header">10:00 &middot; Serendipity Digest</div>
+              <div class="serendipity-items">
+                <div class="serendipity-item">
+                  <span class="serendipity-source">arXiv</span>
+                  <span class="serendipity-title">&ldquo;Measuring AI Ability to Complete Long Tasks&rdquo;</span>
+                  <span class="serendipity-why">matches your note on agent evaluation from Feb 12</span>
                 </div>
-                <div class="health-metric">
-                  <span class="health-metric-label">HRV</span>
-                  <span class="health-metric-value">45.6 <small>ms</small></span>
-                  <span class="health-metric-delta delta-warn">&darr;8%</span>
+                <div class="serendipity-item">
+                  <span class="serendipity-source">HN</span>
+                  <span class="serendipity-title">&ldquo;Why I Stopped Building Second Brains&rdquo;</span>
+                  <span class="serendipity-why">counterpoint to your Personal OS thesis</span>
                 </div>
-                <div class="health-metric">
-                  <span class="health-metric-label">Steps/day</span>
-                  <span class="health-metric-value">6,477</span>
-                  <span class="health-metric-delta delta-warn">&darr;27%</span>
-                </div>
-                <div class="health-metric">
-                  <span class="health-metric-label">Exercise</span>
-                  <span class="health-metric-value">163 <small>min</small></span>
-                  <span class="health-metric-delta delta-warn">&darr;40%</span>
+                <div class="serendipity-item serendipity-surprise">
+                  <span class="serendipity-source">RSS</span>
+                  <span class="serendipity-title">&ldquo;Oblique Strategies as API&rdquo;</span>
+                  <span class="serendipity-why">no direct match &mdash; but your vault mentions Eno 14 times</span>
                 </div>
               </div>
-              <div class="health-sparkline-row">
-                <span class="health-metric-label">HRV 7d</span>
-                <svg class="health-sparkline" viewBox="0 0 84 24" preserveAspectRatio="none">
-                  <polyline fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" points="2,8 14,4 26,10 38,6 50,12 62,14 74,16 82,18"/>
-                  <circle cx="82" cy="18" r="2" fill="var(--accent)"/>
-                </svg>
-              </div>
-              <p class="health-report-insight">HR excellent (well below 65 bpm target). HRV below 50 ms threshold &mdash; suggests incomplete recovery. Prioritize sleep tonight, add a 15-min walk.</p>
             </div>
 
-            <p class="speculative-detail">10:00 &middot; Research digest: &ldquo;Measuring AI Ability to Complete Long Tasks&rdquo; from arXiv, &ldquo;Claude Code Best Practices&rdquo; from Medium, &ldquo;LLMs in Scientific Method&rdquo; from Nature.</p>
+            <p class="speculative-detail">The goal isn&rsquo;t information retrieval. It&rsquo;s serendipity at scale &mdash; the system as a research partner that reads widely and connects laterally, so you can start the day with unexpected material to think with.</p>
           </div>
           <div class="speculative-output">
             <span class="output-label">Sources:</span>
-            <span class="output-options">arXiv &middot; Nature &middot; Medium &middot; HN &middot; Reddit</span>
+            <span class="output-options">arXiv &middot; Nature &middot; HN &middot; Reddit &middot; RSS &middot; Obsidian vault</span>
           </div>
         </div>
         <div class="speculative-card-back">
