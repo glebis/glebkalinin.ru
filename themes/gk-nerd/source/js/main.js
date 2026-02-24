@@ -458,6 +458,7 @@
     const dots = slidesContainer.querySelectorAll('.nightshift-dot');
     const prevBtn = slidesContainer.querySelector('.nightshift-prev');
     const nextBtn = slidesContainer.querySelector('.nightshift-next');
+    const headerText = document.getElementById('nightshift-header-text');
     let current = 0;
 
     function showSlide(n) {
@@ -466,12 +467,52 @@
       current = (n + slides.length) % slides.length;
       slides[current].classList.add('active');
       dots[current].classList.add('active');
+      if (headerText) {
+        headerText.textContent = slides[current].dataset.header;
+      }
     }
 
     prevBtn.addEventListener('click', () => showSlide(current - 1));
     nextBtn.addEventListener('click', () => showSlide(current + 1));
     dots.forEach(dot => {
       dot.addEventListener('click', () => showSlide(parseInt(dot.dataset.slide)));
+    });
+  }
+
+  // ==========================================================================
+  // Research Report Overlay
+  // ==========================================================================
+
+  const overlay = document.getElementById('research-overlay');
+  const overlayIframe = document.getElementById('research-overlay-iframe');
+
+  if (overlay) {
+    function openResearchOverlay(url) {
+      overlayIframe.src = url;
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeResearchOverlay() {
+      overlay.classList.remove('active');
+      overlayIframe.src = '';
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.nightshift-view-report').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        openResearchOverlay(this.dataset.report);
+      });
+    });
+
+    overlay.querySelector('.research-overlay-backdrop').addEventListener('click', closeResearchOverlay);
+    overlay.querySelector('.research-overlay-close').addEventListener('click', closeResearchOverlay);
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) {
+        closeResearchOverlay();
+      }
     });
   }
 

@@ -145,9 +145,11 @@
     <div class="speculative-grid">
       <!-- Story 1: The Thinking Room -->
       <article class="speculative-card">
-        <a href="#" class="speculative-swap-toggle"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg> <span class="swap-label">See the implementation</span></a>
-        <div class="speculative-card-front">
+        <div class="speculative-card-topline">
           <div class="speculative-number">01</div>
+          <a href="#" class="speculative-swap-toggle"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg> <span class="swap-label">See the implementation</span></a>
+        </div>
+        <div class="speculative-card-front">
           <h3 class="speculative-title">The Thinking Room</h3>
           <div class="speculative-body">
             <p>Imagine you are planning your business. You sit in a quiet room. Details keep coming and you voice them without interruption.</p>
@@ -160,7 +162,6 @@
           </div>
         </div>
         <div class="speculative-card-back">
-          <div class="speculative-number">01</div>
           <h3 class="speculative-title">The Implementation</h3>
           <div class="speculative-body">
             <p><a href="https://github.com/glebis/audio-monitor" target="_blank" rel="noopener"><strong>audio-monitor</strong></a> &mdash; continuous audio monitoring with VAD + Whisper transcription + SQLite FTS5 search.</p>
@@ -175,9 +176,11 @@
 
       <!-- Story 2: The Second Opinion -->
       <article class="speculative-card">
-        <a href="#" class="speculative-swap-toggle"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg> <span class="swap-label">See the implementation</span></a>
-        <div class="speculative-card-front">
+        <div class="speculative-card-topline">
           <div class="speculative-number">02</div>
+          <a href="#" class="speculative-swap-toggle"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg> <span class="swap-label">See the implementation</span></a>
+        </div>
+        <div class="speculative-card-front">
           <h3 class="speculative-title">The Second Opinion</h3>
           <div class="speculative-body">
             <p>Before you share your idea publicly, you stress-test it. The agent plays devil&rsquo;s advocate. It finds the weak points you can&rsquo;t see because you&rsquo;re too close.</p>
@@ -190,7 +193,6 @@
           </div>
         </div>
         <div class="speculative-card-back">
-          <div class="speculative-number">02</div>
           <h3 class="speculative-title">The Implementation</h3>
           <div class="speculative-body">
             <p><a href="https://github.com/glebis/claude-skills/tree/master/decision-toolkit" target="_blank" rel="noopener"><strong>Decision Toolkit</strong></a> &mdash; structured decision-making tools with bias checkers, pre-mortem analysis, and scenario explorers. 7 frameworks, 20+ cognitive biases detected.</p>
@@ -205,17 +207,24 @@
 
       <!-- Story 3: The Night Shift -->
       <article class="speculative-card">
-        <a href="#" class="speculative-swap-toggle"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg> <span class="swap-label">See the implementations</span></a>
-        <div class="speculative-card-front">
+        <div class="speculative-card-topline">
           <div class="speculative-number">03</div>
+          <a href="#" class="speculative-swap-toggle"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg> <span class="swap-label">See the implementations</span></a>
+        </div>
+        <div class="speculative-card-front">
           <h3 class="speculative-title">The Night Shift</h3>
           <div class="speculative-body">
             <p>While you sleep, the system daydreams.</p>
 
             <!-- Slide carousel -->
             <div class="nightshift-slides" id="nightshift-slides">
-              <div class="nightshift-slide active" data-slide="0">
-                <div class="nightshift-slide-header">22:00 &middot; Day Captured</div>
+              <div class="nightshift-slide-nav-header">
+                <button class="nightshift-prev" aria-label="Previous">&larr;</button>
+                <div class="nightshift-slide-header-text" id="nightshift-header-text">22:00 &middot; Day Captured</div>
+                <button class="nightshift-next" aria-label="Next">&rarr;</button>
+              </div>
+
+              <div class="nightshift-slide active" data-slide="0" data-header="22:00 &middot; Day Captured">
                 <div class="nightshift-slide-mock nightshift-mock-telegram">
                   <div class="mock-msg mock-msg-system">Vault committed &middot; 12 notes modified</div>
                   <div class="mock-msg mock-msg-system">Chrome history synced &middot; 47 pages indexed</div>
@@ -224,8 +233,7 @@
                 </div>
               </div>
 
-              <div class="nightshift-slide" data-slide="1">
-                <div class="nightshift-slide-header">09:30 &middot; Health Briefing</div>
+              <div class="nightshift-slide" data-slide="1" data-header="09:30 &middot; Health Briefing">
                 <div class="health-report-compact">
                   <div class="health-report-grid">
                     <div class="health-metric">
@@ -260,18 +268,17 @@
                 </div>
               </div>
 
-              <div class="nightshift-slide" data-slide="2">
-                <div class="nightshift-slide-header">overnight &middot; Research Agents</div>
+              <div class="nightshift-slide" data-slide="2" data-header="overnight &middot; Research Agents">
                 <div class="nightshift-slide-mock nightshift-mock-telegram">
                   <div class="mock-msg mock-msg-agent">Scanning arXiv, HN, Reddit, RSS&hellip;</div>
                   <div class="mock-msg mock-msg-agent">Following your interests &mdash; and adjacent ones.</div>
                   <div class="mock-msg mock-msg-result"><strong>arXiv</strong>: &ldquo;Measuring AI Ability to Complete Long Tasks&rdquo; <em>matches your Feb 12 note</em></div>
                   <div class="mock-msg mock-msg-result"><strong>HN</strong>: &ldquo;Why I Stopped Building Second Brains&rdquo; <em>counterpoint to Personal OS</em></div>
                 </div>
+                <a href="#" class="nightshift-view-report" data-report="https://verity.salient.community/research/local-first-software-in-2026.html">View a real research report &rarr;</a>
               </div>
 
-              <div class="nightshift-slide" data-slide="3">
-                <div class="nightshift-slide-header">10:00 &middot; Serendipity Digest</div>
+              <div class="nightshift-slide" data-slide="3" data-header="10:00 &middot; Serendipity Digest">
                 <div class="nightshift-slide-mock nightshift-mock-telegram">
                   <div class="mock-msg mock-msg-agent">10 relevant + 10 serendipitous finds.</div>
                   <div class="mock-msg mock-msg-result"><strong>RSS</strong>: &ldquo;Oblique Strategies as API&rdquo;</div>
@@ -280,15 +287,11 @@
                 </div>
               </div>
 
-              <div class="nightshift-nav">
-                <button class="nightshift-prev" aria-label="Previous">&larr;</button>
-                <div class="nightshift-dots">
-                  <span class="nightshift-dot active" data-slide="0"></span>
-                  <span class="nightshift-dot" data-slide="1"></span>
-                  <span class="nightshift-dot" data-slide="2"></span>
-                  <span class="nightshift-dot" data-slide="3"></span>
-                </div>
-                <button class="nightshift-next" aria-label="Next">&rarr;</button>
+              <div class="nightshift-dots">
+                <span class="nightshift-dot active" data-slide="0"></span>
+                <span class="nightshift-dot" data-slide="1"></span>
+                <span class="nightshift-dot" data-slide="2"></span>
+                <span class="nightshift-dot" data-slide="3"></span>
               </div>
             </div>
           </div>
@@ -298,7 +301,6 @@
           </div>
         </div>
         <div class="speculative-card-back">
-          <div class="speculative-number">03</div>
           <h3 class="speculative-title">The Implementations</h3>
           <div class="speculative-body">
             <div class="speculative-tool-grid">
@@ -781,4 +783,16 @@
     </p>
   </div>
 </section>
+
+<!-- Research Report Overlay -->
+<div class="research-overlay" id="research-overlay">
+  <div class="research-overlay-backdrop"></div>
+  <div class="research-overlay-panel">
+    <div class="research-overlay-header">
+      <span class="research-overlay-title">Verity Research</span>
+      <button class="research-overlay-close" aria-label="Close">&times;</button>
+    </div>
+    <iframe class="research-overlay-iframe" id="research-overlay-iframe" src="" title="Research report"></iframe>
+  </div>
+</div>
 
