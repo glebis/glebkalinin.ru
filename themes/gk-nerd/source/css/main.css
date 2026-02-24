@@ -2165,13 +2165,9 @@
 }
 
 /* Night Shift Timeline */
-.speculative-card-expanded {
-  grid-column: span 1;
-}
-
 @media (min-width: 1024px) {
   .speculative-grid {
-    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -2235,18 +2231,34 @@
 
 .speculative-swap-toggle {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   color: var(--accent);
   text-decoration: none;
-  padding-top: var(--space-md);
-  border-top: 1px solid var(--border-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border-primary);
   transition: opacity var(--transition-fast);
   cursor: pointer;
-  align-self: flex-start;
+  align-self: flex-end;
+}
+
+.speculative-swap-toggle svg {
+  transition: transform 0.3s ease;
 }
 
 .speculative-swap-toggle:hover {
   opacity: 0.7;
+}
+
+.speculative-swap-toggle:hover svg {
+  transform: rotate(180deg);
+}
+
+.speculative-card.is-flipped .speculative-swap-toggle svg {
+  transform: rotate(180deg);
 }
 
 /* Tool grid for Night Shift back */
@@ -2357,6 +2369,208 @@
 .serendipity-surprise .serendipity-why {
   color: var(--accent);
   opacity: 0.8;
+}
+
+/* Night Shift Slides */
+.nightshift-slides {
+  position: relative;
+  margin-top: var(--space-sm);
+}
+
+.nightshift-slide {
+  display: none;
+}
+
+.nightshift-slide.active {
+  display: block;
+}
+
+.nightshift-slide-header {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: var(--space-sm);
+}
+
+/* Mock Telegram messages */
+.nightshift-mock-telegram {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.mock-msg {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  padding: 0.375rem 0.5rem;
+  border-radius: 4px;
+}
+
+.mock-msg-system {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--text-dim);
+  background: var(--bg-tertiary);
+}
+
+.mock-msg-agent {
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border-left: 2px solid var(--accent);
+}
+
+.mock-msg-result {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+  border-left: 2px solid var(--border-primary);
+}
+
+.mock-msg-result strong {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+}
+
+.mock-msg-result em {
+  color: var(--text-muted);
+  font-size: 0.6875rem;
+}
+
+.mock-msg-surprise {
+  color: var(--accent);
+  background: var(--bg-tertiary);
+  border-left: 2px solid var(--accent);
+  font-size: 0.6875rem;
+}
+
+/* Health report (restored) */
+.health-report-compact {
+  background: var(--bg-tertiary);
+  padding: var(--space-sm);
+  border-left: 2px solid var(--accent);
+}
+
+.health-report-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+
+.health-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.0625rem;
+}
+
+.health-metric-label {
+  font-family: var(--font-mono);
+  font-size: 0.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+
+.health-metric-value {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.health-metric-value small {
+  font-size: 0.5625rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.health-metric-delta {
+  font-family: var(--font-mono);
+  font-size: 0.5625rem;
+  font-weight: 600;
+}
+
+.delta-good { color: #27c840; }
+.delta-warn { color: #ffbd2e; }
+.delta-bad { color: #ff5f56; }
+
+.health-sparkline-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 0.25rem 0;
+  margin-bottom: 0.25rem;
+}
+
+.health-sparkline {
+  width: 84px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.health-report-insight {
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Slide navigation */
+.nightshift-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--border-primary);
+}
+
+.nightshift-prev,
+.nightshift-next {
+  background: none;
+  border: 1px solid var(--border-primary);
+  color: var(--accent);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  transition: all var(--transition-fast);
+}
+
+.nightshift-prev:hover,
+.nightshift-next:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+}
+
+.nightshift-dots {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.nightshift-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border-primary);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.nightshift-dot.active {
+  background: var(--accent);
 }
 
 /* ==========================================================================

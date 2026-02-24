@@ -430,19 +430,50 @@
   // ==========================================================================
 
   document.querySelectorAll('.speculative-swap-toggle').forEach(toggle => {
+    const label = toggle.querySelector('.swap-label');
+    if (label) toggle.dataset.label = label.textContent;
+
     toggle.addEventListener('click', function(e) {
       e.preventDefault();
       const card = this.closest('.speculative-card');
       if (!card) return;
       const isFlipped = card.classList.toggle('flipped');
-      this.textContent = isFlipped
-        ? 'Back to concept'
-        : this.dataset.label || 'See the implementation';
+      card.classList.toggle('is-flipped', isFlipped);
+      const span = this.querySelector('.swap-label');
+      if (span) {
+        span.textContent = isFlipped
+          ? 'Back to concept'
+          : this.dataset.label || 'See the implementation';
+      }
     });
-
-    // Store original label
-    toggle.dataset.label = toggle.textContent;
   });
+
+  // ==========================================================================
+  // Night Shift Slides
+  // ==========================================================================
+
+  const slidesContainer = document.getElementById('nightshift-slides');
+  if (slidesContainer) {
+    const slides = slidesContainer.querySelectorAll('.nightshift-slide');
+    const dots = slidesContainer.querySelectorAll('.nightshift-dot');
+    const prevBtn = slidesContainer.querySelector('.nightshift-prev');
+    const nextBtn = slidesContainer.querySelector('.nightshift-next');
+    let current = 0;
+
+    function showSlide(n) {
+      slides.forEach(s => s.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', () => showSlide(current - 1));
+    nextBtn.addEventListener('click', () => showSlide(current + 1));
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => showSlide(parseInt(dot.dataset.slide)));
+    });
+  }
 
   // ==========================================================================
   // Futures Cone Interactivity
