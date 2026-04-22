@@ -37,7 +37,9 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: admin/*
+skip_render:
+  - admin/*
+  - report-q1-2026.html
 # for nelify config via https://blog.anbuchelva.in/blog/integrate-netlify-cms-with-hexo/#enable-netlify-cms
 
 archive_generator:

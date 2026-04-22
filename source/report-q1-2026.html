@@ -1,0 +1,2220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three-Month Activity Report · Jan 22 – Apr 22, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceArgon-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face {
+    font-family: 'Monaspace Argon';
+    src: url('https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceArgon-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Monaspace Argon';
+    src: url('https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceArgon-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+  }
+</style>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --ink-light: #555;
+    --ink-muted: #888;
+    --bg: #fffff8;
+    --bg-aside: #f9f6ee;
+    --accent: #a00;
+    --accent2: #2a6;
+    --accent3: #36a;
+    --rule: #ccc;
+    --spark-claude: #c45a28;
+    --spark-wispr: #2a7a5a;
+    --spark-social: #5a5aaa;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'EB Garamond', Georgia, serif;
+    color: var(--ink);
+    background: var(--bg);
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  /* ─── Small Caps Headers ─── */
+  h1, h2, h3, h4 {
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    font-variant: small-caps;
+    text-transform: lowercase;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 0.3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 0.8rem;
+    color: var(--ink);
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    color: var(--ink-light);
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    color: var(--ink-muted);
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+
+  /* ─── Ornamental Breaks ─── */
+  .ornament {
+    text-align: center;
+    font-family: 'Monaspace Argon', ui-monospace, monospace;
+    color: var(--rule);
+    font-size: 0.9rem;
+    margin: 2rem 0;
+    letter-spacing: 0.1em;
+    font-feature-settings: 'calt', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'ss10', 'liga';
+  }
+
+  /* ─── Tufte Layout ─── */
+  .body-text {
+    max-width: 650px;
+    margin-bottom: 1.5rem;
+  }
+
+  .wide {
+    max-width: 100%;
+  }
+
+  .source-tag {
+    transition: color 0.3s ease;
+    cursor: default;
+  }
+
+  .source-tag:hover {
+    color: var(--ink-light);
+  }
+
+  /* ─── Table of Contents ─── */
+  .toc-layout {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .toc {
+    position: sticky;
+    top: 2rem;
+    font-size: 0.78rem;
+    line-height: 1.8;
+    border-left: 1.5px solid var(--rule);
+    padding-left: 1rem;
+  }
+
+  .toc-title {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    font-size: 0.72rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .toc a {
+    color: var(--ink-light);
+    text-decoration: none;
+    display: block;
+    transition: color 0.15s;
+  }
+
+  .toc a:hover {
+    color: var(--ink);
+  }
+
+  .toc a::before {
+    content: '§';
+    margin-right: 0.3em;
+    color: var(--ink-muted);
+    font-size: 0.85em;
+  }
+
+  .back-to-top {
+    color: var(--rule);
+    text-decoration: none;
+    font-size: 0.75em;
+    margin-left: 0.4em;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+
+  .back-to-top:hover {
+    color: var(--ink-muted);
+    transform: translateY(-2px);
+  }
+
+  /* ─── Sidenotes / Asides ─── */
+  .aside-container {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .aside {
+    font-size: 0.85rem;
+    color: var(--ink-light);
+    border-left: 2px solid var(--rule);
+    padding-left: 1rem;
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  .aside .aside-marker {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--accent);
+    margin-right: 0.3em;
+  }
+
+  /* ─── Summary Cards ─── */
+  .summary-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  .summary-card {
+    padding: 1.2rem 1.5rem;
+    border: 1px solid var(--rule);
+    position: relative;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .summary-card:hover {
+    border-color: #aaa;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+
+  .summary-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px;
+    height: 100%;
+  }
+
+  .summary-card.claude::before { background: var(--spark-claude); }
+  .summary-card.wispr::before { background: var(--spark-wispr); }
+  .summary-card.social::before { background: var(--spark-social); }
+
+  .summary-card .label {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+  }
+
+  .summary-card .big-number-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin: 0.2rem 0;
+  }
+
+  .summary-card .big-number {
+    font-family: 'Monaspace Argon', ui-monospace, monospace;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .card-spark {
+    width: 72px;
+    height: 22px;
+    flex-shrink: 0;
+    position: relative;
+    top: -4px;
+  }
+
+  .summary-card .detail {
+    font-size: 0.85rem;
+    color: var(--ink-light);
+  }
+
+  .summary-card .trend {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+  }
+  .trend.up { color: #2a7a3a; }
+  .trend.down { color: #a02a2a; }
+
+  /* ─── Overview Narrative ─── */
+  .overview {
+    max-width: 720px;
+    margin: 0 0 2rem;
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
+
+  .overview p {
+    margin-bottom: 0.8rem;
+  }
+
+  .overview .lede {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .overview .lede::first-letter {
+    font-size: 3.2rem;
+    float: left;
+    line-height: 0.8;
+    margin: 0.08em 0.12em 0 0;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .spark-inline {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.15em;
+    position: relative;
+    top: -1px;
+  }
+
+  .stat-inline {
+    font-family: 'Monaspace Argon', ui-monospace, monospace;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    font-size: 0.95em;
+  }
+
+  .stat-inline.claude { color: var(--spark-claude); }
+  .stat-inline.wispr { color: var(--spark-wispr); }
+  .stat-inline.social { color: var(--spark-social); }
+
+  .overview .kicker {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  /* ─── Charts ─── */
+  .chart-container {
+    margin: 2rem 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+  }
+
+  .chart-container + .chart-container {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+  }
+
+  .chart-container canvas {
+    max-height: 320px;
+  }
+
+  .chart-title {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.08em;
+    font-size: 1rem;
+    color: var(--ink-light);
+    margin-bottom: 0.5rem;
+  }
+
+  .chart-caption {
+    font-size: 0.82rem;
+    color: var(--ink-muted);
+    font-style: italic;
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  /* ─── Flyout ─── */
+  .flyout {
+    background: var(--bg-aside);
+    border: 1px solid var(--rule);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-size: 0.92rem;
+    position: relative;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .flyout:hover {
+    border-color: #b8b0a0;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+  }
+
+  /* ─── Scroll Reveal ─── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+                transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+
+  .flyout::before {
+    content: '✦';
+    position: absolute;
+    top: -0.6rem;
+    left: 1.2rem;
+    background: var(--bg-aside);
+    padding: 0 0.4rem;
+    color: var(--accent);
+    font-size: 0.9rem;
+  }
+
+  .flyout .flyout-title {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  /* ─── Data Table ─── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    margin: 1.5rem 0;
+  }
+
+  thead th {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    color: var(--ink-muted);
+    border-bottom: 1.5px solid var(--ink);
+    padding: 0.4rem 0.8rem;
+    text-align: right;
+  }
+
+  thead th:first-child { text-align: left; }
+
+  tbody td {
+    padding: 0.35rem 0.8rem;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+    font-family: 'Monaspace Argon', ui-monospace, monospace;
+    font-size: 0.85rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  tbody td:first-child {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 0.92rem;
+  }
+
+  tbody td:first-child { text-align: left; }
+
+  tbody tr {
+    transition: background 0.2s ease;
+  }
+
+  tbody tr:hover { background: rgba(0,0,0,0.03); }
+
+  .sparkbar {
+    display: inline-block;
+    height: 10px;
+    background: var(--spark-claude);
+    border-radius: 1px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    opacity: 0.6;
+  }
+
+  /* ─── Telegram Strip Chart ─── */
+  .telegram-strip {
+    font-size: 0.82rem;
+    line-height: 1;
+  }
+
+  .tg-row {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border-bottom: 1px solid #f0ece0;
+    padding: 3px 0;
+  }
+
+  .tg-row:first-child { border-top: 1px solid var(--ink); }
+  .tg-row:last-child { border-bottom: 1px solid var(--ink); }
+
+  .tg-week {
+    width: 110px;
+    flex-shrink: 0;
+    color: var(--ink-muted);
+    font-size: 0.78rem;
+  }
+
+  .tg-count {
+    width: 32px;
+    flex-shrink: 0;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink-light);
+    font-size: 0.82rem;
+    padding-right: 8px;
+  }
+
+  .tg-bar-area {
+    flex: 1;
+    height: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .tg-bar {
+    height: 10px;
+    background: rgba(90,90,170,0.4);
+    border-radius: 1px;
+    min-width: 1px;
+  }
+
+  .tg-bar.burst {
+    background: rgba(90,90,170,0.7);
+  }
+
+  .tg-note {
+    flex-shrink: 0;
+    width: 120px;
+    text-align: right;
+    padding-left: 6px;
+    color: var(--ink-muted);
+    font-size: 0.7rem;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* ─── Tooltip for charts ─── */
+  .chart-tooltip {
+    font-family: 'EB Garamond', serif !important;
+    font-size: 14px !important;
+  }
+
+  /* ─── Annotation lines ─── */
+  .annotated {
+    position: relative;
+  }
+
+  .annotated .ann-line {
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    width: 20px;
+    height: 1px;
+    background: var(--ink-muted);
+  }
+
+  .annotated .ann-text {
+    position: absolute;
+    top: 50%;
+    right: -140px;
+    transform: translateY(-50%);
+    font-size: 0.72rem;
+    color: var(--ink-muted);
+    font-style: italic;
+    white-space: nowrap;
+    line-height: 1.2;
+  }
+
+  .highlight-row td {
+    background: rgba(42,100,90,0.04);
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* ─── Responsive ─── */
+  @media (max-width: 800px) {
+    .aside-container { grid-template-columns: 1fr; }
+    .aside { border-left: none; border-top: 2px solid var(--rule); padding: 1rem 0 0; margin-top: 1rem; }
+    .summary-row { grid-template-columns: 1fr; }
+    body { font-size: 16px; padding: 1rem; }
+    h1 { font-size: 1.6rem; }
+
+    table { font-size: 0.82rem; }
+    thead th, tbody td { padding: 0.3rem 0.4rem; }
+    .hide-mobile { display: none; }
+
+    .tg-week { width: 80px; font-size: 0.7rem; }
+    .tg-note { width: 100px; font-size: 0.68rem; }
+
+    .annotated .ann-line,
+    .annotated .ann-text { display: none; }
+
+    .toc-layout { grid-template-columns: 1fr; }
+    .toc { display: none; }
+  }
+
+  /* ─── Narrative Style ─── */
+  .state-line {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.45;
+    color: var(--ink-light);
+    margin: 1.5rem 0 2rem;
+    max-width: 750px;
+  }
+
+  .state-line strong {
+    font-style: normal;
+    color: var(--ink);
+  }
+
+  /* ─── Status Strip ─── */
+  .status-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin: 1.5rem 0 2rem;
+    border: 1px solid var(--rule);
+  }
+
+  .status-cell {
+    padding: 0.8rem 1rem;
+    border-left: 4px solid var(--rule);
+    position: relative;
+  }
+
+  .status-cell + .status-cell {
+    border-left-width: 4px;
+    border-left-style: solid;
+    box-shadow: -1px 0 0 var(--rule);
+  }
+
+  .status-cell.status-red { border-left-color: #a02a2a; }
+  .status-cell.status-amber { border-left-color: #c89000; }
+  .status-cell.status-green { border-left-color: #2a7a3a; }
+
+  .status-cell .status-label {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    font-size: 0.72rem;
+    color: var(--ink-muted);
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .status-cell .status-value {
+    font-family: 'Monaspace Argon', ui-monospace, monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+  }
+
+  .status-cell .status-note {
+    font-size: 0.75rem;
+    margin-top: 0.15rem;
+  }
+
+  .status-note.note-red { color: #a02a2a; }
+  .status-note.note-amber { color: #c89000; }
+  .status-note.note-green { color: #2a7a3a; }
+
+  @media (max-width: 800px) {
+    .status-strip { grid-template-columns: repeat(2, 1fr); }
+    .status-cell:nth-child(3),
+    .status-cell:nth-child(4) { border-top: 1px solid var(--rule); }
+  }
+
+  @media print {
+    body { max-width: none; }
+    .aside-container { grid-template-columns: 1fr 240px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Three-Month Activity Report</h1>
+<p class="subtitle">22 January – 22 April 2026 &ensp;❧&ensp; Gleb Kalinin</p>
+<p class="source-tags" style="font-family:ui-monospace,'SF Mono',Monaco,monospace;font-size:0.65rem;color:var(--rule);line-height:1.7;margin-top:-1rem;margin-bottom:1.5rem;letter-spacing:0.02em;">
+  <span class="source-tag">Claude Code sessions</span> · <span class="source-tag">Wispr Flow</span> · <span class="source-tag">Apple Health</span> · <span class="source-tag">Telegram</span>
+</p>
+
+<!-- ═══════════════════════════════════════ SUMMARY ═══════════════════════════════════════ -->
+
+<div class="toc-layout">
+<div>
+<div class="overview">
+  <span class="kicker">at a glance</span>
+  <p class="lede">Over the past ninety-one days, voice became the primary interface to code. You spoke <span class="stat-inline wispr">63,826 words</span> into Wispr Flow <svg class="spark-inline" id="sparkWispr" width="80" height="16"></svg> across <span class="stat-inline wispr">4,209 dictations</span>, the vast majority directed at Claude Code terminals. Claude Code itself processed <span class="stat-inline claude">66,548 messages</span> <svg class="spark-inline" id="sparkClaude" width="80" height="16"></svg> over <span class="stat-inline claude">2,082 sessions</span>, averaging roughly 26 sessions on each active day.</p>
+
+  <p>The trajectory is steep: January was exploratory — nine active days, a few hundred dictations. By March, daily use was the norm. April is on pace to nearly double March's voice volume <svg class="spark-inline" id="sparkGrowth" width="60" height="16"></svg>. Social communication via Telegram <svg class="spark-inline" id="sparkTelegram" width="80" height="16"></svg> follows a burstier rhythm: quiet most days, then <span class="stat-inline social">92 voice messages</span> on April 20–21 alone — more than all of March combined.</p>
+
+  <p>English dominates at <strong>81%</strong> of all dictations — the language of code and AI tools. Russian surfaces on social days, spiking to <strong>40–50%</strong> when Telegram conversations intensify. The working hours settle into a midday plateau, <strong>11:00–14:00 CET</strong>, with an evening return around 18:00. Almost nothing between 1 and 4 in the morning. Apple Watch data reveals a physiological cost to this intensity: HRV is trending downward and two 34-day unbroken work streaks signal burnout risk worth monitoring.</p>
+</div>
+
+<div class="status-strip" id="status">
+  <div class="status-cell status-red">
+    <span class="status-label">hrv status</span>
+    <div class="status-value">26.1 ms</div>
+    <div class="status-note note-red">&#9660; below 40 ms baseline</div>
+  </div>
+  <div class="status-cell status-red">
+    <span class="status-label">work streak</span>
+    <div class="status-value">34 days</div>
+    <div class="status-note note-red">&#9660; no rest days (max 12)</div>
+  </div>
+  <div class="status-cell status-green">
+    <span class="status-label">error rate</span>
+    <div class="status-value">2.1%</div>
+    <div class="status-note note-green">&#10003; at baseline</div>
+  </div>
+  <div class="status-cell status-amber">
+    <span class="status-label">movement</span>
+    <div class="status-value">4,300/day</div>
+    <div class="status-note note-amber">&#9888; down from 7,400</div>
+  </div>
+</div>
+
+<div class="summary-row">
+  <div class="summary-card claude">
+    <div class="label">Claude Code</div>
+    <div class="big-number-row">
+      <div class="big-number">2,082</div>
+      <svg class="card-spark" id="cardSparkClaude"></svg>
+    </div>
+    <div class="detail">sessions across 81 active days</div>
+    <div class="trend up">▲ 450% growth Jan→Apr</div>
+  </div>
+  <div class="summary-card wispr">
+    <div class="label">Wispr Flow</div>
+    <div class="big-number-row">
+      <div class="big-number">4,209</div>
+      <svg class="card-spark" id="cardSparkWispr"></svg>
+    </div>
+    <div class="detail">voice dictations · 63,826 words</div>
+    <div class="trend up">▲ 540% growth Jan→Apr</div>
+  </div>
+  <div class="summary-card social">
+    <div class="label">Telegram</div>
+    <div class="big-number-row">
+      <div class="big-number">301</div>
+      <svg class="card-spark" id="cardSparkTelegram"></svg>
+    </div>
+    <div class="detail">voice-dictated messages · 4,327 words</div>
+    <div class="trend up">▲ 329% growth Jan→Apr</div>
+  </div>
+</div>
+</div><!-- end toc-layout left column -->
+
+<nav class="toc" id="toc">
+  <div class="toc-title">contents</div>
+  <a href="#status">Status</a>
+  <a href="#claude-code">Claude Code</a>
+  <a href="#wispr-flow">Wispr Flow</a>
+  <a href="#telegram">Telegram</a>
+  <a href="#combined">Combined Trends</a>
+  <a href="#output">Output & Projects</a>
+  <a href="#knowledge">Knowledge Work</a>
+  <a href="#wellbeing">Wellbeing Signals</a>
+  <a href="#decisions">Decision Register</a>
+  <a href="#attention">Attention</a>
+</nav>
+</div><!-- end toc-layout -->
+
+<div class="ornament">:::</div>
+
+<!-- ═══════════════════════════════════════ CLAUDE CODE ═══════════════════════════════════════ -->
+
+<h2 id="claude-code">§ i · Claude Code <a href="#toc" class="back-to-top" title="Back to contents">↑</a></h2>
+<p class="state-line">From experiment to default workflow — <strong>2,082 sessions</strong> in 81 days, voice-first.</p>
+
+<div class="aside-container">
+  <div class="body-text">
+    <p>Over three months, you conducted <strong>2,082 sessions</strong> generating <strong>66,548 messages</strong> and invoking <strong>33,837 tool calls</strong>. The ramp from late January (a handful of experimental sessions) to March's sustained ~30 sessions/day represents a fundamental shift in working method — from occasional use to voice-driven pair programming as default workflow.</p>
+  </div>
+  <div class="aside">
+    <span class="aside-marker">†</span> The duration_minutes field in session metadata uses wall-clock time from first to last message. Actual hands-on-keyboard time is shorter; idle sessions inflate the total. Take cumulative duration as a ceiling, not a measurement.
+  </div>
+</div>
+
+<div class="chart-container">
+  <div class="chart-title">daily sessions &amp; messages</div>
+  <canvas id="claudeDaily" height="280"></canvas>
+  <div class="chart-caption">Bars show session count; the line traces total messages. Hover for detail.</div>
+</div>
+
+<div class="aside-container">
+  <div>
+    <h3>monthly breakdown</h3>
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Month</th><th>Sessions</th><th>Messages</th><th class="hide-mobile">Tools</th><th>Days</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>January</td><td>153</td><td>5,591</td><td class="hide-mobile">2,481</td><td>9</td></tr>
+        <tr class="highlight-row"><td>February</td><td>853</td><td>25,641</td><td class="hide-mobile">13,563</td><td>27</td></tr>
+        <tr><td>March</td><td>724</td><td>20,455</td><td class="hide-mobile">10,349</td><td>28</td></tr>
+        <tr><td>April (1–22)</td><td>352</td><td>14,861</td><td class="hide-mobile">7,444</td><td>17</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="aside" style="border-left:none;padding-top:0;">
+    <div style="font-variant:small-caps;text-transform:lowercase;letter-spacing:0.08em;font-size:0.82rem;color:var(--ink-light);margin-bottom:0.5rem;">⚙ the arc</div>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;"><strong>January</strong> — exploratory. Nine active days, feeling out the workflow.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>February</strong> — adoption surge. 853 sessions, 27 active days. Peak day: March 18 with 169 sessions alone.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>March</strong> — sustained. Slightly fewer sessions, 28 of 31 days active. Voice-first is now default.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>April</strong> — on pace. 352 sessions in 17 days projects to ~620 for the full month.</p>
+  </div>
+</div>
+
+<div class="flyout">
+  <div class="flyout-title">&#9881; session efficiency</div>
+  <p>Average messages per session shifted across the quarter: <strong>36.5</strong> in January, <strong>30.0</strong> in February, <strong>28.3</strong> in March, then back up to <strong>42.2</strong> in April. The March dip suggests sessions were getting shorter and more focused. April's rebound coincides with more complex, multi-step tasks. Tool calls per session held steady at ~15, suggesting consistent depth regardless of session length.</p>
+</div>
+
+<div class="ornament">:::</div>
+
+<!-- ═══════════════════════════════════════ WISPR FLOW ═══════════════════════════════════════ -->
+
+<h2 id="wispr-flow">§ ii · Wispr Flow <a href="#toc" class="back-to-top" title="Back to contents">↑</a></h2>
+<p class="state-line">The only metric still accelerating — voice volume doubles every month.</p>
+
+<div class="aside-container">
+  <div class="body-text">
+    <p>Voice dictation volume grew steadily: from <strong>309 dictations</strong> in late January to a projected <strong>~2,700</strong> for full April — a nearly tenfold increase. The daily word count mirrors Claude Code activity, confirming that voice input is now the primary interface to the coding environment. English dominates (81%), but Russian usage spikes on communication-heavy days.</p>
+  </div>
+  <div class="aside">
+    <span class="aside-marker">‡</span> Wispr Flow categorises by target app. "Coding" means cmuxterm + iTerm2 (i.e., Claude Code terminals). The 85% coding share reflects voice-driven development, not manual typing.
+  </div>
+</div>
+
+<div class="chart-container">
+  <div class="chart-title">daily dictations &amp; words</div>
+  <canvas id="wisprDaily" height="280"></canvas>
+  <div class="chart-caption">Area shows word volume; dots mark dictation count. The correlation between peaks is strong.</div>
+</div>
+
+<div class="aside-container">
+  <div>
+    <h3>monthly breakdown</h3>
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Month</th><th>Dictations</th><th>Words</th><th class="hide-mobile">Min</th><th>EN%</th><th style="text-align:left;padding-left:0.5rem;">Volume</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>January</td><td>309</td><td>5,846</td><td class="hide-mobile">69</td><td>75%</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkWisprJan" width="50" height="14"></svg></td></tr>
+        <tr><td>February</td><td>626</td><td>11,332</td><td class="hide-mobile">130</td><td>76%</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkWisprFeb" width="50" height="14"></svg></td></tr>
+        <tr class="highlight-row"><td>March</td><td>1,293</td><td>20,329</td><td class="hide-mobile">223</td><td>82%</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkWisprMar" width="50" height="14"></svg></td></tr>
+        <tr class="highlight-row"><td>April</td><td>1,981</td><td>26,319</td><td class="hide-mobile">300</td><td>83%</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkWisprApr" width="50" height="14"></svg></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="aside" style="border-left:none;padding-top:0;">
+    <div style="font-variant:small-caps;text-transform:lowercase;letter-spacing:0.08em;font-size:0.82rem;color:var(--ink-light);margin-bottom:0.5rem;">reading the curve</div>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;">Dictation volume doubled every month — the only metric still accelerating. English share climbed from 75% to 83% as coding (English-dominant) grew faster than social (Russian-heavy).</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;">At current pace, April will finish with <strong>~2,700 dictations</strong> and <strong>~35,000 words</strong> — nearly a short novel spoken into terminals.</p>
+  </div>
+</div>
+
+<div class="aside-container">
+  <div>
+    <div class="chart-container" style="margin-top:0;">
+      <div class="chart-title">hourly activity distribution</div>
+      <canvas id="hourlyChart" height="220"></canvas>
+      <div class="chart-caption">Dictations by hour of day (CET). The midday plateau and evening bump are consistent.</div>
+    </div>
+  </div>
+  <div class="aside" style="border-left:none; padding-top:0.5rem;">
+    <div style="font-variant:small-caps;text-transform:lowercase;letter-spacing:0.08em;font-size:0.82rem;color:var(--ink-light);margin-bottom:0.5rem;">☞ hourly rhythm</div>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;">Peak: <strong>11:00–14:00</strong> — the midday plateau accounts for 40% of all dictations.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.5rem;">Evening return: <strong>18:00–19:00</strong> — a second wind after the afternoon dip at 17:00.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.5rem;">Early morning: <strong>5:00–7:00</strong> — occasional quick checks, not deep sessions.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.5rem;">Dark hours: <strong>01:00–04:00</strong> — near zero. Consistent pattern across all three months.</p>
+  </div>
+</div>
+
+<div class="flyout">
+  <div class="flyout-title">&#9881; planned analysis</div>
+  <p>Weekday × hour heatmap planned — requires per-session timestamp disaggregation. Current hourly data is aggregated across all days; splitting by weekday would reveal whether weekend sessions shift later or weekday mornings are more concentrated.</p>
+</div>
+
+<div class="ornament">:::</div>
+
+<!-- ═══════════════════════════════════════ SOCIAL ═══════════════════════════════════════ -->
+
+<h2 id="telegram">§ iii · Social · Telegram <a href="#toc" class="back-to-top" title="Back to contents">↑</a></h2>
+<p class="state-line">Bursty, not steady — quiet most days, then <strong>92 messages</strong> in a single weekend.</p>
+
+<div class="aside-container">
+  <div class="body-text">
+    <p>Telegram voice-dictation volume shows a distinctive pattern: relatively low baseline (1–4 messages/day) with dramatic spikes on socially active days. The April 20–21 cluster (92 messages, 950 words in two days) stands out — likely a sustained conversation or event coordination. Overall, Telegram is the sole meaningful social channel in the voice data; Zoom appears only twice.</p>
+  </div>
+  <div class="aside">
+    <span class="aside-marker">§</span> These are <em>voice-dictated</em> Telegram messages only. Typed messages are not captured by Wispr Flow. The true message count is higher.
+  </div>
+</div>
+
+<div class="aside-container">
+  <div>
+    <h3>weekly telegram rhythm</h3>
+    <div id="telegramStrip" class="telegram-strip"></div>
+  </div>
+  <div class="aside" style="border-left:none;padding-top:0;">
+    <table style="font-size:0.8rem;width:100%;margin-bottom:1rem;">
+      <thead>
+        <tr><th style="text-align:left;">Month</th><th>Msgs</th><th>Wds/Msg</th><th style="text-align:left;padding-left:0.5rem;">Shape</th></tr>
+      </thead>
+      <tbody>
+        <tr><td style="text-align:left;">Jan</td><td>34</td><td>16.2</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkTgJan" width="40" height="12"></svg></td></tr>
+        <tr><td style="text-align:left;">Feb</td><td>67</td><td>21.3</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkTgFeb" width="40" height="12"></svg></td></tr>
+        <tr><td style="text-align:left;">Mar</td><td>54</td><td>16.1</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkTgMar" width="40" height="12"></svg></td></tr>
+        <tr><td style="text-align:left;">Apr</td><td>146</td><td>10.1</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkTgApr" width="40" height="12"></svg></td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.8rem;line-height:1.5;margin-top:0.5rem;"><span class="aside-marker">☞</span> Words per message: <strong>21</strong> → <strong>10</strong>. Shorter, more frequent bursts.</p>
+    <p style="font-size:0.8rem;line-height:1.5;margin-top:0.4rem;"><span class="aside-marker">✦</span> Feb 23–25 &amp; Apr 20–21: Russian-language social bursts.</p>
+  </div>
+</div>
+
+<div class="ornament">:::</div>
+
+<!-- ═══════════════════════════════════════ COMBINED TRENDS ═══════════════════════════════════════ -->
+
+<h2 id="combined">§ iv · Combined Trends <a href="#toc" class="back-to-top" title="Back to contents">↑</a></h2>
+<p class="state-line">Three streams, one story — voice and code move in lockstep, social follows its own rhythm.</p>
+
+<div class="chart-container">
+  <div class="chart-title">weekly activity: all three streams</div>
+  <canvas id="weeklyCombo" height="300"></canvas>
+  <div class="chart-caption">Normalised to show relative growth. All three streams accelerate in sync through March, then stabilise in April.</div>
+</div>
+
+<div class="aside-container">
+  <div class="body-text">
+    <p>The three data streams tell a coherent story of accelerating adoption. Voice dictation (Wispr) tracks Claude Code usage almost perfectly — each coding session generates roughly two dictations. Social messaging follows a different rhythm, clustering around specific days rather than spreading evenly. The overall trajectory: from tentative exploration in late January to sustained, voice-first daily practice by mid-March.</p>
+  </div>
+  <div class="aside">
+    <span class="aside-marker">¶</span> Week 13 (Mar 23–29) marks the inflection point where all three metrics peak simultaneously — 626 dictations, 45+ Claude sessions, and 10 Telegram messages in a single week.
+  </div>
+</div>
+
+<div class="aside-container">
+  <div>
+    <h3>monthly growth rates</h3>
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th></th><th>Jan</th><th>Feb</th><th>Mar</th><th>Apr</th><th style="text-align:left;padding-left:0.8rem;">Trend</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color:var(--spark-claude);">Claude Code</td>
+          <td>153</td><td><strong>853</strong></td><td>724</td><td>~620</td>
+          <td style="text-align:left;padding-left:0.8rem;font-size:0.78rem;font-style:italic;"><span style="color:#2a7a3a;">+458%</span> → <span style="color:#a02a2a;">−15%</span> → <span style="color:#a02a2a;">−14%</span></td>
+        </tr>
+        <tr>
+          <td style="color:var(--spark-wispr);">Wispr Flow</td>
+          <td>309</td><td>626</td><td>1,293</td><td><strong>~2,700</strong></td>
+          <td style="text-align:left;padding-left:0.8rem;font-size:0.78rem;font-style:italic;"><span style="color:#2a7a3a;">+103%</span> → <span style="color:#2a7a3a;">+107%</span> → <span style="color:#2a7a3a;">+109%</span></td>
+        </tr>
+        <tr>
+          <td style="color:var(--spark-social);">Telegram</td>
+          <td>34</td><td>67</td><td>54</td><td><strong>~199</strong></td>
+          <td style="text-align:left;padding-left:0.8rem;font-size:0.78rem;font-style:italic;"><span style="color:#2a7a3a;">+97%</span> → <span style="color:#a02a2a;">−19%</span> → <span style="color:#2a7a3a;">+269%</span></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="aside" style="border-left:none;padding-top:0;">
+    <div style="font-variant:small-caps;text-transform:lowercase;letter-spacing:0.08em;font-size:0.82rem;color:var(--ink-light);margin-bottom:0.5rem;">reading the numbers</div>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;"><strong>Claude Code</strong> surged 5× in February (adoption), then settled into a steady ~700 sessions/month — a plateau, not a decline.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>Wispr Flow</strong> is the only metric still accelerating — doubling every month. Voice is becoming the dominant input mode.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>Telegram</strong> is event-driven, not trend-driven. April's 269% spike is one 2-day conversation marathon, not sustained growth.</p>
+  </div>
+</div>
+
+<div class="ornament">:::</div>
+
+<!-- ═══════════════════════════════════════ OUTPUT & PROJECTS ═══════════════════════════════════════ -->
+
+<h2 id="output">§ vi · Output &amp; Projects <a href="#toc" class="back-to-top" title="Back to contents">↑</a></h2>
+<p class="state-line"><strong>355 commits</strong> across 15 projects — brain, generative-sequencer, and genome lead.</p>
+
+<div class="aside-container">
+  <div>
+    <h3>monthly output</h3>
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Month</th><th>Commits</th><th>Lines+</th><th class="hide-mobile">Lines−</th><th class="hide-mobile">Files</th><th style="text-align:left;padding-left:0.5rem;">Shape</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>January</td><td>24</td><td>46,966</td><td class="hide-mobile">1,342</td><td class="hide-mobile">245</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkCommitJan" width="50" height="14"></svg></td></tr>
+        <tr class="highlight-row"><td>February</td><td>106</td><td>63,635</td><td class="hide-mobile">5,054</td><td class="hide-mobile">714</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkCommitFeb" width="50" height="14"></svg></td></tr>
+        <tr><td>March</td><td>78</td><td>63,224</td><td class="hide-mobile">1,933</td><td class="hide-mobile">514</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkCommitMar" width="50" height="14"></svg></td></tr>
+        <tr><td>April (1–17)</td><td>147</td><td>52,104</td><td class="hide-mobile">2,302</td><td class="hide-mobile">482</td><td style="text-align:left;padding-left:0.5rem;"><svg class="spark-inline" id="sparkCommitApr" width="50" height="14"></svg></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="aside" style="border-left:none;padding-top:0;">
+    <div style="font-variant:small-caps;text-transform:lowercase;letter-spacing:0.08em;font-size:0.82rem;color:var(--ink-light);margin-bottom:0.5rem;">reading the curve</div>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;"><strong>February</strong> — adoption burst. 106 commits across 78 pushes; the highest push rate of the quarter. Active experimentation across many repos.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>March</strong> — high output, fewer pushes (17). Local experimentation — long working branches, fewer deployments. Lines added match February despite fewer commits.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>April</strong> — highest commit rate at <strong>8.6/day</strong>. 147 commits in 17 days signals deep, sustained flow states. Push frequency recovered to 62.</p>
+  </div>
+</div>
+
+<div class="aside-container">
+  <div>
+    <h3>top projects</h3>
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Project</th><th>Commits</th><th style="text-align:left;padding-left:0.5rem;">Volume</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>brain</td><td>89</td><td style="text-align:left;padding-left:0.5rem;"><span class="sparkbar" style="width:89px;"></span></td></tr>
+        <tr><td>generative-sequencer</td><td>64</td><td style="text-align:left;padding-left:0.5rem;"><span class="sparkbar" style="width:64px;"></span></td></tr>
+        <tr><td>genome</td><td>52</td><td style="text-align:left;padding-left:0.5rem;"><span class="sparkbar" style="width:52px;"></span></td></tr>
+        <tr><td>agency-docs</td><td>41</td><td style="text-align:left;padding-left:0.5rem;"><span class="sparkbar" style="width:41px;"></span></td></tr>
+        <tr><td>claude-skills</td><td>38</td><td style="text-align:left;padding-left:0.5rem;"><span class="sparkbar" style="width:38px;"></span></td></tr>
+        <tr><td>other (10 repos)</td><td>71</td><td style="text-align:left;padding-left:0.5rem;"><span class="sparkbar" style="width:71px;opacity:0.3;"></span></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="aside" style="border-left:none;padding-top:0;">
+    <div style="font-variant:small-caps;text-transform:lowercase;letter-spacing:0.08em;font-size:0.82rem;color:var(--ink-light);margin-bottom:0.5rem;">☞ project notes</div>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;"><strong>brain</strong> — Obsidian vault automation. Scripts, templates, and daily-note infrastructure. The highest-commit project reflects vault-as-OS thinking.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>generative-sequencer</strong> — creative coding. Audio-visual generative art with p5.js and Tone.js.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>genome</strong> — health genomics. Personal genomics vault with gene notes, biomarker tracking, and protocol management.</p>
+  </div>
+</div>
+
+<div class="chart-container">
+  <div class="chart-title">daily commits vs. lines added</div>
+  <canvas id="commitDailyChart" height="280"></canvas>
+  <div class="chart-caption">Bars show daily commits (orange); line traces thousands of lines added (blue, right axis). Spikes often mark project scaffolding days.</div>
+</div>
+
+<h3>project hrv impact</h3>
+<p class="state-line">Which projects cost the most recovery? genome and generative-sequencer hit hardest.</p>
+
+<div class="aside-container">
+  <div>
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Project</th><th>Days</th><th>Sessions</th><th>Err%</th><th>Next-day HRV</th><th>Δ vs baseline</th></tr>
+      </thead>
+      <tbody>
+        <tr><td style="color:var(--ink);">generative-sequencer</td><td>4</td><td>18</td><td>2.0%</td><td>45.2</td><td style="color:#a02a2a;">−10.8 ▼</td></tr>
+        <tr><td style="color:var(--ink);">paperclip</td><td>3</td><td>30</td><td>1.8%</td><td>46.2</td><td style="color:#a02a2a;">−9.8 ▼</td></tr>
+        <tr><td style="color:var(--ink);">genome</td><td>12</td><td>27</td><td>2.6%</td><td>49.9</td><td style="color:#a02a2a;">−6.1 ▼</td></tr>
+        <tr><td style="color:var(--ink);">genome-toolkit</td><td>12</td><td>71</td><td>1.4%</td><td>50.7</td><td style="color:#a02a2a;">−5.3 ▼</td></tr>
+        <tr><td style="color:var(--ink);">lesson-generator</td><td>4</td><td>58</td><td style="color:#a02a2a;">17.5%</td><td>52.1</td><td style="color:#a02a2a;">−3.9 ▼</td></tr>
+        <tr style="border-top:1px solid var(--rule);"><td style="color:var(--ink-muted);">baseline (all days)</td><td>89</td><td>—</td><td>—</td><td>56.0</td><td>—</td></tr>
+        <tr style="border-top:1px solid #eee;"><td style="color:var(--ink);">sketch-mcp-server</td><td>3</td><td>11</td><td>1.4%</td><td>65.2</td><td style="color:#2a7a3a;">+9.2 ▲</td></tr>
+        <tr><td style="color:var(--ink);">beat-gen</td><td>5</td><td>13</td><td>2.0%</td><td>67.1</td><td style="color:#2a7a3a;">+11.1 ▲</td></tr>
+        <tr><td style="color:var(--ink);">telegram_agent</td><td>7</td><td>13</td><td>2.3%</td><td>71.4</td><td style="color:#2a7a3a;">+15.4 ▲</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="aside" style="border-left:none;padding-top:2rem;">
+    <div style="font-variant:small-caps;text-transform:lowercase;letter-spacing:0.08em;font-size:0.82rem;color:var(--ink-light);margin-bottom:0.5rem;">what this means</div>
+    <p style="font-size:0.85rem;line-height:1.6;"><strong>genome</strong> projects (genome + genome-toolkit) show <span style="color:#a02a2a;">−5 to −6 ms</span> next-day HRV across 12 days each — the most reliable drain signal with the most data.</p>
+    <p style="font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>generative-sequencer</strong> has the worst single impact (<span style="color:#a02a2a;">−10.8 ms</span>) but only 4 days — could be coincidence.</p>
+    <p style="font-size:0.85rem;line-height:1.6;margin-top:0.4rem;">Creative projects (<strong>beat-gen</strong>, <strong>sketch-mcp</strong>, <strong>telegram_agent</strong>) show <span style="color:#2a7a3a;">+9 to +15 ms</span> — lighter, more energizing work.</p>
+    <p style="font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>lesson-generator</strong> is the red flag: 17.5% error rate + HRV drain = high-friction project.</p>
+  </div>
+</div>
+
+<div class="ornament">:::</div>
+
+<!-- ═══════════════════════════════════════ KNOWLEDGE WORK ═══════════════════════════════════════ -->
+
+<h2 id="knowledge">§ vii · Knowledge Work (Obsidian) <a href="#toc" class="back-to-top" title="Back to contents">↑</a></h2>
+<p class="state-line"><strong>11,815 notes</strong> — 2,200 modified this quarter, vault as working memory.</p>
+
+<div class="aside-container">
+  <div>
+    <h3>monthly obsidian activity</h3>
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Month</th><th>Files Modified</th><th>Active Days</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>January</td><td>324</td><td>10</td></tr>
+        <tr><td>February</td><td>458</td><td>23</td></tr>
+        <tr><td>March</td><td>584</td><td>30</td></tr>
+        <tr class="highlight-row"><td>April (1–21)</td><td>834</td><td>21</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="aside" style="border-left:none;padding-top:0;">
+    <div style="font-variant:small-caps;text-transform:lowercase;letter-spacing:0.08em;font-size:0.82rem;color:var(--ink-light);margin-bottom:0.5rem;">☞ vault as infrastructure</div>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;">The vault functions as cognitive infrastructure — not a note archive but a working memory system. April's 834 modified files in 21 days (39.7 files/day) reflects automation: daily notes, gene imports, health syncs.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;">The Apr 5 spike — <strong>277 files</strong> in one day — likely a genome import batch. Note-taking and coding days correlate strongly; days with high commit counts almost always show high vault activity.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;">March achieved 30 active days out of 31 — the vault was touched every day but one.</p>
+  </div>
+</div>
+
+<div class="ornament">:::</div>
+
+<!-- ═══════════════════════════════════════ WELLBEING ═══════════════════════════════════════ -->
+
+<h2 id="wellbeing">§ v · Wellbeing Signals <a href="#toc" class="back-to-top" title="Back to contents">↑</a></h2>
+<p class="state-line">HRV down <strong>13%</strong>, steps down <strong>42%</strong>, two 34-day streaks without rest. The body is keeping score.</p>
+
+<div class="aside-container">
+  <div class="body-text">
+    <p>Two <strong>34-day unbroken streaks</strong> stand out: January 24 – February 26 and March 15 – April 17. No rest days for over a month each time. February's streak coincided with the highest error rate and most late-night activity — a classic intensity pattern where sustained effort compounds fatigue, which surfaces as more tool errors and later working hours.</p>
+  </div>
+  <div class="aside">
+    <span class="aside-marker">⚑</span> These signals are proxies, not diagnoses. Late-night messages might be brief checks; errors might be ambitious experimentation. But the <em>correlation</em> of all three — streaks, errors, late nights — is the pattern to watch.
+  </div>
+</div>
+
+<div class="chart-container">
+  <div class="chart-title">error rate vs. late-night activity</div>
+  <canvas id="burnoutChart" height="280"></canvas>
+  <div class="chart-caption">Error rate (% of messages that triggered tool errors) in orange; late-night messages (22:00–04:00) in blue. Peaks often align.</div>
+</div>
+
+<div class="aside-container">
+  <div>
+    <h3>error categories</h3>
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Count</th><th>Share</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Command Failed</td><td>546</td><td>30%</td></tr>
+        <tr><td>User Rejected</td><td>211</td><td>11%</td></tr>
+        <tr><td>File Changed</td><td>83</td><td>5%</td></tr>
+        <tr><td>File Too Large</td><td>82</td><td>5%</td></tr>
+        <tr><td>File Not Found</td><td>80</td><td>4%</td></tr>
+        <tr class="highlight-row"><td>Other</td><td>825</td><td>45%</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="aside" style="border-left:none;padding-top:4.5rem;">
+    <div style="font-variant:small-caps;text-transform:lowercase;letter-spacing:0.08em;font-size:0.82rem;color:var(--ink-light);margin-bottom:0.5rem;">☞ burnout indicators</div>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;"><strong>1.</strong> Two <strong>34-day streaks</strong> with zero rest days. Recommended max is 10–12 before a deliberate break.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>2.</strong> Feb 10–14 and Mar 1/7: <strong>100+ late-night messages</strong> — deep sessions past midnight.</p>
+    <p style="font-style:normal;font-size:0.85rem;line-height:1.6;margin-top:0.4rem;"><strong>3.</strong> Error rate outliers: Jan 24 (<strong>11.9%</strong>), Mar 5 (<strong>7.9%</strong>). Settled to ~2.1% in April.</p>
+  </div>
+</div>
+
+<h3>physiological correlation</h3>
+
+<div class="body-text">
+  <p>HRV (heart rate variability) is a stress proxy — higher is better, lower signals physiological strain. Your 3-month average is <strong>55.8 ms</strong>, with a clear downward drift from January (avg 57.8) to April (avg 50.4). The lowest readings — <strong>26.1 ms</strong> on April 22 and <strong>33.7 ms</strong> on March 10 and 29 — correlate with high-intensity coding days. Resting heart rate mirrors this: it climbed from ~56 bpm in February to ~61 bpm in April.</p>
+</div>
+
+<div class="aside-container">
+  <div>
+    <div class="chart-container" style="margin-top:0;">
+      <div class="chart-title">hrv vs. coding intensity</div>
+      <canvas id="hrvChart" height="280"></canvas>
+      <div class="chart-caption">HRV (green, higher = better recovery) vs. daily Claude Code sessions (orange bars).</div>
+    </div>
+  </div>
+  <div class="aside" style="border-left:none;padding-top:2rem;">
+    <span class="aside-marker">⚕</span> Data from Apple Watch via HealthKit, queried from the Mac Mini's health.db (19.5M records). HRV is SDNN measured during sleep. Steps are Watch-only to avoid iPhone double-counting.
+  </div>
+</div>
+
+<div class="chart-container">
+  <div class="chart-title">hrv control chart (weekly spc)</div>
+  <canvas id="hrvSpcChart" height="280"></canvas>
+  <div class="chart-caption">Weekly HRV with statistical process control limits. Centerline at 55.8 ms (mean); lower control limit at 34 ms (−2σ). Weeks below the centerline are shaded.</div>
+</div>
+
+<div class="flyout">
+  <div class="flyout-title">&#9877; next-day hrv effect</div>
+  <p>Pearson correlations across 79 paired days: sessions → next-day HRV <strong>r = 0.10</strong> (weak), sessions vs. same-day steps <strong>r = 0.21</strong> (modest positive — more active days have more sessions). Rest days show HRV of <strong>58.5 ms</strong> vs. work days <strong>56.1 ms</strong> — a small but consistent gap. The real signal is the weekly trend: HRV dropped from <strong>64 ms</strong> (W05–W08) to <strong>50 ms</strong> (W11–W16), suggesting cumulative load matters more than any single heavy day.</p>
+</div>
+
+<div class="chart-container">
+  <div class="chart-title">resting heart rate &amp; daily steps</div>
+  <canvas id="rhrStepsChart" height="240"></canvas>
+  <div class="chart-caption">Resting HR (red line, lower = better fitness) and steps (grey bars). Low-step days often precede higher resting HR.</div>
+</div>
+
+<div class="flyout">
+  <div class="flyout-title">⚕ patterns to watch</div>
+  <p><strong>HRV trend:</strong> Weekly average dropped from <span style="color:#2a7a3a;">64 ms</span> (Feb) to <span style="color:#a02a2a;">50 ms</span> (Apr). Cumulative load, not single-day spikes, drives the decline.<br>
+  <strong>Steps declined:</strong> <span style="color:#a02a2a;">7,400 → 4,300/day</span> (−42%). Sessions and steps are weakly correlated (r = 0.21) — coding doesn't directly displace movement, but the trend is clear.<br>
+  <strong>Rest day gap:</strong> Only <strong>9 rest days</strong> in 91 — HRV on rest days averages <span style="color:#2a7a3a;">58.5 ms</span> vs. <span style="color:#a02a2a;">56.1 ms</span> on work days. Small but consistent.</p>
+</div>
+
+<div class="ornament">:::</div>
+
+<!-- ═══════════════════════════════════════ DECISION REGISTER ═══════════════════════════════════════ -->
+
+<h2 id="decisions">§ viii · Decision Register <a href="#toc" class="back-to-top" title="Back to contents">↑</a></h2>
+<p class="state-line">Detect, decide, review — one intervention per week.</p>
+
+<div class="table-wrapper">
+<table>
+  <thead>
+    <tr><th>Signal</th><th>Threshold</th><th>Current</th><th>Status</th><th style="text-align:left;padding-left:0.5rem;">Action</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HRV 7-day avg</td>
+      <td>&lt;50 ms</td>
+      <td>45.2 ms</td>
+      <td style="color:#a02a2a;font-weight:600;">&#9660; alert</td>
+      <td style="text-align:left;padding-left:0.5rem;font-family:'EB Garamond',Georgia,serif;font-size:0.92rem;">Add 2 rest days/week</td>
+    </tr>
+    <tr>
+      <td>Work streak</td>
+      <td>&gt;12 days</td>
+      <td>34 days</td>
+      <td style="color:#a02a2a;font-weight:600;">&#9660; alert</td>
+      <td style="text-align:left;padding-left:0.5rem;font-family:'EB Garamond',Georgia,serif;font-size:0.92rem;">Break streak before Apr 25</td>
+    </tr>
+    <tr>
+      <td>Error rate</td>
+      <td>&gt;3.0%</td>
+      <td>2.1%</td>
+      <td style="color:#2a7a3a;font-weight:600;">&#10003; ok</td>
+      <td style="text-align:left;padding-left:0.5rem;font-family:'EB Garamond',Georgia,serif;font-size:0.92rem;">Maintain</td>
+    </tr>
+    <tr>
+      <td>Daily steps</td>
+      <td>&lt;5,000</td>
+      <td>4,300</td>
+      <td style="color:#c89000;font-weight:600;">&#9651; watch</td>
+      <td style="text-align:left;padding-left:0.5rem;font-family:'EB Garamond',Georgia,serif;font-size:0.92rem;">Walk 30min before first session</td>
+    </tr>
+    <tr>
+      <td>Late-night share</td>
+      <td>&gt;25%</td>
+      <td>12%</td>
+      <td style="color:#2a7a3a;font-weight:600;">&#10003; ok</td>
+      <td style="text-align:left;padding-left:0.5rem;font-family:'EB Garamond',Georgia,serif;font-size:0.92rem;">Maintain</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="ornament">:::</div>
+
+<!-- ═══════════════════════════════════════ ATTENTION PROFILE ═══════════════════════════════════════ -->
+
+<h2 id="attention">§ ix · Attention Profile <a href="#toc" class="back-to-top" title="Back to contents">↑</a></h2>
+<p class="state-line"><strong>86%</strong> iPhone — attention lives on mobile, dominated by news and shopping, not social.</p>
+
+<div class="aside-container">
+  <div class="body-text">
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr><th>Domain</th><th>Visits</th><th>Category</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>meduza.io</td><td>903</td><td>News</td></tr>
+        <tr><td>amazon.de</td><td>724</td><td>Shopping</td></tr>
+        <tr><td>github.com</td><td>159</td><td>Dev</td></tr>
+        <tr><td>archive.is</td><td>144</td><td>News</td></tr>
+        <tr><td>businessinsider.com</td><td>101</td><td>News</td></tr>
+        <tr><td>psychologytoday.com</td><td>79</td><td>Research</td></tr>
+        <tr><td>forbes.com</td><td>76</td><td>News</td></tr>
+        <tr><td>xda-developers.com</td><td>66</td><td>Dev</td></tr>
+        <tr><td>dw.com</td><td>62</td><td>News</td></tr>
+        <tr><td>venturebeat.com</td><td>55</td><td>News</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="font-size:0.85rem;color:var(--ink-muted);margin-top:0.3rem;">Top 10 of 9,726 synced URLs across 7 Chrome devices (incl. 2 iPhones). Full tail includes theguardian.com (54), techcrunch.com (53), futurism.com (52), huggingface.co (48), nature.com (43), arxiv.org (42), sciencealert.com (41).</p>
+  </div>
+  <div class="aside">
+    <span class="aside-marker">&#9670;</span>
+    Mobile-first attention: <strong>8,405</strong> of 9,726 URLs originate from iPhone, just <strong>22</strong> from Mac. The browser is a reading device, not a working one — work happens in terminal and IDE, not in tabs.<br><br>
+    News dominates: meduza.io alone accounts for <strong>9%</strong> of all browsing. Combined with archive.is, businessinsider, forbes, dw, and venturebeat, news/research URLs make up <strong>11%</strong> of the total — and that's the <em>categorised</em> slice; the 86% "other" is largely long-tail articles.<br><br>
+    Near-zero social in browser (<strong>5 URLs</strong>, 0.05%) — it happens in native apps, not Chrome. The research tail — arxiv, nature, sciencealert — signals a curiosity-driven reading habit, not a doomscroll one.
+  </div>
+</div>
+
+<div class="flyout">
+  <div class="flyout-title">&#9881; april desktop context-switching</div>
+  <p>April desktop stats (22 days): <strong>3,650</strong> visits at <strong>166/day</strong> average across <strong>36 unique domains/day</strong> — the context-switch index. Social accounts for <strong>18%</strong> (645 visits), dev <strong>4%</strong> (152), AI tools <strong>1%</strong> (40). The 36-domain daily average is high; each domain switch carries a cognitive cost. Desktop browsing is scattered where mobile browsing is concentrated — two different attention modes on two different surfaces.</p>
+</div>
+
+<div class="ornament">:::</div>
+
+<p style="text-align: center; color: var(--ink-muted); font-size: 0.85rem; margin-top: 2rem; font-style: italic;">
+  Generated 22 April 2026 &ensp;·&ensp; Data from Claude Code session metadata, Wispr Flow SQLite, Telegram voice dictations, and Apple Health via HealthKit
+</p>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js"></script>
+<script>
+// ─── Tufte-inspired Chart.js defaults ───
+Chart.defaults.font.family = "'EB Garamond', Georgia, serif";
+Chart.defaults.font.size = 13;
+Chart.defaults.color = '#555';
+Chart.defaults.plugins.legend.labels.usePointStyle = false;
+Chart.defaults.plugins.legend.labels.boxWidth = 8;
+Chart.defaults.plugins.legend.labels.boxHeight = 8;
+Chart.defaults.plugins.legend.labels.borderRadius = 4;
+Chart.defaults.plugins.legend.labels.font = { family: "'EB Garamond', serif", size: 11 };
+Chart.defaults.plugins.legend.labels.padding = 14;
+
+// Solid filled legend dots — use borderColor as fill so line charts show solid
+const defaultGenerateLabels = Chart.defaults.plugins.legend.labels.generateLabels;
+Chart.defaults.plugins.legend.labels.generateLabels = function(chart) {
+  const items = defaultGenerateLabels.call(this, chart);
+  items.forEach(item => {
+    const ds = chart.data.datasets[item.datasetIndex];
+    const solidColor = ds.borderColor || ds.backgroundColor;
+    item.fillStyle = Array.isArray(solidColor) ? solidColor[0] : solidColor;
+    item.strokeStyle = 'transparent';
+    item.lineWidth = 0;
+    item.borderRadius = 4;
+  });
+  return items;
+};
+Chart.defaults.animation = {
+  duration: 800,
+  easing: 'easeOutQuart',
+  delay: function(ctx) {
+    return ctx.type === 'data' ? ctx.dataIndex * 8 : 0;
+  }
+};
+Chart.defaults.plugins.tooltip.backgroundColor = '#1a1a1a';
+Chart.defaults.plugins.tooltip.titleFont = { family: "'EB Garamond', serif", size: 14 };
+Chart.defaults.plugins.tooltip.bodyFont = { family: "'EB Garamond', serif", size: 13 };
+Chart.defaults.plugins.tooltip.cornerRadius = 2;
+Chart.defaults.plugins.tooltip.padding = 10;
+Chart.defaults.scale.grid.color = '#eee';
+
+// ─── DATA ───
+
+const claudeDaily = [
+  {d:'2026-01-22',s:4,m:286},{d:'2026-01-24',s:55,m:1704},{d:'2026-01-25',s:23,m:363},{d:'2026-01-26',s:33,m:994},
+  {d:'2026-01-27',s:15,m:1037},{d:'2026-01-28',s:3,m:464},{d:'2026-01-29',s:7,m:188},{d:'2026-01-30',s:6,m:546},
+  {d:'2026-01-31',s:7,m:9},{d:'2026-02-01',s:3,m:88},{d:'2026-02-02',s:7,m:128},{d:'2026-02-03',s:22,m:788},
+  {d:'2026-02-04',s:10,m:507},{d:'2026-02-05',s:5,m:233},{d:'2026-02-06',s:10,m:390},{d:'2026-02-07',s:28,m:930},
+  {d:'2026-02-08',s:9,m:621},{d:'2026-02-09',s:29,m:384},{d:'2026-02-10',s:64,m:1834},{d:'2026-02-11',s:18,m:921},
+  {d:'2026-02-12',s:28,m:1687},{d:'2026-02-13',s:85,m:1158},{d:'2026-02-14',s:31,m:1659},{d:'2026-02-15',s:1,m:52},
+  {d:'2026-02-16',s:7,m:61},{d:'2026-02-17',s:13,m:1028},{d:'2026-02-18',s:15,m:734},{d:'2026-02-19',s:137,m:4095},
+  {d:'2026-02-20',s:49,m:1427},{d:'2026-02-21',s:38,m:1505},{d:'2026-02-22',s:27,m:2030},{d:'2026-02-23',s:84,m:1045},
+  {d:'2026-02-24',s:14,m:302},{d:'2026-02-25',s:9,m:556},{d:'2026-02-26',s:1,m:4},{d:'2026-02-28',s:109,m:1474},
+  {d:'2026-03-01',s:166,m:2616},{d:'2026-03-02',s:18,m:661},{d:'2026-03-03',s:77,m:1306},{d:'2026-03-04',s:3,m:146},
+  {d:'2026-03-05',s:8,m:318},{d:'2026-03-06',s:3,m:62},{d:'2026-03-07',s:45,m:3203},{d:'2026-03-08',s:21,m:1311},
+  {d:'2026-03-09',s:8,m:458},{d:'2026-03-10',s:11,m:374},{d:'2026-03-11',s:6,m:168},{d:'2026-03-15',s:32,m:1659},
+  {d:'2026-03-16',s:11,m:228},{d:'2026-03-17',s:22,m:759},{d:'2026-03-18',s:169,m:1189},{d:'2026-03-19',s:28,m:828},
+  {d:'2026-03-20',s:5,m:626},{d:'2026-03-21',s:6,m:73},{d:'2026-03-22',s:7,m:976},{d:'2026-03-23',s:7,m:129},
+  {d:'2026-03-24',s:10,m:1108},{d:'2026-03-25',s:7,m:174},{d:'2026-03-26',s:3,m:16},{d:'2026-03-27',s:1,m:8},
+  {d:'2026-03-28',s:16,m:690},{d:'2026-03-29',s:7,m:921},{d:'2026-03-30',s:3,m:38},{d:'2026-03-31',s:24,m:410},
+  {d:'2026-04-01',s:10,m:1822},{d:'2026-04-02',s:2,m:12},{d:'2026-04-03',s:17,m:983},{d:'2026-04-04',s:141,m:1450},
+  {d:'2026-04-05',s:26,m:613},{d:'2026-04-06',s:9,m:1170},{d:'2026-04-07',s:12,m:685},{d:'2026-04-08',s:15,m:1163},
+  {d:'2026-04-09',s:20,m:1290},{d:'2026-04-10',s:14,m:1711},{d:'2026-04-11',s:5,m:68},{d:'2026-04-12',s:9,m:145},
+  {d:'2026-04-13',s:19,m:201},{d:'2026-04-14',s:17,m:974},{d:'2026-04-15',s:16,m:626},{d:'2026-04-16',s:14,m:1307},
+  {d:'2026-04-17',s:6,m:641}
+];
+
+const wisprDaily = [
+  {d:'2026-01-22',n:3,w:54,en:2,ru:0},{d:'2026-01-24',n:45,w:1004,en:34,ru:9},{d:'2026-01-25',n:10,w:197,en:10,ru:0},
+  {d:'2026-01-26',n:111,w:1743,en:97,ru:11},{d:'2026-01-27',n:36,w:584,en:7,ru:29},{d:'2026-01-28',n:23,w:340,en:11,ru:10},
+  {d:'2026-01-29',n:76,w:1693,en:71,ru:3},{d:'2026-01-30',n:10,w:154,en:7,ru:0},{d:'2026-01-31',n:8,w:82,en:0,ru:8},
+  {d:'2026-02-01',n:9,w:79,en:2,ru:3},{d:'2026-02-02',n:5,w:223,en:3,ru:2},{d:'2026-02-03',n:31,w:419,en:19,ru:7},
+  {d:'2026-02-04',n:2,w:50,en:2,ru:0},{d:'2026-02-05',n:17,w:193,en:4,ru:11},{d:'2026-02-06',n:11,w:295,en:8,ru:0},
+  {d:'2026-02-07',n:40,w:386,en:14,ru:23},{d:'2026-02-09',n:6,w:57,en:6,ru:0},{d:'2026-02-10',n:53,w:697,en:40,ru:12},
+  {d:'2026-02-11',n:14,w:303,en:14,ru:0},{d:'2026-02-12',n:30,w:477,en:21,ru:7},{d:'2026-02-13',n:15,w:295,en:13,ru:0},
+  {d:'2026-02-14',n:13,w:113,en:3,ru:10},{d:'2026-02-15',n:4,w:57,en:0,ru:2},{d:'2026-02-17',n:14,w:168,en:10,ru:1},
+  {d:'2026-02-18',n:22,w:347,en:10,ru:10},{d:'2026-02-19',n:66,w:1178,en:47,ru:4},{d:'2026-02-20',n:11,w:232,en:10,ru:0},
+  {d:'2026-02-21',n:5,w:98,en:5,ru:0},{d:'2026-02-22',n:35,w:762,en:33,ru:0},{d:'2026-02-23',n:36,w:860,en:33,ru:1},
+  {d:'2026-02-24',n:121,w:2320,en:57,ru:62},{d:'2026-02-25',n:113,w:1486,en:60,ru:42},{d:'2026-02-28',n:17,w:257,en:15,ru:0},
+  {d:'2026-03-01',n:46,w:635,en:42,ru:3},{d:'2026-03-02',n:101,w:1387,en:89,ru:8},{d:'2026-03-03',n:112,w:1638,en:80,ru:29},
+  {d:'2026-03-04',n:14,w:191,en:8,ru:5},{d:'2026-03-05',n:5,w:52,en:3,ru:2},{d:'2026-03-06',n:42,w:590,en:23,ru:19},
+  {d:'2026-03-07',n:42,w:383,en:11,ru:27},{d:'2026-03-08',n:15,w:253,en:12,ru:0},{d:'2026-03-09',n:7,w:61,en:6,ru:0},
+  {d:'2026-03-10',n:10,w:195,en:10,ru:0},{d:'2026-03-11',n:47,w:757,en:22,ru:24},{d:'2026-03-12',n:6,w:70,en:1,ru:5},
+  {d:'2026-03-14',n:26,w:302,en:16,ru:10},{d:'2026-03-15',n:37,w:706,en:34,ru:1},{d:'2026-03-16',n:41,w:785,en:39,ru:1},
+  {d:'2026-03-17',n:19,w:147,en:14,ru:2},{d:'2026-03-18',n:2,w:27,en:2,ru:0},{d:'2026-03-19',n:88,w:1265,en:82,ru:0},
+  {d:'2026-03-20',n:10,w:323,en:9,ru:1},{d:'2026-03-21',n:52,w:650,en:18,ru:31},{d:'2026-03-22',n:74,w:1321,en:66,ru:4},
+  {d:'2026-03-23',n:134,w:2595,en:112,ru:18},{d:'2026-03-24',n:108,w:1382,en:92,ru:13},{d:'2026-03-25',n:71,w:737,en:65,ru:4},
+  {d:'2026-03-26',n:6,w:28,en:3,ru:3},{d:'2026-03-27',n:32,w:362,en:27,ru:1},{d:'2026-03-28',n:61,w:908,en:29,ru:28},
+  {d:'2026-03-29',n:82,w:1429,en:79,ru:2},{d:'2026-03-30',n:27,w:609,en:25,ru:0},{d:'2026-03-31',n:39,w:559,en:25,ru:8},
+  {d:'2026-04-01',n:148,w:2640,en:136,ru:10},{d:'2026-04-02',n:41,w:665,en:34,ru:5},{d:'2026-04-03',n:72,w:795,en:71,ru:0},
+  {d:'2026-04-04',n:184,w:1957,en:140,ru:40},{d:'2026-04-05',n:135,w:2451,en:126,ru:6},{d:'2026-04-06',n:136,w:1662,en:121,ru:9},
+  {d:'2026-04-07',n:74,w:889,en:61,ru:11},{d:'2026-04-08',n:175,w:1658,en:172,ru:0},{d:'2026-04-09',n:97,w:1104,en:94,ru:0},
+  {d:'2026-04-10',n:122,w:1210,en:99,ru:14},{d:'2026-04-11',n:9,w:83,en:3,ru:6},{d:'2026-04-12',n:62,w:687,en:55,ru:5},
+  {d:'2026-04-13',n:26,w:269,en:14,ru:11},{d:'2026-04-14',n:40,w:936,en:34,ru:6},{d:'2026-04-15',n:98,w:1381,en:92,ru:6},
+  {d:'2026-04-16',n:107,w:1705,en:104,ru:2},{d:'2026-04-17',n:71,w:1030,en:44,ru:23},{d:'2026-04-18',n:35,w:540,en:27,ru:7},
+  {d:'2026-04-19',n:3,w:5,en:1,ru:0},{d:'2026-04-20',n:115,w:1288,en:62,ru:48},{d:'2026-04-21',n:276,w:3213,en:184,ru:88},
+  {d:'2026-04-22',n:11,w:182,en:5,ru:5}
+];
+
+const telegramDaily = [
+  {d:'2026-01-26',n:1},{d:'2026-01-27',n:15},{d:'2026-01-28',n:13},{d:'2026-01-29',n:2},{d:'2026-01-30',n:2},
+  {d:'2026-01-31',n:1},{d:'2026-02-01',n:4},{d:'2026-02-02',n:1},{d:'2026-02-05',n:2},{d:'2026-02-07',n:2},
+  {d:'2026-02-09',n:4},{d:'2026-02-10',n:1},{d:'2026-02-11',n:1},{d:'2026-02-15',n:1},{d:'2026-02-17',n:2},
+  {d:'2026-02-18',n:1},{d:'2026-02-19',n:1},{d:'2026-02-22',n:2},{d:'2026-02-23',n:14},{d:'2026-02-24',n:9},
+  {d:'2026-02-25',n:22},{d:'2026-03-02',n:4},{d:'2026-03-03',n:16},{d:'2026-03-04',n:4},{d:'2026-03-06',n:10},
+  {d:'2026-03-07',n:3},{d:'2026-03-15',n:1},{d:'2026-03-20',n:4},{d:'2026-03-21',n:1},{d:'2026-03-23',n:7},
+  {d:'2026-03-29',n:3},{d:'2026-03-31',n:1},{d:'2026-04-05',n:6},{d:'2026-04-06',n:1},{d:'2026-04-07',n:1},
+  {d:'2026-04-10',n:4},{d:'2026-04-11',n:5},{d:'2026-04-12',n:7},{d:'2026-04-13',n:7},{d:'2026-04-14',n:1},
+  {d:'2026-04-15',n:4},{d:'2026-04-16',n:1},{d:'2026-04-17',n:3},{d:'2026-04-18',n:9},{d:'2026-04-19',n:1},
+  {d:'2026-04-20',n:45},{d:'2026-04-21',n:47},{d:'2026-04-22',n:4}
+];
+
+const hourlyData = {0:14,4:6,5:18,6:19,7:77,8:91,9:238,10:336,11:412,12:497,13:395,14:407,15:310,16:255,17:161,18:287,19:207,20:133,21:205,22:87,23:54};
+
+// ─── HELPERS ───
+function fmt(d) { return d.slice(5).replace('-','/'); }
+function fmtFull(d) {
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const [,m,day] = d.split('-');
+  return `${parseInt(day)} ${months[parseInt(m)-1]}`;
+}
+
+// ─── CHART 1: Claude Code Daily ───
+new Chart(document.getElementById('claudeDaily'), {
+  type: 'bar',
+  data: {
+    labels: claudeDaily.map(d => fmtFull(d.d)),
+    datasets: [
+      {
+        label: 'Sessions',
+        data: claudeDaily.map(d => d.s),
+        backgroundColor: 'rgba(196,90,40,0.25)',
+        borderColor: 'rgba(196,90,40,0.5)',
+        borderWidth: 0,
+        borderRadius: 1,
+        order: 2
+      },
+      {
+        label: 'Messages',
+        data: claudeDaily.map(d => d.m),
+        type: 'line',
+        borderColor: 'rgba(42,80,140,0.7)',
+        backgroundColor: 'rgba(42,80,140,0.06)',
+        fill: true,
+        borderWidth: 1.5,
+        pointRadius: 0,
+        pointHitRadius: 8,
+        tension: 0.3,
+        yAxisID: 'y1',
+        order: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { grid: { display: false }, ticks: { maxTicksLimit: 12, font: { size: 11 } } },
+      y: { position: 'left', title: { display: true, text: 'Sessions', font: { size: 12 } } },
+      y1: { position: 'right', title: { display: true, text: 'Messages', font: { size: 12 } }, grid: { display: false } }
+    },
+    plugins: { legend: { position: 'top', align: 'end' } }
+  }
+});
+
+// ─── CHART 2: Wispr Daily ───
+new Chart(document.getElementById('wisprDaily'), {
+  type: 'line',
+  data: {
+    labels: wisprDaily.map(d => fmtFull(d.d)),
+    datasets: [
+      {
+        label: 'Words',
+        data: wisprDaily.map(d => d.w),
+        fill: true,
+        backgroundColor: 'rgba(42,122,90,0.12)',
+        borderColor: 'rgba(42,122,90,0.6)',
+        borderWidth: 1.5,
+        pointRadius: 0,
+        tension: 0.3,
+        yAxisID: 'y1',
+        order: 2
+      },
+      {
+        label: 'Dictations',
+        data: wisprDaily.map(d => d.n),
+        borderColor: 'rgba(42,122,90,0.9)',
+        backgroundColor: 'rgba(42,122,90,0.7)',
+        borderWidth: 0,
+        pointRadius: 2.5,
+        pointHitRadius: 8,
+        type: 'scatter',
+        order: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { grid: { display: false }, ticks: { maxTicksLimit: 12, font: { size: 11 } } },
+      y: { position: 'left', title: { display: true, text: 'Dictations', font: { size: 12 } } },
+      y1: { position: 'right', title: { display: true, text: 'Words', font: { size: 12 } }, grid: { display: false } }
+    },
+    plugins: { legend: { position: 'top', align: 'end' } }
+  }
+});
+
+// ─── CHART 4: Hourly ───
+new Chart(document.getElementById('hourlyChart'), {
+  type: 'bar',
+  data: {
+    labels: Array.from({length:24}, (_,i) => `${i.toString().padStart(2,'0')}:00`),
+    datasets: [{
+      label: 'Dictations',
+      data: Array.from({length:24}, (_,i) => hourlyData[i] || 0),
+      backgroundColor: Array.from({length:24}, (_,i) =>
+        i >= 9 && i <= 14 ? 'rgba(42,122,90,0.5)' : 'rgba(42,122,90,0.25)'
+      ),
+      borderWidth: 0,
+      borderRadius: 2
+    }]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      x: { grid: { display: false } },
+      y: { title: { display: true, text: 'Total dictations', font: { size: 12 } } }
+    },
+    plugins: { legend: { display: false } }
+  }
+});
+
+// ─── CHART 6: Weekly Combined (normalised) ───
+const weeklyData = {
+  labels: ['W03','W04','W05','W06','W07','W08','W09','W10','W11','W12','W13','W14','W15','W16'],
+  claude: [4,55+23+33,15+3+7+6+7, 3+7+22+10+5, 10+28+9+29, 64+18+28+85+31, 1+7+13+15+137, 49+38+27+84+14, 9+1+109+166+18, 77+3+8+3+45, 21+8+11+6+32, 11+22+169+28+5, 6+7+7+10+7, 3+1+16+7+3],
+  wispr: [55,259,93,128,130,315,316,129,269,476,626,650,371,392],
+  telegram: [0,16+13+2+2+1, 4+1+2+2, 4+1+1, 1+2+1,1+14+9+22,0+4+16+4+10,3+1+0+0, 4+7+3, 1+0+0,0,6+1+1, 4+5+7+7+1, 4+1+3+9+1]
+};
+
+// Recalculate from raw weekly aggregations
+const weekLabels = ['W04','W05','W06','W07','W08','W09','W10','W11','W12','W13','W14','W15','W16'];
+const claudeWeekly = [141,41,47,60,226,171,213,285,338,230,201,79,76];
+const wisprWeekly = [259,93,128,130,315,316,129,269,476,626,650,371,392];
+const telegramWeekly = [32,5,7,4,4,46,30,5,27,4,7,27,18];
+
+// Normalise to max=100
+const normC = claudeWeekly.map(v => v / Math.max(...claudeWeekly) * 100);
+const normW = wisprWeekly.map(v => v / Math.max(...wisprWeekly) * 100);
+const normT = telegramWeekly.map(v => v / Math.max(...telegramWeekly) * 100);
+
+new Chart(document.getElementById('weeklyCombo'), {
+  type: 'line',
+  data: {
+    labels: weekLabels,
+    datasets: [
+      {
+        label: 'Claude Code',
+        data: normC,
+        borderColor: 'rgba(196,90,40,0.8)',
+        backgroundColor: 'rgba(196,90,40,0.8)',
+        pointBackgroundColor: 'rgba(196,90,40,0.8)',
+        fill: false,
+        borderWidth: 2,
+        pointRadius: 3,
+        tension: 0.3
+      },
+      {
+        label: 'Wispr Flow',
+        data: normW,
+        borderColor: 'rgba(42,122,90,0.8)',
+        backgroundColor: 'rgba(42,122,90,0.8)',
+        pointBackgroundColor: 'rgba(42,122,90,0.8)',
+        fill: false,
+        borderWidth: 2,
+        pointRadius: 3,
+        tension: 0.3
+      },
+      {
+        label: 'Telegram',
+        data: normT,
+        borderColor: 'rgba(90,90,170,0.7)',
+        backgroundColor: 'rgba(90,90,170,0.7)',
+        pointBackgroundColor: 'rgba(90,90,170,0.7)',
+        fill: false,
+        borderWidth: 1.5,
+        pointRadius: 3,
+        borderDash: [4, 3],
+        tension: 0.3
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      x: { grid: { display: false } },
+      y: { title: { display: true, text: 'Relative activity (%)', font: { size: 12 } }, max: 105 }
+    },
+    plugins: { legend: { position: 'top', align: 'end' } }
+  }
+});
+
+// (Growth chart replaced with table)
+
+// ─── CHART 8: Burnout Indicators ───
+const burnoutData = [
+  {d:'2026-01-22',e:2.80,l:12},{d:'2026-01-24',e:11.91,l:38},{d:'2026-01-25',e:7.99,l:6},
+  {d:'2026-01-26',e:3.42,l:12},{d:'2026-01-27',e:2.70,l:1},{d:'2026-01-28',e:2.37,l:0},
+  {d:'2026-01-29',e:2.66,l:2},{d:'2026-01-30',e:2.38,l:0},{d:'2026-02-01',e:5.68,l:0},
+  {d:'2026-02-03',e:2.54,l:25},{d:'2026-02-04',e:2.56,l:6},{d:'2026-02-05',e:0.43,l:2},
+  {d:'2026-02-06',e:2.82,l:4},{d:'2026-02-07',e:4.09,l:11},{d:'2026-02-08',e:2.09,l:1},
+  {d:'2026-02-09',e:1.56,l:16},{d:'2026-02-10',e:5.13,l:109},{d:'2026-02-11',e:3.69,l:28},
+  {d:'2026-02-12',e:4.51,l:107},{d:'2026-02-13',e:1.55,l:40},{d:'2026-02-14',e:6.57,l:45},
+  {d:'2026-02-17',e:1.36,l:21},{d:'2026-02-18',e:1.63,l:0},{d:'2026-02-19',e:3.08,l:121},
+  {d:'2026-02-20',e:2.45,l:59},{d:'2026-02-21',e:2.72,l:0},{d:'2026-02-22',e:2.07,l:77},
+  {d:'2026-02-23',e:1.63,l:37},{d:'2026-02-25',e:2.70,l:15},{d:'2026-02-28',e:2.51,l:33},
+  {d:'2026-03-01',e:1.26,l:240},{d:'2026-03-02',e:1.51,l:11},{d:'2026-03-03',e:1.53,l:0},
+  {d:'2026-03-05',e:7.86,l:0},{d:'2026-03-07',e:2.00,l:185},{d:'2026-03-08',e:1.45,l:0},
+  {d:'2026-03-09',e:0.44,l:0},{d:'2026-03-10',e:1.07,l:0},{d:'2026-03-15',e:1.33,l:66},
+  {d:'2026-03-17',e:3.95,l:4},{d:'2026-03-18',e:2.69,l:0},{d:'2026-03-19',e:3.02,l:2},
+  {d:'2026-03-22',e:2.05,l:2},{d:'2026-03-24',e:2.35,l:0},{d:'2026-03-25',e:2.30,l:11},
+  {d:'2026-03-28',e:1.59,l:7},{d:'2026-03-29',e:1.09,l:2},{d:'2026-03-31',e:3.41,l:0},
+  {d:'2026-04-01',e:2.41,l:36},{d:'2026-04-03',e:2.64,l:36},{d:'2026-04-04',e:1.93,l:0},
+  {d:'2026-04-05',e:0.98,l:0},{d:'2026-04-06',e:1.45,l:0},{d:'2026-04-07',e:1.90,l:2},
+  {d:'2026-04-08',e:3.10,l:0},{d:'2026-04-09',e:2.02,l:32},{d:'2026-04-10',e:2.57,l:0},
+  {d:'2026-04-14',e:2.57,l:54},{d:'2026-04-15',e:2.56,l:30},{d:'2026-04-16',e:1.45,l:3},
+  {d:'2026-04-17',e:2.65,l:0}
+];
+
+new Chart(document.getElementById('burnoutChart'), {
+  type: 'bar',
+  data: {
+    labels: burnoutData.map(d => fmtFull(d.d)),
+    datasets: [
+      {
+        label: 'Late-night msgs',
+        data: burnoutData.map(d => d.l),
+        backgroundColor: 'rgba(90,90,170,0.35)',
+        borderWidth: 0,
+        borderRadius: 1,
+        yAxisID: 'y1',
+        order: 2
+      },
+      {
+        label: 'Error rate %',
+        data: burnoutData.map(d => d.e),
+        type: 'line',
+        borderColor: 'rgba(196,90,40,0.7)',
+        backgroundColor: 'transparent',
+        borderWidth: 1.5,
+        pointRadius: 0,
+        pointHitRadius: 8,
+        tension: 0.3,
+        yAxisID: 'y',
+        order: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { grid: { display: false }, ticks: { maxTicksLimit: 12, font: { size: 11 } } },
+      y: { position: 'left', title: { display: true, text: 'Error rate %', font: { size: 12 } }, max: 14 },
+      y1: { position: 'right', title: { display: true, text: 'Late-night msgs', font: { size: 12 } }, grid: { display: false } }
+    },
+    plugins: { legend: { position: 'top', align: 'end' } }
+  }
+});
+
+// ─── CHART 9: HRV vs Coding Intensity ───
+const hrvData = [
+  {d:'2026-01-22',h:56.7},{d:'2026-01-23',h:71.3},{d:'2026-01-24',h:65.9},{d:'2026-01-25',h:39.9},
+  {d:'2026-01-26',h:56.3},{d:'2026-01-27',h:68.0},{d:'2026-01-28',h:47.7},{d:'2026-01-29',h:36.6},
+  {d:'2026-01-30',h:62.8},{d:'2026-01-31',h:50.8},{d:'2026-02-01',h:80.5},{d:'2026-02-02',h:53.6},
+  {d:'2026-02-03',h:61.5},{d:'2026-02-04',h:52.3},{d:'2026-02-05',h:83.3},{d:'2026-02-06',h:71.6},
+  {d:'2026-02-07',h:66.8},{d:'2026-02-08',h:62.3},{d:'2026-02-09',h:75.5},{d:'2026-02-10',h:73.6},
+  {d:'2026-02-11',h:59.5},{d:'2026-02-12',h:45.4},{d:'2026-02-13',h:69.3},{d:'2026-02-14',h:60.9},
+  {d:'2026-02-15',h:59.3},{d:'2026-02-16',h:58.1},{d:'2026-02-17',h:49.3},{d:'2026-02-18',h:71.8},
+  {d:'2026-02-19',h:52.9},{d:'2026-02-20',h:83.4},{d:'2026-02-21',h:56.3},{d:'2026-02-23',h:60.1},
+  {d:'2026-02-24',h:78.1},{d:'2026-02-25',h:66.6},{d:'2026-02-26',h:53.6},{d:'2026-02-27',h:64.0},
+  {d:'2026-02-28',h:52.4},{d:'2026-03-01',h:73.7},{d:'2026-03-02',h:56.7},{d:'2026-03-04',h:46.7},
+  {d:'2026-03-05',h:61.3},{d:'2026-03-06',h:70.8},{d:'2026-03-07',h:43.9},{d:'2026-03-08',h:49.9},
+  {d:'2026-03-09',h:51.4},{d:'2026-03-10',h:33.7},{d:'2026-03-11',h:57.9},{d:'2026-03-12',h:47.6},
+  {d:'2026-03-13',h:59.9},{d:'2026-03-14',h:77.1},{d:'2026-03-15',h:44.1},{d:'2026-03-16',h:51.3},
+  {d:'2026-03-17',h:36.6},{d:'2026-03-18',h:50.1},{d:'2026-03-19',h:55.9},{d:'2026-03-20',h:40.9},
+  {d:'2026-03-21',h:39.2},{d:'2026-03-22',h:42.1},{d:'2026-03-23',h:45.4},{d:'2026-03-24',h:62.3},
+  {d:'2026-03-25',h:53.1},{d:'2026-03-26',h:58.7},{d:'2026-03-27',h:73.2},{d:'2026-03-28',h:63.6},
+  {d:'2026-03-29',h:33.7},{d:'2026-03-30',h:51.0},{d:'2026-03-31',h:47.7},{d:'2026-04-01',h:41.3},
+  {d:'2026-04-02',h:50.9},{d:'2026-04-03',h:77.6},{d:'2026-04-04',h:37.2},{d:'2026-04-05',h:38.5},
+  {d:'2026-04-06',h:50.0},{d:'2026-04-07',h:59.5},{d:'2026-04-08',h:48.5},{d:'2026-04-09',h:67.2},
+  {d:'2026-04-10',h:60.1},{d:'2026-04-11',h:47.4},{d:'2026-04-12',h:57.0},{d:'2026-04-13',h:63.8},
+  {d:'2026-04-14',h:44.6},{d:'2026-04-15',h:49.6},{d:'2026-04-16',h:35.8},{d:'2026-04-17',h:64.9},
+  {d:'2026-04-18',h:47.1},{d:'2026-04-19',h:50.8},{d:'2026-04-20',h:63.7},{d:'2026-04-21',h:45.2},
+  {d:'2026-04-22',h:26.1}
+];
+
+// Match HRV dates to Claude sessions
+const claudeByDate = {};
+claudeDaily.forEach(d => { claudeByDate[d.d] = d.s; });
+const hrvLabels = hrvData.map(d => fmtFull(d.d));
+const hrvSessions = hrvData.map(d => claudeByDate[d.d] || 0);
+
+new Chart(document.getElementById('hrvChart'), {
+  type: 'bar',
+  data: {
+    labels: hrvLabels,
+    datasets: [
+      {
+        label: 'Sessions',
+        data: hrvSessions,
+        backgroundColor: 'rgba(196,90,40,0.2)',
+        borderWidth: 0,
+        borderRadius: 1,
+        yAxisID: 'y1',
+        order: 2
+      },
+      {
+        label: 'HRV (ms)',
+        data: hrvData.map(d => d.h),
+        type: 'line',
+        borderColor: 'rgba(42,122,90,0.7)',
+        backgroundColor: 'rgba(42,122,90,0.08)',
+        fill: true,
+        borderWidth: 1.5,
+        pointRadius: 1.5,
+        pointHitRadius: 8,
+        tension: 0.3,
+        yAxisID: 'y',
+        order: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { grid: { display: false }, ticks: { maxTicksLimit: 12, font: { size: 11 } } },
+      y: { position: 'left', title: { display: true, text: 'HRV (ms)', font: { size: 12 } }, min: 20 },
+      y1: { position: 'right', title: { display: true, text: 'Sessions', font: { size: 12 } }, grid: { display: false } }
+    },
+    plugins: { legend: { position: 'top', align: 'end' } }
+  }
+});
+
+// ─── CHART 10: Resting HR & Steps ───
+const rhrData = [
+  {d:'2026-01-22',r:62},{d:'2026-01-23',r:59},{d:'2026-01-24',r:58},{d:'2026-01-25',r:55},
+  {d:'2026-01-26',r:57},{d:'2026-01-27',r:58},{d:'2026-01-28',r:64},{d:'2026-01-29',r:55},
+  {d:'2026-01-30',r:54},{d:'2026-01-31',r:60},{d:'2026-02-01',r:59},{d:'2026-02-02',r:53},
+  {d:'2026-02-03',r:52},{d:'2026-02-04',r:55},{d:'2026-02-05',r:54},{d:'2026-02-06',r:56},
+  {d:'2026-02-07',r:54},{d:'2026-02-08',r:54},{d:'2026-02-09',r:53},{d:'2026-02-10',r:54},
+  {d:'2026-02-11',r:57},{d:'2026-02-12',r:64},{d:'2026-02-13',r:56},{d:'2026-02-14',r:56},
+  {d:'2026-02-15',r:63},{d:'2026-02-16',r:59},{d:'2026-02-17',r:60},{d:'2026-02-18',r:64},
+  {d:'2026-02-19',r:60},{d:'2026-02-20',r:57},{d:'2026-02-21',r:55},{d:'2026-02-23',r:59},
+  {d:'2026-02-24',r:63},{d:'2026-02-25',r:61},{d:'2026-02-26',r:61},{d:'2026-02-27',r:66},
+  {d:'2026-02-28',r:55},{d:'2026-03-01',r:58},{d:'2026-03-02',r:52},{d:'2026-03-04',r:60},
+  {d:'2026-03-05',r:57},{d:'2026-03-06',r:60},{d:'2026-03-07',r:55},{d:'2026-03-08',r:56},
+  {d:'2026-03-09',r:61},{d:'2026-03-10',r:63},{d:'2026-03-11',r:57},{d:'2026-03-12',r:60},
+  {d:'2026-03-13',r:57},{d:'2026-03-14',r:52},{d:'2026-03-15',r:55},{d:'2026-03-16',r:57},
+  {d:'2026-03-17',r:60},{d:'2026-03-18',r:58},{d:'2026-03-19',r:56},{d:'2026-03-20',r:60},
+  {d:'2026-03-21',r:50},{d:'2026-03-22',r:56},{d:'2026-03-23',r:60},{d:'2026-03-24',r:51},
+  {d:'2026-03-25',r:59},{d:'2026-03-26',r:52},{d:'2026-03-27',r:53},{d:'2026-03-28',r:60},
+  {d:'2026-03-29',r:59},{d:'2026-03-30',r:55},{d:'2026-03-31',r:55},{d:'2026-04-01',r:61},
+  {d:'2026-04-02',r:58},{d:'2026-04-03',r:56},{d:'2026-04-04',r:56},{d:'2026-04-06',r:54},
+  {d:'2026-04-07',r:57},{d:'2026-04-08',r:60},{d:'2026-04-09',r:59},{d:'2026-04-10',r:63},
+  {d:'2026-04-11',r:68},{d:'2026-04-12',r:55},{d:'2026-04-13',r:56},{d:'2026-04-14',r:63},
+  {d:'2026-04-15',r:65},{d:'2026-04-16',r:65},{d:'2026-04-17',r:60},{d:'2026-04-18',r:57},
+  {d:'2026-04-19',r:64},{d:'2026-04-20',r:60},{d:'2026-04-21',r:65}
+];
+
+const stepsData = [
+  {d:'2026-01-22',s:7592},{d:'2026-01-23',s:5980},{d:'2026-01-24',s:3238},{d:'2026-01-25',s:11614},
+  {d:'2026-01-26',s:9156},{d:'2026-01-27',s:8020},{d:'2026-01-28',s:10023},{d:'2026-01-29',s:7408},
+  {d:'2026-01-30',s:1900},{d:'2026-01-31',s:5566},{d:'2026-02-01',s:11733},{d:'2026-02-02',s:3534},
+  {d:'2026-02-03',s:5451},{d:'2026-02-04',s:12353},{d:'2026-02-05',s:9663},{d:'2026-02-06',s:6838},
+  {d:'2026-02-07',s:12620},{d:'2026-02-08',s:1380},{d:'2026-02-09',s:6645},{d:'2026-02-10',s:11388},
+  {d:'2026-02-11',s:14813},{d:'2026-02-12',s:1320},{d:'2026-02-13',s:8838},{d:'2026-02-14',s:6281},
+  {d:'2026-02-15',s:12787},{d:'2026-02-16',s:8924},{d:'2026-02-17',s:7553},{d:'2026-02-18',s:7884},
+  {d:'2026-02-19',s:3754},{d:'2026-02-20',s:6906},{d:'2026-02-21',s:3842},{d:'2026-02-23',s:14594},
+  {d:'2026-02-24',s:8602},{d:'2026-02-25',s:8364},{d:'2026-02-26',s:17098},{d:'2026-02-27',s:17937},
+  {d:'2026-02-28',s:16129},{d:'2026-03-01',s:11394},{d:'2026-03-02',s:5392},{d:'2026-03-04',s:8069},
+  {d:'2026-03-05',s:1143},{d:'2026-03-06',s:14552},{d:'2026-03-07',s:4704},{d:'2026-03-08',s:9594},
+  {d:'2026-03-09',s:2302},{d:'2026-03-10',s:5564},{d:'2026-03-11',s:4143},{d:'2026-03-12',s:4627},
+  {d:'2026-03-13',s:10239},{d:'2026-03-14',s:7951},{d:'2026-03-15',s:9264},{d:'2026-03-16',s:1181},
+  {d:'2026-03-17',s:7938},{d:'2026-03-18',s:12373},{d:'2026-03-19',s:4339},{d:'2026-03-20',s:2445},
+  {d:'2026-03-21',s:1982},{d:'2026-03-22',s:8644},{d:'2026-03-23',s:11589},{d:'2026-03-24',s:1600},
+  {d:'2026-03-25',s:6805},{d:'2026-03-26',s:1934},{d:'2026-03-27',s:5615},{d:'2026-03-28',s:12975},
+  {d:'2026-03-29',s:6353},{d:'2026-03-30',s:3494},{d:'2026-03-31',s:5015},{d:'2026-04-01',s:638},
+  {d:'2026-04-02',s:1944},{d:'2026-04-03',s:4746},{d:'2026-04-04',s:3784},{d:'2026-04-05',s:383},
+  {d:'2026-04-06',s:5416},{d:'2026-04-07',s:4715},{d:'2026-04-08',s:7197},{d:'2026-04-09',s:7041},
+  {d:'2026-04-10',s:6302},{d:'2026-04-11',s:9406},{d:'2026-04-12',s:1666},{d:'2026-04-13',s:2056},
+  {d:'2026-04-14',s:3450},{d:'2026-04-15',s:4184},{d:'2026-04-16',s:2586},{d:'2026-04-17',s:2560},
+  {d:'2026-04-18',s:10560},{d:'2026-04-19',s:3829},{d:'2026-04-20',s:8234},{d:'2026-04-21',s:1318}
+];
+
+// Align RHR and steps to same dates
+const allHealthDates = [...new Set([...rhrData.map(d=>d.d), ...stepsData.map(d=>d.d)])].sort();
+const rhrByDate = {}; rhrData.forEach(d => { rhrByDate[d.d] = d.r; });
+const stepsByDate = {}; stepsData.forEach(d => { stepsByDate[d.d] = d.s; });
+
+new Chart(document.getElementById('rhrStepsChart'), {
+  type: 'bar',
+  data: {
+    labels: allHealthDates.map(d => fmtFull(d)),
+    datasets: [
+      {
+        label: 'Steps',
+        data: allHealthDates.map(d => stepsByDate[d] || 0),
+        backgroundColor: 'rgba(0,0,0,0.08)',
+        borderWidth: 0,
+        borderRadius: 1,
+        yAxisID: 'y1',
+        order: 2
+      },
+      {
+        label: 'Resting HR (bpm)',
+        data: allHealthDates.map(d => rhrByDate[d] || null),
+        type: 'line',
+        borderColor: 'rgba(180,50,50,0.6)',
+        backgroundColor: 'rgba(180,50,50,0.06)',
+        fill: true,
+        borderWidth: 1.5,
+        pointRadius: 1,
+        pointHitRadius: 8,
+        tension: 0.3,
+        yAxisID: 'y',
+        spanGaps: true,
+        order: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { grid: { display: false }, ticks: { maxTicksLimit: 12, font: { size: 11 } } },
+      y: { position: 'left', title: { display: true, text: 'Resting HR (bpm)', font: { size: 12 } }, min: 45, max: 75 },
+      y1: { position: 'right', title: { display: true, text: 'Steps', font: { size: 12 } }, grid: { display: false } }
+    },
+    plugins: { legend: { position: 'top', align: 'end' } }
+  }
+});
+
+// ─── INLINE SPARKLINES ───
+function drawSparkline(svgId, values, color) {
+  const svg = document.getElementById(svgId);
+  if (!svg) return;
+  const w = parseInt(svg.getAttribute('width'));
+  const h = parseInt(svg.getAttribute('height'));
+  const pad = 2;
+  const max = Math.max(...values);
+  const min = Math.min(...values);
+  const range = max - min || 1;
+  const step = (w - pad * 2) / (values.length - 1);
+
+  const points = values.map((v, i) => {
+    const x = pad + i * step;
+    const y = h - pad - ((v - min) / range) * (h - pad * 2);
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  });
+
+  // filled area
+  const areaPoints = [
+    `${pad},${h - pad}`,
+    ...points,
+    `${(pad + (values.length - 1) * step).toFixed(1)},${h - pad}`
+  ].join(' ');
+
+  // line
+  const linePoints = points.join(' ');
+
+  // end dot
+  const lastX = pad + (values.length - 1) * step;
+  const lastY = h - pad - ((values[values.length - 1] - min) / range) * (h - pad * 2);
+
+  svg.innerHTML = `
+    <polygon points="${areaPoints}" fill="${color}" opacity="0.12" />
+    <polyline points="${linePoints}" fill="none" stroke="${color}" stroke-width="1.2" stroke-linejoin="round" />
+    <circle cx="${lastX.toFixed(1)}" cy="${lastY.toFixed(1)}" r="2" fill="${color}" />
+  `;
+}
+
+// Aggregate weekly for sparklines
+function weeklyAgg(daily, valFn) {
+  const weeks = {};
+  daily.forEach(item => {
+    const d = new Date(item.d);
+    const wk = Math.floor((d - new Date('2026-01-19')) / (7 * 86400000));
+    weeks[wk] = (weeks[wk] || 0) + valFn(item);
+  });
+  return Object.keys(weeks).sort((a,b) => a-b).map(k => weeks[k]);
+}
+
+drawSparkline('sparkClaude', weeklyAgg(claudeDaily, d => d.m), '#c45a28');
+drawSparkline('sparkWispr', weeklyAgg(wisprDaily, d => d.w), '#2a7a5a');
+drawSparkline('sparkTelegram', weeklyAgg(telegramDaily, d => d.n), '#5a5aaa');
+drawSparkline('sparkGrowth', [5846, 11332, 20329, 26319], '#2a7a5a');
+
+// ─── CARD SPARKLINES (responsive to card width) ───
+function drawCardSparkline(svgId, values, color) {
+  const svg = document.getElementById(svgId);
+  if (!svg) return;
+  const vw = 72;
+  const vh = 22;
+  svg.setAttribute('viewBox', `0 0 ${vw} ${vh}`);
+  svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+  const pad = 2;
+  const max = Math.max(...values);
+  const min = Math.min(...values);
+  const range = max - min || 1;
+  const step = (vw - pad * 2) / (values.length - 1);
+
+  const points = values.map((v, i) => {
+    const x = pad + i * step;
+    const y = vh - pad - ((v - min) / range) * (vh - pad * 2);
+    return [x, y];
+  });
+
+  const lineStr = points.map(p => `${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(' ');
+  const areaStr = [
+    `${pad},${vh - pad}`,
+    ...points.map(p => `${p[0].toFixed(1)},${p[1].toFixed(1)}`),
+    `${points[points.length-1][0].toFixed(1)},${vh - pad}`
+  ].join(' ');
+
+  const last = points[points.length - 1];
+
+  svg.innerHTML = `
+    <polygon points="${areaStr}" fill="${color}" opacity="0.1" />
+    <polyline points="${lineStr}" fill="none" stroke="${color}" stroke-width="1.2" stroke-linejoin="round" opacity="0.45" />
+    <circle cx="${last[0].toFixed(1)}" cy="${last[1].toFixed(1)}" r="1.8" fill="${color}" opacity="0.7" />
+  `;
+}
+
+drawCardSparkline('cardSparkClaude', weeklyAgg(claudeDaily, d => d.s), '#c45a28');
+drawCardSparkline('cardSparkWispr', weeklyAgg(wisprDaily, d => d.n), '#2a7a5a');
+drawCardSparkline('cardSparkTelegram', weeklyAgg(telegramDaily, d => d.n), '#5a5aaa');
+
+// ─── TELEGRAM STRIP CHART ───
+(function() {
+  const tgWords = {
+    '2026-01-26':25,'2026-01-27':207,'2026-01-28':218,'2026-01-29':70,'2026-01-30':22,'2026-01-31':8,
+    '2026-02-01':68,'2026-02-02':44,'2026-02-05':43,'2026-02-07':18,'2026-02-09':37,'2026-02-10':9,
+    '2026-02-11':3,'2026-02-15':22,'2026-02-17':64,'2026-02-18':29,'2026-02-19':23,'2026-02-22':36,
+    '2026-02-23':488,'2026-02-24':247,'2026-02-25':299,'2026-03-02':73,'2026-03-03':347,'2026-03-04':79,
+    '2026-03-06':129,'2026-03-07':35,'2026-03-15':27,'2026-03-20':67,'2026-03-21':1,'2026-03-23':76,
+    '2026-03-29':23,'2026-03-31':11,'2026-04-05':63,'2026-04-06':9,'2026-04-07':9,'2026-04-10':24,
+    '2026-04-11':48,'2026-04-12':85,'2026-04-13':85,'2026-04-14':8,'2026-04-15':17,'2026-04-16':5,
+    '2026-04-17':55,'2026-04-18':58,'2026-04-19':5,'2026-04-20':413,'2026-04-21':537,'2026-04-22':58
+  };
+
+  // Build all weeks from Jan 19 to Apr 20
+  const jan19 = new Date('2026-01-19');
+  const allWeeks = [];
+  for (let wk = 1; wk <= 14; wk++) {
+    const wkStart = new Date(jan19.getTime() + wk * 7 * 86400000);
+    const wkEnd = new Date(wkStart.getTime() + 6 * 86400000);
+    allWeeks.push({
+      num: wk,
+      label: `${fmtFull(wkStart.toISOString().slice(0,10))}–${fmtFull(wkEnd.toISOString().slice(0,10))}`,
+      msgs: 0, words: 0, days: 0, maxDay: 0
+    });
+  }
+
+  telegramDaily.forEach(item => {
+    const d = new Date(item.d);
+    const wkNum = Math.floor((d - jan19) / (7 * 86400000));
+    const wkIdx = wkNum - 1;
+    if (wkIdx >= 0 && wkIdx < allWeeks.length) {
+      allWeeks[wkIdx].msgs += item.n;
+      allWeeks[wkIdx].words += tgWords[item.d] || 0;
+      allWeeks[wkIdx].days++;
+      allWeeks[wkIdx].maxDay = Math.max(allWeeks[wkIdx].maxDay, item.n);
+    }
+  });
+
+  const maxMsgs = Math.max(...allWeeks.map(w => w.msgs));
+  const annotations = {
+    1: '',
+    2: 'first sustained use',
+    5: '',
+    8: 'Russian burst · 3 days',
+    10: '16 msgs in 2 days',
+    13: '92 msgs · conversation marathon',
+  };
+
+  const strip = document.getElementById('telegramStrip');
+  allWeeks.forEach((w, i) => {
+    const barPct = w.msgs > 0 ? Math.max(1, (w.msgs / maxMsgs) * 100) : 0;
+    const isBurst = w.maxDay > 15;
+    const note = annotations[i + 1] || '';
+
+    const row = document.createElement('div');
+    row.className = 'tg-row';
+    row.innerHTML = `
+      <span class="tg-week">${w.label}</span>
+      <span class="tg-count">${w.msgs || '·'}</span>
+      <span class="tg-bar-area">
+        ${w.msgs > 0
+          ? `<span class="tg-bar${isBurst ? ' burst' : ''}" style="width:${barPct}%;" title="${w.msgs} msgs, ${w.words} words, ${w.days} days"></span>`
+          : ''}
+      </span>
+      <span class="tg-note">${note}</span>
+    `;
+    strip.appendChild(row);
+  });
+})();
+
+// ─── TELEGRAM MONTHLY SPARKLINES ───
+const tgMonthlyDays = {
+  jan: [1,15,13,2,2,1],
+  feb: [4,1,2,2,4,1,1,1,2,1,1,2,14,9,22],
+  mar: [4,16,4,10,3,1,4,1,7,3,1],
+  apr: [6,1,1,4,5,7,7,1,4,1,3,9,1,45,47,4]
+};
+drawSparkline('sparkTgJan', tgMonthlyDays.jan, '#5a5aaa');
+drawSparkline('sparkTgFeb', tgMonthlyDays.feb, '#5a5aaa');
+drawSparkline('sparkTgMar', tgMonthlyDays.mar, '#5a5aaa');
+drawSparkline('sparkTgApr', tgMonthlyDays.apr, '#5a5aaa');
+
+// Wispr monthly sparklines (weekly aggregates per month)
+drawSparkline('sparkWisprJan', [55,259,93], '#2a7a5a');
+drawSparkline('sparkWisprFeb', [128,130,315,316], '#2a7a5a');
+drawSparkline('sparkWisprMar', [129,269,476,626,650], '#2a7a5a');
+drawSparkline('sparkWisprApr', [371,392,650,568], '#2a7a5a');
+
+// Commit monthly sparklines (daily commits per month)
+drawSparkline('sparkCommitJan', [6,9,0,3,3,3], '#c45a28');
+drawSparkline('sparkCommitFeb', [0,0,4,6,0,1,0,8,4,5,11,1,4,2,0,0,2,0,18,8,9,17,2,2,1,0,1], '#c45a28');
+drawSparkline('sparkCommitMar', [14,0,1,1,0,0,2,0,0,0,0,53,0,0,0,2,0,0,1,0,2,0,0,0,1,0,0,1], '#c45a28');
+drawSparkline('sparkCommitApr', [38,0,16,22,0,2,4,14,11,16,0,1,0,2,2,16,3], '#c45a28');
+
+// ─── CHART: Daily Commits vs Lines Added ───
+const commitDaily = [
+  {d:'2026-01-24',c:6,l:14},{d:'2026-01-25',c:9,l:7},{d:'2026-01-27',c:3,l:3},{d:'2026-01-28',c:3,l:5},
+  {d:'2026-01-30',c:3,l:5},{d:'2026-02-03',c:4,l:4},{d:'2026-02-04',c:6,l:2},{d:'2026-02-06',c:1,l:1},
+  {d:'2026-02-08',c:8,l:1},{d:'2026-02-09',c:4,l:1},{d:'2026-02-10',c:5,l:5},{d:'2026-02-11',c:11,l:3},
+  {d:'2026-02-12',c:1,l:4},{d:'2026-02-13',c:4,l:0},{d:'2026-02-14',c:2,l:5},{d:'2026-02-17',c:2,l:1},
+  {d:'2026-02-19',c:18,l:10},{d:'2026-02-20',c:8,l:3},{d:'2026-02-21',c:9,l:4},{d:'2026-02-22',c:17,l:6},
+  {d:'2026-02-23',c:2,l:1},{d:'2026-02-24',c:2,l:1},{d:'2026-02-25',c:1,l:2},{d:'2026-02-28',c:1,l:2},
+  {d:'2026-03-01',c:14,l:3},{d:'2026-03-03',c:1,l:4},{d:'2026-03-04',c:1,l:0},{d:'2026-03-07',c:2,l:3},
+  {d:'2026-03-15',c:53,l:11},{d:'2026-03-19',c:2,l:5},{d:'2026-03-22',c:1,l:6},{d:'2026-03-24',c:2,l:9},
+  {d:'2026-03-28',c:1,l:1},{d:'2026-03-31',c:1,l:2},{d:'2026-04-01',c:38,l:13},{d:'2026-04-03',c:16,l:2},
+  {d:'2026-04-04',c:22,l:4},{d:'2026-04-06',c:2,l:2},{d:'2026-04-07',c:4,l:3},{d:'2026-04-08',c:14,l:3},
+  {d:'2026-04-09',c:11,l:4},{d:'2026-04-10',c:16,l:3},{d:'2026-04-14',c:2,l:1},{d:'2026-04-15',c:2,l:3},
+  {d:'2026-04-16',c:16,l:11},{d:'2026-04-17',c:3,l:2}
+];
+
+new Chart(document.getElementById('commitDailyChart'), {
+  type: 'bar',
+  data: {
+    labels: commitDaily.map(d => fmtFull(d.d)),
+    datasets: [
+      {
+        label: 'Commits',
+        data: commitDaily.map(d => d.c),
+        backgroundColor: 'rgba(196,90,40,0.35)',
+        borderWidth: 0,
+        borderRadius: 1,
+        order: 2
+      },
+      {
+        label: 'Lines added (×1000)',
+        data: commitDaily.map(d => d.l),
+        type: 'line',
+        borderColor: 'rgba(42,80,140,0.7)',
+        backgroundColor: 'rgba(42,80,140,0.06)',
+        fill: true,
+        borderWidth: 1.5,
+        pointRadius: 1.5,
+        pointHitRadius: 8,
+        tension: 0.3,
+        yAxisID: 'y1',
+        order: 1
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { grid: { display: false }, ticks: { maxTicksLimit: 12, font: { size: 11 } } },
+      y: { position: 'left', title: { display: true, text: 'Commits', font: { size: 12 } } },
+      y1: { position: 'right', title: { display: true, text: 'Lines added (×1000)', font: { size: 12 } }, grid: { display: false } }
+    },
+    plugins: { legend: { position: 'top', align: 'end' } }
+  }
+});
+
+// ─── CHART: HRV SPC Control Chart ───
+const hrvWeekly = [
+  {w:'W03',h:58.5},{w:'W04',h:57.5},{w:'W05',h:64.5},{w:'W06',h:63.4},
+  {w:'W07',h:62.0},{w:'W08',h:64.1},{w:'W09',h:54.9},{w:'W10',h:53.1},
+  {w:'W11',h:45.2},{w:'W12',h:55.7},{w:'W13',h:49.2},{w:'W14',h:55.7},
+  {w:'W15',h:50.9},{w:'W16',h:54.5}
+];
+
+const spcCenterline = 55.8;
+const spcLCL = 34;
+const spcUCL = 78;
+
+new Chart(document.getElementById('hrvSpcChart'), {
+  type: 'line',
+  data: {
+    labels: hrvWeekly.map(d => d.w),
+    datasets: [
+      {
+        label: 'Weekly HRV (ms)',
+        data: hrvWeekly.map(d => d.h),
+        borderColor: 'rgba(42,122,90,0.8)',
+        backgroundColor: hrvWeekly.map(d => d.h < spcCenterline ? 'rgba(180,50,50,0.15)' : 'rgba(42,122,90,0.08)'),
+        fill: {
+          target: { value: spcCenterline },
+          below: 'rgba(180,50,50,0.1)',
+          above: 'rgba(42,122,90,0.05)'
+        },
+        borderWidth: 2,
+        pointRadius: 4,
+        pointBackgroundColor: hrvWeekly.map(d => d.h < spcCenterline ? 'rgba(180,50,50,0.8)' : 'rgba(42,122,90,0.8)'),
+        pointBorderColor: hrvWeekly.map(d => d.h < spcCenterline ? 'rgba(180,50,50,0.8)' : 'rgba(42,122,90,0.8)'),
+        pointHitRadius: 10,
+        tension: 0.2,
+        order: 1
+      },
+      {
+        label: 'Centerline (55.8 ms)',
+        data: hrvWeekly.map(() => spcCenterline),
+        borderColor: 'rgba(136,136,136,0.5)',
+        borderWidth: 1.5,
+        borderDash: [6, 4],
+        pointRadius: 0,
+        pointHitRadius: 0,
+        fill: false,
+        order: 2
+      },
+      {
+        label: 'UCL (78 ms)',
+        data: hrvWeekly.map(() => spcUCL),
+        borderColor: 'rgba(42,122,90,0.3)',
+        borderWidth: 1,
+        borderDash: [3, 3],
+        pointRadius: 0,
+        pointHitRadius: 0,
+        fill: false,
+        order: 3
+      },
+      {
+        label: 'LCL (34 ms)',
+        data: hrvWeekly.map(() => spcLCL),
+        borderColor: 'rgba(180,50,50,0.5)',
+        borderWidth: 1,
+        borderDash: [3, 3],
+        pointRadius: 0,
+        pointHitRadius: 0,
+        fill: false,
+        order: 4
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    scales: {
+      x: { grid: { display: false } },
+      y: {
+        position: 'left',
+        title: { display: true, text: 'HRV (ms)', font: { size: 12 } },
+        min: 25,
+        max: 85
+      }
+    },
+    plugins: {
+      legend: { position: 'top', align: 'end' },
+      tooltip: {
+        callbacks: {
+          label: function(ctx) {
+            if (ctx.datasetIndex === 0) return `HRV: ${ctx.parsed.y} ms`;
+            return ctx.dataset.label;
+          }
+        }
+      }
+    }
+  }
+});
+
+// ─── SCROLL REVEAL ───
+document.querySelectorAll('.chart-container, .flyout, .aside-container, .telegram-strip, .table-wrapper, table:not(.toc table)')
+  .forEach(el => el.classList.add('reveal'));
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+</script>
+</body>
+</html>
