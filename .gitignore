@@ -7,3 +7,9 @@ public
 source/_data/dev.yml
 amp-*
 package-lock.json
+.vercel
+
+# Hexo deploy staging + Enzyme caches (regenerable; not source code)
+.deploy_git/
+.enzyme/
+.enzyme-embeddings/
