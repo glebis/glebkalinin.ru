@@ -66,41 +66,51 @@
   background: rgba(0, 0, 0, 0.03);
 }
 
-/* Theme Toggle */
+/* Theme Toggle — minimalistic monospace glyph button.
+   Both sun and moon SVGs live in markup; CSS swaps visibility by theme. */
 .theme-toggle {
   position: relative;
-  width: 48px;
-  height: 26px;
-  background: var(--border-primary);
-  border-radius: var(--radius-full);
-  cursor: pointer;
-  transition: background-color var(--transition-base);
-}
-
-.theme-toggle-thumb {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 20px;
-  height: 20px;
-  background: var(--bg-primary);
-  border-radius: 50%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  transition: transform var(--transition-base), background-color var(--transition-base);
+  width: 32px; height: 32px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast), border-color var(--transition-fast),
+              background-color var(--transition-fast);
 }
-
-.dark .theme-toggle-thumb {
-  transform: translateX(22px);
+.theme-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.theme-toggle .theme-icon {
+  display: none;
+  width: 16px; height: 16px;
+}
+.theme-toggle .theme-icon svg {
+  width: 100%; height: 100%;
+  display: block;
+}
+/* Show the right glyph per theme */
+.dark  .theme-toggle .theme-icon-sun  { display: block; }
+.light .theme-toggle .theme-icon-moon { display: block; }
+/* Fallback for the old .theme-toggle-thumb selector if bio/blog still references it */
+.theme-toggle-thumb { display: none; }
 
 /* Telegram Button */
 .telegram-btn {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  min-height: 44px;
   padding: var(--space-sm) var(--space-md);
   background: transparent;
   border: 1px solid var(--border-primary);
@@ -122,6 +132,27 @@
   width: 16px;
   height: 16px;
 }
+
+/* WhatsApp — same pill, no text label, icon-only on the header */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+.whatsapp-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+.whatsapp-btn svg { width: 16px; height: 16px; }
 
 /* ==========================================================================
    Hero Section
@@ -1328,6 +1359,37 @@
   margin: var(--space-lg) 0;
   color: var(--text-muted);
   font-style: italic;
+}
+
+.header-text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--text-secondary);
+  font: 500 0.75rem/1 var(--font-mono);
+  letter-spacing: 0.04em;
+}
+
+.header-text-link:hover,
+.text-link:hover {
+  color: var(--accent-secondary);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.hero-actions .cta-btn {
+  opacity: 1;
+  transform: none;
+}
+
+.text-link {
+  color: var(--text-secondary);
+  font: 500 0.8rem/1.2 var(--font-mono);
 }
 
 /* ==========================================================================
@@ -2968,5 +3030,77 @@
 
   .hero-name {
     font-size: clamp(2.5rem, 12vw, 3rem);
+  }
+}
+
+/* ==========================================================================
+   Generic scroll-reveal (used by main.js IO observer on .ch-card/.fx-card/etc.)
+   Initial state: slightly translated + faded. Reveals on intersection.
+   ========================================================================== */
+.ch-card, .fx-card, .community-card, .product-card, .lab-card, .workbench-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s var(--ease-soft, ease), transform .6s var(--ease-soft, ease);
+  will-change: opacity, transform;
+}
+.ch-card.is-revealed,
+.fx-card.is-revealed,
+.community-card.is-revealed,
+.product-card.is-revealed,
+.lab-card.is-revealed,
+.workbench-card.is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ch-card, .fx-card, .community-card, .product-card, .lab-card, .workbench-card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+   Konami portal reveal + confetti (replaces anime.js)
+   ========================================================================== */
+.ru-portal {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  padding: 1rem 2rem;
+  background: var(--accent);
+  color: var(--bg-primary);
+  border-radius: 8px;
+  font-weight: 700;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .5s ease, transform .5s var(--ease-spring, cubic-bezier(.34,1.56,.64,1));
+}
+.ru-portal.is-unlocked {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+.ru-portal a { color: inherit; text-decoration: none; }
+
+.konami-confetti {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  z-index: 9998;
+  pointer-events: none;
+  animation-name: konami-fall;
+  animation-timing-function: cubic-bezier(.4, .1, .6, 1);
+  animation-fill-mode: forwards;
+  transform: rotate(0deg);
+}
+@keyframes konami-fall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0.6;
   }
 }
