@@ -1,0 +1,151 @@
+# Homepage redesign content — sourced from the Open Design export
+# (Gleb's-portfolio-redesign/Gleb Homepage.dc.html).
+# Mirrors the export's renderVals() shape. Consumed by index.ejs as
+# site.data.redesign.{chapters,workbench,timeline,labs,communities}.
+
+showTimeline: true
+
+chapters:
+  - title: "Ten seconds of judgment, delivered to the right doorstep"
+    fiction1: |
+      The machines got capable first and wise second — that was always going to be the order. So the scarce resource in your day quietly changed: not typing, not knowledge, but the moment of judgment only you can supply. Somewhere an agent hits a fork — two roads, both defensible — and the old kind would guess and let you discover the wrong turn an hour later.
+    fiction2: |
+      The new kind knocks. A small panel at the edge of the screen: one question, three options, your ten seconds. You answer, it vanishes, the work continues on the road you chose. Being interrupted stopped being a cost. It became the job.
+    realIntro: "That knock exists. It's called"
+    real: "a native macOS surface where agents queue their questions — a decision to confirm, a rating, a pick from options — and structured answers flow straight back into the agent loop. Built on one principle: an agent should ask before it assumes."
+    project: "Cenno"
+    tagline: "The agent asks before it assumes"
+    link: "https://cenno.salient.community/"
+    linkLabel: "cenno.salient.community"
+    img: "/images/projects/cenno.png"
+
+  - title: "The darkroom where machines learn your eye"
+    fiction1: |
+      Overnight the machines painted four hundred pictures. This is not the miracle it sounds like — abundance is cheap now. The miracle would be knowing, quickly and honestly, which three deserve to exist in public. Generation scaled; taste didn't.
+    fiction2: |
+      So taste gets a darkroom. You rate a batch over coffee; visually similar frames cluster so you judge families, not files; smart collections quietly gather everything that matches what you've already said yes to. The keepers surface. The rest becomes compost without ceremony.
+    realIntro: "The darkroom is"
+    real: "a library where AI-art generations get reviewed and turned into something — ratings and shortlists, visual similarity search, smart collections that learn your criteria, then export and publishing for the images that earn it."
+    project: "Cull"
+    tagline: "Curate an AI-art library, then publish it"
+    link: "https://cull.company"
+    linkLabel: "cull.company"
+    img: "/images/projects/cull.png"
+
+  - title: "Write the procedure once, and every agent inherits it"
+    fiction1: |
+      There was a time when you taught the same lesson to every new colleague: how to run a pre-mortem, how to mine a decade of notes for a connection nobody saw, how to compile a design system from tokens. Then colleagues became agents, and something strange became possible — expertise you could hand over as a file.
+    fiction2: |
+      Now when you solve a problem well, you write the solution down as a drawer in a public cabinet. Any agent — yours, mine, a stranger's — opens the drawer and suddenly knows how. Teaching happens once. Inheritance is instant and infinite.
+    realIntro: "The cabinet is public. It's"
+    real: "an open collection of Claude skills — a decision toolkit with bias checks, vault daydreaming, deep research, session analysis, design tokens and more. Written procedures that any agent can pick up and use."
+    project: "Agent Skills"
+    tagline: "Open procedures for agents"
+    link: "https://skills.salient.community"
+    linkLabel: "skills.salient.community"
+    img: "/images/projects/skills.png"
+
+  - title: "A night shift that reviews its own work"
+    fiction1: |
+      The word factory used to mean repetition. This one means discipline. At 23:40 you write a spec in plain language and go to bed. In the dark, agents pick it up, build, argue — one writes, another reviews, tests gate every door. Nothing ships because a machine felt confident; things ship because they passed.
+    fiction2: |
+      Morning brings a changelog written for humans, like mail from a diligent colleague who happens not to sleep. The trick was never letting the machines improvise: four fifths of the factory is deterministic scaffolding, and the intelligence is spent only where judgment is genuinely needed.
+    realIntro: "That factory runs my products today. It's the"
+    real: "agentic release infrastructure behind everything on this page — specs go in, reviewed, tested, versioned releases come out. 80% deterministic pipeline, 20% AI routing, human sign-off where it matters."
+    project: "Release Factory"
+    tagline: "Specs in, shipped releases out"
+    link: "https://github.com/glebis"
+    linkLabel: "github.com/glebis"
+    img: "/images/projects/factory.png"
+
+  - title: "The room that breathes with your heart"
+    fiction1: |
+      The machines learned to ask, to judge, to ship. Then they learned to listen to the body. You strap on a heart monitor and the room tunes itself to you: lights ripple with every beat, chords stay warm while you're calm and drift dissonant when stress creeps in, a garden on the screen grows vines only from sustained coherence — and remembers the session.
+    fiction2: |
+      Then a second person puts on a strap, and the strangest instrument appears: two hearts as orbiting moons that slowly phase-lock, an aurora that smooths itself the moment you sync. Nobody is performing. The music is what being together sounds like.
+    realIntro: "That room runs on my desk. It's"
+    real: "a biofeedback system streaming ECG at 130 Hz from a Polar H10 strap — live HRV and coherence drive Philips Hue ripples, a physical desk LED, and eleven browser instruments in Three.js and WebAudio, from a breathing pacer to a Bach-inspired generative suite. Multiplayer included."
+    project: "Ribbon"
+    tagline: "Heart → light → sound, in real time"
+    link: "https://github.com/glebis"
+    linkLabel: "github.com/glebis"
+    img: "/images/projects/ribbon.png"
+
+  - title: "A community engine that starts from not-knowing"
+    fiction1: |
+      And once one person can ship like a team, the question turns outward: what could a hundred people be to each other, if the room did the remembering? Most community platforms are filing cabinets with chat attached. Imagine instead a room that listens — notices which conversations matter, surfaces the member who asked your exact question last spring, lets the group's memory compound instead of scrolling away.
+    fiction2: |
+      The engine never claims to understand you. It starts from not-knowing — holds its models of people lightly, asks instead of profiling — and that epistemic humility is precisely why it gets better.
+    realIntro: "The room is being built at"
+    real: "an experimental community engine — infrastructure where collective memory, introductions, and salience are handled by agents, so humans can spend their attention on each other."
+    project: "unknowing.community"
+    tagline: "Experimental community engine"
+    link: "https://unknowing.community"
+    linkLabel: "unknowing.community"
+    img: "/images/projects/unknowing.png"
+
+workbench:
+  - kind: "Instrument"
+    name: "Bandmaskin"
+    desc: "A rack of virtual reel-to-reel tape machines with physically simulated tape: brake it with a finger, pull it to bend pitch, clip felt and foil onto the ribbon and hear them pass the head. A wear mode disintegrates the loop a little on every pass, Frippertronics-style. The MacBook trackpad becomes a ten-finger performance surface."
+    meta: "Rhythm Landscape v3 · Web Audio + physics simulation"
+  - kind: "Workstation"
+    name: "i18n Studio"
+    desc: "A localization workbench for real codebases. Saves touch only the one string you edited — AST-level, zero formatting churn. Edit a phrase once and propagate it to every duplicate across the corpus; review translations keyboard-first at 3 candidates per string, no separate API key needed."
+    meta: "v0.3 · works against any repo · ts-morph + Claude"
+  - kind: "Benchmark"
+    name: "CONFIDE"
+    desc: "An open, local-first toolkit for de-identifying therapy transcripts — and a red team that attacks its own anonymizer to see what leaks. Benchmarked on 30 synthetic sessions with 1,076 gold PII mentions, scoring harm-weighted recall, because a missed leak is the real failure."
+    meta: "open source · regex → NER → local LLM · GDPR attack taxonomy"
+
+timeline:
+  - when: "2001"
+    what: "Started building"
+    note: "twenty-five years in IT, most of it hands-on. Later: CPO Ozon.travel, Chief of Content Ostrovok, Tsentsiper."
+  - when: "2022"
+    what: "First AI labs"
+    note: "began teaching knowledge management and AI agents. 350+ practitioners since."
+  - when: "2024"
+    what: "AGENCY community"
+    note: "~150 builders arguing about how AI should actually work. Tool Building Ape channel grows past 1,800."
+  - when: "2024–25"
+    what: "Personal OS"
+    note: "audio-monitor, Verity (Telegram agent), Decision Toolkit, Vault Daydream — the digital body assembles, organ by organ."
+  - when: "2026"
+    what: "Cull & Cenno"
+    note: "research projects on GitHub: judgment for AI images, questions before assumptions."
+  - when: "2026"
+    what: "Release Factory, Ribbon & unknowing.community"
+    note: "the infrastructure ships itself; the desk lights beat with a heart; the community engine begins to listen."
+
+labs:
+  - name: "Salience"
+    desc: "8 weeks building your own Personal OS — agents running on your data, memory, and context. Telegram agents, voice interfaces, data lakes, skills, MCP."
+    meta: "Cohort 1, March 2026 · live + async · 180+ active members"
+    link: "https://salience.glebkalinin.com"
+  - name: "Claude Code Lab"
+    desc: "7 weeks using Claude Code as your AI workhorse: agents, MCP & skills, deployment, real products. Most participants aren't developers."
+    meta: "Next cohort April 2026 · Zoom, Mon & Wed · 100+ alumni"
+    link: "https://claude.salient.community"
+  - name: "Goal-Driven Design"
+    desc: "A cohort crash course in designing with AI — judgment first, tools second. Build work that is unmistakably yours."
+    meta: "Starts July 20 · 8–15 builders · with Yulia Katan"
+    link: "https://ai-design.salient.community"
+
+communities:
+  - name: "Salient Community"
+    size: "salient.community →"
+    desc: "Builders who think about why they're building, not just what. Home of the labs."
+    link: "https://salient.community"
+  - name: "AGENCY"
+    size: "~150 members, since 2024"
+    desc: "Russian-speaking AI community — developers, entrepreneurs, designers, artists."
+    link: "https://t.me/glebkalinin"
+  - name: "Tool Building Ape"
+    size: "~1,800 subscribers"
+    desc: "AI tools, coding agents, vibe coding — the working notes, published as they happen."
+    link: "https://t.me/toolusing"
+  - name: "Опытным путём"
+    size: "~1,500 subscribers"
+    desc: "Psychology meets practice — the human side of living with machines."
+    link: "https://t.me/experimentally"
