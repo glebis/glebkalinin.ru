@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800">
+  <defs>
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1f"/>
+      <stop offset="100%" style="stop-color:#0f0f12"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="800" fill="url(#darkBg)"/>
+
+  <!-- Section Header -->
+  <g transform="translate(80, 80)">
+    <text fill="#ff6b35" font-family="Geist, sans-serif" font-weight="900" font-size="64">PRODUCTS</text>
+    <text x="420" y="0" fill="#555" font-family="Geist, sans-serif" font-size="24" font-style="italic">what I build</text>
+    <line x1="0" y1="30" x2="1240" y2="30" stroke="#333" stroke-width="1"/>
+  </g>
+
+  <!-- Products Grid (2x2) -->
+  <g transform="translate(80, 160)">
+
+    <!-- Card 1: Salience -->
+    <g transform="translate(0, 0)">
+      <rect width="580" height="260" fill="none" stroke="#333" stroke-width="1"/>
+      <rect width="580" height="260" fill="#ff6b35" opacity="0.05"/>
+
+      <!-- Icon -->
+      <text x="40" y="60" fill="#ff6b35" font-family="monospace" font-size="32">⚡</text>
+
+      <!-- Title -->
+      <text x="40" y="110" fill="#fff" font-family="Geist, sans-serif" font-weight="800" font-size="32">SALIENCE</text>
+
+      <!-- Subtitle -->
+      <text x="40" y="145" fill="#ff6b35" font-family="Geist Mono, monospace" font-size="14">8-week Personal OS lab</text>
+
+      <!-- Description -->
+      <text x="40" y="185" fill="#888" font-family="Geist, sans-serif" font-size="16">Build your Telegram agent.</text>
+      <text x="40" y="210" fill="#888" font-family="Geist, sans-serif" font-size="16">Create your data lakes.</text>
+      <text x="40" y="235" fill="#888" font-family="Geist, sans-serif" font-size="16">Let AI surface what matters.</text>
+
+      <!-- Arrow -->
+      <text x="520" y="230" fill="#ff6b35" font-family="Geist, sans-serif" font-size="24">→</text>
+    </g>
+
+    <!-- Card 2: Voice Claude -->
+    <g transform="translate(620, 0)">
+      <rect width="580" height="260" fill="none" stroke="#333" stroke-width="1"/>
+
+      <!-- Icon -->
+      <text x="40" y="60" fill="#ff6b35" font-family="monospace" font-size="32">🎙</text>
+
+      <!-- Title -->
+      <text x="40" y="110" fill="#fff" font-family="Geist, sans-serif" font-weight="800" font-size="32">VOICE CLAUDE</text>
+
+      <!-- Subtitle -->
+      <text x="40" y="145" fill="#ff6b35" font-family="Geist Mono, monospace" font-size="14">Sub-second voice to tool execution</text>
+
+      <!-- Description -->
+      <text x="40" y="185" fill="#888" font-family="Geist, sans-serif" font-size="16">Speak. Execute. No keyboard.</text>
+      <text x="40" y="210" fill="#888" font-family="Geist, sans-serif" font-size="16">Real-time speech recognition.</text>
+      <text x="40" y="235" fill="#888" font-family="Geist, sans-serif" font-size="16">Your Obsidian vault, hands-free.</text>
+
+      <!-- Arrow -->
+      <text x="520" y="230" fill="#ff6b35" font-family="Geist, sans-serif" font-size="24">→</text>
+    </g>
+
+    <!-- Card 3: Claude Code Lab -->
+    <g transform="translate(0, 300)">
+      <rect width="580" height="260" fill="none" stroke="#333" stroke-width="1"/>
+
+      <!-- Icon -->
+      <text x="40" y="60" fill="#ff6b35" font-family="monospace" font-size="32">⌨</text>
+
+      <!-- Title -->
+      <text x="40" y="110" fill="#fff" font-family="Geist, sans-serif" font-weight="800" font-size="32">CLAUDE CODE LAB</text>
+
+      <!-- Subtitle -->
+      <text x="40" y="145" fill="#ff6b35" font-family="Geist Mono, monospace" font-size="14">6-week practical lab · 350+ alumni</text>
+
+      <!-- Description -->
+      <text x="40" y="185" fill="#888" font-family="Geist, sans-serif" font-size="16">Practical AI-assisted development.</text>
+      <text x="40" y="210" fill="#888" font-family="Geist, sans-serif" font-size="16">For PMs, designers, founders.</text>
+      <text x="40" y="235" fill="#888" font-family="Geist, sans-serif" font-size="16">Ship skills you can fork.</text>
+
+      <!-- Arrow -->
+      <text x="520" y="230" fill="#ff6b35" font-family="Geist, sans-serif" font-size="24">→</text>
+    </g>
+
+    <!-- Card 4: Speculative Design -->
+    <g transform="translate(620, 300)">
+      <rect width="580" height="260" fill="none" stroke="#333" stroke-width="1"/>
+
+      <!-- Icon -->
+      <text x="40" y="60" fill="#ff6b35" font-family="monospace" font-size="32">🎬</text>
+
+      <!-- Title -->
+      <text x="40" y="110" fill="#fff" font-family="Geist, sans-serif" font-weight="800" font-size="32">SPECULATIVE DESIGN</text>
+
+      <!-- Subtitle -->
+      <text x="40" y="145" fill="#ff6b35" font-family="Geist Mono, monospace" font-size="14">Films · Experimental interfaces</text>
+
+      <!-- Description -->
+      <text x="40" y="185" fill="#888" font-family="Geist, sans-serif" font-size="16">What if AI knew everything?</text>
+      <text x="40" y="210" fill="#888" font-family="Geist, sans-serif" font-size="16">Exploring futures through film.</text>
+      <text x="40" y="235" fill="#888" font-family="Geist, sans-serif" font-size="16">Design fiction meets reality.</text>
+
+      <!-- Arrow -->
+      <text x="520" y="230" fill="#ff6b35" font-family="Geist, sans-serif" font-size="24">→</text>
+    </g>
+
+  </g>
+</svg>

@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <linearGradient id="spaceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1f"/>
+      <stop offset="50%" style="stop-color:#0f0f12"/>
+      <stop offset="100%" style="stop-color:#1a1a1f"/>
+    </linearGradient>
+    <linearGradient id="orangeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#ff8c5a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="url(#spaceBg)"/>
+
+  <!-- Stars -->
+  <g fill="#fff" opacity="0.6">
+    <circle cx="120" cy="80" r="1.5"/>
+    <circle cx="340" cy="150" r="1"/>
+    <circle cx="560" cy="60" r="2"/>
+    <circle cx="780" cy="200" r="1"/>
+    <circle cx="1000" cy="90" r="1.5"/>
+    <circle cx="1200" cy="170" r="1"/>
+    <circle cx="200" cy="300" r="1"/>
+    <circle cx="1300" cy="400" r="1.5"/>
+    <circle cx="100" cy="500" r="1"/>
+    <circle cx="1350" cy="250" r="2"/>
+  </g>
+
+  <!-- Twinkling stars (orange accent) -->
+  <g fill="#ff6b35" filter="url(#glow)">
+    <text x="250" y="120" font-family="monospace" font-size="16">✦</text>
+    <text x="890" y="80" font-family="monospace" font-size="14">✦</text>
+    <text x="1150" y="300" font-family="monospace" font-size="18">✦</text>
+    <text x="50" y="400" font-family="monospace" font-size="12">✦</text>
+  </g>
+
+  <!-- Theme toggle (top right) -->
+  <g transform="translate(1280, 30)">
+    <rect x="0" y="0" width="90" height="36" rx="18" fill="rgba(255,255,255,0.1)"/>
+    <circle cx="68" cy="18" r="14" fill="#1a1a1f"/>
+    <text x="72" y="23" font-size="12" text-anchor="middle" fill="#fff">☀</text>
+  </g>
+
+  <!-- 3D Figure placeholder (floating in space) -->
+  <g transform="translate(900, 280)">
+    <!-- Glow behind figure -->
+    <ellipse cx="150" cy="200" rx="180" ry="220" fill="#ff6b35" opacity="0.08" filter="url(#glow)"/>
+
+    <!-- Stylized human silhouette -->
+    <g fill="none" stroke="#dedede" stroke-width="2" opacity="0.9">
+      <!-- Head -->
+      <circle cx="150" cy="80" r="45"/>
+      <!-- Body -->
+      <path d="M150 125 L150 280"/>
+      <!-- Arms -->
+      <path d="M150 160 L80 220"/>
+      <path d="M150 160 L220 220"/>
+      <!-- Legs -->
+      <path d="M150 280 L100 380"/>
+      <path d="M150 280 L200 380"/>
+    </g>
+
+    <!-- Floating particles around figure -->
+    <circle cx="60" cy="150" r="3" fill="#ff6b35" opacity="0.6"/>
+    <circle cx="240" cy="120" r="2" fill="#ff6b35" opacity="0.4"/>
+    <circle cx="280" cy="280" r="4" fill="#ff6b35" opacity="0.5"/>
+    <circle cx="30" cy="300" r="2" fill="#ff6b35" opacity="0.3"/>
+
+    <!-- Label -->
+    <text x="150" y="440" text-anchor="middle" fill="#555" font-family="monospace" font-size="12">[3D Polycam scan]</text>
+  </g>
+
+  <!-- Main text content (left side) -->
+  <g transform="translate(80, 180)">
+    <!-- Name -->
+    <text fill="#fff" font-family="Geist, sans-serif" font-weight="900" font-size="72" letter-spacing="-2">
+      GLEB KALININ
+    </text>
+
+    <!-- Tagline -->
+    <text y="70" fill="#ff6b35" font-family="Geist, sans-serif" font-weight="700" font-size="26">
+      Builder. Maker. AI Lab Facilitator.
+    </text>
+
+    <!-- Main description -->
+    <text y="140" fill="#dedede" font-family="Geist, sans-serif" font-size="20">
+      I build AI systems that know your context.
+    </text>
+    <text y="170" fill="#dedede" font-family="Geist, sans-serif" font-size="20">
+      Not chatbots. <tspan fill="#ff6b35">Personal operating systems.</tspan>
+    </text>
+
+    <!-- Philosophy block -->
+    <g transform="translate(0, 220)">
+      <rect width="500" height="1" fill="#333"/>
+      <text y="35" fill="#888" font-family="EB Garamond, serif" font-size="18" font-style="italic">
+        "AI as capability amplifier, not replacement.
+      </text>
+      <text y="60" fill="#888" font-family="EB Garamond, serif" font-size="18" font-style="italic">
+        Voice is the natural interface for Software 3.0.
+      </text>
+      <text y="85" fill="#888" font-family="EB Garamond, serif" font-size="18" font-style="italic">
+        Keyboards were designed for 1.0."
+      </text>
+    </g>
+
+    <!-- Background credentials -->
+    <g transform="translate(0, 350)">
+      <text fill="#555" font-family="Geist Mono, monospace" font-size="13">
+        Former Director of Product @ OZON.travel
+      </text>
+      <text y="22" fill="#555" font-family="Geist Mono, monospace" font-size="13">
+        First editor, Theory &amp; Practice SPB · TEDx speaker
+      </text>
+      <text y="44" fill="#555" font-family="Geist Mono, monospace" font-size="13">
+        Global Shapers alumnus (WEF) · Building since 2001
+      </text>
+    </g>
+
+    <!-- CTA Button -->
+    <g transform="translate(0, 440)">
+      <rect width="200" height="56" fill="#ff6b35" rx="0"/>
+      <text x="100" y="36" text-anchor="middle" fill="#1a1a1f" font-family="Geist, sans-serif" font-weight="700" font-size="14" letter-spacing="1">EXPLORE WORK →</text>
+    </g>
+  </g>
+
+  <!-- Navigation (bottom) -->
+  <g transform="translate(80, 820)">
+    <text fill="#888" font-family="Geist Mono, monospace" font-size="14">
+      <tspan fill="#ff6b35">products</tspan>
+      <tspan dx="30">·</tspan>
+      <tspan dx="30">videos</tspan>
+      <tspan dx="30">·</tspan>
+      <tspan dx="30">community</tspan>
+      <tspan dx="30">·</tspan>
+      <tspan dx="30">blog</tspan>
+      <tspan dx="30">·</tspan>
+      <tspan dx="30">chat</tspan>
+    </text>
+  </g>
+
+  <!-- Scroll indicator -->
+  <g transform="translate(700, 850)">
+    <text text-anchor="middle" fill="#555" font-family="Geist Mono, monospace" font-size="12">↓ scroll</text>
+  </g>
+</svg>

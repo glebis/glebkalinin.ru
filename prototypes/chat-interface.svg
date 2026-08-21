@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700" width="1400" height="700">
+  <defs>
+    <linearGradient id="chatBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1f"/>
+      <stop offset="100%" style="stop-color:#0f0f12"/>
+    </linearGradient>
+    <linearGradient id="terminalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#141823"/>
+      <stop offset="100%" style="stop-color:#0a0d15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="700" fill="url(#chatBg)"/>
+
+  <!-- Section Header -->
+  <g transform="translate(80, 80)">
+    <text fill="#ff6b35" font-family="Geist, sans-serif" font-weight="900" font-size="64">CHAT</text>
+    <text x="200" y="0" fill="#555" font-family="Geist, sans-serif" font-size="24" font-style="italic">ask me anything</text>
+    <line x1="0" y1="30" x2="1240" y2="30" stroke="#333" stroke-width="1"/>
+  </g>
+
+  <!-- Two column layout -->
+  <g transform="translate(80, 160)">
+
+    <!-- Left: Description -->
+    <g transform="translate(0, 0)">
+      <text fill="#fff" font-family="Geist, sans-serif" font-weight="700" font-size="28">Talk to my AI</text>
+
+      <text y="50" fill="#888" font-family="Geist, sans-serif" font-size="16">Trained on my work, notes, and expertise.</text>
+      <text y="75" fill="#888" font-family="Geist, sans-serif" font-size="16">Ask about AI tools, Personal OS, workshops.</text>
+
+      <!-- Features -->
+      <g transform="translate(0, 120)">
+        <text fill="#ff6b35" font-family="Geist Mono, monospace" font-size="14">→</text>
+        <text x="25" fill="#dedede" font-family="Geist, sans-serif" font-size="14">Text chat (type your question)</text>
+
+        <text y="35" fill="#ff6b35" font-family="Geist Mono, monospace" font-size="14">→</text>
+        <text x="25" y="35" fill="#dedede" font-family="Geist, sans-serif" font-size="14">Voice chat (click microphone)</text>
+
+        <text y="70" fill="#ff6b35" font-family="Geist Mono, monospace" font-size="14">→</text>
+        <text x="25" y="70" fill="#dedede" font-family="Geist, sans-serif" font-size="14">Powered by Groq (fast inference)</text>
+      </g>
+
+      <!-- Disclaimer -->
+      <text y="240" fill="#555" font-family="Geist, sans-serif" font-size="12" font-style="italic">AI responses are generated. For accurate info, contact me directly.</text>
+    </g>
+
+    <!-- Right: Terminal chat UI -->
+    <g transform="translate(500, 0)">
+      <!-- Terminal window -->
+      <rect width="700" height="450" rx="12" fill="url(#terminalGrad)" stroke="#ff6b3520" stroke-width="1"/>
+
+      <!-- Terminal header -->
+      <g transform="translate(20, 15)">
+        <circle r="6" fill="#ff5f56" opacity="0.9"/>
+        <circle cx="20" r="6" fill="#ffbd2e" opacity="0.9"/>
+        <circle cx="40" r="6" fill="#27c840" opacity="0.9"/>
+        <text x="80" fill="#555" font-family="Geist Mono, monospace" font-size="12">gleb-ai · chat</text>
+      </g>
+
+      <!-- Divider -->
+      <line x1="0" y1="40" x2="700" y2="40" stroke="#ffffff10" stroke-width="1"/>
+
+      <!-- Chat messages -->
+      <g transform="translate(25, 70)">
+        <!-- User message -->
+        <text fill="#ff6b35" font-family="Geist Mono, monospace" font-size="14">&gt;</text>
+        <text x="20" fill="#dedede" font-family="Geist Mono, monospace" font-size="14">What is Personal OS?</text>
+
+        <!-- AI response -->
+        <g transform="translate(0, 40)">
+          <text fill="#888" font-family="Geist Mono, monospace" font-size="14">⏺ Thinking...</text>
+        </g>
+
+        <g transform="translate(0, 80)">
+          <text fill="#dedede" font-family="Geist, sans-serif" font-size="14">Personal OS is an integrated AI infrastructure that</text>
+          <text y="22" fill="#dedede" font-family="Geist, sans-serif" font-size="14">unifies your knowledge, health data, communications,</text>
+          <text y="44" fill="#dedede" font-family="Geist, sans-serif" font-size="14">and autonomous agents into one queryable system.</text>
+
+          <text y="80" fill="#dedede" font-family="Geist, sans-serif" font-size="14">Key components:</text>
+          <text y="105" fill="#ff6b35" font-family="Geist Mono, monospace" font-size="13">→</text>
+          <text x="20" y="105" fill="#888" font-family="Geist, sans-serif" font-size="13">Knowledge layer (Obsidian + 10 years of notes)</text>
+          <text y="128" fill="#ff6b35" font-family="Geist Mono, monospace" font-size="13">→</text>
+          <text x="20" y="128" fill="#888" font-family="Geist, sans-serif" font-size="13">Data lakes (health, browser history, transcripts)</text>
+          <text y="151" fill="#ff6b35" font-family="Geist Mono, monospace" font-size="13">→</text>
+          <text x="20" y="151" fill="#888" font-family="Geist, sans-serif" font-size="13">Voice + Telegram interface</text>
+        </g>
+      </g>
+
+      <!-- Input area -->
+      <g transform="translate(0, 390)">
+        <line x1="25" y1="0" x2="675" y2="0" stroke="#333" stroke-width="1"/>
+        <rect x="25" y="15" width="580" height="40" rx="4" fill="#0a0d15" stroke="#333" stroke-width="1"/>
+        <text x="40" y="40" fill="#555" font-family="Geist, sans-serif" font-size="14">Ask me anything...</text>
+
+        <!-- Microphone button -->
+        <g transform="translate(620, 15)">
+          <rect width="55" height="40" rx="4" fill="#ff6b35"/>
+          <text x="27" y="27" text-anchor="middle" fill="#1a1a1f" font-size="18">🎤</text>
+        </g>
+      </g>
+    </g>
+
+  </g>
+</svg>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glebkalinin.ru - Design Prototypes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #0a0a0c;
+            color: #fff;
+            font-family: 'Geist', sans-serif;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            color: #ff6b35;
+        }
+        .subtitle {
+            color: #888;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+        .prototype {
+            margin-bottom: 4rem;
+        }
+        .prototype h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #dedede;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #333;
+        }
+        .prototype img {
+            width: 100%;
+            max-width: 1400px;
+            height: auto;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+        .note {
+            color: #555;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            font-family: 'Geist Mono', monospace;
+        }
+        .toc {
+            background: #1a1a1f;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+        .toc h3 {
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+        .toc ul {
+            list-style: none;
+        }
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+        .toc a {
+            color: #dedede;
+            text-decoration: none;
+            font-family: 'Geist Mono', monospace;
+        }
+        .toc a:hover {
+            color: #ff6b35;
+        }
+    </style>
+</head>
+<body>
+    <h1>glebkalinin.ru Redesign</h1>
+    <p class="subtitle">SVG Prototypes - Dark theme, Geist typography, Orange accent</p>
+
+    <div class="toc">
+        <h3>Sections</h3>
+        <ul>
+            <li><a href="#hero">1. Hero Section</a> - 3D floating figure, bold intro, stats</li>
+            <li><a href="#products">2. Products Grid</a> - 4 product cards</li>
+            <li><a href="#videos">3. Video Gallery</a> - Filterable grid</li>
+            <li><a href="#community">4. Community</a> - Telegram channels</li>
+            <li><a href="#chat">5. AI Chat</a> - Terminal-style interface</li>
+        </ul>
+    </div>
+
+    <div class="prototype" id="hero">
+        <h2>1. Hero Section</h2>
+        <img src="hero-section.svg" alt="Hero Section Prototype">
+        <p class="note">Full viewport hero with 3D Polycam scan placeholder, bold text, stats, CTA</p>
+    </div>
+
+    <div class="prototype" id="products">
+        <h2>2. Products Grid</h2>
+        <img src="products-grid.svg" alt="Products Grid Prototype">
+        <p class="note">2x2 grid: Salience, Voice Claude, Claude Code Lab, Speculative Design</p>
+    </div>
+
+    <div class="prototype" id="videos">
+        <h2>3. Video Gallery</h2>
+        <img src="video-gallery.svg" alt="Video Gallery Prototype">
+        <p class="note">3x2 grid with filter tabs, YouTube embeds on click</p>
+    </div>
+
+    <div class="prototype" id="community">
+        <h2>4. Community Section</h2>
+        <img src="community-section.svg" alt="Community Section Prototype">
+        <p class="note">3 Telegram channels: @toolusing, @experimentally, @mentalhealthtech</p>
+    </div>
+
+    <div class="prototype" id="chat">
+        <h2>5. AI Chat Interface</h2>
+        <img src="chat-interface.svg" alt="Chat Interface Prototype">
+        <p class="note">Terminal-style chat with text + voice input, Groq backend</p>
+    </div>
+
+    <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #333; color: #555; font-size: 0.9rem;">
+        <p>Prototypes for glebkalinin.ru redesign</p>
+        <p style="margin-top: 0.5rem;">Design system: Salience-inspired (Geist fonts, oklch orange accent, dark theme)</p>
+    </footer>
+</body>
+</html>

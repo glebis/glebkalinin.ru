@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 550" width="1400" height="550">
+  <defs>
+    <linearGradient id="videoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1f"/>
+      <stop offset="100%" style="stop-color:#0f0f12"/>
+    </linearGradient>
+    <linearGradient id="thumbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a30"/>
+      <stop offset="100%" style="stop-color:#1a1a1f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="550" fill="url(#videoBg)"/>
+
+  <!-- Section Header -->
+  <g transform="translate(80, 80)">
+    <text fill="#ff6b35" font-family="Geist, sans-serif" font-weight="900" font-size="64">VIDEOS</text>
+    <text x="280" y="0" fill="#555" font-family="Geist, sans-serif" font-size="24" font-style="italic">talks &amp; demos</text>
+    <line x1="0" y1="30" x2="1240" y2="30" stroke="#333" stroke-width="1"/>
+  </g>
+
+  <!-- Video Grid (3 videos in a row) -->
+  <g transform="translate(80, 160)">
+
+    <!-- Video 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="400" height="225" fill="url(#thumbGrad)" stroke="#333" stroke-width="1"/>
+      <!-- Play button -->
+      <circle cx="200" cy="112" r="30" fill="#ff6b35" opacity="0.9"/>
+      <polygon points="190,100 190,125 215,112" fill="#1a1a1f"/>
+      <!-- Duration -->
+      <rect x="340" y="190" width="50" height="24" fill="#000" opacity="0.8"/>
+      <text x="365" y="207" text-anchor="middle" fill="#fff" font-family="Geist Mono, monospace" font-size="11">45:21</text>
+      <!-- Title -->
+      <text y="255" fill="#fff" font-family="Geist, sans-serif" font-weight="600" font-size="16">Voice Claude: Hands-free AI Coding</text>
+      <text y="280" fill="#888" font-family="Geist, sans-serif" font-size="13">Demo · Product walkthrough</text>
+    </g>
+
+    <!-- Video 2 -->
+    <g transform="translate(420, 0)">
+      <rect width="400" height="225" fill="url(#thumbGrad)" stroke="#333" stroke-width="1"/>
+      <circle cx="200" cy="112" r="30" fill="#ff6b35" opacity="0.9"/>
+      <polygon points="190,100 190,125 215,112" fill="#1a1a1f"/>
+      <rect x="340" y="190" width="50" height="24" fill="#000" opacity="0.8"/>
+      <text x="365" y="207" text-anchor="middle" fill="#fff" font-family="Geist Mono, monospace" font-size="11">58:42</text>
+      <text y="255" fill="#fff" font-family="Geist, sans-serif" font-weight="600" font-size="16">Software 3.0: The Agent Era</text>
+      <text y="280" fill="#888" font-family="Geist, sans-serif" font-size="13">Talk · Conference keynote</text>
+    </g>
+
+    <!-- Video 3 -->
+    <g transform="translate(840, 0)">
+      <rect width="400" height="225" fill="url(#thumbGrad)" stroke="#333" stroke-width="1"/>
+      <circle cx="200" cy="112" r="30" fill="#ff6b35" opacity="0.9"/>
+      <polygon points="190,100 190,125 215,112" fill="#1a1a1f"/>
+      <rect x="340" y="190" width="50" height="24" fill="#000" opacity="0.8"/>
+      <text x="365" y="207" text-anchor="middle" fill="#fff" font-family="Geist Mono, monospace" font-size="11">31:44</text>
+      <text y="255" fill="#fff" font-family="Geist, sans-serif" font-weight="600" font-size="16">Building Personal OS with AI</text>
+      <text y="280" fill="#888" font-family="Geist, sans-serif" font-size="13">Workshop excerpt · Salience</text>
+    </g>
+
+  </g>
+
+  <!-- More coming note -->
+  <g transform="translate(80, 490)">
+    <text fill="#555" font-family="Geist Mono, monospace" font-size="13">More videos coming soon · Subscribe to @toolusing for updates</text>
+  </g>
+</svg>
