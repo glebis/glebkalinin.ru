@@ -2,37 +2,69 @@
 <html lang="en" class="dark">
 <head>
   <%- partial('_partial/head') %>
+  <% if (is_home()) { %>
+    <link rel="stylesheet" href="/css/home.css">
+  <% } %>
 </head>
-<body>
+<body class="<%= is_home() ? 'page-home' : '' %>">
   <!-- Progress Bar -->
   <div class="progress-bar" id="progress-bar"></div>
 
   <!-- Header Controls -->
   <header class="site-header">
     <div class="header-controls">
-      <div class="theme-toggle" id="theme-toggle" role="button" tabindex="0" aria-label="Toggle theme">
-        <div class="theme-toggle-thumb">
-          <span class="theme-icon">☀️</span>
-        </div>
-      </div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <circle cx="8" cy="8" r="2.6" fill="none" stroke="currentColor" stroke-width="1.1"/>
+          <g stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+            <line x1="8" y1="1" x2="8" y2="3"/>
+            <line x1="8" y1="13" x2="8" y2="15"/>
+            <line x1="1" y1="8" x2="3" y2="8"/>
+            <line x1="13" y1="8" x2="15" y2="8"/>
+            <line x1="2.8" y1="2.8" x2="4.3" y2="4.3"/>
+            <line x1="11.7" y1="11.7" x2="13.2" y2="13.2"/>
+            <line x1="2.8" y1="13.2" x2="4.3" y2="11.7"/>
+            <line x1="11.7" y1="4.3" x2="13.2" y2="2.8"/>
+          </g>
+        </svg>
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+          <path d="M13.5 9.8A6 6 0 0 1 6.2 2.5a6 6 0 1 0 7.3 7.3z"
+                fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <a href="/bio/" class="header-text-link">Biography</a>
       <a href="https://t.me/<%= theme.telegram %>" class="telegram-btn" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M9.964 15.568l-.246 3.463c.352 0 .505-.151.688-.333l1.651-1.588 3.418 2.51c.626.347 1.073.165 1.244-.58l2.254-10.556h.001c.2-.932-.337-1.296-.95-1.07L3.23 11.07c-.912.353-.898.861-.155 1.09l3.91 1.219 9.084-5.73c.427-.279.816-.125.496.154" fill="currentColor"/>
         </svg>
         <span>Message</span>
       </a>
+      <% if (theme.whatsapp) { %>
+        <a href="<%= wa_me(theme.whatsapp) %>" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.15 1.6 5.96L2 22l4.25-1.11a9.9 9.9 0 0 0 5.78 1.84h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01Zm-7.01 15.24h-.01a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-2.52.66.67-2.46-.2-.31a8.23 8.23 0 0 1-1.26-4.4c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23a7.5 7.5 0 0 1-1.39-1.72c-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.16 0-.42.06-.64.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.28Z"/>
+          </svg>
+        </a>
+      <% } %>
     </div>
   </header>
 
   <!-- Main Content -->
   <%- body %>
 
-  <!-- Footer -->
-  <%- partial('_partial/footer') %>
+  <%# Homepage inlines its own .home-footer in index.ejs; suppress the
+      site-wide partial to avoid duplicate copyright + Telegram links. %>
+  <% if (!is_home()) { %>
+    <!-- Footer -->
+    <%- partial('_partial/footer') %>
+  <% } %>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- Scripts — anime.js removed (CSS transitions + plain JS handle theming) -->
   <script src="/js/main.js"></script>
-  <script src="/js/vault-graph.js" defer></script>
+  <% if (is_home()) { %>
+    <script src="/js/type-fx.js" defer></script>
+    <script src="/js/motion.js" defer></script>
+    <script src="/js/vault-graph.js" defer></script>
+  <% } %>
 </body>
 </html>
