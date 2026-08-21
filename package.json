@@ -28,6 +28,7 @@
     "hexo-tag-instagram": "^1.0.2",
     "hexo-typograf": "0.0.1",
     "markdown-it": "^13.0.1",
+    "photoswipe": "5.4.4",
     "qs": "^6.11.0"
   },
   "devDependencies": {

@@ -7,6 +7,9 @@
       </div>
       <div class="footer-links">
         <a href="https://t.me/<%= theme.telegram %>" target="_blank">Telegram</a>
+        <% if (theme.whatsapp) { %>
+          <a href="<%= wa_me(theme.whatsapp) %>" target="_blank">WhatsApp</a>
+        <% } %>
         <a href="https://github.com/glebis" target="_blank">GitHub</a>
         <a href="https://twitter.com/glebis" target="_blank">Twitter</a>
         <a href="/impressum/">Impressum</a>

@@ -8,6 +8,7 @@ menu:
 
 # Social links
 telegram: glebkalinin
+whatsapp: "+4917685278763"   # raw digits with + and country code; templates build wa.me from this
 telegram_channels:
   - handle: toolusing
     name: Tool Building Ape
