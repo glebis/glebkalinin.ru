@@ -44,10 +44,27 @@
   background: var(--bg-base);
   color: var(--fg);
   font-family: var(--font-text);
-  font-weight: 300;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+/* Body prose — chapter blocks, lab/community/workbench descriptions, hero
+   paragraphs. The design's "tell" (Monaspace) stays on display headings,
+   links, wordmark, and footer chrome. Prose uses a proportional face at
+   normal weight so light-mode body copy reads cleanly. */
+.page-home .ch-text p,
+.page-home .method p,
+.page-home .labs-section p,
+.page-home .community p,
+.page-home .workbench-section p,
+.page-home .home-hero .hero-copy p,
+.page-home .section-intro p,
+.page-home .timeline p,
+.page-home .home-footer p {
+  font-family: var(--font-sans);
+  font-weight: 400;
 }
 .page-home a { color: var(--lead); text-decoration: none; transition: color .2s ease; }
 .page-home a:hover { color: var(--fg); }
@@ -296,17 +313,17 @@
   margin: 0 0 20px; letter-spacing: -0.01em; text-wrap: balance;
 }
 .page-home .ch-text .ch-fict {
-  font-size: 16px; line-height: 1.7; font-style: italic; color: var(--muted);
+  font-size: 16px; line-height: 1.7; color: var(--fg); opacity: 0.78;
   margin: 0 0 16px; text-wrap: pretty;
 }
 .page-home .ch-text .ch-fict + .ch-fict { margin-bottom: 28px; }
 .page-home .ch-text .ch-real {
-  font-size: 15px; line-height: 1.7; color: var(--muted);
-  margin: 0; border-top: 1px dashed var(--border-soft);
+  font-size: 15px; line-height: 1.7; color: var(--fg); opacity: 0.88;
+  margin: 0; border-top: 2px solid var(--lead);
   padding-top: 20px; text-wrap: pretty;
 }
 .page-home .ch-text .ch-real strong {
-  color: var(--fg); font-weight: 400;
+  color: var(--lead); font-weight: 600;
 }
 
 .page-home .ch-card { position: sticky; top: 32px; }
