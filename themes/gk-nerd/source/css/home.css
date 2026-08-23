@@ -540,6 +540,48 @@
 }
 .page-home .home-footer .legal a { color: var(--muted); }
 
+/* ---- Humane Agentic Design ---- */
+.page-home .humane-section .humane-install {
+  margin: 72px 0 0;
+  padding: 40px;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-xl);
+}
+.page-home .humane-section .humane-install h3 {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(22px, 2.6vw, 28px);
+  margin: 0 0 12px; letter-spacing: -0.01em;
+}
+.page-home .humane-section .humane-install > p {
+  font-size: 16px; line-height: 1.65; color: var(--muted);
+  margin: 0 0 24px; max-width: 560px;
+}
+.page-home .humane-section .install-cmds {
+  display: flex; flex-direction: column; gap: 10px;
+  margin: 0 0 28px;
+}
+.page-home .humane-section .install-cmd {
+  display: flex; align-items: baseline; gap: 14px;
+  background: var(--bg-base);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  font-family: 'Monaspace Neon VF', 'Monaspace Neon', monospace;
+  font-size: 14px;
+  color: var(--fg);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.page-home .humane-section .install-label {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--lead);
+  flex: 0 0 auto;
+}
+
 /* ==========================================================================
    Responsive
    ========================================================================== */
