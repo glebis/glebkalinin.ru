@@ -177,18 +177,34 @@
   // ---- Entry point -----------------------------------------------------------
   function start() {
     if (reduceMotion) return; // CSS-only fallback already carries the page
-    withDeadline(
-      loadScript(CDN.gsap)
-        .then(() => loadScript(CDN.scrollTrigger))
-        .then(() => loadScript(CDN.splitText).catch(() => null)) // optional
-        .then(() => window.gsap && window.ScrollTrigger
-          ? runMotion(window.gsap, window.ScrollTrigger, window.SplitText)
-          : Promise.reject(new Error('gsap global missing'))),
-      GSAP_TIMEOUT_MS
-    ).catch(() => {
-      // Quiet fallback: CSS .gsap-failed stands in.
-      document.documentElement.classList.add('gsap-failed');
+
+    // Defer the CDN fetch until the browser is idle so the GSAP request never
+    // competes with first paint. The CSS weight-bloom animation carries the
+    // page during the wait; if we miss the idle window (>2s) we still kick.
+    const kick = (window.requestIdleCallback || ((cb) => setTimeout(cb, 1500)))(() => {
+      withDeadline(
+        loadScript(CDN.gsap)
+          .then(() => loadScript(CDN.scrollTrigger))
+          .then(() => loadScript(CDN.splitText).catch(() => null)) // optional
+          .then(() => window.gsap && window.ScrollTrigger
+            ? runMotion(window.gsap, window.ScrollTrigger, window.SplitText)
+            : Promise.reject(new Error('gsap global missing'))),
+        GSAP_TIMEOUT_MS
+      ).catch(() => {
+        // Quiet fallback: CSS .gsap-failed stands in.
+        document.documentElement.classList.add('gsap-failed');
+      });
     });
+
+    // Belt-and-braces: if the page never becomes interactive (e.g. heavy
+    // hero), force GSAP-failed after 8s so the CSS weight-bloom doesn't
+    // stay stuck mid-state.
+    setTimeout(() => {
+      if (!document.documentElement.classList.contains('gsap-type') &&
+          !document.documentElement.classList.contains('gsap-failed')) {
+        document.documentElement.classList.add('gsap-failed');
+      }
+    }, 8000);
   }
 
   if (document.readyState === 'loading') {

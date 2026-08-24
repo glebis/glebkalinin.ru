@@ -5,8 +5,10 @@
    /Users/glebkalinin/Downloads/Gleb's-portfolio-redesign/Gleb Homepage.dc.html
    ========================================================================== */
 
-/* ---- Variable Monaspace instances: unlock live weight/slant animation the
-   static 300/400/700 webfonts can't express. Two requests total (not five). */
+/* ---- Variable Monaspace instances: one request each covers 200-800 weight.
+   The static 300/400/700 fallback webfonts were removed — the variable
+   instance handles those weights via interpolation, so the ~40KB of static
+   woff2s was dead weight on every cold load. */
 @font-face {
   font-family: 'Monaspace Xenon VF';
   src: url('https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceXenonVarVF%5Bwght,wdth,slnt%5D.woff2') format('woff2');
@@ -16,23 +18,6 @@
   font-family: 'Monaspace Neon VF';
   src: url('https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceNeonVarVF%5Bwght,wdth,slnt%5D.woff2') format('woff2');
   font-weight: 200 800; font-display: swap;
-}
-
-/* Static fallback webfonts (matches the redesign's fontsource loads) */
-@font-face {
-  font-family: 'Monaspace Xenon';
-  src: url('https://cdn.jsdelivr.net/fontsource/fonts/monaspace-xenon@latest/latin-700-normal.woff2') format('woff2');
-  font-weight: 700; font-display: swap;
-}
-@font-face {
-  font-family: 'Monaspace Neon';
-  src: url('https://cdn.jsdelivr.net/fontsource/fonts/monaspace-neon@latest/latin-300-normal.woff2') format('woff2');
-  font-weight: 300; font-display: swap;
-}
-@font-face {
-  font-family: 'Monaspace Neon';
-  src: url('https://cdn.jsdelivr.net/fontsource/fonts/monaspace-neon@latest/latin-400-normal.woff2') format('woff2');
-  font-weight: 400; font-display: swap;
 }
 
 /* ---- Base + body ---- */
@@ -50,22 +35,41 @@
   transition: background-color var(--transition-base), color var(--transition-base);
 }
 
-/* Body prose — chapter blocks, lab/community/workbench descriptions, hero
-   paragraphs. The design's "tell" (Monaspace) stays on display headings,
-   links, wordmark, and footer chrome. Prose uses a proportional face at
-   normal weight so light-mode body copy reads cleanly. */
-.page-home .ch-text p,
-.page-home .method p,
-.page-home .labs-section p,
-.page-home .community p,
-.page-home .workbench-section p,
-.page-home .home-hero .hero-copy p,
-.page-home .section-intro p,
-.page-home .timeline p,
-.page-home .home-footer p {
+/* Keyboard focus — explicit visible ring on every focusable surface.
+   Inherits --lead which has a darker light-mode value (#9F4F38 → 5.5:1),
+   so the outline passes WCAG 2.4.7 in both themes. */
+.page-home :focus-visible {
+  outline: 2px solid var(--lead);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+/* Transparent default for :focus (not :focus-visible) prevents the
+   click-focus flash on .fx-card titles that aren't themselves links. */
+.page-home :focus { outline: none; }
+
+/* Body prose — every text block on the homepage uses the proportional
+   face at normal weight so light-mode copy reads cleanly. The design's
+   "tell" (Monaspace) stays on display headings, links, wordmark, and
+   footer chrome. New prose blocks added to the homepage are safe by
+   default as long as they inherit from body. */
+.page-home p,
+.page-home li,
+.page-home blockquote,
+.page-home dd,
+.page-home figcaption,
+.page-home label,
+.page-home input,
+.page-home button,
+.page-home textarea,
+.page-home address {
   font-family: var(--font-sans);
   font-weight: 400;
+  font-style: normal;
 }
+.page-home strong,
+.page-home b { font-family: inherit; font-weight: 600; }
+.page-home em,
+.page-home i { font-style: italic; }
 .page-home a { color: var(--lead); text-decoration: none; transition: color .2s ease; }
 .page-home a:hover { color: var(--fg); }
 .page-home ::selection { background: var(--lead); color: var(--bg-base); }
@@ -140,20 +144,21 @@
     transition: transform .3s var(--ease-spring), background .2s ease,
                 color .2s ease, border-color .2s ease,
                 font-variation-settings .25s var(--ease-soft);
-    will-change: transform;
   }
   .page-home .cta-primary:hover { transform: translateY(-3px) scale(1.02); background: var(--fg); }
   .page-home .cta-ghost:hover { transform: translateY(-3px) scale(1.02); border-color: var(--lead); color: var(--lead); }
   .page-home .cta-primary:active,
   .page-home .cta-ghost:active { transform: translateY(1px) scale(0.99); transition-duration: .08s; }
 
-  /* Lab/community cards: spring lift + accent border; title drift wider */
+  /* Lab/community cards: spring lift + accent border; title drift wider.
+     will-change is applied only on hover (or just before) so the GPU layer
+     isn't allocated for the 18 cards that never get hovered at once. */
   .page-home .fx-card {
     transition: transform .38s var(--ease-spring), border-color .25s ease,
                 box-shadow .38s var(--ease-snap), color .2s ease;
-    will-change: transform;
   }
   .page-home .fx-card:hover {
+    will-change: transform;
     transform: translateY(-5px);
     box-shadow: 0 14px 40px rgba(0,0,0,.35), 0 0 0 1px color-mix(in srgb, var(--lead) 35%, transparent);
   }

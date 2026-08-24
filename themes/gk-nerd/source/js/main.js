@@ -13,23 +13,19 @@
 
   // ==========================================================================
   // Theme Toggle
-  // Initial class is set in layout.ejs (<html class="dark">) to avoid FOUC.
-  // JS overrides from localStorage or system preference once available.
+  // Initial class is set in head.ejs (synchronous inline script) to avoid
+  // FOUC. main.js only wires the click handler + persists the choice.
   // ==========================================================================
 
   const themeToggle = document.getElementById('theme-toggle');
   const html = document.documentElement;
 
-  // Refine the initial class set by the server-rendered HTML
-  const savedTheme = localStorage.getItem('theme');
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-  html.className = initialTheme;
-
   if (themeToggle) {
+    themeToggle.setAttribute('aria-pressed', html.className === 'dark' ? 'false' : 'true');
     themeToggle.addEventListener('click', () => {
       const next = html.className === 'dark' ? 'light' : 'dark';
       html.className = next;
+      themeToggle.setAttribute('aria-pressed', next === 'dark' ? 'false' : 'true');
       localStorage.setItem('theme', next);
     });
   }

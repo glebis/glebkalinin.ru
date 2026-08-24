@@ -7,6 +7,12 @@
   <% } %>
 </head>
 <body class="<%= is_home() ? 'page-home' : '' %>">
+  <!-- Skip-to-content — first focusable element. Hidden until focused
+       (WCAG 2.4.1 Bypass Blocks). Targets the homepage <main>; for other
+       pages the first <main>/<article> becomes the target via the .skip-link
+       href matching whatever follows it. -->
+  <a class="skip-link" href="<%= is_home() ? '#story' : '#main' %>">Skip to main content</a>
+
   <!-- Progress Bar -->
   <div class="progress-bar" id="progress-bar"></div>
 
@@ -58,7 +64,10 @@
     <%- partial('_partial/footer') %>
   <% } %>
 
-  <!-- Scripts — anime.js removed (CSS transitions + plain JS handle theming) -->
+  <!-- Scripts — anime.js removed (CSS transitions + plain JS handle theming).
+       motion.js + vault-graph.js are deferred AND scheduled via requestIdleCallback
+       inside their own bootstrap, so they never block first paint. CSS stands in
+       for the motion during the idle wait (the .gsap-failed fallback). -->
   <script src="/js/main.js"></script>
   <% if (is_home()) { %>
     <script src="/js/type-fx.js" defer></script>

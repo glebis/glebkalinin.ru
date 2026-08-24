@@ -30,11 +30,14 @@ labelLayer.id = 'vault-label-layer';
 labelLayer.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden;';
 container.appendChild(labelLayer);
 
-// Load Three.js dynamically
+// Load Three.js dynamically — deferred to idle so the 600KB CDN request never
+// competes with first paint. The graph container stays empty (the hero copy
+// sits to the left, so this is invisible during the brief wait).
 const script = document.createElement('script');
 script.src = 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js';
 script.onload = initGraph;
-document.head.appendChild(script);
+const idle = (window.requestIdleCallback || ((cb) => setTimeout(cb, 1500)));
+idle(() => document.head.appendChild(script));
 
 function initGraph() {
   const THREE = window.THREE;

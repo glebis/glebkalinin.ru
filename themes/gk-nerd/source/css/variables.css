@@ -90,6 +90,10 @@
 
   --border-primary: #e0e0e0;
   --border-secondary: #d0d0d0;
+
+  --accent: #C04A1F;          /* darker than #ff6b35 (2.84:1) → 4.5:1 on white. WCAG AA. */
+  --accent-hover: #D8582A;
+  --accent-glow: rgba(192, 74, 31, 0.15);
 }
 
 /* ==========================================================================
@@ -109,13 +113,16 @@
   --muted: #C4CCD4;
   --border-soft: #232D38;
 
-  /* Display + body type — Monaspace with Geist Mono fallback */
-  --font-display: "Monaspace Xenon", "Geist Mono", "SF Mono", Consolas, monospace;
-  --font-text: "Monaspace Neon", "Geist Mono", "SF Mono", Consolas, monospace;
+  /* Display + body type — Monaspace with ui-monospace fallback.
+     ui-monospace lands first so users without Geist Mono installed get
+     a system-native monospace (SF Mono / Menlo / Consolas) at the right
+     metrics, before falling back to the generic monospace keyword. */
+  --font-display: "Monaspace Xenon", "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-text: "Monaspace Neon", "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 
 .page-home.light {
-  --lead: #C8745A;          /* deeper terracotta for contrast on light bg */
+  --lead: #9F4F38;          /* terracotta darkened to 5.5:1 against #F8F9FA — passes AA for body + UI */
   --bg-base: #F8F9FA;
   --surface: #FFFFFF;
   --fg: #0C1116;

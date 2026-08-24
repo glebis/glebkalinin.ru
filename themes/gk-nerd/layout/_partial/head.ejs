@@ -2,6 +2,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><%= page.title ? page.title + ' | ' + config.title : config.title %></title>
 
+<!-- Theme class set synchronously, before any stylesheet parses. Avoids
+     the dark→light flash that would otherwise occur when main.js runs. -->
+<script>
+  (function(){
+    try {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.className = theme;
+    } catch (e) {
+      document.documentElement.className = 'dark';
+    }
+  })();
+</script>
+
 <!-- Preconnect to fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -73,7 +73,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px; height: 32px;
+  width: 44px; height: 44px;
   padding: 0;
   background: transparent;
   border: 1px solid var(--border-primary);
@@ -133,13 +133,14 @@
   height: 16px;
 }
 
-/* WhatsApp — same pill, no text label, icon-only on the header */
+/* WhatsApp — same pill, no text label, icon-only on the header.
+   Bumped to 44×44 to meet the AAA target-size threshold (≥44×44). */
 .whatsapp-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   background: transparent;
   border: 1px solid var(--border-primary);
   border-radius: var(--radius-full);
@@ -2864,6 +2865,30 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* Skip-to-content — first focusable element on the page. WCAG 2.4.1. */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: var(--z-tooltip);
+  padding: 12px 20px;
+  background: var(--accent);
+  color: var(--bg-primary);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: top var(--transition-fast);
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 16px;
+  color: var(--bg-primary);
+  outline: 2px solid var(--fg);
+  outline-offset: 2px;
 }
 
 /* ==========================================================================
