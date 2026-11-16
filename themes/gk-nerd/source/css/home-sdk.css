@@ -1,0 +1,223 @@
+/* ==========================================================================
+   Homepage skin after ui-sdk.dev — loaded after home.css, homepage only.
+   Keeps the site's typography (fonts, sizes); changes the system around it:
+   flat off-white / near-black, hairline borders at 20% ink, square corners,
+   one electric-blue accent, framed panels on a 96/12px grid, mono labels.
+   ========================================================================== */
+
+.page-home {
+  /* ui-sdk palette — dark (site default) */
+  --ink: #f2f2f2;
+  --paper: #0b0b0b;
+  --blue: #3d7bff;            /* lighter than ui-sdk's blue so it holds 5:1 on #0b0b0b */
+  --on-blue: #ffffff;
+  --line: color-mix(in oklab, var(--ink) 20%, transparent);
+  --line-faint: color-mix(in oklab, var(--ink) 9%, transparent);
+  --grid-major: color-mix(in oklab, var(--ink) 11%, transparent);
+  --grid-minor: color-mix(in oklab, var(--ink) 4%, transparent);
+
+  /* map the home.css tokens onto it */
+  --bg-base: var(--paper);
+  --surface: var(--paper);
+  --fg: var(--ink);
+  --muted: color-mix(in oklab, var(--ink) 68%, var(--paper));
+  --border-soft: var(--line);
+  --lead: var(--blue);
+
+  /* and the global ones the day island reads */
+  --accent: var(--blue);
+  --accent-hover: var(--blue);
+  --accent-glow: color-mix(in oklab, var(--blue) 14%, transparent);
+  --accent-secondary: var(--ink);
+  --bg-primary: var(--paper);
+  --bg-secondary: color-mix(in oklab, var(--ink) 5%, var(--paper));
+  --bg-tertiary: var(--paper);
+  --bg-card: var(--paper);
+  --text-primary: var(--ink);
+  --text-secondary: color-mix(in oklab, var(--ink) 82%, var(--paper));
+  --text-muted: color-mix(in oklab, var(--ink) 62%, var(--paper));
+  --text-dim: color-mix(in oklab, var(--ink) 45%, var(--paper));
+  --border-primary: var(--line);
+  --border-secondary: var(--line-faint);
+  --border-accent: var(--blue);
+  --radius-sm: 0; --radius-md: 0; --radius-lg: 0; --radius-xl: 0; --radius-full: 0;
+
+  --wrap: 1280px;
+  --gutter: clamp(16px, 3vw, 40px);
+  background: var(--paper);
+}
+
+html.light .page-home {
+  --ink: #0a0a0a;
+  --paper: #f7f7f7;
+  --blue: #0057ff;            /* ≈ ui-sdk lab(47.75 21 −82) */
+  /* variables.css sets these with the same selector; restate so ours win. */
+  --bg-base: var(--paper);
+  --surface: var(--paper);
+  --fg: var(--ink);
+  --muted: color-mix(in oklab, var(--ink) 68%, var(--paper));
+  --border-soft: var(--line);
+  --lead: var(--blue);
+}
+
+/* The site-wide header buttons float top-right; keep nav links clear of them. */
+@media (min-width: 901px) {
+  .page-home .home-nav { padding-right: calc(var(--gutter) + 240px); }
+}
+.page-home .header-controls a,
+.page-home .header-controls button { color: var(--fg); }
+
+/* Framed panel on the ui-sdk grid. */
+.page-home .sdk-grid {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(to right, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(var(--grid-major) 1px, transparent 1px),
+    linear-gradient(to right, var(--grid-minor) 1px, transparent 1px),
+    linear-gradient(var(--grid-minor) 1px, transparent 1px);
+  background-size: 96px 96px, 96px 96px, 12px 12px, 12px 12px;
+  border: 1px solid var(--line);
+}
+
+/* ── page width + section rhythm ─────────────────────────────────────── */
+.page-home .home-nav,
+.page-home .home-hero,
+.page-home .home-container,
+.page-home .day-section,
+.page-home .home-footer {
+  max-width: var(--wrap);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+.page-home .section-intro {
+  max-width: none;
+  border-top: 1px solid var(--line);
+  padding-top: clamp(40px, 6vw, 64px);
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+.page-home .section-intro p { max-width: 62ch; }
+
+/* ── nav: sticky bar with a hairline, like the docs header ───────────── */
+.page-home .home-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  padding-top: 14px; padding-bottom: 14px;
+}
+.page-home .home-nav .nav-links a:hover { color: var(--blue); }
+.page-home .header-controls,
+.page-home .header-controls > * { border-radius: 0 !important; }
+.page-home .header-controls { background: var(--paper); border: 1px solid var(--line); box-shadow: none; }
+
+/* ── buttons: solid blocks, black and blue ───────────────────────────── */
+.page-home .cta-primary,
+.page-home .cta-ghost {
+  border-radius: 0; border: 0;
+  padding: 16px 24px; min-width: 200px;
+  font-size: 15px; transition: filter var(--transition-fast);
+}
+.page-home .cta-primary { background: var(--ink); color: var(--paper); }
+.page-home .cta-ghost { background: var(--blue); color: var(--on-blue); }
+.page-home .cta-primary:hover,
+.page-home .cta-ghost:hover { filter: brightness(1.15); }
+.page-home .hero-actions { gap: 8px; }
+
+/* ── hero: graph sits in a grid frame ────────────────────────────────── */
+.page-home .hero-visual {
+  border: 1px solid var(--line);
+  background-image:
+    linear-gradient(to right, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(var(--grid-major) 1px, transparent 1px);
+  background-size: 96px 96px;
+}
+.page-home .hero-visual .hero-caption {
+  font-family: var(--font-mono); font-size: 11px;
+  text-transform: uppercase; letter-spacing: .08em;
+}
+
+/* ── card grids become one framed panel of numbered cells ────────────── */
+.page-home .grid-3,
+.page-home .grid-2 {
+  gap: 0 clamp(16px, 2vw, 24px);
+  padding: clamp(16px, 3vw, 40px);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  counter-reset: cell;
+}
+.page-home .fx-card,
+.page-home .community-card,
+.page-home .fx-step {
+  counter-increment: cell;
+  background: transparent;
+  border: 0; border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  padding: 24px 0;
+  gap: 8px;
+}
+.page-home .fx-card::before,
+.page-home .community-card::before {
+  content: counter(cell, decimal-leading-zero);
+  font: 11px var(--font-mono); color: var(--muted);
+}
+.page-home .fx-card .kind {
+  font-family: var(--font-mono); font-size: 14px;
+  text-transform: none; letter-spacing: -0.01em; color: var(--fg);
+}
+.page-home .fx-card h3 { font-size: 17px; }
+.page-home .fx-card .meta,
+.page-home .community-card .c-size {
+  font-family: var(--font-mono); font-size: 11px;
+  text-transform: uppercase; letter-spacing: .08em; color: var(--muted);
+}
+.page-home .organ-card:hover,
+.page-home .community-card:hover { translate: none; border-bottom-color: var(--blue); }
+.page-home .organ-card:hover .kind,
+.page-home .community-card:hover .c-name { color: var(--blue); }
+
+/* install commands + quote: square, terminal-ish */
+.page-home .humane-section .install-cmd { border-radius: 0; background: var(--ink); color: var(--paper); border: 0; }
+.page-home .humane-section .install-label { color: var(--blue); }
+.page-home .labs-section .quote { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 24px; }
+
+/* ── media: photography + video ─────────────────────────────────────── */
+.page-home .media-grid {
+  display: grid; gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  padding: clamp(8px, 2vw, 16px);
+}
+.page-home .media-item { margin: 0; display: grid; gap: 8px; align-content: start; }
+.page-home .media-item img,
+.page-home .media-item video {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: var(--ratio, 4 / 5); object-fit: cover;
+  background: var(--bg-secondary);
+}
+.page-home .media-item figcaption {
+  display: flex; justify-content: space-between; gap: 12px;
+  font: 11px/1.5 var(--font-mono); text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted); padding: 0 2px;
+}
+.page-home .media-item figcaption a { color: var(--blue); white-space: nowrap; }
+.page-home .media-videos { --ratio: 16 / 9; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.page-home .media-sub {
+  font: 11px var(--font-mono); text-transform: uppercase; letter-spacing: .08em;
+  color: var(--muted); margin: 40px 0 12px;
+}
+
+/* ── focus ring: blue, square ───────────────────────────────────────── */
+.page-home :focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 0; }
+
+@media (max-width: 900px) {
+  .page-home .home-nav { position: static; }
+  .page-home .cta-primary, .page-home .cta-ghost { min-width: 0; flex: 1 1 auto; text-align: center; }
+}
+
+/* Keep the graph frame inside the page; clip its floating node labels. */
+.page-home .hero-visual { right: var(--gutter); overflow: hidden; }
+.page-home { overflow-x: clip; }
+
+@media (max-width: 900px) {
+  /* The floating theme/message buttons own the top-right; the page is one scroll. */
+  .page-home .home-nav { padding-right: calc(var(--gutter) + 190px); min-height: 64px; }
+  .page-home .home-nav .nav-links { display: none; }
+}

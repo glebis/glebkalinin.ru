@@ -1,0 +1,29 @@
+# Photography and video samples for the homepage ("Away from the terminal").
+# Each section appears only when its list has at least one entry.
+#
+# Files: put them in source/media/ (served at /media/...).
+#   Photos — export ~2000px on the long side; add a same-named .webp and set webp: true.
+#   Videos — short silent loops, 6–15 s, H.264 MP4, ≤ 4 MB each, 1280px wide.
+#            Make a poster frame:  ffmpeg -i loop.mp4 -frames:v 1 -q:v 3 loop.jpg
+#            Make the loop:        ffmpeg -i full.mov -t 10 -an -vf scale=1280:-2 -c:v libx264 -crf 26 -preset slow -movflags +faststart loop.mp4
+#
+# photos:
+#   - src: /media/photos/2024-berlin-portrait.jpg
+#     alt: "Woman laughing in a Kreuzberg courtyard, late light"   # what's in the frame, for screen readers
+#     caption: "Portrait · Berlin · 2024"
+#     ratio: "4 / 5"          # optional: "3 / 2", "1 / 1", "16 / 9" … defaults to 4 / 5
+#     webp: true              # optional: only if a same-named .webp sits next to the file
+#
+# videos:
+#   - src: /media/video/lab-demo-loop.mp4
+#     poster: /media/video/lab-demo-loop.jpg
+#     title: "Goal-Driven AI — participant demo day"
+#     caption: "Lab · 2026"
+#     full: https://youtu.be/...       # where "Watch full" goes; omit to hide the link
+
+intro_photos: "I've photographed people for twenty years: portraits, pop-up studios at parties, festivals. The attention it takes is the same one the agents need."
+intro_videos: "Short loops from talks, labs and things in motion. Each one links to the full version."
+
+photos: []
+
+videos: []

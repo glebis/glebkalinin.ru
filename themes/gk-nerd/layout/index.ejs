@@ -13,6 +13,7 @@
   <div class="nav-links">
     <a href="#day">the day</a>
     <a href="#organs">what ran it</a>
+    <% if (((site.data.media||{}).photos||[]).length || ((site.data.media||{}).videos||[]).length) { %><a href="#work">photo + video</a><% } %>
     <a href="#labs">labs</a>
     <a href="#community">community</a>
     <a href="https://t.me/glebkalinin">telegram ↗</a>
@@ -43,7 +44,7 @@
 <main id="day" class="day-section">
   <div class="section-intro">
     <h2 class="vf-bloom">24 hours, <%= beats.length %> moments</h2>
-    <p>Orange is an agent working on its own. Teal is me. Both is most of the day. Drag the clock, press play, or ask.</p>
+    <p>Blue marks an agent working on its own; the rest is me, or the two of us together. Drag the clock, press play, or ask the agent on the right.</p>
   </div>
 
   <div id="day-app" data-fallback>
@@ -79,6 +80,65 @@
     </div>
   </div>
 </section>
+
+<!-- =================== AWAY FROM THE TERMINAL (photography + video) ===================
+     Content: source/_data/media.yml. Each half renders only when it has items. -->
+<% const media = (site.data && site.data.media) || {}; %>
+<% const photos = media.photos || [], videos = media.videos || []; %>
+<% if (photos.length || videos.length) { %>
+<section id="work" class="labs-section media-section">
+  <div class="home-container">
+    <div class="section-intro">
+      <h2 class="vf-bloom">Away from the terminal</h2>
+      <p><%= photos.length ? media.intro_photos : media.intro_videos %></p>
+    </div>
+
+    <% if (photos.length) { %>
+      <p class="media-sub">Photography · <%= photos.length %></p>
+      <div class="media-grid sdk-grid">
+        <% photos.forEach(function (p, i) { %>
+          <figure class="media-item" style="--ratio: <%= p.ratio || '4 / 5' %>">
+            <picture>
+              <% if (p.webp) { %><source srcset="<%= p.src.replace(/\.(jpe?g|png)$/i, '.webp') %>" type="image/webp"><% } %>
+              <img src="<%= p.src %>" alt="<%= p.alt || '' %>" loading="lazy" decoding="async">
+            </picture>
+            <% if (p.caption) { %><figcaption><span><%= p.caption %></span></figcaption><% } %>
+          </figure>
+        <% }); %>
+      </div>
+    <% } %>
+
+    <% if (videos.length) { %>
+      <% if (photos.length) { %><p class="media-sub">Video · <%= videos.length %> &mdash; <%= media.intro_videos %></p><% } else { %><p class="media-sub">Video · <%= videos.length %></p><% } %>
+      <div class="media-grid media-videos sdk-grid">
+        <% videos.forEach(function (v) { %>
+          <figure class="media-item">
+            <video class="media-loop" src="<%= v.src %>" poster="<%= v.poster || '' %>" muted loop playsinline preload="none" aria-label="<%= v.title %>"></video>
+            <figcaption>
+              <span><%= v.title %><% if (v.caption) { %> · <%= v.caption %><% } %></span>
+              <% if (v.full) { %><a href="<%= v.full %>" target="_blank" rel="noopener">Watch full ↗</a><% } %>
+            </figcaption>
+          </figure>
+        <% }); %>
+      </div>
+      <%# Play loops only while on screen, never for reduced motion (then show controls). %>
+      <script>
+        (function () {
+          var loops = document.querySelectorAll('.media-loop');
+          if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+            loops.forEach(function (v) { v.controls = true; v.preload = 'metadata'; });
+            return;
+          }
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) { e.isIntersecting ? e.target.play().catch(function () {}) : e.target.pause(); });
+          }, { threshold: 0.35 });
+          loops.forEach(function (v) { io.observe(v); });
+        })();
+      </script>
+    <% } %>
+  </div>
+</section>
+<% } %>
 
 <!-- =================== LABS =================== -->
 <section id="labs" class="labs-section">
