@@ -1,0 +1,109 @@
+{
+ "date": "2026-11-15",
+ "weekday": "Sunday",
+ "place": "Berlin",
+ "beats": [
+  {
+   "at": "00:23",
+   "actor": "agent",
+   "organ": "Researcher",
+   "title": "While I sleep, a researcher keeps reading",
+   "body": "A silent companion agent wakes every half hour, reads what changed in my notes and sessions, and writes a short review into the vault. It does not message me, and it does not fix things on its own. When a day brings in too much, it reports what it found and asks, instead of quietly correcting it.",
+   "lesson": "Noticing is its job. Deciding is mine."
+  },
+  {
+   "at": "03:13",
+   "actor": "agent",
+   "organ": "Researcher",
+   "title": "It argues with its own earlier conclusion",
+   "body": "Reading an old conversation, the agent finds counter-evidence to a diagnosis it made two days earlier, and says so. It labels what is fact, what is interpretation and what is just a hypothesis."
+  },
+  {
+   "at": "08:00",
+   "actor": "agent",
+   "organ": "Telegram bots",
+   "title": "A bot asks a question it already had the answer to",
+   "body": "My Telegram assistant asks me to confirm a scope I had already set, waits eight minutes, then times out. A small failure, logged honestly. Tonight's analysis will pick it up.",
+   "lesson": "An agent should ask before it assumes — but not ask what it already knows."
+  },
+  {
+   "at": "09:23",
+   "actor": "both",
+   "organ": "Skills",
+   "title": "I ask an agent to grill me",
+   "body": "Before teaching, I run a skill whose only job is to interrogate a plan until the weak spots show. It asks; I answer; the plan gets shorter."
+  },
+  {
+   "at": "10:00",
+   "actor": "me",
+   "organ": "Labs",
+   "title": "Teaching: prototype an agent or a tool",
+   "body": "Session four of Goal-Driven AI, in two groups at once — English and an advanced Russian-speaking cohort. Most participants are not developers. Two hours later most of them have something that runs."
+  },
+  {
+   "at": "10:48",
+   "actor": "both",
+   "organ": "Skills",
+   "title": "Testing a privacy skill on a real document",
+   "body": "Between groups I test a skill that strips personal data out of PDFs before an agent ever reads them. The test is on a real file, so the details stay off this page."
+  },
+  {
+   "at": "12:49",
+   "actor": "agent",
+   "organ": "Telegram bots",
+   "title": "I said Threads. The agent planned for Threads and X.",
+   "body": "I narrow a post to one platform. The bot agrees, then a child task reports back with the old plan for two. Nothing went out wrong, but it was close. The fix: an approval is tied to the exact destination and checked again right before sending.",
+   "lesson": "Approval belongs to a specific version of the action, not to the intent."
+  },
+  {
+   "at": "14:28",
+   "actor": "agent",
+   "organ": "Researcher",
+   "title": "The researcher changes its mind about me",
+   "body": "After I told it which work I actually check and which I hand off, the researcher rewrites its own framing.",
+   "quote": "Routine work may be delegable because a counterpart can cheaply recognise a correct result; open-ended design stays coupled to judgment."
+  },
+  {
+   "at": "16:23",
+   "actor": "both",
+   "organ": "Vault",
+   "title": "A link arrives. This page starts here.",
+   "body": "Someone shares a Winamp rebuilt from UI SDK behaviors, with an agent bridge so an AI can drive it. An agent clips it into my vault with sources checked. The idea that an agent should use the page through its components, not by guessing at pixels, became this page."
+  },
+  {
+   "at": "17:50",
+   "actor": "both",
+   "organ": "Skills",
+   "title": "Reviewing my own open-source toolkit",
+   "body": "I hand an agent the repository of my public cognitive toolkit and ask it to review the skills, find gaps and propose new ones. Later, a second toolkit gets the same treatment."
+  },
+  {
+   "at": "19:16",
+   "actor": "agent",
+   "organ": "Vault",
+   "title": "The day becomes memory",
+   "body": "Calendar events land in the daily note, recordings get matched to their transcripts, and a lab session from last spring is processed into notes. The vault the graph above is drawn from grows by another day."
+  },
+  {
+   "at": "22:24",
+   "actor": "agent",
+   "organ": "Telegram bots",
+   "title": "The bots analyse their own day",
+   "body": "A nightly job reads every bot conversation from the last 24 hours and writes up the patterns, including this morning's needless question and the Threads mix-up, each tied to a ticket."
+  },
+  {
+   "at": "22:31",
+   "actor": "agent",
+   "organ": "Sessions",
+   "title": "Two agents talk to each other",
+   "body": "One coding session finishes downloading assets and messages another session working on the same site, so it can pick up where the first left off. I read the exchange the next morning."
+  },
+  {
+   "at": "23:54",
+   "actor": "agent",
+   "organ": "Researcher",
+   "title": "Last review of the day",
+   "body": "The researcher's 46th note. Nothing dramatic happened, and it says so. That is the point: a companion that reports quiet days as quiet."
+  }
+ ]
+}

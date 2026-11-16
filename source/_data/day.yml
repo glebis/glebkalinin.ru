@@ -1,0 +1,220 @@
+# One real day — Sunday, 15 November 2026 (CET).
+# Source: Claude Code session logs, vault drafts and the daily note for 20261115.
+# Everything here is abstracted: no client names, mail contents, call transcripts
+# or money. Reviewed by Gleb on 2026-11-16. `draft: true` beats are hidden
+# from the live page until you flip them.
+#
+# Fields
+#   at      HH:MM, 24h CET
+#   actor   agent | me | both
+#   organ   which part of the "digital body" did the work (links to a project)
+#   trace   a short replay of what actually ran, shown in the beat's console
+#   lesson  optional — what the day taught, in one line
+
+date: "2026-11-15"
+weekday: "Sunday"
+place: "Berlin"
+
+beats:
+  - at: "00:23"
+    actor: agent
+    organ: Researcher
+    title: "While I sleep, a researcher keeps reading"
+    body: >-
+      A silent companion agent wakes every half hour, reads what changed in my
+      notes and sessions, and writes a short review into the vault. It does not
+      message me, and it does not fix things on its own. When a day brings in
+      too much, it reports what it found and asks, instead of quietly
+      correcting it.
+    trace:
+      - "$ researcher review --bounded"
+      - "read: focus, operating guide, notebook ledger"
+      - "collector: 0 new records — not inactivity, just quiet"
+      - "changes made: none — report only"
+      - "→ Claude-Drafts/researcher/20261115-0023-companion-review.md"
+    lesson: "Noticing is its job. Deciding is mine."
+
+  - at: "03:13"
+    actor: agent
+    organ: Researcher
+    title: "It argues with its own earlier conclusion"
+    body: >-
+      Reading an old conversation, the agent finds counter-evidence to a
+      diagnosis it made two days earlier, and says so. It labels what is fact,
+      what is interpretation and what is just a hypothesis.
+    trace:
+      - "facts: from transcript, not independently checked"
+      - "interpretation: counter-evidence to an automation-first reading"
+      - "next question: find a case where practice actually changed"
+      - "decision: silent review, no delivery claimed"
+
+  - at: "08:00"
+    actor: agent
+    organ: Telegram bots
+    title: "A bot asks a question it already had the answer to"
+    body: >-
+      My Telegram assistant asks me to confirm a scope I had already set, waits
+      eight minutes, then times out. A small failure, logged honestly. Tonight's
+      analysis will pick it up.
+    trace:
+      - "08:00 bot: confirm the digest scope?"
+      - "08:08 bot: no answer after 8 minutes, stopping"
+      - "logged → bots-patterns analysis"
+    lesson: "An agent should ask before it assumes — but not ask what it already knows."
+
+  - at: "09:23"
+    actor: both
+    organ: Skills
+    title: "I ask an agent to grill me"
+    body: >-
+      Before teaching, I run a skill whose only job is to interrogate a plan
+      until the weak spots show. It asks; I answer; the plan gets shorter.
+    trace:
+      - "> /grill-me"
+      - "agent: what does 'done' look like for a participant today?"
+      - "me: a working prototype they can show someone tomorrow"
+
+  - at: "10:00"
+    actor: me
+    organ: Labs
+    title: "Teaching: prototype an agent or a tool"
+    body: >-
+      Session four of Goal-Driven AI, in two groups at once — English and an
+      advanced Russian-speaking cohort. Most participants are not developers.
+      Two hours later most of them have something that runs.
+    link: "#labs"
+    trace:
+      - "10:00 Goal-Driven AI (EN) · Session 04"
+      - "10:00 Goal-Driven AI 01 · advanced group"
+      - "brief: prototype an agent or tool you will use this week"
+
+  - at: "10:48"
+    actor: both
+    organ: Skills
+    title: "Testing a privacy skill on a real document"
+    body: >-
+      Between groups I test a skill that strips personal data out of PDFs
+      before an agent ever reads them. The test is on a real file, so the
+      details stay off this page.
+    trace:
+      - "> /pii-pdf"
+      - "found: names, addresses, IDs → redacted"
+      - "output: clean copy, original untouched"
+
+  - at: "12:49"
+    actor: agent
+    organ: Telegram bots
+    title: "I said Threads. The agent planned for Threads and X."
+    body: >-
+      I narrow a post to one platform. The bot agrees, then a child task reports
+      back with the old plan for two. Nothing went out wrong, but it was close.
+      The fix: an approval is tied to the exact destination and checked again
+      right before sending.
+    trace:
+      - "12:49 me: Threads"
+      - "12:50 bot: understood, no X"
+      - "12:50 child task: scheduled for Threads + X  ✗"
+      - "fix: re-check approval at the submit boundary"
+    lesson: "Approval belongs to a specific version of the action, not to the intent."
+
+  - at: "14:28"
+    actor: agent
+    organ: Researcher
+    title: "The researcher changes its mind about me"
+    body: >-
+      After I told it which work I actually check and which I hand off, the
+      researcher rewrites its own framing.
+    quote: "Routine work may be delegable because a counterpart can cheaply recognise a correct result; open-ended design stays coupled to judgment."
+    trace:
+      - "new evidence: explicit human distinction"
+      - "correction: drop the universal human-vs-agent lens"
+      - "→ 20261115-1428-companion-selective-delegation.md"
+
+  - at: "16:23"
+    actor: both
+    organ: Vault
+    title: "A link arrives. This page starts here."
+    body: >-
+      Someone shares a Winamp rebuilt from UI SDK behaviors, with an agent
+      bridge so an AI can drive it. An agent clips it into my vault with
+      sources checked. The idea that an agent should use the page through its
+      components, not by guessing at pixels, became this page.
+    link: "https://ui-sdk.dev/"
+    trace:
+      - "clip → Sources/20261115-winamp-ui-sdk.md"
+      - "verified: npm registry, GitHub API, docs"
+      - "caveat: demo metadata read, demo not run"
+
+  - at: "17:50"
+    actor: both
+    organ: Skills
+    title: "Reviewing my own open-source toolkit"
+    body: >-
+      I hand an agent the repository of my public cognitive toolkit and ask it
+      to review the skills, find gaps and propose new ones. Later, a second
+      toolkit gets the same treatment.
+    link: "https://github.com/glebis/claude-cognitive-toolkit"
+    trace:
+      - "> review this plugin, suggest improvements and new skills"
+      - "reading SKILL.md, references and README"
+      - "21:09 > review this project  (mental-toolkit)"
+
+  - at: "19:16"
+    actor: agent
+    organ: Vault
+    title: "The day becomes memory"
+    body: >-
+      Calendar events land in the daily note, recordings get matched to their
+      transcripts, and a lab session from last spring is processed into notes.
+      The vault the graph above is drawn from grows by another day.
+    trace:
+      - "> sync calendar"
+      - "matched: meeting ↔ transcript"
+      - "Lab 05 transcript → summary, links, tasks"
+
+  - at: "22:24"
+    actor: agent
+    organ: Telegram bots
+    title: "The bots analyse their own day"
+    body: >-
+      A nightly job reads every bot conversation from the last 24 hours and
+      writes up the patterns, including this morning's needless question and
+      the Threads mix-up, each tied to a ticket.
+    trace:
+      - "window: 14 Nov 23:01 → 15 Nov 23:24"
+      - "pattern 1: stale intent survived a narrower approval"
+      - "pattern 2: needless confirmation, then timeout"
+      - "tickets updated, none silently closed"
+
+  - at: "22:31"
+    actor: agent
+    organ: Sessions
+    title: "Two agents talk to each other"
+    body: >-
+      One coding session finishes downloading assets and messages another
+      session working on the same site, so it can pick up where the first left
+      off. I read the exchange the next morning.
+    trace:
+      - "session A → session B: assets downloaded, paths below"
+      - "session B: resuming with local assets"
+
+  - at: "23:54"
+    actor: agent
+    organ: Researcher
+    title: "Last review of the day"
+    body: >-
+      The researcher's 46th note. Nothing dramatic happened, and it says so.
+      That is the point: a companion that reports quiet days as quiet.
+    trace:
+      - "collector: few changes"
+      - "no claims beyond evidence"
+      - "see you at 00:23"
+
+# Which project each organ points to (used for the "organs" strip under the day).
+organs:
+  Researcher: { label: "Silent companion", link: "https://github.com/glebis" }
+  Telegram bots: { label: "Telegram assistants", link: "https://t.me/toolusing" }
+  Skills: { label: "Claude skills", link: "https://github.com/glebis/claude-skills" }
+  Labs: { label: "Goal-Driven AI labs", link: "#labs" }
+  Vault: { label: "Obsidian vault", link: "#graph" }
+  Sessions: { label: "Agent sessions", link: "https://github.com/glebis" }

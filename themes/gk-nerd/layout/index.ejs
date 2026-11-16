@@ -1,17 +1,18 @@
-<%# Homepage — redesigned per /Users/glebkalinin/Downloads/Gleb's-portfolio-redesign/
-    Content lives in source/_data/redesign.yml (mirrors the export's renderVals()).
-    Image slots use <picture> with AVIF → WebP for size.
-    The 4D vault graph reuses the existing /js/vault-graph.js — it self-mounts on
-    #vault-graph-container, which lives inside .hero-visual below. %>
+<%# Homepage — "One real day". The story is a single real day (source/_data/day.yml),
+    rendered by the React + ui-sdk island in /homepage-app (built to /home-app/).
+    Everything inside #day-app below is the no-JS / SEO fallback; the island
+    replaces it on load. Projects come from source/_data/redesign.yml. %>
 
 <% const d = (site.data && site.data.redesign) || {}; %>
+<% const day = (site.data && site.data.day) || { beats: [] }; %>
+<% const beats = (day.beats || []).filter(function (b) { return !b.draft; }); %>
 
 <!-- =================== NAV =================== -->
 <nav class="home-nav">
   <a href="#top" class="wordmark">Gleb Kalinin</a>
   <div class="nav-links">
-    <a href="#story">the story</a>
-    <a href="#method">the method</a>
+    <a href="#day">the day</a>
+    <a href="#organs">what ran it</a>
     <a href="#labs">labs</a>
     <a href="#community">community</a>
     <a href="https://t.me/glebkalinin">telegram ↗</a>
@@ -24,124 +25,66 @@
 <!-- =================== HERO =================== -->
 <header id="top" class="home-hero">
   <div class="hero-copy">
-    <h1 class="st-hero">Somebody has to imagine the future. I&rsquo;d rather build it and live in it.</h1>
-    <p>I use science fiction, speculative design and vibe-coding to imagine daily life with thinking machines &mdash; then I build working systems and live with them until the fiction stops being fiction.</p>
-    <p>This page is the story of what happens when you take that seriously. Six chapters. Every one of them ships.</p>
+    <h1 class="st-hero">This is one real day of living with agents.</h1>
+    <p>I build systems where people and AI agents work side by side, then I live with them until it stops feeling like the future. Instead of telling you about it, here is a day of it: <strong><%= day.weekday %>, 15&nbsp;November&nbsp;2026</strong>, <%= day.place %>.</p>
+    <p>Nothing staged. Taken from the logs, with private details left out. Scrub through it yourself, or let an agent show you around &mdash; it will ask before it touches anything.</p>
     <div class="hero-actions">
-      <a href="#story" class="cta-primary">Read the story ↓</a>
-      <a href="#labs" class="cta-ghost">Join a lab</a>
+      <a href="#day" class="cta-primary">Start at midnight ↓</a>
+      <a href="#labs" class="cta-ghost">Learn to build this</a>
     </div>
   </div>
-  <div class="hero-visual" id="hero-visual">
+  <div class="hero-visual" id="graph">
     <div class="vault-graph-container" id="vault-graph-container"></div>
-    <p class="hero-caption">the digital body &mdash; drag to rotate, scroll to zoom, click a node</p>
+    <p class="hero-caption">the vault this day wrote into &mdash; drag to rotate, click a node</p>
   </div>
 </header>
 
-<!-- =================== STORY =================== -->
-<main id="story" class="story">
+<!-- =================== THE DAY =================== -->
+<main id="day" class="day-section">
   <div class="section-intro">
-    <h2 class="vf-bloom">The story so far</h2>
-    <p>Every system I build starts the same way: as a scene from a life that doesn&rsquo;t quite exist yet. I write the scene down, then I refuse to let it stay fiction. What follows are six of those scenes &mdash; and the working software each one became.</p>
+    <h2 class="vf-bloom">24 hours, <%= beats.length %> moments</h2>
+    <p>Orange is an agent working on its own. Teal is me. Both is most of the day. Drag the clock, press play, or ask.</p>
   </div>
 
-  <% (d.chapters || []).forEach(function(ch, i) { %>
-    <article class="ch-block">
-      <div class="ch-text">
-        <span class="ch-rule" aria-hidden="true"></span>
-        <h3 class="vf-bloom"><%= ch.title %></h3>
-        <p class="ch-fict"><%= ch.fiction1 %></p>
-        <p class="ch-fict"><%= ch.fiction2 %></p>
-        <p class="ch-real"><%= ch.realIntro %> <strong><%= ch.project %></strong> &mdash; <%= ch.real %></p>
-      </div>
-      <div class="ch-card">
-        <div class="card-frame">
-          <div class="card-image">
-            <picture>
-              <source srcset="<%= ch.img.replace(/\.png$/, '.avif') %>" type="image/avif">
-              <source srcset="<%= ch.img.replace(/\.png$/, '.webp') %>" type="image/webp">
-              <%# First chapter is above the fold on most viewports — eager + high
-                  priority cuts LCP by 100-300ms on slow connections. %>
-              <img src="<%= ch.img.replace(/\.png$/, '.webp') %>" alt="<%= ch.project %> — <%= ch.tagline %>" width="800" height="260"<% if (i === 0) { %> loading="eager" fetchpriority="high"<% } else { %> loading="lazy"<% } %> decoding="async">
-            </picture>
-          </div>
-          <div class="card-body">
-            <p class="project"><%= ch.project %></p>
-            <p class="tagline"><%= ch.tagline %></p>
-            <a class="ch-link" href="<%= ch.link %>" target="_blank" rel="noopener"><%= ch.linkLabel %> →</a>
-          </div>
-        </div>
-      </div>
-    </article>
-    <% if (i < d.chapters.length - 1) { %>
-      <div class="ch-divider"><span>···</span></div>
-    <% } %>
-  <% }); %>
+  <div id="day-app" data-fallback>
+    <ol class="day-fallback">
+      <% beats.forEach(function (b) { %>
+        <li>
+          <time datetime="<%= day.date %>T<%= b.at %>"><%= b.at %></time>
+          <strong><%= b.title %></strong>
+          <p><%= b.body %></p>
+        </li>
+      <% }); %>
+    </ol>
+  </div>
+  <script type="application/json" id="day-data"><%- JSON.stringify(day).replace(/</g, '\\u003c') %></script>
 </main>
 
-<!-- =================== WORKBENCH =================== -->
-<section id="workbench" class="workbench-section">
+<!-- =================== WHAT RAN IT =================== -->
+<section id="organs" class="workbench-section">
   <div class="home-container">
     <div class="section-intro">
-      <h2 class="vf-bloom">Meanwhile, on the workbench</h2>
-      <p>Not everything gets a chapter. Some things exist because the tools were lying around and the itch wouldn&rsquo;t go away &mdash; instruments, workstations, benchmarks. All real, all in use.</p>
+      <h2 class="vf-bloom">What ran that day</h2>
+      <p>None of this is a product demo. Each piece started as a scene I wanted to live in, then became software I use every day. Most of it is open.</p>
     </div>
     <div class="grid-3">
-      <% (d.workbench || []).forEach(function(wb) { %>
-        <div class="fx-card workbench-card">
-          <p class="kind"><%= wb.kind %></p>
-          <h3><%= wb.name %></h3>
-          <p class="desc"><%= wb.desc %></p>
-          <p class="meta"><%= wb.meta %></p>
-        </div>
+      <% (d.chapters || []).forEach(function (ch) { %>
+        <a class="fx-card workbench-card organ-card" href="<%= ch.link %>" target="_blank" rel="noopener">
+          <p class="kind"><%= ch.project %></p>
+          <h3><%= ch.tagline %></h3>
+          <p class="desc"><%= ch.real %></p>
+          <p class="meta"><%= ch.linkLabel %> ↗</p>
+        </a>
       <% }); %>
     </div>
   </div>
 </section>
 
-<!-- =================== METHOD =================== -->
-<section id="method" class="method">
-  <div class="home-container">
-    <h2 class="vf-bloom">I imagine how daily life will feel when the tech catches up. Then I build it and live with it now.</h2>
-    <p class="lede">Working prototypes, not concept renders. Childhood sci-fi never left &mdash; it just changed medium. Every chapter above followed the same three moves.</p>
-    <div class="grid-3">
-      <div class="fx-step">
-        <h3>Prototype the future</h3>
-        <p>If you can&rsquo;t use it daily, it&rsquo;s not real yet. The fiction earns its keep the day it compiles.</p>
-      </div>
-      <div class="fx-step">
-        <h3>Live with it</h3>
-        <p>The real question isn&rsquo;t &ldquo;what can this AI do?&rdquo; but &ldquo;what happens when a person and an AI live together for months?&rdquo;</p>
-      </div>
-      <div class="fx-step">
-        <h3>Digital body, not second brain</h3>
-        <p>Memory + tools + agency + senses. An organism, not a tool. The projects above are its organs.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- =================== TIMELINE =================== -->
-<% if (d.showTimeline) { %>
-<section class="timeline">
-  <h2 class="vf-bloom">Things I shipped and slept next to</h2>
-  <p class="lede">The story didn&rsquo;t start with agents. It started twenty-five years ago, with the habit of building whatever I couldn&rsquo;t stop thinking about.</p>
-  <div>
-    <% (d.timeline || []).forEach(function(t) { %>
-      <div class="fx-row">
-        <p class="when"><%= t.when %></p>
-        <p class="what-note"><strong><%= t.what %></strong> &mdash; <%= t.note %></p>
-      </div>
-    <% }); %>
-  </div>
-</section>
-<% } %>
-
 <!-- =================== LABS =================== -->
 <section id="labs" class="labs-section">
   <div class="home-container">
     <div class="section-intro">
-      <h2 class="vf-bloom">Where the story becomes teachable</h2>
+      <h2 class="vf-bloom">Want a day like this?</h2>
       <p>The hard part of working with AI isn&rsquo;t technical &mdash; it&rsquo;s unlearning what you think is impossible. Week one: &ldquo;I can&rsquo;t code.&rdquo; Week four: shipping working products. Over 350 people have gone through my labs, and most of them aren&rsquo;t developers.</p>
     </div>
     <div class="grid-3">

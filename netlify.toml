@@ -1,6 +1,10 @@
 [build]
-  command = "npm install && npx hexo generate"
+  # The homepage island (React + ui-sdk) builds into the theme first, then Hexo.
+  command = "npm --prefix homepage-app ci && npm --prefix homepage-app run build && npm install && npx hexo generate"
   publish = "public"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"

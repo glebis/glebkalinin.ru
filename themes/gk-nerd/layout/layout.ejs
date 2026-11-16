@@ -4,6 +4,7 @@
   <%- partial('_partial/head') %>
   <% if (is_home()) { %>
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/home-app/day.css">
   <% } %>
 </head>
 <body class="<%= is_home() ? 'page-home' : '' %>">
@@ -11,7 +12,7 @@
        (WCAG 2.4.1 Bypass Blocks). Targets the homepage <main>; for other
        pages the first <main>/<article> becomes the target via the .skip-link
        href matching whatever follows it. -->
-  <a class="skip-link" href="<%= is_home() ? '#story' : '#main' %>">Skip to main content</a>
+  <a class="skip-link" href="<%= is_home() ? '#day' : '#main' %>">Skip to main content</a>
 
   <!-- Progress Bar -->
   <div class="progress-bar" id="progress-bar"></div>
@@ -73,6 +74,7 @@
     <script src="/js/type-fx.js" defer></script>
     <script src="/js/motion.js" defer></script>
     <script src="/js/vault-graph.js" defer></script>
+    <script type="module" src="/home-app/day.js"></script>
   <% } %>
 </body>
 </html>

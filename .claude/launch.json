@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hexo",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4001", "--bind", "127.0.0.1", "--directory", "public"],
+      "port": 4001,
+      "url": "http://127.0.0.1:4001"
+    }
+  ]
+}
