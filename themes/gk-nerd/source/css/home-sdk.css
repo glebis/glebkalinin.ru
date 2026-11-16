@@ -20,9 +20,9 @@
   --bg-base: var(--paper);
   --surface: var(--paper);
   --fg: var(--ink);
-  --muted: color-mix(in oklab, var(--ink) 68%, var(--paper));
+  --muted: color-mix(in oklab, var(--ink) 90%, var(--paper));   /* dark: APCA needs more lift than WCAG */
   --border-soft: var(--line);
-  --lead: var(--blue);
+  --lead: var(--ink);          /* links are ink; blue is reserved for agents (rule 14) */
 
   /* and the global ones the day island reads */
   --accent: var(--blue);
@@ -34,8 +34,9 @@
   --bg-tertiary: var(--paper);
   --bg-card: var(--paper);
   --text-primary: var(--ink);
-  --text-secondary: color-mix(in oklab, var(--ink) 82%, var(--paper));
-  --text-muted: color-mix(in oklab, var(--ink) 62%, var(--paper));
+  --text-secondary: color-mix(in oklab, var(--ink) 94%, var(--paper));
+  --text-muted: color-mix(in oklab, var(--ink) 88%, var(--paper));
+  /* --text-dim is for lines and dots only — it never clears 4.5:1 as text */
   --text-dim: color-mix(in oklab, var(--ink) 45%, var(--paper));
   --border-primary: var(--line);
   --border-secondary: var(--line-faint);
@@ -55,9 +56,10 @@ html.light .page-home {
   --bg-base: var(--paper);
   --surface: var(--paper);
   --fg: var(--ink);
-  --muted: color-mix(in oklab, var(--ink) 68%, var(--paper));
+  --muted: color-mix(in oklab, var(--ink) 74%, var(--paper));
   --border-soft: var(--line);
-  --lead: var(--blue);
+  --lead: var(--ink);
+  --text-muted: color-mix(in oklab, var(--ink) 70%, var(--paper));
 }
 
 /* The site-wide header buttons float top-right; keep nav links clear of them. */
@@ -104,7 +106,7 @@ html.light .page-home {
   border-bottom: 1px solid var(--line);
   padding-top: 14px; padding-bottom: 14px;
 }
-.page-home .home-nav .nav-links a:hover { color: var(--blue); }
+.page-home .home-nav .nav-links a:hover { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; }
 .page-home .header-controls,
 .page-home .header-controls > * { border-radius: 0 !important; }
 .page-home .header-controls { background: var(--paper); border: 1px solid var(--line); box-shadow: none; }
@@ -117,7 +119,7 @@ html.light .page-home {
   font-size: 15px; transition: filter var(--transition-fast);
 }
 .page-home .cta-primary { background: var(--ink); color: var(--paper); }
-.page-home .cta-ghost { background: var(--blue); color: var(--on-blue); }
+.page-home .cta-ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
 .page-home .cta-primary:hover,
 .page-home .cta-ghost:hover { filter: brightness(1.15); }
 .page-home .hero-actions { gap: 8px; }
@@ -142,22 +144,15 @@ html.light .page-home {
   padding: clamp(16px, 3vw, 40px);
   border: 1px solid var(--line);
   background: var(--paper);
-  counter-reset: cell;
 }
 .page-home .fx-card,
 .page-home .community-card,
 .page-home .fx-step {
-  counter-increment: cell;
   background: transparent;
   border: 0; border-bottom: 1px solid var(--line);
   border-radius: 0;
   padding: 24px 0;
   gap: 8px;
-}
-.page-home .fx-card::before,
-.page-home .community-card::before {
-  content: counter(cell, decimal-leading-zero);
-  font: 11px var(--font-mono); color: var(--muted);
 }
 .page-home .fx-card .kind {
   font-family: var(--font-mono); font-size: 14px;
@@ -170,13 +165,14 @@ html.light .page-home {
   text-transform: uppercase; letter-spacing: .08em; color: var(--muted);
 }
 .page-home .organ-card:hover,
-.page-home .community-card:hover { translate: none; border-bottom-color: var(--blue); }
+.page-home .community-card:hover { translate: none; border-bottom-color: var(--ink); }
 .page-home .organ-card:hover .kind,
-.page-home .community-card:hover .c-name { color: var(--blue); }
+.page-home .community-card:hover .c-name { text-decoration: underline; text-underline-offset: 3px; }
+.page-home .fx-card .lab-link, .page-home .media-item figcaption a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
 
 /* install commands + quote: square, terminal-ish */
 .page-home .humane-section .install-cmd { border-radius: 0; background: var(--ink); color: var(--paper); border: 0; }
-.page-home .humane-section .install-label { color: var(--blue); }
+.page-home .humane-section .install-label { color: color-mix(in oklab, var(--paper) 70%, var(--ink)); }
 .page-home .labs-section .quote { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 24px; }
 
 /* ── media: photography + video ─────────────────────────────────────── */
@@ -197,15 +193,13 @@ html.light .page-home {
   font: 11px/1.5 var(--font-mono); text-transform: uppercase; letter-spacing: .06em;
   color: var(--muted); padding: 0 2px;
 }
-.page-home .media-item figcaption a { color: var(--blue); white-space: nowrap; }
+.page-home .media-item figcaption a { white-space: nowrap; }
 .page-home .media-videos { --ratio: 16 / 9; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
-.page-home .media-sub {
-  font: 11px var(--font-mono); text-transform: uppercase; letter-spacing: .08em;
-  color: var(--muted); margin: 40px 0 12px;
-}
+.page-home .media-sub { font-size: 1.25rem; font-weight: 600; color: var(--fg); margin: 40px 0 6px; }
+.page-home .media-lede { color: var(--muted); margin: 0 0 16px; max-width: 62ch; }
 
 /* ── focus ring: blue, square ───────────────────────────────────────── */
-.page-home :focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 0; }
+.page-home :focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; border-radius: 0; }
 
 @media (max-width: 900px) {
   .page-home .home-nav { position: static; }

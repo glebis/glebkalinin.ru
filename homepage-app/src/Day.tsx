@@ -101,6 +101,13 @@ export function Day({ day, minute, onMinute, agentsOnly, onAgentsOnly }: Props) 
             data-active={b === active ? "" : undefined}
             data-actor={b.actor}
             onClick={() => onMinute(toMinutes(b.at))}
+            onKeyDown={(e) => {
+              // Rows take focus via the Timeline's arrow keys; Enter/Space choose the moment.
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+                onMinute(toMinutes(b.at))
+              }
+            }}
           >
             <TimelineMarker className="beat-marker" />
             <TimelineConnector className="beat-line" />

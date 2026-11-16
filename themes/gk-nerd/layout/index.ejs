@@ -94,7 +94,7 @@
     </div>
 
     <% if (photos.length) { %>
-      <p class="media-sub">Photography · <%= photos.length %></p>
+      <h3 class="media-sub">Photography</h3>
       <div class="media-grid sdk-grid">
         <% photos.forEach(function (p, i) { %>
           <figure class="media-item" style="--ratio: <%= p.ratio || '4 / 5' %>">
@@ -109,7 +109,8 @@
     <% } %>
 
     <% if (videos.length) { %>
-      <% if (photos.length) { %><p class="media-sub">Video · <%= videos.length %> &mdash; <%= media.intro_videos %></p><% } else { %><p class="media-sub">Video · <%= videos.length %></p><% } %>
+      <h3 class="media-sub">Video</h3>
+      <% if (photos.length) { %><p class="media-lede"><%= media.intro_videos %></p><% } %>
       <div class="media-grid media-videos sdk-grid">
         <% videos.forEach(function (v) { %>
           <figure class="media-item">
