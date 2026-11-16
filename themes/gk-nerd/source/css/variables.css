@@ -121,7 +121,10 @@
   --font-text: "Monaspace Neon", "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 
-.page-home.light {
+/* The theme class lives on <html>, while .page-home lives on <body>.
+   Keeping the selector in that order is essential: `.page-home.light`
+   never matched, so light mode kept the dark home palette on a white page. */
+html.light .page-home {
   --lead: #9F4F38;          /* terracotta darkened to 5.5:1 against #F8F9FA — passes AA for body + UI */
   --bg-base: #F8F9FA;
   --surface: #FFFFFF;
