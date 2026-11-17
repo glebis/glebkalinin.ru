@@ -24,7 +24,8 @@
 .page-home {
   scroll-behavior: smooth;
 }
-.page-home body {
+/* .page-home sits on <body> (layout.ejs), so this rule targets body itself. */
+body.page-home {
   margin: 0;
   background: var(--bg-base);
   color: var(--fg);
@@ -38,14 +39,22 @@
 /* Keyboard focus — explicit visible ring on every focusable surface.
    Inherits --lead which has a darker light-mode value (#9F4F38 → 5.5:1),
    so the outline passes WCAG 2.4.7 in both themes. */
+/* Suppress the ring only for mouse/touch focus. A bare `:focus { outline: none }`
+   here used to come after the :focus-visible rule at equal specificity and
+   wiped the keyboard ring from every element on the homepage. */
+.page-home :focus:not(:focus-visible) { outline: none; }
 .page-home :focus-visible {
   outline: 2px solid var(--lead);
   outline-offset: 3px;
-  border-radius: 2px;
+  /* No border-radius here: the outline follows each element's own shape,
+     so round header controls stay round when focused. */
 }
-/* Transparent default for :focus (not :focus-visible) prevents the
-   click-focus flash on .fx-card titles that aren't themselves links. */
-.page-home :focus { outline: none; }
+/* Filled buttons: the --lead ring would merge with the --lead fill, so
+   ring them in the foreground colour instead. */
+.page-home .cta-primary:focus-visible,
+.page-home .skip-link:focus-visible {
+  outline-color: var(--fg);
+}
 
 /* Body prose — every text block on the homepage uses the proportional
    face at normal weight so light-mode copy reads cleanly. The design's
