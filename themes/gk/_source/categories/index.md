@@ -1,3 +1,0 @@
-title: "Категории"
-layout: "categories"
----
