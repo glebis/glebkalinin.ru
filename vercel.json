@@ -2,5 +2,25 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npx hexo generate",
   "outputDirectory": "public",
-  "framework": null
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "glebkalinin.ru" }],
+      "destination": "https://glebkalinin.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.glebkalinin.ru" }],
+      "destination": "https://glebkalinin.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.glebkalinin.com" }],
+      "destination": "https://glebkalinin.com/:path*",
+      "permanent": true
+    }
+  ]
 }
