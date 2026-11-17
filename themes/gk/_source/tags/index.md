@@ -1,3 +1,0 @@
-title: "Теги"
-layout: "tags"
----
