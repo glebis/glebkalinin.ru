@@ -100,7 +100,7 @@
    Homepage-only tokens (.page-home)
    Loaded by themes/gk-nerd/source/css/home.css and scoped here so bio/blog
    pages keep their existing palette. Two parallel palettes — dark default
-   under .page-home, light overrides under .page-home.light — keep the
+   under .page-home, light overrides under .light .page-home — keep the
    redesign's tokens consistent across the toggle.
    ========================================================================== */
 
@@ -121,7 +121,9 @@
   --font-text: "Monaspace Neon", "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 
-.page-home.light {
+/* Theme class lives on <html>, .page-home on <body> — so this must be a
+   descendant selector. (`.page-home.light` never matched.) */
+.light .page-home {
   --lead: #9F4F38;          /* terracotta darkened to 5.5:1 against #F8F9FA — passes AA for body + UI */
   --bg-base: #F8F9FA;
   --surface: #FFFFFF;
