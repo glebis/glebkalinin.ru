@@ -4,3 +4,36 @@
 
 [build.environment]
   NODE_VERSION = "18"
+
+# Domain redirects: send every legacy/alias host to the canonical
+# https://glebkalinin.com, keeping the path. These only take effect for
+# hosts that are added to this Netlify site as domain aliases.
+[[redirects]]
+  from = "https://glebkalinin.ru/*"
+  to = "https://glebkalinin.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://glebkalinin.ru/*"
+  to = "https://glebkalinin.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.glebkalinin.ru/*"
+  to = "https://glebkalinin.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.glebkalinin.ru/*"
+  to = "https://glebkalinin.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.glebkalinin.com/*"
+  to = "https://glebkalinin.com/:splat"
+  status = 301
+  force = true
