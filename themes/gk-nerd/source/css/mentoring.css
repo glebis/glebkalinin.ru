@@ -1,0 +1,42 @@
+.mentoring-prompt {
+  border: 1px solid var(--border-primary);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.mentoring-prompt-text {
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+
+.mentoring-copy {
+  min-height: 44px;
+  max-width: 100%;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm, 4px);
+  background: transparent;
+  color: var(--text-primary);
+  font: inherit;
+  cursor: pointer;
+}
+
+.mentoring-copy:hover,
+.mentoring-copy:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.mentoring-copy-status {
+  font-size: 0.9rem;
+  margin-top: var(--space-sm);
+}
+
+.mentoring-copy-status:empty {
+  display: none;
+}
+
+.footer-links {
+  flex-wrap: wrap;
+}

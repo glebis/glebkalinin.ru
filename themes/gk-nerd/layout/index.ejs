@@ -1,4 +1,5 @@
-<%# Homepage — "One real day". The story is a single real day (source/_data/day.yml),
+<%# Homepage — AI-first product builder. Products come from source/_data/products.yml;
+    "how I build" is one real day The story is a single real day (source/_data/day.yml),
     rendered by the React + ui-sdk island in /homepage-app (built to /home-app/).
     Everything inside #day-app below is the no-JS / SEO fallback; the island
     replaces it on load. Projects come from source/_data/redesign.yml. %>
@@ -11,11 +12,12 @@
 <nav class="home-nav">
   <a href="#top" class="wordmark">Gleb Kalinin</a>
   <div class="nav-links">
-    <a href="#day">the day</a>
-    <a href="#organs">what ran it</a>
+    <a href="/mentoring/">mentoring</a>
+    <a href="#products">products</a>
+    <a href="#day">how I build</a>
     <% if (((site.data.media||{}).photos||[]).length || ((site.data.media||{}).videos||[]).length) { %><a href="#work">photo + video</a><% } %>
     <a href="#labs">labs</a>
-    <a href="#community">community</a>
+    <a href="#contact">work with me</a>
     <a href="https://t.me/glebkalinin">telegram ↗</a>
     <% if (theme.whatsapp) { %>
       <a href="<%= wa_me(theme.whatsapp) %>">whatsapp ↗</a>
@@ -26,12 +28,12 @@
 <!-- =================== HERO =================== -->
 <header id="top" class="home-hero">
   <div class="hero-copy">
-    <h1 class="st-hero">This is one real day of living with agents.</h1>
-    <p>I build systems where people and AI agents work side by side, then I live with them until it stops feeling like the future. Instead of telling you about it, here is a day of it: <strong><%= day.weekday %>, 15&nbsp;November&nbsp;2026</strong>, <%= day.place %>.</p>
-    <p>Nothing staged. Taken from the logs, with private details left out. Scrub through it yourself, or let an agent show you around &mdash; it will ask before it touches anything.</p>
+    <h1 class="st-hero">I build AI-first products, and use them every day.</h1>
+    <p>Products where agents do real work and people stay in charge: the agent shows its evidence, asks before it acts, and leaves the decision with you. I design them, build them, and run my own day on them.</p>
+    <p>Clients bring me an AI product to get from idea to working software. In my labs I teach the same method to teams.</p>
     <div class="hero-actions">
-      <a href="#day" class="cta-primary">Start at midnight ↓</a>
-      <a href="#labs" class="cta-ghost">Learn to build this</a>
+      <a href="#products" class="cta-primary">See what I&rsquo;ve shipped ↓</a>
+      <a href="#contact" class="cta-ghost">Work with me</a>
     </div>
   </div>
   <div class="hero-visual" id="graph">
@@ -40,11 +42,36 @@
   </div>
 </header>
 
+<!-- =================== PRODUCTS =================== -->
+<% const products = ((site.data && site.data.products) || {}).products || []; %>
+<% const productNames = products.map(function (p) { return p.name.toLowerCase(); }); %>
+<% if (products.length) { %>
+<section id="products" class="workbench-section products-section">
+  <div class="home-container">
+    <div class="section-intro">
+      <h2 class="vf-bloom">What I&rsquo;ve shipped</h2>
+      <p>Each one started as a real problem, mine or a client&rsquo;s. With each, I note the product decision that mattered most, because that&rsquo;s the part an agent can&rsquo;t make for you.</p>
+    </div>
+    <div class="grid-2 product-grid">
+      <% products.forEach(function (p) { %>
+        <article class="fx-card product-card">
+          <p class="kind"><%= p.kind %></p>
+          <h3><% if (p.link) { %><a href="<%= p.link %>"<% if (!p.link.startsWith('#')) { %> target="_blank" rel="noopener"<% } %>><%= p.name %></a><% } else { %><%= p.name %><% } %></h3>
+          <p class="desc"><%= p.what %></p>
+          <p class="decision"><strong>Decision:</strong> <%= p.decision %></p>
+          <p class="meta"><%= p.proof %></p>
+        </article>
+      <% }); %>
+    </div>
+  </div>
+</section>
+<% } %>
+
 <!-- =================== THE DAY =================== -->
 <main id="day" class="day-section">
   <div class="section-intro">
-    <h2 class="vf-bloom">24 hours, <%= beats.length %> moments</h2>
-    <p>Blue marks an agent working on its own; the rest is me, or the two of us together. Drag the clock, press play, or ask the agent on the right.</p>
+    <h2 class="vf-bloom">How I build: one real day</h2>
+    <p>The products above come out of a working day like this one: <strong><%= day.weekday %>, 15&nbsp;November&nbsp;2026</strong>, <%= day.place %>, taken from the logs with private details left out. <%= beats.length %> moments in 24 hours. Blue marks an agent working on its own; the rest is me, or the two of us together. Drag the clock, press play, or ask the agent on the right.</p>
   </div>
 
   <div id="day-app" data-fallback>
@@ -65,11 +92,11 @@
 <section id="organs" class="workbench-section">
   <div class="home-container">
     <div class="section-intro">
-      <h2 class="vf-bloom">What ran that day</h2>
-      <p>None of this is a product demo. Each piece started as a scene I wanted to live in, then became software I use every day. Most of it is open.</p>
+      <h2 class="vf-bloom">What else ran that day</h2>
+      <p>Smaller tools and experiments from the same workbench. Each started as a scene I wanted to live in and became software I use every day. Most of it is open.</p>
     </div>
     <div class="grid-3">
-      <% (d.chapters || []).forEach(function (ch) { %>
+      <% (d.chapters || []).filter(function (ch) { return productNames.indexOf(String(ch.project).toLowerCase()) === -1; }).forEach(function (ch) { %>
         <a class="fx-card workbench-card organ-card" href="<%= ch.link %>" target="_blank" rel="noopener">
           <p class="kind"><%= ch.project %></p>
           <h3><%= ch.tagline %></h3>
@@ -193,37 +220,37 @@
     </div>
     <div class="grid-3">
       <article class="fx-card">
-        <p class="kind">01 · setup</p>
+        <p class="kind">Step 1</p>
         <h3>Setup</h3>
         <p class="desc">Install the skill pack, point it at a real product question, and the rest of the workflow can begin. The first move is always the boring one.</p>
         <p class="meta">foundation · installs in 30 seconds</p>
       </article>
       <article class="fx-card">
-        <p class="kind">02 · frame</p>
+        <p class="kind">Step 2</p>
         <h3>Jobs to be done</h3>
         <p class="desc">Ground the work in the job a real person is trying to get done. Without this, the agent ships features that satisfy nobody &mdash; including itself.</p>
         <p class="meta">evidence before artifacts</p>
       </article>
       <article class="fx-card">
-        <p class="kind">03 · prototype</p>
+        <p class="kind">Step 3</p>
         <h3>Prototype</h3>
         <p class="desc">Make the future real enough to use. The fiction earns its keep the day it compiles &mdash; and only a working prototype tells you which fiction survives contact.</p>
         <p class="meta">fiction → function</p>
       </article>
       <article class="fx-card">
-        <p class="kind">04 · walkthrough</p>
+        <p class="kind">Step 4</p>
         <h3>Walkthrough</h3>
         <p class="desc">Drive a real person through the thing you just built. Watch where they hesitate, where they reach for controls that aren&rsquo;t there, where the system goes quiet.</p>
         <p class="meta">observation over opinion</p>
       </article>
       <article class="fx-card">
-        <p class="kind">05 · tokens</p>
+        <p class="kind">Step 5</p>
         <h3>Design tokens</h3>
         <p class="desc">A shared vocabulary of color, type, spacing, and radius that every other skill can read. Tokens are how a team agrees on what feels right.</p>
         <p class="meta">the grammar of taste</p>
       </article>
       <article class="fx-card">
-        <p class="kind">06 · review</p>
+        <p class="kind">Step 6</p>
         <h3>Review</h3>
         <p class="desc">One consolidated verdict across structure, copy, usability, and contrast &mdash; not five reports you have to reconcile. Evidence locators, not vibes.</p>
         <p class="meta">ranked by user impact</p>
@@ -243,9 +270,9 @@
 </section>
 
 <!-- =================== FOOTER (homepage closing) =================== -->
-<footer class="home-footer">
-  <h2 class="vf-bloom">The next chapter is being written in a terminal in Berlin.</h2>
-  <p class="lede">If you want to build alongside it &mdash; as a lab participant, a collaborator, or a client &mdash; say hello.</p>
+<footer id="contact" class="home-footer">
+  <h2 class="vf-bloom">Have an AI product to build?</h2>
+  <p class="lede">Tell me what it should do for the people who&rsquo;ll use it. I&rsquo;ll help you get it from the first question to working software. Teams who want to learn the method can join a lab.</p>
   <div class="socials">
     <a href="https://t.me/glebkalinin">Telegram ↗</a>
     <% if (theme.whatsapp) { %>

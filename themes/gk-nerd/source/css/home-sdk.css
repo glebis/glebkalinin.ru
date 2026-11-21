@@ -93,8 +93,8 @@ html.light .page-home {
 }
 .page-home .section-intro {
   max-width: none;
-  border-top: 1px solid var(--line);
-  padding-top: clamp(40px, 6vw, 64px);
+  border-top: 0;
+  padding-top: clamp(56px, 8vw, 96px);
   margin-bottom: clamp(32px, 5vw, 56px);
 }
 .page-home .section-intro p { max-width: 62ch; }
@@ -133,39 +133,38 @@ html.light .page-home {
   background-size: 96px 96px;
 }
 .page-home .hero-visual .hero-caption {
-  font-family: var(--font-mono); font-size: 11px;
-  text-transform: uppercase; letter-spacing: .08em;
+  font-family: var(--font-mono); font-size: 13px;
 }
 
-/* ── card grids become one framed panel of numbered cells ────────────── */
+/* ── card grids: open columns separated by space, no frames or rules ── */
 .page-home .grid-3,
 .page-home .grid-2 {
-  gap: 0 clamp(16px, 2vw, 24px);
-  padding: clamp(16px, 3vw, 40px);
-  border: 1px solid var(--line);
-  background: var(--paper);
+  gap: clamp(40px, 5vw, 56px) clamp(24px, 4vw, 56px);
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 .page-home .fx-card,
 .page-home .community-card,
 .page-home .fx-step {
   background: transparent;
-  border: 0; border-bottom: 1px solid var(--line);
+  border: 0;
   border-radius: 0;
-  padding: 24px 0;
+  padding: 0;
   gap: 8px;
 }
 .page-home .fx-card .kind {
   font-family: var(--font-mono); font-size: 14px;
   text-transform: none; letter-spacing: -0.01em; color: var(--fg);
 }
-.page-home .fx-card h3 { font-size: 17px; }
+.page-home .fx-card h3 { font-size: 22px; line-height: 1.25; }
 .page-home .fx-card .meta,
 .page-home .community-card .c-size {
-  font-family: var(--font-mono); font-size: 11px;
-  text-transform: uppercase; letter-spacing: .08em; color: var(--muted);
+  font-family: var(--font-mono); font-size: 13px;
+  text-transform: none; letter-spacing: 0; color: var(--muted);
 }
 .page-home .organ-card:hover,
-.page-home .community-card:hover { translate: none; border-bottom-color: var(--ink); }
+.page-home .community-card:hover { translate: none; }
 .page-home .organ-card:hover .kind,
 .page-home .community-card:hover .c-name { text-decoration: underline; text-underline-offset: 3px; }
 .page-home .fx-card .lab-link, .page-home .media-item figcaption a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
@@ -173,7 +172,11 @@ html.light .page-home {
 /* install commands + quote: square, terminal-ish */
 .page-home .humane-section .install-cmd { border-radius: 0; background: var(--ink); color: var(--paper); border: 0; }
 .page-home .humane-section .install-label { color: color-mix(in oklab, var(--paper) 70%, var(--ink)); }
-.page-home .labs-section .quote { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 24px; }
+.page-home .labs-section .quote { border: 0; padding: 0; margin-top: 56px; }
+.page-home .humane-section .humane-install,
+.page-home .community-section,
+.page-home #community,
+.page-home .home-footer .legal { border: 0; }
 
 /* ── media: photography + video ─────────────────────────────────────── */
 .page-home .media-grid {
@@ -190,7 +193,7 @@ html.light .page-home {
 }
 .page-home .media-item figcaption {
   display: flex; justify-content: space-between; gap: 12px;
-  font: 11px/1.5 var(--font-mono); text-transform: uppercase; letter-spacing: .06em;
+  font: 13px/1.5 var(--font-mono);
   color: var(--muted); padding: 0 2px;
 }
 .page-home .media-item figcaption a { white-space: nowrap; }
@@ -215,3 +218,9 @@ html.light .page-home {
   .page-home .home-nav { padding-right: calc(var(--gutter) + 190px); min-height: 64px; }
   .page-home .home-nav .nav-links { display: none; }
 }
+
+/* ── products: the decision line is the point of each card ──────────── */
+.page-home .product-card h3 a { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.page-home .product-card .decision { color: var(--fg); margin: 4px 0 0; }
+.page-home .product-card .decision strong { font-weight: 600; }
+.page-home .humane-section .humane-install { padding-left: 0; padding-right: 0; background: transparent; }

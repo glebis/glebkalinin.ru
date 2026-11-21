@@ -35,7 +35,7 @@
 [data-actor="both"] { --c: var(--c-both); }
 
 .label {
-  font: 11px/1.4 var(--font-mono); text-transform: uppercase; letter-spacing: .08em;
+  font: 13px/1.4 var(--font-mono);
   color: var(--text-muted);
 }
 
@@ -48,7 +48,7 @@
   font-variant-numeric: tabular-nums;
   color: var(--text-primary);
 }
-.clock-meta { font: 11px var(--font-mono); color: var(--text-muted); text-transform: uppercase; letter-spacing: .08em; }
+.clock-meta { font: 13px var(--font-mono); color: var(--text-muted); }
 
 .scrub-control { height: 48px; display: flex; align-items: center; touch-action: none; cursor: pointer; }
 .scrub-track { position: relative; width: 100%; height: 1px; background: var(--hair); }
@@ -91,7 +91,7 @@ button:disabled { opacity: .4; cursor: default; }
 /* ── active beat ──────────────────────────────────────────────────────── */
 .beat-card {
   margin-top: 24px; padding: clamp(20px, 3vw, 32px);
-  border: 1px solid var(--hair); border-radius: 0;
+  border: 0; border-radius: 0;
   background: var(--paper, var(--bg-card));
   animation: beat-in 320ms var(--ease-snap);
 }
@@ -101,32 +101,32 @@ button:disabled { opacity: .4; cursor: default; }
   display: inline-grid; place-items: center; min-width: 56px; height: 32px; padding: 0 8px;
   font: 13px var(--font-mono); background: var(--c); color: var(--paper, #fff);
 }
-.beat-card-who { font: 11px var(--font-mono); text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); }
+.beat-card-who { font: 13px var(--font-mono); color: var(--text-muted); }
 .beat-card-organ {
-  margin-left: auto; font: 11px var(--font-mono); text-transform: uppercase; letter-spacing: .08em;
-  color: var(--text-muted); border-bottom: 1px solid var(--hair);
+  margin-left: auto; font: 13px var(--font-mono);
+  color: var(--text-muted); text-decoration: underline; text-underline-offset: 3px;
 }
-.beat-card-organ:hover { color: var(--text-primary); border-color: var(--text-primary); }
+.beat-card-organ:hover { color: var(--text-primary); }
 .beat-card h3 { margin: 20px 0 8px; font-weight: 500; font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.15; letter-spacing: -.02em; text-wrap: balance; }
 .beat-card > p { max-width: 62ch; color: var(--text-secondary); line-height: 1.6; text-wrap: pretty; }
-.beat-card blockquote { margin: 20px 0; padding: 16px 0 0; border-top: 1px solid var(--hair); font-size: 1.15rem; line-height: 1.5; color: var(--text-primary); }
+.beat-card blockquote { margin: 20px 0; padding: 0; font-size: 1.15rem; line-height: 1.5; color: var(--text-primary); }
 .trace {
   margin: 20px 0 0; padding: 16px 20px; min-height: 7rem; white-space: pre-wrap; overflow-wrap: anywhere;
   font: 13px/1.7 var(--font-mono);
-  color: #e8e8e8; background: #0a0a0a; border: 1px solid var(--hair); border-radius: 0;
+  color: #e8e8e8; background: #0a0a0a; border: 0; border-radius: 0;
 }
 .trace-line { display: block; animation: line-in 200ms ease-out; }
 .trace-line:last-child::after { content: "▌"; margin-left: 4px; color: #6f6f6f; }
 @keyframes line-in { from { opacity: 0; } }
-.lesson { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--hair); font-weight: 500; color: var(--text-primary) !important; }
+.lesson { margin-top: 20px; font-weight: 500; color: var(--text-primary) !important; }
 .lesson::before { content: "→ "; color: var(--c); }
 .beat-link { display: inline-block; margin-top: 12px; color: var(--text-primary); text-decoration: underline; text-underline-offset: 3px; }
 
-/* ── timeline: rows on hairlines, square markers ─────────────────────── */
-.beats { list-style: none; margin: 32px 0 0; padding: 0; border-top: 1px solid var(--hair); }
+/* ── timeline: markers and the connector carry the rhythm, no row rules ─ */
+.beats { list-style: none; margin: 32px 0 0; padding: 0; }
 .beat-row {
   position: relative; display: grid; grid-template-columns: 56px 1fr; column-gap: 16px;
-  padding: 12px 0 12px 24px; border-bottom: 1px solid var(--line-faint, var(--hair));
+  padding: 10px 0 10px 24px;
   cursor: pointer;
 }
 .beat-row:focus-visible { outline: 2px solid var(--text-primary); outline-offset: -2px; }

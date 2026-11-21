@@ -1,0 +1,36 @@
+# Shipped products for the homepage ("What I've shipped"), in display order.
+# Each card: what it is, one product decision that shaped it, and proof.
+# Keep "proof" to facts you can point at (repo, release, test run, users).
+# Projects named here are left out of "What else ran that day" (redesign.yml chapters).
+
+products:
+  - name: "Workroom"
+    kind: "Collaborative research workspace"
+    what: "A shared document space where agents research companies and passages, then propose findings and edits with the quoted sources attached. People edit live alongside them."
+    decision: "Accepting a finding never rewrites the document. Edits are separate proposals, checked against the current text before they apply, and anything still unproven stays marked unknown."
+    proof: "Runnable prototype delivered October 2026 · React, Yjs, PostgreSQL, a durable worker · 105 checks passing"
+    # link: omitted — not public
+
+  - name: "cenno"
+    kind: "macOS app for agents"
+    what: "Lets any MCP agent (Claude Code, Claude Desktop and others) ask you a question in a small floating panel and get your answer back as structured data."
+    decision: "The panel never takes your keyboard focus, and every answer is kept on your machine, so the questions become your own dataset."
+    proof: "Signed, notarized DMG and Homebrew cask · 155 downloads · open source"
+    link: "https://cenno.salient.community/"
+    linkLabel: "cenno.salient.community"
+
+  - name: "pibot"
+    kind: "Agent companions on Telegram"
+    what: "Personal agents you chat with over Telegram. Each has its own memory, calendar awareness, scheduler and skills it improves over time."
+    decision: "A cheap heartbeat model decides whether anything is worth saying before an agent speaks. Capabilities are opt-in, and changes to your calendar or tasks need your confirmation."
+    proof: "337 commits · open source · runs my own agents every day"
+    link: "https://github.com/glebis/pibot"
+    linkLabel: "github.com/glebis/pibot"
+
+  - name: "Course automation"
+    kind: "Pipeline behind my labs"
+    what: "Takes a lab session from recording to published notes and materials, and sets up each new cohort's site from the last one."
+    decision: "Nothing publishes until it passes the checks: MDX lint, type check, broken links and a full local build."
+    proof: "Runs every Claude Code Lab session · 350+ participants so far"
+    link: "#labs"
+    linkLabel: "the labs"
