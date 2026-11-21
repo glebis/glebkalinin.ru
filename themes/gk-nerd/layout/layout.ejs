@@ -18,28 +18,13 @@
   <!-- Progress Bar -->
   <div class="progress-bar" id="progress-bar"></div>
 
-  <!-- Header Controls -->
+  <!-- Header Controls. The homepage carries the theme toggle in its own nav
+       and its contact links in the nav + footer, so the floating pill is
+       for inner pages only (it covered the homepage nav at every width). -->
+  <% if (!is_home()) { %>
   <header class="site-header">
     <div class="header-controls">
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
-        <svg class="theme-icon theme-icon-sun" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-          <circle cx="8" cy="8" r="2.6" fill="none" stroke="currentColor" stroke-width="1.1"/>
-          <g stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
-            <line x1="8" y1="1" x2="8" y2="3"/>
-            <line x1="8" y1="13" x2="8" y2="15"/>
-            <line x1="1" y1="8" x2="3" y2="8"/>
-            <line x1="13" y1="8" x2="15" y2="8"/>
-            <line x1="2.8" y1="2.8" x2="4.3" y2="4.3"/>
-            <line x1="11.7" y1="11.7" x2="13.2" y2="13.2"/>
-            <line x1="2.8" y1="13.2" x2="4.3" y2="11.7"/>
-            <line x1="11.7" y1="4.3" x2="13.2" y2="2.8"/>
-          </g>
-        </svg>
-        <svg class="theme-icon theme-icon-moon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-          <path d="M13.5 9.8A6 6 0 0 1 6.2 2.5a6 6 0 1 0 7.3 7.3z"
-                fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
-        </svg>
-      </button>
+      <%- partial('_partial/theme-toggle') %>
       <a href="https://t.me/<%= theme.telegram %>" class="telegram-btn" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M9.964 15.568l-.246 3.463c.352 0 .505-.151.688-.333l1.651-1.588 3.418 2.51c.626.347 1.073.165 1.244-.58l2.254-10.556h.001c.2-.932-.337-1.296-.95-1.07L3.23 11.07c-.912.353-.898.861-.155 1.09l3.91 1.219 9.084-5.73c.427-.279.816-.125.496.154" fill="currentColor"/>
@@ -55,6 +40,7 @@
       <% } %>
     </div>
   </header>
+  <% } %>
 
   <!-- Main Content -->
   <%- body %>

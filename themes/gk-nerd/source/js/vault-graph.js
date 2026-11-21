@@ -19,6 +19,9 @@ const CAT_COLORS = {
 
 const container = document.getElementById('vault-graph-container');
 if (!container) return;
+// The hero graph is display:none on phones (home.css, ≤900px). Don't pull
+// 600KB of three.js for a canvas nobody can see.
+if (!container.getClientRects().length) return;
 
 const canvas = document.createElement('canvas');
 canvas.id = 'vault-graph-canvas';

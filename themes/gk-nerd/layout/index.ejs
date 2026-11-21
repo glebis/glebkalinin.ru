@@ -9,19 +9,18 @@
 <% const beats = (day.beats || []).filter(function (b) { return !b.draft; }); %>
 
 <!-- =================== NAV =================== -->
-<nav class="home-nav">
+<nav class="home-nav" aria-label="Main">
   <a href="#top" class="wordmark">Gleb Kalinin</a>
   <div class="nav-links">
-    <a href="/mentoring/">mentoring</a>
     <a href="#products">products</a>
     <a href="#day">how I build</a>
     <% if (((site.data.media||{}).photos||[]).length || ((site.data.media||{}).videos||[]).length) { %><a href="#work">photo + video</a><% } %>
     <a href="#labs">labs</a>
-    <a href="#contact">work with me</a>
-    <a href="https://t.me/glebkalinin">telegram ↗</a>
-    <% if (theme.whatsapp) { %>
-      <a href="<%= wa_me(theme.whatsapp) %>">whatsapp ↗</a>
-    <% } %>
+    <a href="/mentoring/">mentoring</a>
+  </div>
+  <div class="nav-actions">
+    <a href="#contact" class="nav-cta">Work with me</a>
+    <%- partial('_partial/theme-toggle') %>
   </div>
 </nav>
 
@@ -32,8 +31,8 @@
     <p>Products where agents do real work and people stay in charge: the agent shows its evidence, asks before it acts, and leaves the decision with you. I design them, build them, and run my own day on them.</p>
     <p>Clients bring me an AI product to get from idea to working software. In my labs I teach the same method to teams.</p>
     <div class="hero-actions">
-      <a href="#products" class="cta-primary">See what I&rsquo;ve shipped ↓</a>
-      <a href="#contact" class="cta-ghost">Work with me</a>
+      <a href="#contact" class="cta-primary">Work with me</a>
+      <a href="#products" class="cta-ghost">See what I&rsquo;ve shipped ↓</a>
     </div>
   </div>
   <div class="hero-visual" id="graph">
@@ -168,47 +167,6 @@
 </section>
 <% } %>
 
-<!-- =================== LABS =================== -->
-<section id="labs" class="labs-section">
-  <div class="home-container">
-    <div class="section-intro">
-      <h2 class="vf-bloom">Want a day like this?</h2>
-      <p>The hard part of working with AI isn&rsquo;t technical &mdash; it&rsquo;s unlearning what you think is impossible. Week one: &ldquo;I can&rsquo;t code.&rdquo; Week four: shipping working products. Over 350 people have gone through my labs, and most of them aren&rsquo;t developers.</p>
-    </div>
-    <div class="grid-3">
-      <% (d.labs || []).forEach(function(lab) { %>
-        <div class="fx-card lab-card">
-          <h3><%= lab.name %></h3>
-          <p class="desc"><%= lab.desc %></p>
-          <p class="meta"><%= lab.meta %></p>
-          <a class="lab-link" href="<%= lab.link %>" target="_blank" rel="noopener">Join the lab →</a>
-        </div>
-      <% }); %>
-    </div>
-    <blockquote class="quote">
-      <p>&ldquo;There&rsquo;s simply no boundary anymore of what you can&rsquo;t do.&rdquo;</p>
-      <cite>&mdash; Mikhail, lab participant</cite>
-    </blockquote>
-  </div>
-</section>
-
-<!-- =================== COMMUNITY =================== -->
-<section id="community" class="community">
-  <div class="home-container">
-    <h2 class="vf-bloom">Nobody imagines the future alone</h2>
-    <p class="lede">The labs produced something I didn&rsquo;t plan for: rooms full of people who kept building after the sessions ended. These are the rooms.</p>
-    <div class="grid-2">
-      <% (d.communities || []).forEach(function(c) { %>
-        <a class="community-card" href="<%= c.link %>" target="_blank" rel="noopener">
-          <span class="c-name"><%= c.name %></span>
-          <span class="c-desc"><%= c.desc %></span>
-          <span class="c-size"><%= c.size %></span>
-        </a>
-      <% }); %>
-    </div>
-  </div>
-</section>
-
 <!-- =================== HUMANE AGENTIC DESIGN =================== -->
 <%# Skill pack + plugin set that powers the design method behind this site.
     Source: https://humane.salient.community/ — six core skills + install commands. %>
@@ -265,6 +223,47 @@
         <code class="install-cmd"><span class="install-label">/plugin</span> marketplace add glebis/humane-agentic-design</code>
       </div>
       <a class="cta-ghost humane-cta" href="https://humane.salient.community/" target="_blank" rel="noopener">Read the full skill pack ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- =================== LABS =================== -->
+<section id="labs" class="labs-section">
+  <div class="home-container">
+    <div class="section-intro">
+      <h2 class="vf-bloom">Want a day like this?</h2>
+      <p>The hard part of working with AI isn&rsquo;t technical &mdash; it&rsquo;s unlearning what you think is impossible. Week one: &ldquo;I can&rsquo;t code.&rdquo; Week four: shipping working products. Over 350 people have gone through my labs, and most of them aren&rsquo;t developers.</p>
+    </div>
+    <div class="grid-3">
+      <% (d.labs || []).forEach(function(lab) { %>
+        <div class="fx-card lab-card">
+          <h3><%= lab.name %></h3>
+          <p class="desc"><%= lab.desc %></p>
+          <p class="meta"><%= lab.meta %></p>
+          <a class="lab-link" href="<%= lab.link %>" target="_blank" rel="noopener">Join the lab →</a>
+        </div>
+      <% }); %>
+    </div>
+    <blockquote class="quote">
+      <p>&ldquo;There&rsquo;s simply no boundary anymore of what you can&rsquo;t do.&rdquo;</p>
+      <cite>&mdash; Mikhail, lab participant</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- =================== COMMUNITY =================== -->
+<section id="community" class="community">
+  <div class="home-container">
+    <h2 class="vf-bloom">Nobody imagines the future alone</h2>
+    <p class="lede">The labs produced something I didn&rsquo;t plan for: rooms full of people who kept building after the sessions ended. These are the rooms.</p>
+    <div class="grid-2">
+      <% (d.communities || []).forEach(function(c) { %>
+        <a class="community-card" href="<%= c.link %>" target="_blank" rel="noopener">
+          <span class="c-name"><%= c.name %></span>
+          <span class="c-desc"><%= c.desc %></span>
+          <span class="c-size"><%= c.size %></span>
+        </a>
+      <% }); %>
     </div>
   </div>
 </section>

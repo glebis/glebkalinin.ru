@@ -62,12 +62,19 @@ html.light .page-home {
   --text-muted: color-mix(in oklab, var(--ink) 70%, var(--paper));
 }
 
-/* The site-wide header buttons float top-right; keep nav links clear of them. */
-@media (min-width: 901px) {
-  .page-home .home-nav { padding-right: calc(var(--gutter) + 240px); }
+/* One header: the theme toggle and the offer live in the nav itself. */
+.page-home .home-nav { display: flex; align-items: center; gap: 16px 32px; }
+.page-home .home-nav .nav-links { flex: 1 1 auto; }
+.page-home .nav-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.page-home .nav-cta {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px;
+  background: var(--ink); color: var(--paper); font-size: 14px;
+  transition: filter var(--transition-fast);
 }
-.page-home .header-controls a,
-.page-home .header-controls button { color: var(--fg); }
+.page-home .nav-cta:hover { filter: brightness(1.15); }
+.page-home .nav-cta:active, .page-home .cta-primary:active, .page-home .cta-ghost:active { translate: 0 1px; }
+.page-home .home-nav .theme-toggle { border-radius: 0; color: var(--fg); border-color: var(--line); }
+.page-home .home-nav .theme-toggle:hover { border-color: var(--fg); color: var(--fg); }
 
 /* Framed panel on the ui-sdk grid. */
 .page-home .sdk-grid {
@@ -107,9 +114,6 @@ html.light .page-home {
   padding-top: 14px; padding-bottom: 14px;
 }
 .page-home .home-nav .nav-links a:hover { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; }
-.page-home .header-controls,
-.page-home .header-controls > * { border-radius: 0 !important; }
-.page-home .header-controls { background: var(--paper); border: 1px solid var(--line); box-shadow: none; }
 
 /* ── buttons: solid blocks, black and blue ───────────────────────────── */
 .page-home .cta-primary,
@@ -214,10 +218,18 @@ html.light .page-home {
 .page-home { overflow-x: clip; }
 
 @media (max-width: 900px) {
-  /* The floating theme/message buttons own the top-right; the page is one scroll. */
-  .page-home .home-nav { padding-right: calc(var(--gutter) + 190px); min-height: 64px; }
+  /* Phones: wordmark, the offer and the toggle; the page is one scroll. */
+  .page-home .home-nav { min-height: 64px; }
   .page-home .home-nav .nav-links { display: none; }
 }
+
+/* ── type scale: the hero leads, section heads follow ───────────────── */
+.page-home h2.vf-bloom {
+  font-size: clamp(32px, 4.2vw, 56px) !important;
+  line-height: 1.02 !important;
+  text-wrap: balance;
+}
+.page-home h3.vf-bloom { font-size: clamp(24px, 2.6vw, 34px) !important; }
 
 /* ── products: the decision line is the point of each card ──────────── */
 .page-home .product-card h3 a { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
