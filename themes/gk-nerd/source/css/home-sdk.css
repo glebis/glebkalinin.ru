@@ -128,14 +128,19 @@ html.light .page-home {
 .page-home .cta-ghost:hover { filter: brightness(1.15); }
 .page-home .hero-actions { gap: 8px; }
 
-/* ── hero: graph sits in a grid frame ────────────────────────────────── */
-.page-home .hero-visual {
-  border: 1px solid var(--line);
-  background-image:
-    linear-gradient(to right, var(--grid-major) 1px, transparent 1px),
-    linear-gradient(var(--grid-major) 1px, transparent 1px);
-  background-size: 96px 96px;
+/* ── hero: graph floats on the page, no frame or grid ─────────────────── */
+.page-home .hero-visual { border: 0; background: none; }
+/* Graph labels: page ink on a paper halo, so they read in both themes and
+   sit behind the headline instead of glowing through it. */
+.page-home .vg-label {
+  position: absolute; white-space: nowrap; pointer-events: none;
+  will-change: transform, opacity;
+  font-family: var(--font-mono, "Geist Mono", monospace);
+  font-weight: 500; letter-spacing: 0;
+  color: color-mix(in oklab, var(--ink) 78%, var(--paper));
+  text-shadow: 0 0 2px var(--paper), 0 0 6px var(--paper), 0 0 12px var(--paper);
 }
+.page-home .vg-label.vg-focus { color: var(--ink); font-weight: 600; }
 .page-home .hero-visual .hero-caption {
   font-family: var(--font-mono); font-size: 13px;
 }
@@ -236,3 +241,39 @@ html.light .page-home {
 .page-home .product-card .decision { color: var(--fg); margin: 4px 0 0; }
 .page-home .product-card .decision strong { font-weight: 600; }
 .page-home .humane-section .humane-install { padding-left: 0; padding-right: 0; background: transparent; }
+
+/* ── cards: real padding, one quiet hover ───────────────────────────────
+   Resets the older lift/shadow/accent-border (home.css) and the gradient
+   sweep (.product-card in main.css). Every card gets inner padding; only
+   cards that are links get a hover, and it is a faint tint, nothing more. */
+.page-home .fx-card,
+.page-home .community-card {
+  padding: clamp(20px, 2.4vw, 28px);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  transition: background-color .2s ease;
+}
+.page-home .grid-3,
+.page-home .grid-2 { gap: clamp(8px, 1.5vw, 16px); margin-inline: calc(-1 * clamp(20px, 2.4vw, 28px)); }
+.page-home .product-card::before { content: none; }
+.page-home .fx-card:hover,
+.page-home .community-card:hover {
+  transform: none; translate: none; box-shadow: none; border: 0;
+  will-change: auto;
+}
+.page-home .fx-card:hover h3,
+.page-home .fx-card:hover strong { letter-spacing: inherit; color: inherit; }
+.page-home .organ-card:hover,
+.page-home .community-card:hover,
+.page-home .product-card:has(h3 a):hover,
+.page-home .lab-card:hover {
+  background: color-mix(in oklab, var(--ink) 7%, var(--paper));
+}
+@media (max-width: 900px) {
+  .page-home .grid-3,
+  .page-home .grid-2 { margin-inline: 0; }
+  .page-home .fx-card, .page-home .community-card { padding-inline: 0; }
+  .page-home .fx-card:hover, .page-home .community-card:hover { background: transparent; }
+}
+.page-home .product-card p.desc { flex: none; }
