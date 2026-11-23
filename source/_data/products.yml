@@ -9,7 +9,8 @@ products:
     kind: "Collaborative research workspace"
     what: "A shared workspace where people and AI agents research together. Agents bring findings with their sources; people decide what goes in."
     decision: "Agents suggest, people approve. Nothing changes the document without a person saying yes."
-    # link: omitted — not public
+    link: "https://workroom.salient.community/"
+    linkLabel: "workroom.salient.community"
 
   - name: "cenno"
     kind: "macOS app for agents"
