@@ -58,7 +58,7 @@
           <h3><% if (p.link) { %><a href="<%= p.link %>"<% if (!p.link.startsWith('#')) { %> target="_blank" rel="noopener"<% } %>><%= p.name %></a><% } else { %><%= p.name %><% } %></h3>
           <p class="desc"><%= p.what %></p>
           <p class="decision"><strong>Decision:</strong> <%= p.decision %></p>
-          <p class="meta"><%= p.proof %></p>
+          <% if (p.proof) { %><p class="meta"><%= p.proof %></p><% } %>
         </article>
       <% }); %>
     </div>
