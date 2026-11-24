@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "npx hexo generate",
+  "buildCommand": "npm --prefix mentoring-app ci && npm --prefix mentoring-app run build && npx hexo generate",
   "outputDirectory": "public",
   "framework": null
 }

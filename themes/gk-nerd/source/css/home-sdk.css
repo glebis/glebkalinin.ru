@@ -1,0 +1,279 @@
+/* ==========================================================================
+   Homepage skin after ui-sdk.dev — loaded after home.css, homepage only.
+   Keeps the site's typography (fonts, sizes); changes the system around it:
+   flat off-white / near-black, hairline borders at 20% ink, square corners,
+   one electric-blue accent, framed panels on a 96/12px grid, mono labels.
+   ========================================================================== */
+
+.page-home {
+  /* ui-sdk palette — dark (site default) */
+  --ink: #f2f2f2;
+  --paper: #0b0b0b;
+  --blue: #3d7bff;            /* lighter than ui-sdk's blue so it holds 5:1 on #0b0b0b */
+  --on-blue: #ffffff;
+  --line: color-mix(in oklab, var(--ink) 20%, transparent);
+  --line-faint: color-mix(in oklab, var(--ink) 9%, transparent);
+  --grid-major: color-mix(in oklab, var(--ink) 11%, transparent);
+  --grid-minor: color-mix(in oklab, var(--ink) 4%, transparent);
+
+  /* map the home.css tokens onto it */
+  --bg-base: var(--paper);
+  --surface: var(--paper);
+  --fg: var(--ink);
+  --muted: color-mix(in oklab, var(--ink) 90%, var(--paper));   /* dark: APCA needs more lift than WCAG */
+  --border-soft: var(--line);
+  --lead: var(--ink);          /* links are ink; blue is reserved for agents (rule 14) */
+
+  /* and the global ones the day island reads */
+  --accent: var(--blue);
+  --accent-hover: var(--blue);
+  --accent-glow: color-mix(in oklab, var(--blue) 14%, transparent);
+  --accent-secondary: var(--ink);
+  --bg-primary: var(--paper);
+  --bg-secondary: color-mix(in oklab, var(--ink) 5%, var(--paper));
+  --bg-tertiary: var(--paper);
+  --bg-card: var(--paper);
+  --text-primary: var(--ink);
+  --text-secondary: color-mix(in oklab, var(--ink) 94%, var(--paper));
+  --text-muted: color-mix(in oklab, var(--ink) 88%, var(--paper));
+  /* --text-dim is for lines and dots only — it never clears 4.5:1 as text */
+  --text-dim: color-mix(in oklab, var(--ink) 45%, var(--paper));
+  --border-primary: var(--line);
+  --border-secondary: var(--line-faint);
+  --border-accent: var(--blue);
+  --radius-sm: 0; --radius-md: 0; --radius-lg: 0; --radius-xl: 0; --radius-full: 0;
+
+  --wrap: 1280px;
+  --gutter: clamp(16px, 3vw, 40px);
+  background: var(--paper);
+}
+
+html.light .page-home {
+  --ink: #0a0a0a;
+  --paper: #f7f7f7;
+  --blue: #0057ff;            /* ≈ ui-sdk lab(47.75 21 −82) */
+  /* variables.css sets these with the same selector; restate so ours win. */
+  --bg-base: var(--paper);
+  --surface: var(--paper);
+  --fg: var(--ink);
+  --muted: color-mix(in oklab, var(--ink) 74%, var(--paper));
+  --border-soft: var(--line);
+  --lead: var(--ink);
+  --text-muted: color-mix(in oklab, var(--ink) 70%, var(--paper));
+}
+
+/* One header: the theme toggle and the offer live in the nav itself. */
+.page-home .home-nav { display: flex; align-items: center; gap: 16px 32px; }
+.page-home .home-nav .nav-links { flex: 1 1 auto; }
+.page-home .nav-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.page-home .nav-cta {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px;
+  background: var(--ink); color: var(--paper); font-size: 14px;
+  transition: filter var(--transition-fast);
+}
+.page-home .nav-cta:hover { filter: brightness(1.15); }
+.page-home .nav-cta:active, .page-home .cta-primary:active, .page-home .cta-ghost:active { translate: 0 1px; }
+.page-home .home-nav .theme-toggle { border-radius: 0; color: var(--fg); border-color: var(--line); }
+.page-home .home-nav .theme-toggle:hover { border-color: var(--fg); color: var(--fg); }
+
+/* Framed panel on the ui-sdk grid. */
+.page-home .sdk-grid {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(to right, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(var(--grid-major) 1px, transparent 1px),
+    linear-gradient(to right, var(--grid-minor) 1px, transparent 1px),
+    linear-gradient(var(--grid-minor) 1px, transparent 1px);
+  background-size: 96px 96px, 96px 96px, 12px 12px, 12px 12px;
+  border: 1px solid var(--line);
+}
+
+/* ── page width + section rhythm ─────────────────────────────────────── */
+.page-home .home-nav,
+.page-home .home-hero,
+.page-home .home-container,
+.page-home .day-section,
+.page-home .home-footer {
+  max-width: var(--wrap);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+.page-home .section-intro {
+  max-width: none;
+  border-top: 0;
+  padding-top: clamp(56px, 8vw, 96px);
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+.page-home .section-intro p { max-width: 62ch; }
+
+/* ── nav: sticky bar with a hairline, like the docs header ───────────── */
+.page-home .home-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  padding-top: 14px; padding-bottom: 14px;
+}
+.page-home .home-nav .nav-links a:hover { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; }
+
+/* ── buttons: solid blocks, black and blue ───────────────────────────── */
+.page-home .cta-primary,
+.page-home .cta-ghost {
+  border-radius: 0; border: 0;
+  padding: 16px 24px; min-width: 200px;
+  font-size: 15px; transition: filter var(--transition-fast);
+}
+.page-home .cta-primary { background: var(--ink); color: var(--paper); }
+.page-home .cta-ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.page-home .cta-primary:hover,
+.page-home .cta-ghost:hover { filter: brightness(1.15); }
+.page-home .hero-actions { gap: 8px; }
+
+/* ── hero: graph floats on the page, no frame or grid ─────────────────── */
+.page-home .hero-visual { border: 0; background: none; }
+/* Graph labels: page ink on a paper halo, so they read in both themes and
+   sit behind the headline instead of glowing through it. */
+.page-home .vg-label {
+  position: absolute; white-space: nowrap; pointer-events: none;
+  will-change: transform, opacity;
+  font-family: var(--font-mono, "Geist Mono", monospace);
+  font-weight: 500; letter-spacing: 0;
+  color: color-mix(in oklab, var(--ink) 78%, var(--paper));
+  text-shadow: 0 0 2px var(--paper), 0 0 6px var(--paper), 0 0 12px var(--paper);
+}
+.page-home .vg-label.vg-focus { color: var(--ink); font-weight: 600; }
+.page-home .hero-visual .hero-caption {
+  font-family: var(--font-mono); font-size: 13px;
+}
+
+/* ── card grids: open columns separated by space, no frames or rules ── */
+.page-home .grid-3,
+.page-home .grid-2 {
+  gap: clamp(40px, 5vw, 56px) clamp(24px, 4vw, 56px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.page-home .fx-card,
+.page-home .community-card,
+.page-home .fx-step {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  gap: 8px;
+}
+.page-home .fx-card .kind {
+  font-family: var(--font-mono); font-size: 14px;
+  text-transform: none; letter-spacing: -0.01em; color: var(--fg);
+}
+.page-home .fx-card h3 { font-size: 22px; line-height: 1.25; }
+.page-home .fx-card .meta,
+.page-home .community-card .c-size {
+  font-family: var(--font-mono); font-size: 13px;
+  text-transform: none; letter-spacing: 0; color: var(--muted);
+}
+.page-home .organ-card:hover,
+.page-home .community-card:hover { translate: none; }
+.page-home .organ-card:hover .kind,
+.page-home .community-card:hover .c-name { text-decoration: underline; text-underline-offset: 3px; }
+.page-home .fx-card .lab-link, .page-home .media-item figcaption a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
+
+/* install commands + quote: square, terminal-ish */
+.page-home .humane-section .install-cmd { border-radius: 0; background: var(--ink); color: var(--paper); border: 0; }
+.page-home .humane-section .install-label { color: color-mix(in oklab, var(--paper) 70%, var(--ink)); }
+.page-home .labs-section .quote { border: 0; padding: 0; margin-top: 56px; }
+.page-home .humane-section .humane-install,
+.page-home .community-section,
+.page-home #community,
+.page-home .home-footer .legal { border: 0; }
+
+/* ── media: photography + video ─────────────────────────────────────── */
+.page-home .media-grid {
+  display: grid; gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  padding: clamp(8px, 2vw, 16px);
+}
+.page-home .media-item { margin: 0; display: grid; gap: 8px; align-content: start; }
+.page-home .media-item img,
+.page-home .media-item video {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: var(--ratio, 4 / 5); object-fit: cover;
+  background: var(--bg-secondary);
+}
+.page-home .media-item figcaption {
+  display: flex; justify-content: space-between; gap: 12px;
+  font: 13px/1.5 var(--font-mono);
+  color: var(--muted); padding: 0 2px;
+}
+.page-home .media-item figcaption a { white-space: nowrap; }
+.page-home .media-videos { --ratio: 16 / 9; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.page-home .media-sub { font-size: 1.25rem; font-weight: 600; color: var(--fg); margin: 40px 0 6px; }
+.page-home .media-lede { color: var(--muted); margin: 0 0 16px; max-width: 62ch; }
+
+/* ── focus ring: blue, square ───────────────────────────────────────── */
+.page-home :focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; border-radius: 0; }
+
+@media (max-width: 900px) {
+  .page-home .home-nav { position: static; }
+  .page-home .cta-primary, .page-home .cta-ghost { min-width: 0; flex: 1 1 auto; text-align: center; }
+}
+
+/* Keep the graph frame inside the page; clip its floating node labels. */
+.page-home .hero-visual { right: var(--gutter); overflow: hidden; }
+.page-home { overflow-x: clip; }
+
+@media (max-width: 900px) {
+  /* Phones: wordmark, the offer and the toggle; the page is one scroll. */
+  .page-home .home-nav { min-height: 64px; }
+  .page-home .home-nav .nav-links { display: none; }
+}
+
+/* ── type scale: the hero leads, section heads follow ───────────────── */
+.page-home h2.vf-bloom {
+  font-size: clamp(32px, 4.2vw, 56px) !important;
+  line-height: 1.02 !important;
+  text-wrap: balance;
+}
+.page-home h3.vf-bloom { font-size: clamp(24px, 2.6vw, 34px) !important; }
+
+/* ── products: the decision line is the point of each card ──────────── */
+.page-home .product-card h3 a { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.page-home .product-card .decision { color: var(--fg); margin: 4px 0 0; }
+.page-home .product-card .decision strong { font-weight: 600; }
+.page-home .humane-section .humane-install { padding-left: 0; padding-right: 0; background: transparent; }
+
+/* ── cards: real padding, one quiet hover ───────────────────────────────
+   Resets the older lift/shadow/accent-border (home.css) and the gradient
+   sweep (.product-card in main.css). Every card gets inner padding; only
+   cards that are links get a hover, and it is a faint tint, nothing more. */
+.page-home .fx-card,
+.page-home .community-card {
+  padding: clamp(20px, 2.4vw, 28px);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  transition: background-color .2s ease;
+}
+.page-home .grid-3,
+.page-home .grid-2 { gap: clamp(8px, 1.5vw, 16px); margin-inline: calc(-1 * clamp(20px, 2.4vw, 28px)); }
+.page-home .product-card::before { content: none; }
+.page-home .fx-card:hover,
+.page-home .community-card:hover {
+  transform: none; translate: none; box-shadow: none; border: 0;
+  will-change: auto;
+}
+.page-home .fx-card:hover h3,
+.page-home .fx-card:hover strong { letter-spacing: inherit; color: inherit; }
+.page-home .organ-card:hover,
+.page-home .community-card:hover,
+.page-home .product-card:has(h3 a):hover,
+.page-home .lab-card:hover {
+  background: color-mix(in oklab, var(--ink) 7%, var(--paper));
+}
+@media (max-width: 900px) {
+  .page-home .grid-3,
+  .page-home .grid-2 { margin-inline: 0; }
+  .page-home .fx-card, .page-home .community-card { padding-inline: 0; }
+  .page-home .fx-card:hover, .page-home .community-card:hover { background: transparent; }
+}
+.page-home .product-card p.desc { flex: none; }

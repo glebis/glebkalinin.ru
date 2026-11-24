@@ -1,147 +1,237 @@
-<%# Homepage — redesigned per /Users/glebkalinin/Downloads/Gleb's-portfolio-redesign/
-    Content lives in source/_data/redesign.yml (mirrors the export's renderVals()).
-    Image slots use <picture> with AVIF → WebP for size.
-    The 4D vault graph reuses the existing /js/vault-graph.js — it self-mounts on
-    #vault-graph-container, which lives inside .hero-visual below. %>
+<%# Homepage — AI-first product builder. Products come from source/_data/products.yml;
+    "how I build" is one real day The story is a single real day (source/_data/day.yml),
+    rendered by the React + ui-sdk island in /homepage-app (built to /home-app/).
+    Everything inside #day-app below is the no-JS / SEO fallback; the island
+    replaces it on load. Projects come from source/_data/redesign.yml. %>
 
 <% const d = (site.data && site.data.redesign) || {}; %>
+<% const day = (site.data && site.data.day) || { beats: [] }; %>
+<% const beats = (day.beats || []).filter(function (b) { return !b.draft; }); %>
 
 <!-- =================== NAV =================== -->
-<nav class="home-nav">
+<nav class="home-nav" aria-label="Main">
   <a href="#top" class="wordmark">Gleb Kalinin</a>
   <div class="nav-links">
-    <a href="#story">the story</a>
-    <a href="#method">the method</a>
+    <a href="#products">products</a>
+    <a href="#day">how I build</a>
+    <% if (((site.data.media||{}).photos||[]).length || ((site.data.media||{}).videos||[]).length) { %><a href="#work">photo + video</a><% } %>
     <a href="#labs">labs</a>
-    <a href="#community">community</a>
-    <a href="https://t.me/glebkalinin">telegram ↗</a>
-    <% if (theme.whatsapp) { %>
-      <a href="<%= wa_me(theme.whatsapp) %>">whatsapp ↗</a>
-    <% } %>
+    <a href="/mentoring/">mentoring</a>
+  </div>
+  <div class="nav-actions">
+    <a href="#contact" class="nav-cta">Work with me</a>
+    <%- partial('_partial/theme-toggle') %>
   </div>
 </nav>
 
 <!-- =================== HERO =================== -->
 <header id="top" class="home-hero">
   <div class="hero-copy">
-    <h1 class="st-hero">Somebody has to imagine the future. I&rsquo;d rather build it and live in it.</h1>
-    <p>I use science fiction, speculative design and vibe-coding to imagine daily life with thinking machines &mdash; then I build working systems and live with them until the fiction stops being fiction.</p>
-    <p>This page is the story of what happens when you take that seriously. Six chapters. Every one of them ships.</p>
+    <h1 class="st-hero">I build AI-first products, and use them every day</h1>
+    <p>Products where agents do real work and people stay in charge: the agent shows its evidence, asks before it acts, and leaves the decision with you. I design them, build them, and run my own day on them.</p>
+    <p>Clients bring me an AI product to get from idea to working software. In my labs I teach the same method to teams.</p>
     <div class="hero-actions">
-      <a href="#story" class="cta-primary">Read the story ↓</a>
-      <a href="#labs" class="cta-ghost">Join a lab</a>
+      <a href="#contact" class="cta-primary">Work with me</a>
+      <a href="#products" class="cta-ghost">See what I&rsquo;ve shipped ↓</a>
     </div>
   </div>
-  <div class="hero-visual" id="hero-visual">
+  <div class="hero-visual" id="graph">
     <div class="vault-graph-container" id="vault-graph-container"></div>
-    <p class="hero-caption">the digital body &mdash; drag to rotate, scroll to zoom, click a node</p>
+    <p class="hero-caption">the vault this day wrote into &mdash; drag to rotate, click a node</p>
   </div>
 </header>
 
-<!-- =================== STORY =================== -->
-<main id="story" class="story">
-  <div class="section-intro">
-    <h2 class="vf-bloom">The story so far</h2>
-    <p>Every system I build starts the same way: as a scene from a life that doesn&rsquo;t quite exist yet. I write the scene down, then I refuse to let it stay fiction. What follows are six of those scenes &mdash; and the working software each one became.</p>
-  </div>
-
-  <% (d.chapters || []).forEach(function(ch, i) { %>
-    <article class="ch-block">
-      <div class="ch-text">
-        <span class="ch-rule" aria-hidden="true"></span>
-        <h3 class="vf-bloom"><%= ch.title %></h3>
-        <p class="ch-fict"><%= ch.fiction1 %></p>
-        <p class="ch-fict"><%= ch.fiction2 %></p>
-        <p class="ch-real"><%= ch.realIntro %> <strong><%= ch.project %></strong> &mdash; <%= ch.real %></p>
-      </div>
-      <div class="ch-card">
-        <div class="card-frame">
-          <div class="card-image">
-            <picture>
-              <source srcset="<%= ch.img.replace(/\.png$/, '.avif') %>" type="image/avif">
-              <source srcset="<%= ch.img.replace(/\.png$/, '.webp') %>" type="image/webp">
-              <%# First chapter is above the fold on most viewports — eager + high
-                  priority cuts LCP by 100-300ms on slow connections. %>
-              <img src="<%= ch.img.replace(/\.png$/, '.webp') %>" alt="<%= ch.project %> — <%= ch.tagline %>" width="800" height="260"<% if (i === 0) { %> loading="eager" fetchpriority="high"<% } else { %> loading="lazy"<% } %> decoding="async">
-            </picture>
-          </div>
-          <div class="card-body">
-            <p class="project"><%= ch.project %></p>
-            <p class="tagline"><%= ch.tagline %></p>
-            <a class="ch-link" href="<%= ch.link %>" target="_blank" rel="noopener"><%= ch.linkLabel %> →</a>
-          </div>
-        </div>
-      </div>
-    </article>
-    <% if (i < d.chapters.length - 1) { %>
-      <div class="ch-divider"><span>···</span></div>
-    <% } %>
-  <% }); %>
-</main>
-
-<!-- =================== WORKBENCH =================== -->
-<section id="workbench" class="workbench-section">
+<!-- =================== PRODUCTS =================== -->
+<% const products = ((site.data && site.data.products) || {}).products || []; %>
+<% const productNames = products.map(function (p) { return p.name.toLowerCase(); }); %>
+<% if (products.length) { %>
+<section id="products" class="workbench-section products-section">
   <div class="home-container">
     <div class="section-intro">
-      <h2 class="vf-bloom">Meanwhile, on the workbench</h2>
-      <p>Not everything gets a chapter. Some things exist because the tools were lying around and the itch wouldn&rsquo;t go away &mdash; instruments, workstations, benchmarks. All real, all in use.</p>
+      <h2 class="vf-bloom">What I&rsquo;ve shipped</h2>
+      <p>Each one started as a real problem, mine or a client&rsquo;s. With each, I note the product decision that mattered most, because that&rsquo;s the part an agent can&rsquo;t make for you.</p>
+    </div>
+    <div class="grid-2 product-grid">
+      <% products.forEach(function (p) { %>
+        <article class="fx-card product-card">
+          <p class="kind"><%= p.kind %></p>
+          <h3><% if (p.link) { %><a href="<%= p.link %>"<% if (!p.link.startsWith('#')) { %> target="_blank" rel="noopener"<% } %>><%= p.name %></a><% } else { %><%= p.name %><% } %></h3>
+          <p class="desc"><%= p.what %></p>
+          <p class="decision"><strong>Decision:</strong> <%= p.decision %></p>
+          <% if (p.proof) { %><p class="meta"><%= p.proof %></p><% } %>
+        </article>
+      <% }); %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<!-- =================== THE DAY =================== -->
+<main id="day" class="day-section">
+  <div class="section-intro">
+    <h2 class="vf-bloom">How I build: one real day</h2>
+    <p>The products above come out of a working day like this one: <strong><%= day.weekday %>, 15&nbsp;November&nbsp;2026</strong>, <%= day.place %>, taken from the logs with private details left out. <%= beats.length %> moments in 24 hours. Blue marks an agent working on its own; the rest is me, or the two of us together. Drag the clock, press play, or ask the agent on the right.</p>
+  </div>
+
+  <div id="day-app" data-fallback>
+    <ol class="day-fallback">
+      <% beats.forEach(function (b) { %>
+        <li>
+          <time datetime="<%= day.date %>T<%= b.at %>"><%= b.at %></time>
+          <strong><%= b.title %></strong>
+          <p><%= b.body %></p>
+        </li>
+      <% }); %>
+    </ol>
+  </div>
+  <script type="application/json" id="day-data"><%- JSON.stringify(day).replace(/</g, '\\u003c') %></script>
+</main>
+
+<!-- =================== WHAT RAN IT =================== -->
+<section id="organs" class="workbench-section">
+  <div class="home-container">
+    <div class="section-intro">
+      <h2 class="vf-bloom">What else ran that day</h2>
+      <p>Smaller tools and experiments from the same workbench. Each started as a scene I wanted to live in and became software I use every day. Most of it is open.</p>
     </div>
     <div class="grid-3">
-      <% (d.workbench || []).forEach(function(wb) { %>
-        <div class="fx-card workbench-card">
-          <p class="kind"><%= wb.kind %></p>
-          <h3><%= wb.name %></h3>
-          <p class="desc"><%= wb.desc %></p>
-          <p class="meta"><%= wb.meta %></p>
-        </div>
+      <% (d.chapters || []).filter(function (ch) { return productNames.indexOf(String(ch.project).toLowerCase()) === -1; }).forEach(function (ch) { %>
+        <a class="fx-card workbench-card organ-card" href="<%= ch.link %>" target="_blank" rel="noopener">
+          <p class="kind"><%= ch.project %></p>
+          <h3><%= ch.tagline %></h3>
+          <p class="desc"><%= ch.real %></p>
+          <p class="meta"><%= ch.linkLabel %> ↗</p>
+        </a>
       <% }); %>
     </div>
   </div>
 </section>
 
-<!-- =================== METHOD =================== -->
-<section id="method" class="method">
+<!-- =================== AWAY FROM THE TERMINAL (photography + video) ===================
+     Content: source/_data/media.yml. Each half renders only when it has items. -->
+<% const media = (site.data && site.data.media) || {}; %>
+<% const photos = media.photos || [], videos = media.videos || []; %>
+<% if (photos.length || videos.length) { %>
+<section id="work" class="labs-section media-section">
   <div class="home-container">
-    <h2 class="vf-bloom">I imagine how daily life will feel when the tech catches up. Then I build it and live with it now.</h2>
-    <p class="lede">Working prototypes, not concept renders. Childhood sci-fi never left &mdash; it just changed medium. Every chapter above followed the same three moves.</p>
-    <div class="grid-3">
-      <div class="fx-step">
-        <h3>Prototype the future</h3>
-        <p>If you can&rsquo;t use it daily, it&rsquo;s not real yet. The fiction earns its keep the day it compiles.</p>
-      </div>
-      <div class="fx-step">
-        <h3>Live with it</h3>
-        <p>The real question isn&rsquo;t &ldquo;what can this AI do?&rdquo; but &ldquo;what happens when a person and an AI live together for months?&rdquo;</p>
-      </div>
-      <div class="fx-step">
-        <h3>Digital body, not second brain</h3>
-        <p>Memory + tools + agency + senses. An organism, not a tool. The projects above are its organs.</p>
-      </div>
+    <div class="section-intro">
+      <h2 class="vf-bloom">Away from the terminal</h2>
+      <p><%= photos.length ? media.intro_photos : media.intro_videos %></p>
     </div>
-  </div>
-</section>
 
-<!-- =================== TIMELINE =================== -->
-<% if (d.showTimeline) { %>
-<section class="timeline">
-  <h2 class="vf-bloom">Things I shipped and slept next to</h2>
-  <p class="lede">The story didn&rsquo;t start with agents. It started twenty-five years ago, with the habit of building whatever I couldn&rsquo;t stop thinking about.</p>
-  <div>
-    <% (d.timeline || []).forEach(function(t) { %>
-      <div class="fx-row">
-        <p class="when"><%= t.when %></p>
-        <p class="what-note"><strong><%= t.what %></strong> &mdash; <%= t.note %></p>
+    <% if (photos.length) { %>
+      <h3 class="media-sub">Photography</h3>
+      <div class="media-grid sdk-grid">
+        <% photos.forEach(function (p, i) { %>
+          <figure class="media-item" style="--ratio: <%= p.ratio || '4 / 5' %>">
+            <picture>
+              <% if (p.webp) { %><source srcset="<%= p.src.replace(/\.(jpe?g|png)$/i, '.webp') %>" type="image/webp"><% } %>
+              <img src="<%= p.src %>" alt="<%= p.alt || '' %>" loading="lazy" decoding="async">
+            </picture>
+            <% if (p.caption) { %><figcaption><span><%= p.caption %></span></figcaption><% } %>
+          </figure>
+        <% }); %>
       </div>
-    <% }); %>
+    <% } %>
+
+    <% if (videos.length) { %>
+      <h3 class="media-sub">Video</h3>
+      <% if (photos.length) { %><p class="media-lede"><%= media.intro_videos %></p><% } %>
+      <div class="media-grid media-videos sdk-grid">
+        <% videos.forEach(function (v) { %>
+          <figure class="media-item">
+            <video class="media-loop" src="<%= v.src %>" poster="<%= v.poster || '' %>" muted loop playsinline preload="none" aria-label="<%= v.title %>"></video>
+            <figcaption>
+              <span><%= v.title %><% if (v.caption) { %> · <%= v.caption %><% } %></span>
+              <% if (v.full) { %><a href="<%= v.full %>" target="_blank" rel="noopener">Watch full ↗</a><% } %>
+            </figcaption>
+          </figure>
+        <% }); %>
+      </div>
+      <%# Play loops only while on screen, never for reduced motion (then show controls). %>
+      <script>
+        (function () {
+          var loops = document.querySelectorAll('.media-loop');
+          if (matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+            loops.forEach(function (v) { v.controls = true; v.preload = 'metadata'; });
+            return;
+          }
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) { e.isIntersecting ? e.target.play().catch(function () {}) : e.target.pause(); });
+          }, { threshold: 0.35 });
+          loops.forEach(function (v) { io.observe(v); });
+        })();
+      </script>
+    <% } %>
   </div>
 </section>
 <% } %>
+
+<!-- =================== HUMANE AGENTIC DESIGN =================== -->
+<%# Skill pack + plugin set that powers the design method behind this site.
+    Source: https://humane.salient.community/ — six core skills + install commands. %>
+<section id="humane" class="labs-section humane-section">
+  <div class="home-container">
+    <div class="section-intro">
+      <h2 class="vf-bloom">Put a design method next to your agent</h2>
+      <p>Humane Agentic Design turns a real product question into evidence, a prototype, a tested interface, a next learning step &mdash; and, when the work is ready, a final product. The interface is the last thing the agent sees. Seventeen skills that teach your agent to design like a person who has shipped things.</p>
+    </div>
+    <div class="grid-3">
+      <article class="fx-card">
+        <p class="kind">Step 1</p>
+        <h3>Setup</h3>
+        <p class="desc">Install the skill pack, point it at a real product question, and the rest of the workflow can begin. The first move is always the boring one.</p>
+        <p class="meta">foundation · installs in 30 seconds</p>
+      </article>
+      <article class="fx-card">
+        <p class="kind">Step 2</p>
+        <h3>Jobs to be done</h3>
+        <p class="desc">Ground the work in the job a real person is trying to get done. Without this, the agent ships features that satisfy nobody &mdash; including itself.</p>
+        <p class="meta">evidence before artifacts</p>
+      </article>
+      <article class="fx-card">
+        <p class="kind">Step 3</p>
+        <h3>Prototype</h3>
+        <p class="desc">Make the future real enough to use. The fiction earns its keep the day it compiles &mdash; and only a working prototype tells you which fiction survives contact.</p>
+        <p class="meta">fiction → function</p>
+      </article>
+      <article class="fx-card">
+        <p class="kind">Step 4</p>
+        <h3>Walkthrough</h3>
+        <p class="desc">Drive a real person through the thing you just built. Watch where they hesitate, where they reach for controls that aren&rsquo;t there, where the system goes quiet.</p>
+        <p class="meta">observation over opinion</p>
+      </article>
+      <article class="fx-card">
+        <p class="kind">Step 5</p>
+        <h3>Design tokens</h3>
+        <p class="desc">A shared vocabulary of color, type, spacing, and radius that every other skill can read. Tokens are how a team agrees on what feels right.</p>
+        <p class="meta">the grammar of taste</p>
+      </article>
+      <article class="fx-card">
+        <p class="kind">Step 6</p>
+        <h3>Review</h3>
+        <p class="desc">One consolidated verdict across structure, copy, usability, and contrast &mdash; not five reports you have to reconcile. Evidence locators, not vibes.</p>
+        <p class="meta">ranked by user impact</p>
+      </article>
+    </div>
+
+    <div class="humane-install">
+      <h3 class="vf-bloom">Install the pack</h3>
+      <p>Two commands. Works in Claude Code and Cursor. The agent gains seventeen skills; you gain a design method.</p>
+      <div class="install-cmds">
+        <code class="install-cmd"><span class="install-label">npx</span> skills add glebis/humane-agentic-design</code>
+        <code class="install-cmd"><span class="install-label">/plugin</span> marketplace add glebis/humane-agentic-design</code>
+      </div>
+      <a class="cta-ghost humane-cta" href="https://humane.salient.community/" target="_blank" rel="noopener">Read the full skill pack ↗</a>
+    </div>
+  </div>
+</section>
 
 <!-- =================== LABS =================== -->
 <section id="labs" class="labs-section">
   <div class="home-container">
     <div class="section-intro">
-      <h2 class="vf-bloom">Where the story becomes teachable</h2>
+      <h2 class="vf-bloom">Want a day like this?</h2>
       <p>The hard part of working with AI isn&rsquo;t technical &mdash; it&rsquo;s unlearning what you think is impossible. Week one: &ldquo;I can&rsquo;t code.&rdquo; Week four: shipping working products. Over 350 people have gone through my labs, and most of them aren&rsquo;t developers.</p>
     </div>
     <div class="grid-3">
@@ -178,70 +268,10 @@
   </div>
 </section>
 
-<!-- =================== HUMANE AGENTIC DESIGN =================== -->
-<%# Skill pack + plugin set that powers the design method behind this site.
-    Source: https://humane.salient.community/ — six core skills + install commands. %>
-<section id="humane" class="labs-section humane-section">
-  <div class="home-container">
-    <div class="section-intro">
-      <h2 class="vf-bloom">Put a design method next to your agent.</h2>
-      <p>Humane Agentic Design turns a real product question into evidence, a prototype, a tested interface, a next learning step &mdash; and, when the work is ready, a final product. The interface is the last thing the agent sees. Seventeen skills that teach your agent to design like a person who has shipped things.</p>
-    </div>
-    <div class="grid-3">
-      <article class="fx-card">
-        <p class="kind">01 · setup</p>
-        <h3>Setup</h3>
-        <p class="desc">Install the skill pack, point it at a real product question, and the rest of the workflow can begin. The first move is always the boring one.</p>
-        <p class="meta">foundation · installs in 30 seconds</p>
-      </article>
-      <article class="fx-card">
-        <p class="kind">02 · frame</p>
-        <h3>Jobs to be done</h3>
-        <p class="desc">Ground the work in the job a real person is trying to get done. Without this, the agent ships features that satisfy nobody &mdash; including itself.</p>
-        <p class="meta">evidence before artifacts</p>
-      </article>
-      <article class="fx-card">
-        <p class="kind">03 · prototype</p>
-        <h3>Prototype</h3>
-        <p class="desc">Make the future real enough to use. The fiction earns its keep the day it compiles &mdash; and only a working prototype tells you which fiction survives contact.</p>
-        <p class="meta">fiction → function</p>
-      </article>
-      <article class="fx-card">
-        <p class="kind">04 · walkthrough</p>
-        <h3>Walkthrough</h3>
-        <p class="desc">Drive a real person through the thing you just built. Watch where they hesitate, where they reach for controls that aren&rsquo;t there, where the system goes quiet.</p>
-        <p class="meta">observation over opinion</p>
-      </article>
-      <article class="fx-card">
-        <p class="kind">05 · tokens</p>
-        <h3>Design tokens</h3>
-        <p class="desc">A shared vocabulary of color, type, spacing, and radius that every other skill can read. Tokens are how a team agrees on what feels right.</p>
-        <p class="meta">the grammar of taste</p>
-      </article>
-      <article class="fx-card">
-        <p class="kind">06 · review</p>
-        <h3>Review</h3>
-        <p class="desc">One consolidated verdict across structure, copy, usability, and contrast &mdash; not five reports you have to reconcile. Evidence locators, not vibes.</p>
-        <p class="meta">ranked by user impact</p>
-      </article>
-    </div>
-
-    <div class="humane-install">
-      <h3 class="vf-bloom">Install the pack</h3>
-      <p>Two commands. Works in Claude Code and Cursor. The agent gains seventeen skills; you gain a design method.</p>
-      <div class="install-cmds">
-        <code class="install-cmd"><span class="install-label">npx</span> skills add glebis/humane-agentic-design</code>
-        <code class="install-cmd"><span class="install-label">/plugin</span> marketplace add glebis/humane-agentic-design</code>
-      </div>
-      <a class="cta-ghost humane-cta" href="https://humane.salient.community/" target="_blank" rel="noopener">Read the full skill pack ↗</a>
-    </div>
-  </div>
-</section>
-
 <!-- =================== FOOTER (homepage closing) =================== -->
-<footer class="home-footer">
-  <h2 class="vf-bloom">The next chapter is being written in a terminal in Berlin.</h2>
-  <p class="lede">If you want to build alongside it &mdash; as a lab participant, a collaborator, or a client &mdash; say hello.</p>
+<footer id="contact" class="home-footer">
+  <h2 class="vf-bloom">Have an AI product to build?</h2>
+  <p class="lede">Tell me what it should do for the people who&rsquo;ll use it. I&rsquo;ll help you get it from the first question to working software. Teams who want to learn the method can join a lab.</p>
   <div class="socials">
     <a href="https://t.me/glebkalinin">Telegram ↗</a>
     <% if (theme.whatsapp) { %>

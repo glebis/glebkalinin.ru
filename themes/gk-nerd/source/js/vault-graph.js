@@ -19,6 +19,9 @@ const CAT_COLORS = {
 
 const container = document.getElementById('vault-graph-container');
 if (!container) return;
+// The hero graph is display:none on phones (home.css, ≤900px). Don't pull
+// 600KB of three.js for a canvas nobody can see.
+if (!container.getClientRects().length) return;
 
 const canvas = document.createElement('canvas');
 canvas.id = 'vault-graph-canvas';
@@ -188,7 +191,8 @@ function initGraph() {
 
   // Focused node label overlay
   const focusLabel=document.createElement('div');
-  focusLabel.style.cssText='position:absolute;font-family:var(--font-mono,"Geist Mono",monospace);white-space:nowrap;pointer-events:none;text-shadow:0 0 10px rgba(26,26,31,0.95),0 0 20px rgba(26,26,31,0.8);will-change:transform,opacity;font-size:16px;opacity:0;transition:opacity 0.3s ease;z-index:10;';
+  focusLabel.className='vg-label vg-focus';
+  focusLabel.style.cssText='font-size:16px;opacity:0;transition:opacity 0.3s ease;z-index:10;';
   labelLayer.appendChild(focusLabel);
 
   function easeInOutCubic(t){return t<0.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}
@@ -222,7 +226,6 @@ function initGraph() {
     const node=nodes[nodeIdx];
     const cc=CAT_COLORS[cats[node[1]]]||[1,0.42,0.21];
     focusLabel.textContent=node[0];
-    focusLabel.style.color='rgba('+Math.round(cc[0]*255)+','+Math.round(cc[1]*255)+','+Math.round(cc[2]*255)+',1)';
     focusLabel.style.opacity='1';
     canvas.style.cursor='pointer';
   }
@@ -276,11 +279,11 @@ function initGraph() {
   });
 
   // Labels
-  const MAX_LABELS=25;
+  const MAX_LABELS=14;
   const labelEls=[];
   for(let i=0;i<MAX_LABELS;i++){
     const el=document.createElement('div');
-    el.style.cssText='position:absolute;font-family:var(--font-mono,"Geist Mono",monospace);white-space:nowrap;pointer-events:none;text-shadow:0 0 8px rgba(26,26,31,0.95),0 0 16px rgba(26,26,31,0.7);will-change:transform,opacity;';
+    el.className='vg-label';  // colour + halo come from home-sdk.css (theme-aware)
     el.style.display='none';
     labelLayer.appendChild(el);
     labelEls.push(el);
@@ -295,18 +298,21 @@ function initGraph() {
       const p=projected[i];
       tmpV.set(p[0],p[1],p[2]).project(camera);
       const sx=(tmpV.x*hw)+hw,sy=(-tmpV.y*hh)+hh;
-      if(tmpV.z>1||tmpV.z<0||sx<-80||sx>w+80||sy<-40||sy>h+40)continue;
+      // Keep labels out of the faded left third, where the headline sits.
+      if(tmpV.z>1||tmpV.z<0||sx<w*0.42||sx>w-40||sy<24||sy>h-40)continue;
       const depth=(p[2]-dMin)/dRange;
       const wt=degrees[i]*1.5+(1-depth)*3;
-      const fs=clamp(7+degrees[i]*0.6,7,14);
-      const op=clamp(0.25+(1-depth)*0.75,0.1,0.95);
-      cands.push({i,sx,sy,wt,fs,op});
+      const fs=clamp(11+degrees[i]*0.3,11,15);
+      const op=clamp(0.6+(1-depth)*0.4,0.6,1);
+      const tw=nodes[i][0].length*fs*0.62;  // approx. mono text width
+      cands.push({i,sx,sy,wt,fs,op,tw});
     }
     cands.sort((a,b)=>b.wt-a.wt);
     const vis=[];
     for(const c of cands){
       let ok=true;
-      for(const v of vis){const dx=c.sx-v.sx,dy=c.sy-v.sy;if(dx*dx+dy*dy<(c.fs+v.fs)*7){ok=false;break;}}
+      // Box overlap test (labels are centred on x), with a little air.
+      for(const v of vis){if(Math.abs(c.sx-v.sx)<(c.tw+v.tw)/2+12&&Math.abs(c.sy-v.sy)<(c.fs+v.fs)*0.75+6){ok=false;break;}}
       if(ok){vis.push(c);if(vis.length>=MAX_LABELS)break;}
     }
     for(let j=0;j<MAX_LABELS;j++){
@@ -314,13 +320,11 @@ function initGraph() {
       if(j<vis.length){
         const v=vis[j];
         const node=nodes[v.i];
-        const cc=CAT_COLORS[cats[node[1]]]||[1,0.42,0.21];
         el.textContent=node[0];
         el.style.display='';
         el.style.transform=`translate(${v.sx}px,${v.sy}px) translate(-50%,-120%)`;
         el.style.fontSize=v.fs+'px';
         el.style.opacity=v.op;
-        el.style.color=`rgba(${Math.round(cc[0]*255)},${Math.round(cc[1]*255)},${Math.round(cc[2]*255)},${clamp(v.op+0.2,0.3,1)})`;
       }else{el.style.display='none';}
     }
   }

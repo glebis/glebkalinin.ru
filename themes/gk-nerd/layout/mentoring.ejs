@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/mentoring.css">
+<link rel="stylesheet" href="/mentoring-app/preparation.css">
+<main id="main" class="section page-section">
+  <div class="container">
+    <nav aria-label="<%= page.lang === 'ru' ? 'Навигация по странице' : 'Page navigation' %>" class="page-content">
+      <p><a href="/">Gleb Kalinin</a> · <a href="/mentoring/" lang="en" hreflang="en"<%- page.lang === 'en' ? ' aria-current="page"' : '' %>>English</a> / <a href="/ru/mentoring/" lang="ru" hreflang="ru"<%- page.lang === 'ru' ? ' aria-current="page"' : '' %>>Русский</a></p>
+    </nav>
+    <header class="section-header"><h1 class="section-title"><%= page.title %></h1></header>
+    <div class="page-content">
+      <%- page.content %>
+      <% if (page.preparation_prompt) { const ru = page.lang === 'ru'; %>
+        <section class="mentoring-preparation" aria-labelledby="preparation-heading">
+          <h2 id="preparation-heading"><%= ru ? 'Если хотите подготовиться к встрече' : 'If you’d like to prepare' %></h2>
+          <p><%= ru ? 'Можно отправить этот промпт в чат с ИИ, а получившуюся заметку — мне. Это необязательно: можно просто написать своими словами.' : 'Paste this prompt into an AI chat and send me the resulting note. This is optional; you can simply write to me in your own words.' %></p>
+          <div class="mentoring-exercise" data-preparation-exercise hidden></div>
+          <div class="mentoring-prompt">
+            <p id="preparation-prompt" class="mentoring-prompt-text"><%= page.preparation_prompt.trim() %></p>
+            <button type="button" class="mentoring-copy" hidden aria-controls="preparation-prompt" data-copy-prompt data-copied="<%= ru ? 'Промпт скопирован.' : 'Prompt copied.' %>" data-copy-error="<%= ru ? 'Не удалось скопировать автоматически. Выделите текст промпта и скопируйте его вручную.' : 'Couldn’t copy automatically. Select the prompt text and copy it manually.' %>"><%= ru ? 'Скопировать промпт' : 'Copy prompt' %></button>
+            <p class="mentoring-copy-status" role="status" aria-live="polite" data-copy-status></p>
+          </div>
+        </section>
+      <% } %>
+      <p><a class="cta-primary" href="https://t.me/<%= theme.telegram %>"><%= page.lang === 'ru' ? 'Написать мне в Telegram' : 'Write to me on Telegram' %></a></p>
+    </div>
+  </div>
+</main>
+<script src="/js/mentoring.js" defer></script>
+<script type="module" src="/mentoring-app/preparation.js"></script>

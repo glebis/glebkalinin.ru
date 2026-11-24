@@ -24,7 +24,8 @@
 .page-home {
   scroll-behavior: smooth;
 }
-.page-home body {
+/* `.page-home` is itself the body, not a parent of it. */
+body.page-home {
   margin: 0;
   background: var(--bg-base);
   color: var(--fg);

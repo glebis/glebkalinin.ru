@@ -1,0 +1,37 @@
+# Shipped products for the homepage ("What I've shipped"), in display order.
+# Each card: what it is, one product decision that shaped it, and proof.
+# Keep every line top-level and plain: what it is and does, no stacks or metrics.
+# "proof" is optional; keep it to a short fact a visitor can check.
+# Projects named here are left out of "What else ran that day" (redesign.yml chapters).
+
+products:
+  - name: "Workroom"
+    kind: "Collaborative research workspace"
+    what: "A shared workspace where people and AI agents research together. Agents bring findings with their sources; people decide what goes in."
+    decision: "Agents suggest, people approve. Nothing changes the document without a person saying yes."
+    link: "https://workroom.salient.community/"
+    linkLabel: "workroom.salient.community"
+
+  - name: "cenno"
+    kind: "macOS app for agents"
+    what: "Lets your AI agent stop and ask you a quick question instead of guessing."
+    decision: "It asks without interrupting your work, and your answers stay on your computer."
+    proof: "Free and open source"
+    link: "https://cenno.salient.community/"
+    linkLabel: "cenno.salient.community"
+
+  - name: "pibot"
+    kind: "Agent companions on Telegram"
+    what: "Personal AI assistants you talk to in Telegram. They remember you, know your schedule and get better over time."
+    decision: "They speak up only when something is worth saying, and ask before changing your calendar or tasks."
+    proof: "Open source · runs my own assistants every day"
+    link: "https://github.com/glebis/pibot"
+    linkLabel: "github.com/glebis/pibot"
+
+  - name: "Course automation"
+    kind: "Pipeline behind my labs"
+    what: "Turns each lab session into published notes and materials, and sets up each new cohort."
+    decision: "Nothing goes out until it has been checked."
+    proof: "Runs every Claude Code Lab session · 350+ participants so far"
+    link: "#labs"
+    linkLabel: "the labs"
