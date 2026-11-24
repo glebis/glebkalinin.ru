@@ -51,7 +51,7 @@
    "at": "12:49",
    "actor": "agent",
    "organ": "Telegram bots",
-   "title": "I said Threads. The agent planned for Threads and X.",
+   "title": "I said Threads. The agent planned for Threads and X",
    "body": "I narrow a post to one platform. The bot agrees, then a child task reports back with the old plan for two. Nothing went out wrong, but it was close. The fix: an approval is tied to the exact destination and checked again right before sending.",
    "lesson": "Approval belongs to a specific version of the action, not to the intent."
   },
@@ -67,7 +67,7 @@
    "at": "16:23",
    "actor": "both",
    "organ": "Vault",
-   "title": "A link arrives. This page starts here.",
+   "title": "A link arrives. This page starts here",
    "body": "Someone shares a Winamp rebuilt from UI SDK behaviors, with an agent bridge so an AI can drive it. An agent clips it into my vault with sources checked. The idea that an agent should use the page through its components, not by guessing at pixels, became this page."
   },
   {
